@@ -7,6 +7,6 @@
   </info>
   <files>
     <file name="source.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/artificer_armorer.xml" />
-    <file name="items.xml" url="http://hosting.com/files/items.xml" />
+    <file name="items.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
   </files>
 </index>
