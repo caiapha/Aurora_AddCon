@@ -2,7 +2,7 @@
 <index>
   <info>
     <update version="1.0">
-      <file name="sample.index" url="http://hosting.com/files/sample.index" />
+      <file name="TCE.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/TCE.index" />
     </update>
   </info>
   <files>
