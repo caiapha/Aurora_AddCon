@@ -4,7 +4,7 @@
 		<name>Armorer</name>
 		<description>The Armorer Specialist from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1">
+		<update version="0.2">
 			<file name="artificer_armorer.xml" url="https://absent/artificer_armorer.xml"/>
 		</update>
 	</info>
@@ -114,7 +114,7 @@
 		</description>
 		<sheet usage="short/long rest">
 			<description>
-				<p>• You can customize your Arcane Armor using Smith's tools. Choose one of the following armor models: Guardian or Infiltrator. Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.</p>
+				<p>You can customize your Arcane Armor using Smith's tools. Choose one of the following armor models: Guardian or Infiltrator. Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.</p>
 			</description>
 		</sheet>
 		<rules>
