@@ -98,8 +98,8 @@
 	<element name="Armor Model" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL">
 		<description>
 			<p>At 3th level, You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.</p>
-			<p class="indent">Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.</p>
-			<p class="indent">You can change the armor's model whenever you finish a short or long rest, provided you have smith's tools in hand.</p>
+			<p class="indent"> • Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.</p>
+			<p class="indent"> • You can change the armor's model whenever you finish a short or long rest, provided you have smith's tools in hand.</p>
 			<strong>Guardian:</strong><p>You design your armor to be in the front line of conflict. It has the following features:</p>
 				<ul>
 					<li><strong>Thunder Gauntlets:</strong> Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals ld8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.</li>
