@@ -4,7 +4,7 @@
 		<name>Armorer</name>
 		<description>The Armorer Specialist from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0">
+		<update version="0.1">
 			<file name="artificer_armorer.xml" url="https://absent/artificer_armorer.xml"/>
 		</update>
 	</info>
