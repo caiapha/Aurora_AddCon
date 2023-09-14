@@ -258,53 +258,51 @@
 			<stat name="item infusions:max" value="1" level="18" />
 		</rules>
 	</element>
-	
-	<!-- qui -->
-
-	<element name="Artificer Specialist" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
+		<element name="Artificer Specialist" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
 		<description>
-			<p>At 3rd level, you choose the type of specialist you are: Alchemist, Artillerist, or Battle Smith, each of which is detailed at the end of the class’s description. Your choice grants you features at 5th level and again at 9th and 15th level.</p>
+			<p>At 3rd level, Choose the type of specialist you are: Alchemist, Armorer, Artillerist, or Battle Smith, each of which is detailed after the class's description. Your choice grants you features at 5th level and again at 9th and 15th level.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Archetype" name="Artificer Specialist" supports="Artificer Specialist" />
 		</rules>
 	</element>
-	<element name="The Right Tool for the Job" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_THE_RIGHT_TOOL_FOR_THE_JOB">
+	<element name="The Right Tool for the Job" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_THE_RIGHT_TOOL_FOR_THE_JOB">
 		<description>
-			<p>At 3rd level, you learn how to produce exactly the tool you need: with tinker’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again.</p>
+			<p>At 3rd level, You've learned how to produce exactly the tool you need: with thieves' tools or artisan's tools in hand, you can magically create one set of artisan's tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again</p>
 		</description>
 		<sheet>
 			<description>With tinker’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>When you reach 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false">
-			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+			<description>When you reach 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eberron Artificer,4" level="4" />
-			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eberron Artificer,8" level="8" />
-			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eberron Artificer,12" level="12" />
-			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eberron Artificer,16" level="16" />
-			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eberron Artificer,19" level="19" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Tasha's Artificer,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Tasha's Artificer,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Tasha's Artificer,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Tasha's Artificer,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Tasha's Artificer,19" level="19" />
 		</rules>
 	</element>
-	<element name="Tool Expertise" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE">
+	<element name="Tool Expertise" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE">
 		<description>
 			<p>Starting at 6th level, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</p>
 		</description>
 		<sheet>
 			<description>Your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</description>
 		</sheet>
+		<!-- trovare modo di implementarlo in scheda -->
 	</element>
-	<element name="Flash of Genius" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS">
+	<element name="Flash of Genius" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS">
 		<description>
-			<p>Starting at 7th level, you gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.</p>
+			<p>You've gained the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.</p>
 			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
@@ -315,28 +313,27 @@
 			<stat name="flash of genius:usage" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Magic Item Adept" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT">
+	<element name="Magic Item Adept" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT">
 		<description>
-			<p>When you reach 10th level, you achieve a profound understanding of how to use and make magic items:</p>
+			<p>When you reach 10th level, You've achieved a profound understanding of how to use and make magic items::</p>
 			<ul>
 				<li>You can attune to up to four magic items at once.</li>
 				<li>If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>You can attune to up to {{attunement:max}} items at once.
-			If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</description>
+			<description>You can attune to up to {{attunement:max}} items at once. If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</description>
 		</sheet>
 		<rules>
 			<stat name="attunement:max" value="4" bonus="base" />
 		</rules>
 	</element>
-	<element name="Spell-Storing Item" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
+	<element name="Spell-Storing Item" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
 		<description>
-			<p>At 11th level, you learn how to store a spell in an object. Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you needn’t have it prepared).</p>
-			<p class="indent">While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it’s been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object.</p>
+			<p>You can now store a spell in an object. Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1 st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you needn't have it prepared).</p>
+			<p class="indent">While holding the object, a creature can take an action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object.</p>
 		</description>
-		<sheet>
+		<sheet usage="long rest">
 			<description>Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast.
 			While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it’s been used {{spell storing item:charges}} times or until you use this feature again to store a spell in an object.</description>
 		</sheet>
@@ -347,7 +344,7 @@
 			<stat name="spell storing item:charges" value="spell storing item:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Magic Item Savant" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_SAVANT">
+	<element name="Magic Item Savant" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_SAVANT">
 		<description>
 			<p>At 14th level, your skill with magic items deepens more:</p>
 			<ul>
@@ -363,7 +360,7 @@
 			<!-- todo: ignore attunement requirements -->
 		</rules>
 	</element>
-	<element name="Magic Item Master" type="Class Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER">
+	<element name="Magic Item Master" type="Class Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER">
 		<description>
 			<p>Starting at 18th level, you can attune to up to six magic items at once.</p>
 		</description>
@@ -398,8 +395,9 @@
 			<stat name="charisma:save:misc" value="attunement:current" />
 		</rules>
 	</element>
-	
-	<element name="Alchemist" type="Archetype" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_ARTIFICER_ALCHEMIST">
+<!-- artificer specialists -->
+	<!-- Alchemist Specialist -->
+	<element name="Alchemist" type="Archetype" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_ARCHETYPE_ARTIFICER_ALCHEMIST">
 		<supports>Artificer Specialist</supports>
 		<description>
 			<p>An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace.</p>
@@ -414,15 +412,15 @@
 			<description>An Alchemist is an expert at combining reagents to produce mystical effects.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" level="5" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS" level="9" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY" level="15" />
 		</rules>
 	</element>
-	<element name="Tool Proficiency" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY">
+	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY">
 		<description>
 			<p>When you adopt this specialization at 3rd level, you gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
@@ -433,7 +431,7 @@
 			<select type="Proficiency" name="Tool Proficiency, Alchemist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
 		</rules>
 	</element>
-	<element name="Alchemist Spells" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
+	<element name="Alchemist Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
 		<description>
 			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<h5 class="caption">ALCHEMIST SPELLS</h5>
@@ -464,12 +462,12 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Artificer" level="17" prepared="true" />
 		</rules>
 	</element>
-	<element name="Experimental Elixir" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
+	<element name="Experimental Elixir" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
 		<description>
-			<p>Beginning at 3rd level, whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
+			<p>Beginning at 3rd level, Whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
+			<p class="indent">You can create additional experimental elixirs by expending a spell slot of 1 st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.</p>
 			<p class="indent">Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.</p>
-			<p class="indent">When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir’s effect separately. Each elixir requires its own flask.</p>
-			<p class="indent">You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir’s effect from the Experimental Elixir table.</p>
+			<p class="indent">When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.</p>
 			<p><strong>Experimental Elixir</strong></p>
 			<table>
 				<thead>
@@ -484,9 +482,9 @@
 			</table>
 		</description>
 		<sheet>
-			<description>Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs, each in an empty flask you touch.
+			<description>Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs, each in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect. 
 			Any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.
-			You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one.</description>
+			You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one. In this case you can choose the effect form the Experimental Elixir table</description>
 		</sheet>
 		<rules>
 			<stat name="experimental elixir:count" value="1"  />
@@ -494,7 +492,7 @@
 			<stat name="experimental elixir:count" value="1" level="15" />
 		</rules>
 	</element>
-	<element name="Alchemical Savant" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
+	<element name="Alchemical Savant" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
 		<description>
 			<p>At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
 		</description>
@@ -506,7 +504,7 @@
 			<stat name="alchemical savant:bonus" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Restorative Reagents" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
+	<element name="Restorative Reagents" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
 		<description>
 			<p>Starting at 9th level, you can incorporate restorative reagents into some of your works:</p>
 			<ul>
@@ -523,7 +521,7 @@
 			<stat name="restorative reagents:usage" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Chemical Mastery" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
+	<element name="Chemical Mastery" type="Archetype Feature" source="Tasha's Cauldron of Evertything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
 		<description>
 			<p>By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
 			<ul>
@@ -541,29 +539,33 @@
 		</rules>
 	</element>
 
-	<element name="Artillerist" type="Archetype" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_ARTIFICER_ARTILLERIST">
+	<!-- Artillerist Specialist -->
+	<element name="Artillerist" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_ARTIFICER_ARTILLERIST">
 		<supports>Artificer Specialist</supports>
 		<description>
-			<p>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield. This destructive power was valued by all the armies of the Last War. Now that the war is over, some members of this specialization have sought to build a more peaceful world by using their powers to fight the resurgence of strife in Khorvaire. The gnome artificer Vi, an unlikely yet key member of House Cannith’s warforged project, has been especially vocal about making things right: "It’s about time we fixed things instead of blowing them all to hell."</p>
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" />
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" />
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" />
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" />
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" />
-			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" />
+			<p>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield. This destructive power is valued by armies in the wars on many different worlds. And when war passes, some members of this specialization seek to build a more peaceful world by using their powers to fight the resurgence of strife. The world-hopping gnome artificer Vi has been especially vocal about making things right: "It's about time we fixed things instead of blowing them all to hell."</p>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" />
 		</description>
 		<sheet display="false">
 			<description>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" level="5" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" level="9" />
-			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" level="15" />
 		</rules>
 	</element>
+
+	<!-- QUI -->
+	
 	<element name="Tool Proficiency" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY">
 		<description>
 			<p>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
