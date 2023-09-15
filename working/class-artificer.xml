@@ -562,11 +562,8 @@
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" level="9" />
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" level="15" />
 		</rules>
-	</element>
-
-	<!-- QUI -->
-	
-	<element name="Tool Proficiency" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY">
+	</element>	
+	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY">
 		<description>
 			<p>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
@@ -577,7 +574,7 @@
 			<select type="Proficiency" name="Tool Proficiency, Artillerist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
 		</rules>
 	</element>
-	<element name="Artillerist Spells" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS">
+	<element name="Artillerist Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS">
 		<description>
 			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<p><strong>ARTILLERIST SPELLS</strong></p>
@@ -593,9 +590,9 @@
 			</table>
 		</description>
 		<sheet display="false">
-			<description>You always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
+			<description>You always have certain spells prepared after you reach particular levels in this class. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</description>
 		</sheet>
-		<rules>
+		<rules> <!-- QUI -->
 			<grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Artificer" level="5" prepared="true" />
