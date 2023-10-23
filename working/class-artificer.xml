@@ -86,7 +86,7 @@
 			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS" />
 			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT" />
 			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM" />
-			<div element="ID_WOTC_v_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_SAVANT" />
+			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_SAVANT" />
 			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER" />
 			<div element="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE" />
 		</description>
@@ -630,8 +630,11 @@
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_FORCE_BALLISTA" />
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_PROTECTOR" />
 		</rules>
-	</element> <!-- QUI -->
-	<element name="Flamethrower" type="Archetype Feature" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_FLAMETHROWER">
+	</element> 
+
+	<!-- QUI -->
+	
+	<element name="Flamethrower" type="Archetype Feature" source="Tasha's Cauldron of Everithing" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_FLAMETHROWER">
 		<description>
 			<p>The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.</p>
 		</description>
