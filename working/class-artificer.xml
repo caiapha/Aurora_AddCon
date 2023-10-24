@@ -11,7 +11,7 @@
 			<p>Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions. You can find everything you need to play one of these inventors in the next few sections.</p>
 			<p class="indent">Artificers use a variety of tools to channel their arcane power. To cast a spell, an artificer might use alchemist's supplies to create a potent elixir, calligrapher's supplies to inscribe a sigil of power, or tinker's tools to craft a temporary charm. The magic of artificers is tied to their tools and their talents, and few other characters can produce the right tool for a job as well as an artificer.</p>			
 			<h4>ARTIFICERS IN MANY WORLDS</h4>
-			<p class="indent">Throughout the D&D multiverse, artificers create inventions and magic items of peace and war. Many lives have been brightened or saved because of the work of kind artificers, but countless lives have also been lost because of the mass destruction unleashed by certain artificers' creations.</p>
+			<p class="indent">Throughout the DnD multiverse, artificers create inventions and magic items of peace and war. Many lives have been brightened or saved because of the work of kind artificers, but countless lives have also been lost because of the mass destruction unleashed by certain artificers' creations.</p>
 			<p class="indent">In the Forgotten Realms, the island of Lantan is home to many artificers, and in the world of Dragonlance, tinker gnomes are often members of this class. The strange technologies in the Barrier Peaks of the world of Greyhawk have inspired some folk to walk the path of the artificer, and in Mystara, various nations employ artificers to keep airships and other wondrous devices operational.</p>
 			<p class="indent">Artificers in the City of Sigil share discoveries from throughout the multiverse, and from there, the gnome artificer Vi runs a cosmos-spanning business that hires adventurers to fix problems that others deem unfixable. In Vi's home world, Eberron, magic is harnessed as a form of science and deployed throughout society, largely as a result of the wondrous ingenuity of artificers.</p>
 			<h4>CREATING A ARTIFICER</h4>
@@ -213,6 +213,7 @@
 		</rules>
 	</element>
 	<element name="Infuse Item" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_INFUSE_ITEM">
+		<description>	
 			<p>At 2nd level, you gain the ability to imbue mundane items with certain magical infusions, turning those objects into magic items</p>
 			<h5>INFUSIONS KNOWN</h5>
 			<p>When you gain this feature, pick four artificer infusions to learn, choosing from the "Artificer Infusions" section at the end of the class's description. You learn additional infusions of your choice when you reach certain levels in this class, as shown in the Infusions Known column of the Artificer table.</p>
