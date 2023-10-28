@@ -4,7 +4,7 @@
 		<name>Artificer</name>
 		<description>The Armorer Class from the Tasha's Cauldron of Evertything.</description>	
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-artificer.xml" url="https://absent/class-artificer.xml" />
 		</update>
 	</info>
@@ -192,8 +192,6 @@
 			<list known="true">Artificer</list>
 		</spellcasting>
 		<rules>
-			<grant type="Spell" id="ID_XGTE_SPELL_FROSTBITE" spellcasting="Artificer" level="1" prepared="false" />
-			<grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Artificer" level="17" prepared="false" />
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
 			<!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_RITUAL_CASTER" /> -->
 			<stat name="artificer:spellcasting:slots:1" value="2" level="1" />
