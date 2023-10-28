@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells from Tasha's Cauldron of Everighing</name>
-    <update version="0.0.5">
+    <update version="0.0.6">
       <file name="spells.xml" url="https://absent/TCE/spells_TCE.xml" />
     </update>
   </info>
@@ -28,7 +28,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Artificer Frostbite" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCE_SPELL_FROSTBITE">
+  <element name="Frostbite Artificer" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCE_SPELL_FROSTBITE_ARTIFICER">
         <supports>Druid, Sorcerer, Warlock, Wizard, Rogue (Arcane Trickster), Fighter (Eldritch Knight)</supports>
         <description>
             <p>You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.</p>
