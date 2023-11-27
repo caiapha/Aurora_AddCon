@@ -4,7 +4,7 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -52,7 +52,7 @@
 			<description>
 				<p>you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:</p>
 				<p class="indent">
-					- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit. <\r></p>
+					- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit. </r></p>
 				<p class="indent">
 					- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action \r </p>
 				<p class="indent">
