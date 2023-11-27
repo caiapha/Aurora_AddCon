@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.3.0">
+    <update version="1.3.1">
       <file name="TCE.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/TCE.index" />
     </update>
   </info>
