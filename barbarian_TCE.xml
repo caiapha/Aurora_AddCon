@@ -4,7 +4,7 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -51,9 +51,9 @@
 		<sheet usage="Entering Rage">
 			<description>
 				<p>you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:</p>
-				<p>- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</r>
-				- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</r>
-				- 3 - Tail: You tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
+				<p>- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p></r>
+				<p>- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p></r>
+				<p>- 3 - Tail: You tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
 			</description>
 		</sheet>	
 	</element>
