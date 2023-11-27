@@ -52,11 +52,11 @@
 			<description>
 				<p>you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:</p>
 				<p class="indent">
-					<LF>- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
+					- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
 				<p class="indent">
-					<LF>- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p>
+					- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p>
 				<p class="indent">
-					<LF>- 3 - Tail: You tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
+					- 3 - Tail: You tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
 			</description>
 		</sheet>	
 	</element>
@@ -73,9 +73,9 @@
 			<description>
 				<p>Your natual weapon count as magical. Choose one of the following</p>
 				<p>
-				<LF>- 1 - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
-				<LF>- 2 - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-				<LF>- 3 - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</p>
+				- 1 - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+				- 2 - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+				- 3 - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</p>
 			</description>
 			</sheet>
 	</element>
@@ -91,8 +91,8 @@
 		<sheet usage="Proficiency Bonus/Long Rest">
 			<description>
 				<p>On a hit with your natural weapons while you are raging, the target must succeed on a Wisdom saving throw (DC=8 + CON + PB) or suffer one of the following effects (your choice):
-				<LF>- The target must use its reaction to make a melee attack against another creature of your choice that you can see.
-				<LF>- The target takes 2d12 psychic damage</p>
+				- The target must use its reaction to make a melee attack against another creature of your choice that you can see.
+				- The target takes 2d12 psychic damage</p>
 		</description>
 		</sheet>
 	</element>
