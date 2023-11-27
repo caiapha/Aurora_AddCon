@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.2.4">
+    <update version="1.3.0">
       <file name="TCE.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/TCE.index" />
     </update>
   </info>
@@ -11,5 +11,6 @@
     <file name="cleric_twilight.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/cleric_twilight.xml" />
     <file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/spells_TCE.xml" />
     <file name="barbarian_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/barbarian_TCE.xml" />
+    <file name="bard_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/bard_TCE.xml" />
   </files>
 </index>
