@@ -4,7 +4,7 @@
 		<name>Cleric Domains form TCE</name>
 		<description>The new domains for Cleric class from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0">
+		<update version="0.0.0">
 			<file name="cleric_TCE.xml" url="https://absent/" />
 		</update>
 	</info>
@@ -121,15 +121,121 @@
 			<description>When you damage a creature with Divine Strike, until the start of your next turn if an ally hits the creature, it also takes 2d8 psychic damage and the effect ends.</description>
 		</sheet>
 	</element>
-
-
-
-
-
-
-
-
-	<!-- Divine Domain: Twilight Domain -->
+	
+	<!-- Divine Domain: Peace Domain -->
+	<element name="Peace Domain" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_CLERIC_PEACE_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.</p>
+			<p class="indent">Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.</p>
+			<h5 class="caption">ORDER DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>heroism, sanctuary</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, warding bond</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, sending</em></td></tr>
+				<tr><td>7th</td><td><em>aura of purity, Otiluke’s Resilient Sphere</em></td></tr>
+				<tr><td>9th</td><td><em>greater restoration, Rary’s Telepathic Bond</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_IMPLEMENT_OF_PEACE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EMBOLDENING_BOND" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_PROTECTIVE_BOND" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EXPANSIVE_BOND" />
+		</description>
+		<sheet display="false">
+			<description><p>The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.</p>
+				<p class="indent">Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_IMPLEMENT_OF_PEACE" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EMBOLDENING_BOND" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_PROTECTIVE_BOND" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING" level="8"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EXPANSIVE_BOND" level="17"/>
+		</rules>
+	</element>
+	<element name="Implement of Peace" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_IMPLEMENT_OF_PEACE">
+		<description>
+			<p><em>1st-level Peace Domain feature</em></p>
+			<p>You gain proficiency in the Insight, Performance, or Persuasion skill (your choice).</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Insight, Performance, or Persuasion skill (your choice).</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="ID_PROFICIENCY_SKILL_INDIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="1" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC" />
+		</rules>
+	</element>
+	<element name="Emboldening Bond" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EMBOLDENING_BOND">
+		<description>
+			<p><em>1st-level Peace Domain feature</em></p>
+			<p>You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/long rest">		
+			<description>Choose  a number of willing creature (can include yourself) within 30ft equal to your proficiency bonus. For 10 minutes, until an choosen creature is within 30ft form another, once per turn it can add 1d4 to an attack roll, and ability check or a saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Balm of Peace" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_CD_BALM_OF_PEACE">
+		<description>
+			<p><em>2nd-level Peace Domain feature</em></p>
+			<p>You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action.</p>
+		</description>
+		<sheet alt="Balm of Peace" action="Action" usage="Channel Divinity">
+			<description>
+				<p>You can move up to your speed without provoking opportunity attacks. When you move withing 5ft of any other creature, once per turn you can restore 2d6+{{balm_of_peace}} to that creature.</p>
+			</description>	
+		</sheet>
+		<rules>
+			<stat name="balm_of_peace" value="1" bonus="base" />
+			<stat name="balm_of_peace" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Protective Bond" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_PROTECTIVE_BOND">
+		<description>
+			<p><em>6th-level Peace Domain feature</em></p>
+			<p>The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead.</p>
+		</description>
+		<sheet>		
+			<description>When a creature affected by your Emboldening Bond is about to take damage, a second bonded creature within 30ft can use his reaction to telerpot at 5ft from him and taking all the damage on himself</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING">
+		<description>
+			<p><em>8th-level Peace Domain feature</em></p>
+			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip</p>
+		</description>
+		<sheet>		
+			<description>You add your Wisdom modifier to the damage you deal with any cleric cantrip</description>
+		</sheet>
+	</element>
+	<element name="Expansive Bond" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PEACE_DOMAIN_EXPANSIVE_BOND">
+		<description>
+			<p><em>17th-level Peace Domain feature</em></p>
+			<p>The benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage</p>
+		</description>
+		<sheet>		
+			<description>The distance for Embolding and Protective Bond increase to 60ft. When a creature uses Protective Bond to take someone else's damate, the creature has resistance to that damage.</description>
+		</sheet>
+	</element>
+	
+<!-- Divine Domain: Twilight Domain -->
 	<element name="Twilight Domain" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_CLERIC_TWILIGHT_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
@@ -179,6 +285,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_TWILIGHT_SHROUD" level="17"/>
 		</rules>
 	</element>
+	
 	<element name="Bonus Proficiencies" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_BONUS_PROFICIENCIES">
 		<description>
 			<p><em>1st-level Twilight Domain feature</em></p>
@@ -192,6 +299,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 		</rules>
 	</element>
+
 	<element name="Eyes of Night" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_EYES_OF_NIGHT">
 		<description>
 			<p>You can see through the deepest gloom. You have darkvision out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.</p>
@@ -201,6 +309,7 @@
 			<p>You have darkvision out to a range of 300 feet. As an action, you share it with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum one). The shared darkvision lasts for 1 hour. You can do it once per long rest, unless you expend a spell slot.</p>
 		</sheet>		
 	</element>
+	
 	<element name="Vigilant Blessing" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_VIGILANT_BLESSING">
 		<description>
 			<p>The night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again.</p>
@@ -225,6 +334,7 @@
 			</description>	
 		</sheet>
 	</element>
+	
 	<element name="Steps of Night" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_STEPS_OF_NIGHT">
 		<description>
 			<p>At 6th level, you can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest</p>
