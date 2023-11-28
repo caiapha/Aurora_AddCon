@@ -4,7 +4,7 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.12">
+		<update version="0.1.0">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -76,7 +76,7 @@
 			</description>
 			</sheet>
 	</element>
-	<element name="Infectious Fury" type="Archetype Feature" source="Tasha Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_INFECTIOUS_FURY">
+	<element name="Infectious Fury" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_INFECTIOUS_FURY">
 		<description>
 			<p>At 10th level, When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):</p>
 			<ul>
@@ -168,7 +168,7 @@
 			</description>
 			</sheet>
 	</element>
-	<element name="Bolstering Magic" type="Archetype Feature" source="Tasha Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_BOLSTERING_MAGIC">
+	<element name="Bolstering Magic" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_BOLSTERING_MAGIC">
 		<description>
 			<p>At 6th level, You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:.</p>
 			<ul>
