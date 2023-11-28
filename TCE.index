@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="1.4.0">
+    <update version="1.4.1">
       <file name="TCE.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/TCE.index" />
     </update>
   </info>
   <files>
     <file name="class_artificer.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/class_artificer.xml" />
     <file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
-    <file name="cleric_twilight.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/cleric_twilight.xml" />
     <file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/spells_TCE.xml" />
     <file name="barbarian_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/barbarian_TCE.xml" />
     <file name="bard_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/bard_TCE.xml" />
