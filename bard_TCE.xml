@@ -165,7 +165,7 @@
 			<description>When a creature in 60ft from you uses your Bardic Inspiration die, you can give a Bardic Inspiration die to a different creature in 60ft.</description>
 		</sheet>
 		<rules>
-			<set name="infectous_inspiration" value="1" bonus="base">
-			<set name="infectous_inspiration" value="charisma:modifier" bonus="base">
+			<set name="infectous_inspiration" value="1" bonus="base" />
+			<set name="infectous_inspiration" value="charisma:modifier" bonus="base" />
 	</element>
 </elements>
