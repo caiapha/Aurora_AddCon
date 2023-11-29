@@ -167,5 +167,6 @@
 		<rules>
 			<set name="infectous_inspiration" value="1" bonus="base" />
 			<set name="infectous_inspiration" value="charisma:modifier" bonus="base" />
+		</rules>
 	</element>
 </elements>
