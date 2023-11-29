@@ -92,8 +92,8 @@
 			<description>Using the Performance of Creation feature, you can create a nubmer of item equals to {{creative_crescendo}}. You are no longer limited by gp value</description>
 		</sheet>
 		<rules>
-			<set name="creative_crescendo" value="2" bonus="base" />
-			<set name="creative_crescendo" value="charisma:modifier" bonus="base" />
+			<stat name="creative_crescendo" value="2" bonus="base" />
+			<stat name="creative_crescendo" value="charisma:modifier" bonus="base" />
 		</rules>	
 	</element>
 <!-- College of Eloquence -->
@@ -165,8 +165,8 @@
 			<description>When a creature in 60ft from you uses your Bardic Inspiration die, you can give a Bardic Inspiration die to a different creature in 60ft.</description>
 		</sheet>
 		<rules>
-			<set name="infectous_inspiration" value="1" bonus="base" />
-			<set name="infectous_inspiration" value="charisma:modifier" bonus="base" />
+			<stat name="infectous_inspiration" value="1" bonus="base" />
+			<stat name="infectous_inspiration" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
 </elements>
