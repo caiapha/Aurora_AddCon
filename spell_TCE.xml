@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells from Tasha's Cauldron of Everighing</name>
-    <update version="0.0.12">
+    <update version="0.0.13">
       <file name="spells.xml" url="https://absent/TCE/spells_TCE.xml" />
     </update>
   </info>
@@ -17,7 +17,7 @@
       <set name="keywords"></set>
       <set name="level">9</set>
       <set name="school">Conjuration</set>
-      <set name="time">1 bonud action</set>
+      <set name="time">1 bonus action</set>
       <set name="duration">concentration, up to 1 minute</set>
       <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
