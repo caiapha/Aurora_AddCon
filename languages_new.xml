@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>New Languages</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="languages_new.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/languages_new.xml" />
 		</update>
 	</info>
