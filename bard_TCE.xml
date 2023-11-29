@@ -4,7 +4,7 @@
 		<name>Bard Colleges from TCE</name>
 		<description>New Bard Colleges from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="bard_TCE.xml" url="https://absent" />
 		</update>
 	</info>
@@ -31,6 +31,7 @@
 	</element>
 	<element name="Mote of Potential" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_MOTE_OF_POTENTIAL">
 		<description>
+			<p><em>3rd-level College of Creation feature</em></p>
 			<p>Whenever you give a creature a Bardic Inspiration die, you can utter a note from the Song of Creation to create a Tiny mote of potential, which orbits within 5 feet of that creature. The mote is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. The mote looks like a musical note, a star, a flower, or another symbol of art or life that you choose.</p>
 			<p class="indent">When the creature uses the Bardic Inspiration die, the mote provides an additional effect based on whether the die benefits an ability check, an attack roll, or a saving throw, as detailed below:</p>
 			<ul>
@@ -43,24 +44,32 @@
 			<description>Whenever you give a creature a Bardic Inspiration die, the creature using the die gain one of the following effect:
 				- Ability Check: roll two dice and choose one.
 				- Attack Roll: after spending the die, the target and any creature of your choice within 5 feet from it take damage equal to the die. CON saves.
-				- Saving Throw: after spending the die, the creature gains temporary HP equal to the die+CAR modifier (minimum 1)</description>
+				- Saving Throw: after spending the die, the creature gains temporary HP equal to the die+{{charisma:modifier}} (minimum 1)</description>
 		</sheet>
 	</element>
 	<element name="Performance of Creation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_PERFORMANCE_OF_CREATION">
 		<description>
+			<p><em>3rd-level College of Creation feature</em></p>
 			<p>As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the Player's Handbook.</p>
 			<p class="indent">Once you create an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.</p>	
 			<p class="indent">The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge).</p>
 		</description>
 		<sheet action="Action" usage="1/long rest OR 2nd lvl spell slot">
-			<description>You create a non-magical medium or smaller object, worth gp equal to 20 times your bard level or less.
+			<description level="3">You create a non-magical Medium or smaller object, worth gp equal to 20 times your bard level or less.
 			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after a number of hours equal to your proficiency bonus.
-			You can have create only one objcet at time. The size of the item increases by one size category when you reach 6th level (Large) and 14th level (Huge).</description>
+			You can have create only one objcet at time.</description>
+			<description level="6">You create a non-magical Large or smaller object, worth gp equal to 20 times your bard level or less.
+			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after a number of hours equal to your proficiency bonus.
+			You can have create only one objcet at time.</description>	
+			<description level="14">You create a non-magical Huge or smaller object, worth gp equal to 20 times your bard level or less.
+			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after a number of hours equal to your proficiency bonus.
+			You can have create only one objcet at time.</description>	
 		</sheet>
 	</element>
 	<element name="Animating Performance" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_ANIMATING_PERFORMANCE">
 		<description>
-			<p>At 6th level, As an action, you can target a Large or smaller nonmagical item you can see within 30 feet of you and animate it. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.</p>
+			<p><em>6th-level College of Creation feature</em></p>
+			<p>As an action, you can target a Large or smaller nonmagical item you can see within 30 feet of you and animate it. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.</p>
 			<p class="indent">In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the item can take any action of its choice, not just Dodge.</p>
 			<p class="indent">When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration.</p>		
 			<p class="indent">Once you animate an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a dancing item from this feature, the first one immediately becomes inanimate.</p>
@@ -76,11 +85,16 @@
 	</element>
 	<element name="Creative Crescendo" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_CREATIVE_CRESCENDO">
 		<description>
-			<p>Starting at 14th level, When you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). You are no longer limited by gp value when creating items with Performance of Creation.</p>
+			<p><em>14th-level College of Creation feature</em></p>
+			<p>When you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). You are no longer limited by gp value when creating items with Performance of Creation.</p>
 		</description>
 		<sheet>
-			<description>Using the Performance of Creation feature, you can create a nubmer of item equals your Charisma modifier (minimum of two items). You are no longer limited by gp value</description>
+			<description>Using the Performance of Creation feature, you can create a nubmer of item equals to {{creative_crescendo}}. You are no longer limited by gp value</description>
 		</sheet>
+		<rules>
+			<set name="creative_crescendo" value="2" bonus="base" />
+			<set name="creative_crescendo" value="charisma:modifier" bonus="base" />
+		</rules>	
 	</element>
 <!-- College of Eloquence -->
 	<element name="College of Eloquence" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_COLLEGE_OF_ELOQUENCE">
@@ -145,10 +159,13 @@
 		<description>
 			<p><em>14th-level College of Eloquence feature</em></p>
 			<p>When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.</p>
-			<p class="indent">You can use this ·reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet action="Reaction" usage=" {{Proficiency}}/long rest">
+		<sheet action="Reaction" usage=" {{infectous_inspiration}}/long rest">
 			<description>When a creature in 60ft from you uses your Bardic Inspiration die, you can give a Bardic Inspiration die to a different creature in 60ft.</description>
 		</sheet>
+		<rules>
+			<set name="infectous_inspiration" value="1" bonus="base">
+			<set name="infectous_inspiration" value="charisma:modifier" bonus="base">
 	</element>
 </elements>
