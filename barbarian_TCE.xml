@@ -4,7 +4,7 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -40,6 +40,7 @@
 	</element>
 	<element name="From of the Beast" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST">
 		<description>
+			<p><em>3rd-level Path of the Beast feature</em></p>
 			<p>When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.</p>
 			<p class="indent">You choose the weapon's form each time you rage:</p> 
 			<ul class="unstyled">
@@ -50,7 +51,7 @@
 		</description>
 		<sheet usage="Entering Rage">
 			<description>
-				<p>you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:
+				<p>You manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:
 				- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
 				- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.
 				- 3 - Tail: You grow a tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
@@ -59,7 +60,8 @@
 	</element>
 	<element name="Bestial Soul" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_BESTIAL_SOUL">
 		<description>
-			<p>Starting from 6th level, the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:</p>
+			<p><em>6th-level Path of the Beast feature</em></p>
+			<p>The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:</p>
 				<ul>
 					<li>You gain a swimming speed equal to your walking speed, and you can breathe underwater</li>
 					<li>You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</li>
@@ -78,7 +80,8 @@
 	</element>
 	<element name="Infectious Fury" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_INFECTIOUS_FURY">
 		<description>
-			<p>At 10th level, When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):</p>
+			<p><em>10th-level Path of the Beast feature</em></p>
+			<p>When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):</p>
 			<ul>
 				<li>The target must use its reaction to make a melee attack against another creature of your choice that you can see.</li>
 				<li>The target takes 2d12 psychic damage.</li>
@@ -95,7 +98,8 @@
 	</element>
 	<element name="Call the Hunt" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_CALL_THE_HUNT">
 		<description>
-			<p>At 14th level, The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. </p>
+			<p><em>14th-level Path of the Beast feature</em></p>
+			<p>The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. </p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="Proficiency Bonus/Long Rest">
@@ -126,6 +130,7 @@
 	</element>
 	<element name="Magic Awareness" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_MAGIC_AWARENESS">
 		<description>
+			<p><em>3rd-level Path of the Wild Magic feature</em></p>
 			<p>As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p> 
 		</description>
@@ -137,6 +142,7 @@
 	</element>
 	<element name="Wild Surge" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_WILD_SURGE">
 		<description>
+			<p><em>3rd-level Path of the Wild Magic feature</em></p>
 			<p>The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.</p>
 			<p class="indent">If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
 				<table class="Wild_Magic">
@@ -170,7 +176,8 @@
 	</element>
 	<element name="Bolstering Magic" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_BOLSTERING_MAGIC">
 		<description>
-			<p>At 6th level, You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:.</p>
+			<p><em>6th-level Path of the Wild Magic feature</em></p>
+			<p>You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:.</p>
 			<ul>
 				<li>For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.</li>
 				<li>Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.</li>
@@ -187,7 +194,8 @@
 	</element>
 	<element name="Unstable Backlash" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_UNSTABLE_BACKLASH">
 		<description>
-			<p>At 10th level, When you are imperiled during your rage, the magic damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</p>
+			<p><em>10th-level Path of the Wild Magic feature</em></p>
+			<p>When you are imperiled during your rage, the magic damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</p>
 		</description>
 		<sheet>
 			<description>When you are imperiled during your rage, the magic damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</description>
@@ -195,7 +203,8 @@
 	</element>
 	<element name="Controlled Surge" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_CONTROLLED_SURGE">
 		<description>
-			<p>At 14th level, Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</p>
+			<p><em>14th-level Path of the Wild Magic feature</em></p>
+			<p>Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</p>
 		</description>
 		<sheet>
 			<description>Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</description>
