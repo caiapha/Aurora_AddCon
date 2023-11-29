@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Spells from Tasha's Cauldron of Everighing</name>
-    <update version="0.0.13">
+    <update version="0.0.14">
       <file name="spells.xml" url="https://absent/TCE/spells_TCE.xml" />
     </update>
   </info>
