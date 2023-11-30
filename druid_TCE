@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Druid Cirlces form TCE</name>
+		<description>The new Circles for Cleric class from the Tasha's Cauldron of Everything</description>
+		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="druid_TCE.xml" url="https://absent/" />
+		</update>
+	</info>
+	
+	<!-- Druid Circle: Circle of Spores -->
+	<element name="Circle of Spores" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_DRUID_CIRCLE_OF_SPORES">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life. These druids believe that life and death are parts of a grand cycle, with one leading to the other and then back again. Death isn't the end of life, but instead a change of state that sees life shift into a new form.</p>
+			<p class="indent">Druids of this circle have a complex relationship with the undead. They see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.</p>
+			<h5 class="caption">CIRCLE OF SPORES SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>chill touch</em></td></tr>
+				<tr><td>3rd</td><td><em>blindness/deafness, gentle repose</em></td></tr>
+				<tr><td>5th</td><td><em>animate death, gaseous form</em></td></tr>
+				<tr><td>7th</td><td><em>blight, confusion</em></td></tr>
+				<tr><td>9th</td><td><em>cloudkill, contagion</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_HALO_OF_SPORES" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SYMBIOTIC_ENTITY" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_INFESTATION" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SPREADING_SPORES" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_BODY" />
+		</description>
+		<sheet display="false">
+			<description><p>Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life. These druids believe that life and death are parts of a grand cycle, with one leading to the other and then back again. Death isn't the end of life, but instead a change of state that sees life shift into a new form.</p>
+			<p class="indent">Druids of this circle have a complex relationship with the undead. They see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_HALO_OF_SPORES" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SYMBIOTIC_ENTITY" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_INFESTATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SPREADING_SPORES" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_BODY" level="14"/>
+		</rules>
+	</element>
+	<element name="Halo of Spores" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_HALO_OF_SPORES">
+		<description>
+			<p><em>2nd-level Circle of Spores feature</em></p>
+			<p>You are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal ld4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to ld6 at 6th level, ld8 at 10th level, and ldlO at 14th level.</p>
+		</description>
+		<sheet>
+			<description level="2"><p>When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal ld4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</p></description>
+			<description level="6"><p>When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal ld6 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</p></description>
+			<description level="10"><p>When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal ld8 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</p></description>
+			<description level="14"><p>When a creature you can see moves into a space within 10 feet of you or starts its turn there, you can use your reaction to deal ld10 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC.</p></description>
+		</sheet>		
+	</element>
+	<element name="Symbiotic Entity" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SYMBIOTIC_ENTITY">
+		<description>
+			<p><em>2nd-level Circle of Spores feature</em></p>
+			<p>You gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:</p>
+			<ul>
+				<li>When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.</li>
+				<li>Your melee weapon attacks deal an extra ld6 necrotic damage to any target they hit.</li>
+			</ul>
+			<p>These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again</p>
+		</description>
+		<sheet action="Action">
+			<description><p>You can spend one Wild Shape to awaken spores. You gain 4 temporery HP per druid level and you gain the following: 
+				- 1 - When you deal your Halo of Spores damage, roll the damage die a second time adn add it to the total.
+				- 2 - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target you hit.
+				The effects lats for 10 minutes, until you lose the temporary HP or until you use the Wild Shape feature again.</p>
+			</description>
+		</sheet>		
+	</element>
+	<element name="Fungal Infestation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_INFESTATION">
+		<description>
+			<p><em>6th-level Circle of Spores feature</em></p>
+			<p>Your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to stand up immediately with 1 hit point. The creature uses the Zombie stat block in the Monster Manual. It remains animate for 1 hour, after which time it collapses and dies.</p>
+			<p class="indent">In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{fungal_infestation}}/long rest">
+			<description><p>If a medium or smaller beast or humanoid dies within 10ft from you, you can use your reaction to animate it with 1hp. It uses the Zombie stat block from MM. It remains animate for 1 hour.
+				In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="fungal_infestation" value="1" bonus="base" />
+			<stat name="fungal_infestation" value="wisdom:modifier" bonus="base" />
+		</rules>		
+	</element>
+	<element name="Spreading Spores" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_SPREADING_SPORES">
+		<description>
+			<p><em>10th-level Circle of Spores feature</em></p>
+			<p>You gain the ability to seed an area with deadly spores. As a bonus action while your Symbiotic Entity feature is active, you can hurl spores up to 30 feet away, where they swirl in a 10-foot cube for 1 minute. The spores disappear early if you use this feature again, if you dismiss them as a bonus action, or if your Symbiotic Entity feature is no longer active.</p>
+			<p class="indent">Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn.</p>
+			<p class="indent">While the cube of spores persists, you can't use your Halo of Spores reaction.</p>
+		</description>
+		<sheet action="Bonus action">
+			<description><p>While your Symbiotic Entity feature is active, you hurl a 10-foot cube of spores up to 30ft away from you.
+				Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn.
+				The spores last 1 minute. They disappear if you use this feature again, if you dismiss them with a bonus action or if the Symbiotic Entity is not longer active.
+				You can't use the Halo of Spores reaction until the cube persists.</p>
+			</description>
+		</sheet>		
+	</element>
+	<element name="Fungal Body" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_BODY">
+		<description>
+			<p><em>14th-level Circle of Spores feature</em></p>
+			<p>The fungal spores in your body alter you: you can't be blinded, deafened, frightened, or poisoned, and any critical hit against you counts as a normal hit instead, unless you're incapacitated.</p>
+		</description>
+		<sheet>
+			<description><p>You can't be blinded, deafened, frightened, or poisoned, and any critical hit against you counts as a normal hit instead, unless you're incapacitated.</p></description>
+		</sheet>		
+	</element>
+	
+	<!-- Druid Circle: Circle of Stars -->
+	<element name="Circle of Stars" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_DRUID_CIRCLE_OF_STARS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>The Circle of Stars allows druids to draw on the power of starlight. These druids have tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By revealing and understanding these secrets, the Circle of the Stars seeks to harness the powers of the cosmos.</p>
+			<p class="indent">Many druids of this circle keep records of the constellations and the stars' effects on the world. Some groups document these observations at megalithic sites, which serve as enigmatic libraries of lore. These repositories might take the form of stone circles, pyramids, petroglyphs, and underground temples-any construction durable enough to protect the circle's sacred knowledge even against a great cataclysm.</p>
+			
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STAR_MAP" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STARRY_FORM" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_COSMIC_OMEN" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_TWINKLING_CONSTELLATIONS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_FULL_OF_STARS" />
+		</description>
+		<sheet display="false">
+			<description><p>Many druids of this circle keep records of the constellations and the stars' effects on the world. Some groups document these observations at megalithic sites, which serve as enigmatic libraries of lore. These repositories might take the form of stone circles, pyramids, petroglyphs, and underground temples-any construction durable enough to protect the circle's sacred knowledge even against a great cataclysm.</p></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STAR_MAP" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STARRY_FORM" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_COSMIC_OMEN" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_TWINKLING_CONSTELLATIONS" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_FULL_OF_STARS" level="14"/>
+		</rules>
+	</element>
+	<element name="Star map" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STAR_MAP">
+		<description>
+			<p><em>2nd-level Circle of Stars feature</em></p>
+			<p class="indent">You've created a star chart as part of your heavenly studies. It is a Tiny object and can serve as a spellcasting focus for your druid spells. You determine its form by rolling on the Star Map table or by choosing one. While holding this map, you have these benefits:</p>
+			<ul>
+				<li>You know the guidance cantrip</li>
+				<li>You have the guiding bolt spell prepared. It counts as a druid spell for you, and it doesn't count against the number of spells you can have prepared .</li>
+				<li>You can cast guiding bolt without expending a spell slot. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest</li>
+			</ul>
+			<p class="indent">If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a short or long rest, and it destroys the previous map.</p>
+		</description>
+		<sheet>
+			<description><p>You create a map which can be used as spell-casting focus. Holding the map you gain the following benefits:
+				- 1 - you know the Guidance cantrip.
+				- 2 - you have the Guiding bolt spell prepared. It count as duird spell and it doesn't count against the number of prepared spell
+				- 3 - you can cast Guiding bolt without expending a spell slot. You can do so {{proficiency}} times for long rest.
+				You can create a map performing a 1-hour ceremony during a short or a long rest. It destroys the previous map.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="2" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Starry form" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_STARRY_FORM">
+		<description>
+			<p><em>2nd-level Circle of Stars feature</em></p>
+			<p>As a bonus action, you can expend a use of your Wild Shape feature to take on a starry form, rather than transforming into a beast.</p>
+			<p class="indent">While in your starry form, you retain your game statistics, but your body becomes luminous; your joints glimmer like stars, and glowing lines connect them as on a star chart. This form sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), are incapacitated, die, or use this feature again.</p>
+			<p class="indent">Whenever you assume your starry form, choose which of the following constellations glimmers on your body; your choice gives you certain benefits while in the form:</p>
+			<ul>
+				<li><strong>Archer:</strong> A constellation of an archer appears on you. When you activate this form, and as a bonus action on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of you. On a hit, the attack deals radiant damage equal to ld8 + your Wisdom modifier.</li>
+				<li><strong>Chalice:</strong> A constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores hit points to a creature, you or another creature within 30 feet of you can regain hit points equal to ld8 + your Wisdom modifier.</li>
+				<li><strong>Dragon:</strong> A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain concentration on a spell, you can treat a roll of 9 or lower on the d20 as a 10.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus action">
+			<description level="2"><p>Spend one Wild Shape feature to gain a starry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
+				This form lasts 10 minute or until you dismiss it (no action req.), are incapacitated, die or you use this feature again. Choose one of the followign:
+				- 1 - Archer: as bonus action you can make a ranged spell attack to a target within 60 feet, dealing 1d8+{{wisdom:modifier}}.
+				- 2 - Chalice: When you use a spell slot to restore hit points to a creature, you or a creature within 30ft of you can regain 1d8+{{wisdom:modifier}} hp.
+				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10.</p>
+			</description>
+			<description level="10"><p>Spend one Wild Shape feature to gain a sarry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
+				This form lasts 10 minute or until you dismiss it (no action req.), are incapacitated, die or you use this feature again. Choose one of the followign:
+				- 1 - Archer: as bonus action you can make a ranged spell attack to a target within 60 feet, dealing 2d8+{{wisdom:modifier}}.
+				- 2 - Chalice: When you use a spell slot to restore hit points to a creature, you or a creature within 30ft of you can regain 2d8+{{wisdom:modifier}} hp.
+				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10. Moreover you have a flying speed of 20 feet.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Cosmic Omen" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_COSMIC_OMEN">
+		<description>
+			<p><em>6th-level Circle of Stars feature</em></p>
+			<p>Whenever you finish a long rest, you can consult your Star Map for omens. When you do so, roll a die. Until you finish your next long rest, you gain access to a special reaction based on whether you rolled an even or an odd number on the die:</p>
+			<ul>
+				<li><strong>Weal (even):</strong> Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and add the number rolled to the total.</li>
+				<li><strong>Woe (odd):</strong>Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.</li>
+			</ul>
+			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="reaction" usage="{{proficiency}}/long rest">
+			<description>Whenever you finish a long rest, you can consult your Star Map. Roll a die. Until your next long rest you gain one of the following special reaction:
+				- 1 - Weal (even):Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and add the number rolled to the total.
+				- 2 - Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.
+			</description>
+		</sheet>
+	</element>
+	<element name="Twinkling Constallation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_TWINKLING_CONSTELLATIONS">
+		<description>
+			<p><em>10th-level Circle of Stars feature</em></p>
+			<p>The constellations of your Starry Form improve. The ld8 of the Archer and the Chalice becomes 2d8, and while the Dragon is active, you have a flying speed of 20 feet and can hover.</p>
+			<p class="indent">Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
+		</description>
+		<sheet>
+			<description>Your Starry Form improve (see the feature). Moreover, at each turn you can change the constallation of your form.</description>
+		</sheet>
+	</element>
+	<element name="Full of Stars" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_FULL_OF_STARS">
+		<description>
+			<p><em>14th-level Circle of Stars feature</em></p>
+			<p>While in your Starry Form, you become partially incorporeal, giving you resistance to bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<sheet>
+			<description>While in Starry Form, you have resistance to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+	</element>
+	
+<!-- Druid Circle: Circle of Wildfire -->
+	<element name="Circle of Wildfire" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_DRUID_CIRCLE_OF_WILDFIRE">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.</p>
+			<h5 class="caption">CIRCLE OF WILDFIRE SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>burning hands, cure wounds</em></td></tr>
+				<tr><td>3rd</td><td><em>flaming sphere, scorching ray</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth, revivify</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life, fire shield</em></td></tr>
+				<tr><td>9th</td><td><em>flame strike, mass cure wounds</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_SUMMON WILDFIRE_SPIRIT" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_ENHANCED_BOND" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_CAUTERIZING_FLAMES" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_BLAZING_REVIVAL" />
+		</description>
+		<sheet display="false">
+			<description>Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_SUMMON WILDFIRE_SPIRIT" level="2"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_ENHANCED_BOND" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_CAUTERIZING_FLAMES" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_BLAZING_REVIVAL" level="14"/>
+		</rules>
+	</element>
+	<element name="Summon Wildfire Spirit" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_SUMMON WILDFIRE_SPIRIT">
+		<description>
+			<p><em>2nd-level Circle of Wildfire feature</em></p>
+			<p>You can summon the primal spirit bound to your soul. As an action, you can expend one use of your Wild Shape feature to summon your wildfire spirit, rather than assuming a beast form.</p>
+			<p class="indent">The spirit appears in an unoccupied space of your choice that you can see within 30 feet of you. Each creature within 10 feet of the spirit (other than you) when it appears must succeed on a Dexterity saving throw against your spell save DC or take 2d6 fire damage.</p>
+			<p class="indent">The spirit is friendly to you and your companions and obeys your commands. See this creature's game statistics in the Wildfire Spirit stat block, which uses your proficiency bonus (PB) in several places. You determine the spirit's appearance. Some spirits take the form of a humanoid figure made of gnarled branches covered in flame, while others look like beasts wreathed in fire.</p>
+			<p class="indent">In combat, the spirit shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the spirit can take any action of its choice, not just Dodge.</p>
+			<p class="indent">The spirit manifests for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the spirit again, or until you die.</p>
+		</description>
+		<sheet action="Action">
+			<description><p>Spening a Wild Shape feature, you summon a wildfire spirit assuming a beast form. It appears within 30ft form you. All creature, other than you, within 10ft from the spirit must succeded a DES Saving Throw or take 2d6 fire damage. For the spirit's stats see related Statblock (TCE pag.40)</p>
+				<p> In combat, the spirit shares your initiative and act immeadiately after you. He takes only Dodge action, unless you spend a Bonus Action to give him a different command.</p>
+				<p> It lasts 1 hour, or until it is reduced to 0 HP, you dismiss it, you use this feature again or you die.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Enhanced Bond" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_ENHANCED_BOND">
+		<description>
+			<p><em>6th-level Circle of Wildfire feature</em></p>
+			<p>The bond with your wildfire spirit enhances your destructive and restorative spells. Whenever you cast a spell that deals fire damage or restores hit points while your wildfire spirit is summoned, roll a d8, and you gain a bonus equal to the number rolled to one damage or healing roll of the spell.</p>
+			<p class="indent">In addition, when you cast a spell with a range other than self, the spell can originate from you or your wildfire spirit.</p>
+		</description>
+		<sheet>
+			<description>While your spirit is summoned, add 1d8 to each damage fire spell or cure you cast.
+			In addition, any spell you cast with a range other than self, can originate for the spirit.</description>
+		</sheet>
+	</element>
+	<element name="Cauterizing Flames" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_CAUTERIZING_FLAMES">
+		<description>
+			<p><em>10th-level Circle of Wildfire feature</em></p>
+			<p>You gain the ability to turn death into magical flames that can heal or incinerate. When a Small or larger creature dies withiff 30 feet of you or your wildfire spirit, a harmless spectral flame springs forth in the dead creature's space and flickers there for 1 minute. When a creature you can see enters that space, you can use your reaction to extinguish the spectral flame there and either heal the creature or deal fire damage to it. The healing or damage equals 2d10 + your Wisdom modifier.</p>
+			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/long rest">
+			<description>When a Small or larger creature dies within 30ft from you or your Spirit, a spectral flame origins in that space.
+			 If a creautre you can see enters that space, you can use your reaction to estinguish the flame and heal or deal fire damage to the creature equal to 2d10+{{wisdom:modifier}}.
+			</description>
+		</sheet>
+	</element>
+	<element name="Blazing Revival" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_BLAZING_REVIVAL">
+		<description>
+			<p><em>14th-level Circle of Wildfire feature</em></p>
+			<p>The bond with your wildfire spirit can save you from death. If the spirit is within 120 feet of you when you are reduced to 0 hit points and thereby fall unconscious, you can cause the spirit to drop to 0 hit points. You then regain half your hit points and immediately rise to your feet.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/long rest">
+			<description><p>If your spirit is within 120ft from you when you are reduced to 0 HP, you can cause the spirit to drop to 0 HP. You regain half of your HP and rise to your feet.</p></description>
+		</sheet>
+	</element>
+</elements>
