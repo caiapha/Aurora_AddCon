@@ -81,7 +81,8 @@
 	</element>
 	<element name="Channel Divinity: Order's Demand" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ORDER_DOMAIN_CD_ORDERS_DEMAND">
 		<description>
-			<p>Starting at 2nd level, You can use your Channel Divinity to exert an intimidating presence over others.</p>
+			<p><em>2nd-level Order Domain feature</p></em>
+			<p>You can use your Channel Divinity to exert an intimidating presence over others.</p>
 			<p class="indent">As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw.</p>
 		</description>
 		<sheet alt="Order's Demand" action="Action" usage="Channel Divinity">
@@ -92,6 +93,7 @@
 	</element>
 	<element name="Embodiment of the Law" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ORDER_DOMAIN_EMBODIMENT_OF_THE_LAW">
 		<description>
+			<p><em>6th-level Order Domain feature</p></em>
 			<p>At 6th-level, you have become remarkably adept at channeling magical energy to compel others.</p>
 			<p calss="indent">If you cast a spell of the enchantment school using a spell slot of 1 st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.</p>
 			<p calss="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
@@ -106,7 +108,8 @@
 	</element>
 	<element name="Divine Strike" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE">
 		<description>
-			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+			<p><em>8th-level Order Domain feature</p></em>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet usage="Once per turn">		
 			<description>You deal +1d8 cold, fire, or lightning damage with a weapon attack.</description>
@@ -115,6 +118,7 @@
 	</element>
 	<element name="Order's Wrath" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ORDER_DOMAIN_ORDERS_WRATH">
 		<description>
+			<p><em>17th-level Order Domain feature</p></em>
 			<p>Enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies hits the cursed creature with an attack, the target also takes 2d8 psychic damage, and the curse ends. You can curse a creature in this way only once per turn.</p>
 		</description>
 		<sheet usage="Once per turn">		
@@ -302,25 +306,32 @@
 
 	<element name="Eyes of Night" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_EYES_OF_NIGHT">
 		<description>
+			<p><em>1st-level Twilight Domain feature</em></p>
 			<p>You can see through the deepest gloom. You have darkvision out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.</p>
 			<p class="indent">As an action, you can magically share the darkvision of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again.</p>
 		</description>
-		<sheet action="Action" usage="Wisdom mod./Long Rest">
-			<p>You have darkvision out to a range of 300 feet. As an action, you share it with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum one). The shared darkvision lasts for 1 hour. You can do it once per long rest, unless you expend a spell slot.</p>
-		</sheet>		
+		<sheet action="Action" usage="{{eyes_of_night}}/Long Rest OR 1 spell slot">
+			<description>You have darkvision out to a range of 300 feet. As an action, you share it with willing creatures you can see within 10 feet of you, up to a number of creatures equal to {{eyes_of_night}}. The shared darkvision lasts for 1 hour. You can do it once per long rest, unless you expend a spell slot.</description>
+		</sheet>
+		<rules>
+			<stat name="eyes_of_night" value="1" bonus="base" />
+			<stat name="eyes_of_night" value="wisdom:modifier" bonus="base" />
+		</rules>
 	</element>
 	
 	<element name="Vigilant Blessing" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_VIGILANT_BLESSING">
 		<description>
+			<p><em>1st-level Twilight Domain feature</em></p>
 			<p>The night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again.</p>
 		</description>
-		<sheet>
-			<p>as an action, touching a creature you give advantage at next initiative roll. The effect ends after the roll or if you use this feature again</p>
+		<sheet action="action">
+			<description>Touching a creature you give advantage at next initiative roll. The effect ends after the roll or if you use this feature again</description>
 		</sheet>
 	</element>
 	<element name="Channel Divinity: Twilight Sanctuary" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_CD_TWILIGHT_SANCTUARY">
 		<description>
-			<p>Starting at 2nd level, You can use your Channel Divinity to refresh your allies with soothing twilight</p>
+			<p><em>2nd-level Twilight Domain feature</em></p>
+			<p>You can use your Channel Divinity to refresh your allies with soothing twilight</p>
 			<p class="indent">As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:</p>
 			<ul>
 				<li>You grant it temporary hit points equal to ld6 plus your cleric level.</li>
@@ -330,23 +341,25 @@
 		</description>
 		<sheet alt="Twilight Sanctuary" action="Action" usage="Channel Divinity">
 			<description>
-				<p>You create a 30-foor radius sphere centered on you. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits: • You grant it temporary hit points equal to ld6 plus your cleric level • You end one effect on it causing it to be charmed or frightened</p>
+				You create a 30-foor radius sphere centered on you. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits: • You grant it temporary hit points equal to ld6 plus your cleric level • You end one effect on it causing it to be charmed or frightened.
 			</description>	
 		</sheet>
 	</element>
 	
 	<element name="Steps of Night" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_STEPS_OF_NIGHT">
 		<description>
-			<p>At 6th level, you can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest</p>
+			<p><em>6th-level Twilight Domain feature</em></p>
+			<p>You can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest</p>
 		</description>
-		<sheet action="bonus action">
-			<description>when in dim light or darkness, you can fly for 1 minute at walking speed. You can use this bonus action a number of times equal to your proficiency bonus for long rest.</description>
+		<sheet action="bonus action" usage="{{proficiency}}/long rest">
+			<description>when in dim light or darkness, you can fly for 1 minute at walking speed.</description>
 		</sheet>
 	</element>
 
 	<element name="Divine Strike" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_DIVINE_STRIKE">
 		<description>
-			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+			<p><em>8th-level Twilight Domain feature</em></p>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet>		
 			<description>Once on each of your turn +1d8 cold, fire, or lightning damage with a weapon attack.</description>
@@ -356,7 +369,8 @@
 	
 	<element name="Twilight Shroud" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_TWILIGHT_SHROUD">
 		<description>
-			<p>At 17th level, The twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary.</p>
+			<p><em>17th-level Twilight Domain feature</em></p>
+			<p>The twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary.</p>
 		</description>
 		<sheet>
 			<description>The twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary</description>
