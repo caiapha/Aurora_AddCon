@@ -2,9 +2,9 @@
 <elements>
 	<info>
 		<name>Artificer</name>
-		<description>The Armorer Class from the Tasha's Cauldron of Evertything.</description>	
+		<description>The Artificer Class from the Tasha's Cauldron of Evertything.</description>	
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="class-artificer.xml" url="https://absent/class-artificer.xml" />
 		</update>
 	</info>
@@ -137,7 +137,8 @@
 	</element>
 	<element name="Magical Tinkering" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGICAL_TINKERING">
 		<description>
-			<p>At 1st level, you learn how to invest a spark of magic into mundane objects. To use this ability, you must have tinker’s tools or other artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:</p>
+			<p><em>1st-level Artificer feature</em></p>
+			<p>You learn how to invest a spark of magic into mundane objects. To use this ability, you must have tinker’s tools or other artisan’s tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:</p>
 			<ul>
 				<li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li>
 				<li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li>
@@ -147,14 +148,14 @@
 			<p class="indent">The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.</p>
 			<p class="indent">You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to your Intelligence modifier (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.</p>
 		</description>
-		<sheet>
-			<description>You must have tinker’s tools or other artisan’s tools in hand. You touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
-			The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.
-			Whenever tapped by a creature, the object emits a recorded message (no more than 6 seconds long) that can be heard up to 10 feet away.
-			The object continuously emits your choice of an odor or a nonverbal sound. The chosen phenomenon is perceivable up to 10 feet away.
-			A static visual effect appears on one of the object’s surfaces.
-			The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.
-			You can bestow magic on up to {{magical tinkering:objects}} objects.</description>
+		<sheet action="action">
+			<description>You must have tinker’s tools or other artisan’s tools in hand. You touch a Tiny nonmagical object and give it one of the following magical properties of your choice:
+			• The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet. 
+			• Whenever tapped by a creature, the object emits a recorded message (no more than 6 seconds long) that can be heard up to 10 feet away. 
+			• The object continuously emits your choice of an odor or a nonverbal sound. The chosen phenomenon is perceivable up to 10 feet away. 
+			• A static visual effect appears on one of the object’s surfaces. 
+			• The chosen property lasts indefinitely. As an action, you can touch the object and end the property early. 
+			• You can bestow magic on up to {{magical tinkering:objects}} objects.</description>
 		</sheet>
 		<rules>
 			<stat name="magical tinkering:objects" value="1" bonus="base" />
@@ -215,7 +216,8 @@
 	</element>
 	<element name="Infuse Item" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_INFUSE_ITEM">
 		<description>
-			<p>At 2nd level, you gain the ability to imbue mundane items with certain magical infusions. The magic items you create with this feature are effectively prototypes of permanent items.</p>
+			<p><em>2nd-level Artificer feature</em></p>
+			<p>You gain the ability to imbue mundane items with certain magical infusions. The magic items you create with this feature are effectively prototypes of permanent items.</p>
 			<h5>INFUSIONS KNOWN</h5>
 			<p>When you gain this feature, pick four artificer infusions to learn, choosing from the "Artificer Infusions" section at the end of the class’s description. You learn additional infusions of your choice when you reach certain levels in this class, as shown in the Infusions Known column of the Artificer table.</p>
 			<p class="indent">Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one.</p>	
@@ -261,7 +263,8 @@
 	</element>
 	<element name="Artificer Specialist" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_ARTIFICER_SPECIALIST">
 		<description>
-			<p>At 3rd level, you choose the type of specialist you are: Alchemist, Armorer, Artillerist, or Battle Smith, each of which is detailed at the end of the class’s description. Your choice grants you features at 5th level and again at 9th and 15th level.</p>
+			<p><em>3rd-level Artificer feature</em><p>
+			<p>You choose the type of specialist you are: Alchemist, Armorer, Artillerist, or Battle Smith, each of which is detailed at the end of the class’s description. Your choice grants you features at 5th level and again at 9th and 15th level.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -270,7 +273,8 @@
 	</element>
 	<element name="The Right Tool for the Job" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_THE_RIGHT_TOOL_FOR_THE_JOB">
 		<description>
-			<p>At 3rd level, you learn how to produce exactly the tool you need: with tinker’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again.</p>
+			<p><em>3rd-level Artificer feature</em><p>
+			<p>You learn how to produce exactly the tool you need: with tinker’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again.</p>
 		</description>
 		<sheet>
 			<description>With tinker’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work.</description>
@@ -294,7 +298,8 @@
 	</element>
 	<element name="Tool Expertise" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_TOOL_EXPERTISE">
 		<description>
-			<p>Starting at 6th level, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</p>
+			<p><em>6th-level Artificer feature</em><p>
+			<p>Your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</p>
 		</description>
 		<sheet>
 			<description>Your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</description>
@@ -302,7 +307,8 @@
 	</element>
 	<element name="Flash of Genius" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_FLASH_OF_GENIUS">
 		<description>
-			<p>Starting at 7th level, you gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.</p>
+			<p><em>7th-level Artificer feature</em><p>
+			<p>You gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.</p>
 			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
@@ -315,7 +321,8 @@
 	</element>
 	<element name="Magic Item Adept" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT">
 		<description>
-			<p>When you reach 10th level, you achieve a profound understanding of how to use and make magic items:</p>
+			<p><em>10th-level Artificer feature</em><p>
+			<p>You achieve a profound understanding of how to use and make magic items:</p>
 			<ul>
 				<li>You can attune to up to four magic items at once.</li>
 				<li>If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</li>
@@ -331,7 +338,8 @@
 	</element>
 	<element name="Spell-Storing Item" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_SPELL_STORING_ITEM">
 		<description>
-			<p>At 11th level, you learn how to store a spell in an object. Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you needn’t have it prepared).</p>
+			<p><em>11th-level Artificer feature</em><p>
+			<p>You learn how to store a spell in an object. Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you needn’t have it prepared).</p>
 			<p class="indent">While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it’s been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object.</p>
 		</description>
 		<sheet>
@@ -347,6 +355,7 @@
 	</element>
 	<element name="Magic Item Savant" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_SAVANT">
 		<description>
+			<p><em>14th-level Artificer feature</em><p>
 			<p>At 14th level, your skill with magic items deepens more:</p>
 			<ul>
 				<li>You can attune to up to five magic items at once.</li>
@@ -363,7 +372,8 @@
 	</element>
 	<element name="Magic Item Master" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER">
 		<description>
-			<p>Starting at 18th level, you can attune to up to six magic items at once.</p>
+			<p><em>18th-level Artificer feature</em><p>
+			<p>You can attune to up to six magic items at once.</p>
 		</description>
 		<sheet display="false">
 			<description>You can attune to up to six magic items at once.</description>
@@ -374,7 +384,8 @@
 	</element>
 	<element name="Soul of Artifice" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_ARTIFICER_SOUL_OF_ARTIFICE">
 		<description>
-			<p>At 20th level, you develop a mystical connection to your magic items, which you can draw on for protection:</p>
+			<p><em>20th-level Artificer feature</em><p>
+			<p>You develop a mystical connection to your magic items, which you can draw on for protection:</p>
 			<ul>
 				<li>You gain a +1 bonus to all saving throws per magic item you are currently attuned to.</li>
 				<li>If you’re reduced to 0 hit points but not killed outright, you can use your reaction to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0.</li>
@@ -425,7 +436,8 @@
 	</element>
 	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY">
 		<description>
-			<p>When you adopt this specialization at 3rd level, you gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+			<p><em>3rd-level Alchemist feature</em><p>
+			<p>When you adopt this specialization, you gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
 		<sheet display="false">
 			<description>You gain proficiency with alchemist’s supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</description>
@@ -436,7 +448,8 @@
 	</element>
 	<element name="Alchemist Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
 		<description>
-			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<p><em>3rd-level Alchemist feature</em><p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<h5 class="caption">ALCHEMIST SPELLS</h5>
 			<table>
 				<thead>
@@ -467,7 +480,8 @@
 	</element>
 	<element name="Experimental Elixir" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
 		<description>
-			<p>Beginning at 3rd level, whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
+			<p><em>3rd-level Alchemist feature</em><p>
+			<p>Whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
 			<p class="indent">Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.</p>
 			<p class="indent">When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir’s effect separately. Each elixir requires its own flask.</p>
 			<p class="indent">You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir’s effect from the Experimental Elixir table.</p>
@@ -497,7 +511,8 @@
 	</element>
 	<element name="Alchemical Savant" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
 		<description>
-			<p>At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
+			<p><em>5th-level Alchemist feature</em><p>
+			<p>You develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
 		</description>
 		<sheet>
 			<description>Whenever you cast a spell using your alchemist’s supplies, you gain a +{{alchemical savant:bonus}} bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage.</description>
@@ -509,7 +524,8 @@
 	</element>
 	<element name="Restorative Reagents" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
 		<description>
-			<p>Starting at 9th level, you can incorporate restorative reagents into some of your works:</p>
+			<p><em>9th-level Alchemist feature</em><p>
+			<p>You can incorporate restorative reagents into some of your works:</p>
 			<ul>
 				<li>Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).</li>
 				<li>You can cast lesser restoration without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</li>
@@ -526,7 +542,8 @@
 	</element>
 	<element name="Chemical Mastery" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
 		<description>
-			<p>By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
+			<p><em>15th-level Alchemist feature</em><p>
+			<p>You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
 			<ul>
 				<li>You gain resistance to acid damage and poison damage, and you are immune to the poisoned condition.</li>
 				<li>You can cast greater restoration and heal without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.</li>
@@ -570,6 +587,7 @@
 	</element>
 	<element name="Tools of the trade" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE">
 		<description>
+			<p><em>3rd-level Armorer feature</em><p>
 			<p>You gain proficiency with heavy armor. You also gain proficiency with smith's tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan's tools of your choice.</p>
 		</description>
 		<sheet display="false">
@@ -583,7 +601,8 @@
 	
 	<element name="Armorer Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARMORER_SPELLS">
 		<description>
-			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Armorer Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<p><em>3rd-level Armorer feature</em><p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Armorer Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
 			<h5 class="caption">ARMORER SPELLS</h5>
 			<table>
 				<thead>
@@ -614,6 +633,7 @@
 	</element>
 	<element name="Arcane Armor" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARCANE_ARMOR">
 		<description>
+			<p><em>3rd-level Armorer feature</em><p>
 			<p>Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand.</p>
 			<p class="indent">You gain the following benefits while wearing this armor:</p>
 			<ul>
@@ -626,13 +646,19 @@
 		</description>
 		<sheet usage="action">
 			<description>
-			<p>You can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand. You gain the following benefits: • The arcane armor lacks of any Strenght requirement for you. • You can use the arcane armor as a spellcasting focus for your artificer spells. • The armor attaches to you and can't be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a limb it replaces. • You can doff or don the armor as an action. • The armor continues to be Arcane Armor until you don another suit of armor or you die.</p>
+			<p>You can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand. You gain the following benefits: 
+				• The arcane armor lacks of any Strenght requirement for you. 
+				• You can use the arcane armor as a spellcasting focus for your artificer spells. 
+				• The armor attaches to you and can't be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a limb it replaces. 
+				• You can doff or don the armor as an action. 
+				• The armor continues to be Arcane Armor until you don another suit of armor or you die.</p>
 		</description>
 		</sheet>
 	</element>
 	<element name="Armor Model" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL">
 		<description>
-			<p>At 3th level, You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.</p>
+			<p><em>3rd-level Armorer feature</em><p>
+			<p>You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.</p>
 			<p class="indent">Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.</p>
 			<p class="indent">You can change the armor's model whenever you finish a short or long rest, provided you have smith's tools in hand.</p>
 			<strong>Guardian:</strong><p>You design your armor to be in the front line of conflict. It has the following features:</p>
@@ -660,7 +686,8 @@
 
 	<element name="Extra Attack" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_EXTRA_ATTACK">
 		<description>
-			<p>At 5th level, You can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+			<p><em>5th-level Armorer feature</em><p>
+			<p>You can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
@@ -671,7 +698,8 @@
 	</element>
 	<element name="Armor Modification" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODIFICATIONS">
 		<description>
-			<p>By 9th level, You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor.</p>	
+			<p><em>9th-level Armorer feature</em><p>
+			<p>You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor.</p>	
 		</description>
 		<sheet>
 			<description>That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor.</description>
@@ -682,16 +710,17 @@
 	</element>
 	<element name="Perfect Armor" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_PERFECTED_ARMOR">
 		<description>
-			<p>By 15th level, Your Arcane Armor gains additional benefits based on its model, as shown below:</p>
+			<p><em>15th-level Armorer feature</em><p>
+			<p>Your Arcane Armor gains additional benefits based on its model, as shown below:</p>
 			<ul>
 				<li><strong>Guardian.</strong> When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force the creature to make a Strength saving throw against your spell save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest</li>	
 				<li><strong>Infiltrator.</strong> Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra ld6 lightning damage.</li>
 			</ul>
 		</description>
 		<sheet display="false">
-			<p>Your Arcane Armor gains additional benefits based on its model, as shown below:</p>
-			<strong>Guardian.</strong><p>When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force the creature to make a Strength saving throw against your spell save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest</p>	
-			<strong>Infiltrator.</strong><p> Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra ld6 lightning damage.</p>
+			Your Arcane Armor gains additional benefits based on its model, as shown below:
+			• Guardian: when a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to force the creature to make a Strength saving throw against your spell save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction. You can use this reaction {{proficiency}} times per long rest. 	
+			• Infiltrator: any creature that takes lightning damage from your Lightning Launcher dim light in a 5-foot radius, and it has disadvantage on attack rolls against you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra ld6 lightning damage.
 		</sheet>
 	</element>
 
@@ -701,14 +730,14 @@
 		<description></description>
 		<sheet>
 			<description level="3">Thunder Gauntlets: Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals ld8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else. • Defensive Field. As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
-			<description level="15">Thunder Gauntlets: Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals ld8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else. • Defensive Field. As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. • When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force the creature to make a Strength saving throw against your spell save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest</description>
+			<description level="15">Thunder Gauntlets: Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals ld8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else. • Defensive Field. As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. • When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to force the creature to make a Strength saving throw against your spell save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction. You can use this reaction {{proficiency}} times per long rest.</description>
 		</sheet>
 	</element>
 	<element name="Infiltrator" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL_INFILTRATOR">
 		<description></description>
 		<sheet>
 			<description level="3">Lightning Launcher. A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals ld6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra ld6 lightning damage to that target. • Powered Steps. Your walking speed increases. by 5 feet. • Dampening Field. You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal.</description>
-			<description level="15">Lightning Launcher. A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals ld6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra ld6 lightning damage to that target. • Powered Steps. Your walking speed increases. by 5 feet. • Dampening Field. You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal. • Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra ld6 lightning damage.</description>
+			<description level="15">Lightning Launcher. A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals ld6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra ld6 lightning damage to that target. • Powered Steps. Your walking speed increases. by 5 feet. • Dampening Field. You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal. • Any creature that takes lightning damage from your Lightning Launcher dim light in a 5-foot radius, and it has disadvantage on attack rolls against you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra ld6 lightning damage.</description>
 		</sheet>
 	</element>
 
@@ -740,7 +769,8 @@
 	</element>
 	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY">
 		<description>
-			<p>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+			<p><em>3rd-level Artillerist feature<p><em>
+			<p>When you adopt this specialization, you gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
 		<sheet display="false">
 			<description>You gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</description>
@@ -751,7 +781,8 @@
 	</element>
 	<element name="Artillerist Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS">
 		<description>
-			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<p><em>3rd-level Artillerist feature<p><em>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<p><strong>ARTILLERIST SPELLS</strong></p>
 			<table>
 				<thead>
@@ -782,7 +813,8 @@
 	</element>
 	<element name="Eldritch Cannon" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON">
 		<description>
-			<p>At 3rd level, you learn how to create a magical cannon. Using woodcarver’s tools or smith’s tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.</p>
+			<p><em>3rd-level Artillerist feature<p><em>
+			<p>You learn how to create a magical cannon. Using woodcarver’s tools or smith’s tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.</p>
 			<p class="indent">Once you create a cannon, you can’t do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can’t create one while your cannon is present.</p>
 			<p class="indent">The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.</p>
 			<p class="indent">When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.</p>
@@ -843,7 +875,8 @@
 	</element>
 	<element name="Arcane Firearm" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM">
 		<description>
-			<p>At 5th level, you know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver’s tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.</p>
+			<p><em>5th-level Artillerist feature<p><em>
+			<p>You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver’s tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.</p>
 			<p class="indent">You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell’s damage rolls equal to the number rolled.</p>
 		</description>
 		<sheet>
@@ -853,7 +886,8 @@
 	</element>
 	<element name="Explosive Cannon" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON">
 		<description>
-			<p>Starting at 9th level, every eldritch cannon you create is more destructive:</p>
+			<p><em>9th-level Artillerist feature<p><em>
+			<p>Every eldritch cannon you create is more destructive:</p>
 			<ul>
 				<li>The cannon’s damage rolls all increase by 1d8.</li>
 				<li>As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.</li>
@@ -870,7 +904,8 @@
 	</element>
 	<element name="Fortified Position" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION">
 		<description>
-			<p>Starting at 15th level, you’re a master at forming well-defended emplacements using Eldritch Cannon:</p>
+			<p><em>15th-level Artillerist feature<p><em>
+			<p>You’re a master at forming well-defended emplacements using Eldritch Cannon:</p>
 			<ul>
 				<li>You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.</li>
 				<li>You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine whether the cannons are identical to each other or different. You can’t create a third cannon while you have two.</li>
@@ -912,7 +947,8 @@
 	</element>
 	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_TOOL_PROFICIENCY">
 		<description>
-			<p>When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+			<p><em>3rd-level Battle Smith feature<p><em>
+			<p>When you adopt this specialization, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
 		<sheet display="false">
 			<description>You gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</description>
@@ -923,7 +959,8 @@
 	</element>
 	<element name="Battle Smith Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_BATTLE_SMITH_SPELLS">
 		<description>
-			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<p><em>3rd-level Battle Smith feature<p><em>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<p><strong>BATTLE SMITH SPELLS</strong></p>
 			<table>
 				<thead>
@@ -954,7 +991,8 @@
 	</element>
 	<element name="Battle Ready" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_BATTLE_READY">
 		<description>
-			<p>When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:</p>
+			<p><em>3rd-level Battle Smith feature<p><em>
+			<p>Your combat training and your experiments with magic have paid off in two ways:</p>
 			<ul>
 				<li>You gain proficiency with martial weapons.</li>
 				<li>When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.</li>
@@ -969,7 +1007,8 @@
 	</element>
 	<element name="Steel Defender" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_STEEL_DEFENDER">
 		<description>
-			<p>By 3rd level, your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands. See this creature’s game statistics in the steel defender stat block. You determine the creature’s appearance and whether it has two legs or four; your choice has no effect on its game statistics.</p>
+			<p><em>3rd-level Battle Smith feature<p><em>
+			<p>Your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands. See this creature’s game statistics in the steel defender stat block. You determine the creature’s appearance and whether it has two legs or four; your choice has no effect on its game statistics.</p>
 			<p class="indent">In combat, the steel defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the Dash, Disengage, Help, Hide, or Search action.</p>
 			<p class="indent">If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.</p>
 			<p class="indent">At the end of a long rest, you can create a new steel defender if you have your smith’s tools with you. If you already have a steel defender from this feature, the first one immediately perishes.</p>
@@ -985,7 +1024,8 @@
 	</element>
 	<element name="Extra Attack" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_EXTRA_ATTACK">
 		<description>
-			<p>Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+			<p><em>5th-level Battle Smith feature<p><em>
+			<p>You can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice, rather than once, whenever you take the Attack action on your turn.</description>
@@ -996,7 +1036,8 @@
 	</element>
 	<element name="Arcane Jolt" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_ARCANE_JOLT">
 		<description>
-			<p>At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:</p>
+			<p><em>9th-level Battle Smith feature<p><em>
+			<p>You learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:</p>
 			<ul>
 				<li>The target takes an extra 2d6 force damage.</li>
 				<li>Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.</li>
@@ -1015,7 +1056,8 @@
 	</element>
 	<element name="Improved Defender" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BATTLE_SMITH_IMPROVED_DEFENDER">
 		<description>
-			<p>At 15th level, your Arcane jolt and steel defender become more powerful:</p>
+			<p><em>15th-level Battle Smith feature<p><em>
+			<p>Your Arcane jolt and steel defender become more powerful:</p>
 			<ul>
 				<li>The extra damage and the healing of your Arcane jolt both increase to 4d6.</li>
 				<li>Your steel defender gains a +2 bonus to Armor Class.</li>
