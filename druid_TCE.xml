@@ -4,7 +4,7 @@
 		<name>Druid Cirlces form TCE</name>
 		<description>The new Circles for Cleric class from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.0">
+		<update version="0.0.1">
 			<file name="druid_TCE.xml" url="https://absent/" />
 		</update>
 	</info>
@@ -211,11 +211,10 @@
 			</ul>
 			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description><p>Whenever you finish a long rest, you can consult your Star Map. Roll a die. Until your next long rest you gain one of the following special reaction:
+		<sheet action="reaction" usage="{{proficiency}}/long rest">
+			<description>Whenever you finish a long rest, you can consult your Star Map. Roll a die. Until your next long rest you gain one of the following special reaction:
 				- 1 - Weal (even):Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and add the number rolled to the total.
 				- 2 - Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.
-				You can use this reaction {{proficiency}} times per long rest.</p>
 			</description>
 		</sheet>
 	</element>
@@ -226,7 +225,7 @@
 			<p class="indent">Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
 		</description>
 		<sheet>
-			<description><p>Your Starry Form improve (see the feature). Moreover, at each turn you can change the constallation of your form.</p></description>
+			<description>Your Starry Form improve (see the feature). Moreover, at each turn you can change the constallation of your form.</description>
 		</sheet>
 	</element>
 	<element name="Full of Stars" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_FULL_OF_STARS">
@@ -235,7 +234,7 @@
 			<p>While in your Starry Form, you become partially incorporeal, giving you resistance to bludgeoning, piercing, and slashing damage.</p>
 		</description>
 		<sheet>
-			<description><p>While in Starry Form, you have resistance to bludgeoning, piercing, and slashing damage.</p></description>
+			<description>While in Starry Form, you have resistance to bludgeoning, piercing, and slashing damage.</description>
 		</sheet>
 	</element>
 	
@@ -261,7 +260,7 @@
 			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_BLAZING_REVIVAL" />
 		</description>
 		<sheet display="false">
-			<description><p>Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.</p></description>
+			<description>Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="2" spellcasting="Druid" prepared="true" />
@@ -303,8 +302,8 @@
 			<p class="indent">In addition, when you cast a spell with a range other than self, the spell can originate from you or your wildfire spirit.</p>
 		</description>
 		<sheet>
-			<description><p>While your spirit is summoned, add 1d8 to each damage fire spell or cure you cast.</p>
-			<p> In addition, any spell you cast with a range other than self, can originate for the spirit.</p></description>
+			<description>While your spirit is summoned, add 1d8 to each damage fire spell or cure you cast.
+			In addition, any spell you cast with a range other than self, can originate for the spirit.</description>
 		</sheet>
 	</element>
 	<element name="Cauterizing Flames" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_CAUTERIZING_FLAMES">
@@ -314,8 +313,8 @@
 			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{proficiency}}/long rest">
-			<description><p>When a Small or larger creature dies within 30ft from you or your Spirit, a spectral flame origins in that space.</p>
-			<p> If a creautre you can see enters that space, you can use your reaction to estinguish the flame and heal or deal fire damage to the creature equal to 2d10+{{wisdom:modifier}}.</p>
+			<description>When a Small or larger creature dies within 30ft from you or your Spirit, a spectral flame origins in that space.
+			 If a creautre you can see enters that space, you can use your reaction to estinguish the flame and heal or deal fire damage to the creature equal to 2d10+{{wisdom:modifier}}.
 			</description>
 		</sheet>
 	</element>
