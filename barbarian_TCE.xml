@@ -4,7 +4,7 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -90,11 +90,16 @@
 		</description>
 		<sheet usage="Proficiency Bonus/Long Rest">
 			<description>
-				<p>On a hit with your natural weapons while you are raging, the target must succeed on a Wisdom saving throw (DC=8 + CON + PB) or suffer one of the following effects (your choice):
+				<p>On a hit with your natural weapons while you are raging, the target must succeed on a Wisdom saving throw DC={{Infectious_Fury_dc}} or suffer one of the following effects (your choice):
 				- The target must use its reaction to make a melee attack against another creature of your choice that you can see.
 				- The target takes 2d12 psychic damage</p>
 		</description>
 		</sheet>
+		<rules>
+			<stat name="Infectious_Fury_dc" value="8" />
+			<stat name="Infectious_Fury_dc" value="constitution:modifier" />
+			<stat name="Infectious_Fury_dc" value="proficiency" />
+		</rules>
 	</element>
 	<element name="Call the Hunt" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_CALL_THE_HUNT">
 		<description>
@@ -103,8 +108,11 @@
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="Proficiency Bonus/Long Rest">
-			<description>Entering rage, choose a number of willing creatures you can see in 30ft equal to your CON. You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, when a chosen creature hits a target with an attack roll, onche per his turn can roll a d6 and gain a bonus to the damage equal to the number rolled.</description>
+			<description>Entering rage, choose a number of willing creatures you can see in 30ft equal to {{constitution:modifier}}. You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, when a chosen creature hits a target with an attack roll, onche per his turn can roll a d6 and gain a bonus to the damage equal to the number rolled.</description>
 		</sheet>
+		<rules>
+			<stat name="call_the_hunt" value="constitution:modifier" />
+		</rules>
 	</element>
 <!-- Path of the Wild Magic -->
 <element name="Path of Wild Magic" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC">
@@ -161,18 +169,23 @@
 		</description>
 		<sheet>
 			<description>
-				<p>When you enter your rage, roll on the Wild Magic table to determine the magical effect produced. If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier</p>
+				<p>When you enter your rage, roll on the Wild Magic table to determine the magical effect produced. If the effect requires a saving throw, the DC is equal to {{wild_magic_dc}}</p>
 				<p>
 				- 1 - Shadowy tendrils lash around you . Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take ldl2 necrotic damage. You also gain ldl2 tem porary hit points.
-				- 2 - You teleport u p to 30 feet to an unoccupied space you can see. Until you rrage ends, you can use this effect again on each of your turns as a bonus action
-				- 3 - An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5 feet of one creature of you r choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature withi n 5 feet of it must succeed on a Dexterity saving throw or take l d 6 force damage. U ntil you rrage ends, you can use this effect again , sum moning another spirit, o n each of you r turns as a bonus action.
-				- 4 - Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves you r hand, the weapon reappears in your hand at the end of the current turn.
-				- 5 - Whenever a creature hits you with an attack roll before your rage ends, that creature takes ld6 force damage, as magic lashes out in retri bution
+				- 2 - You teleport up to 30 feet to an unoccupied space you can see. Until you rrage ends, you can use this effect again on each of your turns as a bonus action
+				- 3 - An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5ft of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5ft of it must succeed on a Dexterity saving throw or take ld6 force damage. Until you rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.
+				- 4 - Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20ft and a long range of 60ft. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.
+				- 5 - Whenever a creature hits you with an attack roll before your rage ends, that creature takes ld6 force damage, as magic lashes out in retribution.
 				- 6 - Until your rage ends, you are surrounded by multicolored, protective lights; you gain a +l bonus to AC, and while within 10 feet of you , your allies gain the same bonus.
-				- 7 - Flowers and vines temporarily grow around you; until your rage ends, the ground within l5 feet of you is difficult terrain for you renemies
-				- 8 - A bolt of light shoots from you r chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take l d 6 rad iant damage and be blinded until the start of you r next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</p>
+				- 7 - Flowers and vines temporarily grow around you; until your rage ends, the ground within l5 feet of you is difficult terrain for you renemies.
+				- 8 - A bolt of light shoots from your chest. Another creature of your choice that you can see within 30ft of you must succeed on a Constitution saving throw or take ld6 radiant damage and be blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</p>
 			</description>
 			</sheet>
+			<rules>
+				<stat name="wild_magic_dc" value="8" />
+				<stat name="wild_magic_dc" value="constitution:modifier" />
+				<stat name="wild_magic_dc" value="proficiency" />
+			</rules>
 	</element>
 	<element name="Bolstering Magic" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_BOLSTERING_MAGIC">
 		<description>
