@@ -4,8 +4,8 @@
 		<name>Bard Colleges from TCE</name>
 		<description>New Bard Colleges from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.9">
-			<file name="bard_TCE.xml" url="https://absent" />
+		<update version="1.0.0">
+			<file name="bard_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/bard_TCE.xml" />
 		</update>
 	</info>
 	<!-- College of Creation -->
@@ -59,15 +59,9 @@
 			<p class="indent">The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge).</p>
 		</description>
 		<sheet action="Action" usage="1/long rest OR 2nd lvl spell slot">
-			<description level="3">You create a non-magical Medium or smaller object, worth gp equal to 20 times your bard level or less.
-			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours.
-			You can have create only one objcet at time.</description>
-			<description level="6">You create a non-magical Large or smaller object, worth gp equal to 20 times your bard level or less.
-			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours.
-			You can have create only one objcet at time.</description>	
-			<description level="14">You create a non-magical Huge or smaller object, worth gp equal to 20 times your bard level or less.
-			The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours.
-			You can have create only one objcet at time.</description>	
+			<description level="3">You create a non-magical Medium or smaller object, worth gp equal to 20 times your bard level or less. The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours. You can have create only one objcet at time.</description>
+			<description level="6">You create a non-magical Large or smaller object, worth gp equal to 20 times your bard level or less. The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours. You can have create only one objcet at time.</description>	
+			<description level="14">You create a non-magical Huge or smaller object, worth gp equal to 20 times your bard level or less. The item glimmers softly, and a creature can faintly hear music when touching it. The. The created item disappears after {{proficiency}} hours. You can have create only one objcet at time.</description>	
 		</sheet>
 	</element>
 	<element name="Animating Performance" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_ANIMATING_PERFORMANCE">
@@ -79,12 +73,7 @@
 			<p class="indent">Once you animate an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a dancing item from this feature, the first one immediately becomes inanimate.</p>
 		</description>
 		<sheet action="action" usage="1/long rest OR 3rd lvl spell slot">
-			<description>You animate a Large or smaller nonmagical item you can see within 30 feet. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB).
-				The effect lasts 1 hour or until it is reduced to 0 hit points, or until you die. In combat, the item shares your initiative count,
-				but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action,
-				unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action.
-				If you are incapacitated, the item can take any action of its choice, not just Dodge. When you use your Bardic Inspiration feature,
-				you can command the item as part of the same bonus action you use for Bardic Inspiration. You can have only one item animated by this feature at a time;</description>	
+			<description>You animate a Large or smaller nonmagical item you can see within 30 feet. The animate item uses the Dancing Item stat block, which uses your proficiency bonus (PB). The effect lasts 1 hour or until it is reduced to 0 hit points, or until you die. In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the item can take any action of its choice, not just Dodge. When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration. You can have only one item animated by this feature at a time;</description>	
 		</sheet>
 	</element>
 	<element name="Creative Crescendo" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_BARD_CREATION_CREATIVE_CRESCENDO">
@@ -169,7 +158,7 @@
 			<p>When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.</p>
 			<p class="indent">You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet action="Reaction" usage=" {{infectous_inspiration}}/long rest">
+		<sheet action="Reaction" usage="{{infectous_inspiration}}/long rest">
 			<description>When a creature in 60ft from you uses your Bardic Inspiration die, you can give a Bardic Inspiration die to a different creature in 60ft.</description>
 		</sheet>
 		<rules>
