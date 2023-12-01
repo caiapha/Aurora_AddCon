@@ -4,7 +4,7 @@
 		<name>Martial Archetype form TCE</name>
 		<description>The Martial Archetype from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.0">
+		<update version="1.0.0">
 			<file name="fighter_TCE.xml" url="absent"/>
 		</update>
 	</info>
@@ -48,8 +48,7 @@
 			<description>Your Psionic Energy is represented by {{psionic_dice_number}} d{{psionic_dice_type}} Psionic Energy Dice. You regain all Psionic Energy Dice at the end of a long rest. As bonus action, you can regain one Dice once per short or long rest. You gain the following Psionic powers:
 				• Protective Field: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus {{intelligence:modifier}} (minimum 1 ).
 				• Psionic Strike: Once on each of your turns, when you deal damage to a target with a weapon attack, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus {{intelligence:modifier}} 
-				• Telekinetic Movement: As an action, target a Large or smaller loose object or a willing creature other than you within 30ft from you. You can move it up to 30ft in any direction. Alternatively, you can move a tiny object to or from your hand. You can do it once per short or long rest, unless you spend an Energy die to do it again.
-			</description>
+				• Telekinetic Movement: As an action, target a Large or smaller loose object or a willing creature other than you within 30ft from you. You can move it up to 30ft in any direction. Alternatively, you can move a tiny object to or from your hand. You can do it once per short or long rest, unless you spend an Energy die to do it again.</description>
 		</sheet>
 		<rules>
 			<stat name="psionic_dice_type" value="6" level="3" />
@@ -72,8 +71,7 @@
 		<sheet>
 			<description>You gain the following ability:
 				• Psi-Powered Leap: as a bonus action, you gain a flying speed equal to twice your walking speed until the end of the current turn. You can do it once per short or long rest, unless you spend an Energy die to do it again. 		
-				• Telekinetic Thrust: When you deal damage to a target with your Psionic Strike you can force the target to make a Strength saving throw against a DC equal to {{telekinetic_trust_DC}}. If it fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.  
-			</description>
+				• Telekinetic Thrust: When you deal damage to a target with your Psionic Strike you can force the target to make a Strength saving throw against a DC equal to {{telekinetic_trust_DC}}. If it fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</description>
 			</sheet>
 		<rules>
 			<stat name="telekinetic_trust_DC" value="8" />
@@ -119,9 +117,7 @@
 	<element name="Rune Knight" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FIGHTER_RUNE_KNIGHT">
 		<supports>Martial Archetype</supports>
 		<description>
-			<p>Rune Knights enhance their martial prowess using
-the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment.</p>
-							
+			<p>Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment.</p>
 			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_BONUS_PROFICIENCY" />
 			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNE_CARVER" />
 			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GIANTS_MIGHT" />
@@ -182,9 +178,7 @@ the supernatural power of runes, an ancient practice that originated with giants
 			</ul>
 		</description>
 		<sheet usage="after long rest">
-			<description>
-				<p>You can choose up to {{rune_known}} different objects and apply a single different rune on it. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. The sawing throw DC is {{rune_carver_dc}}. You know the following runes:</p>
-			</description>
+			<description>You can choose up to {{rune_known}} different objects and apply a single different rune on it. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. The sawing throw DC is {{rune_carver_dc}}. You know the following runes:</description>
 		</sheet>
 		<rules>
 			<stat name="rune_carver_dc" value="8" />
@@ -215,8 +209,7 @@ the supernatural power of runes, an ancient practice that originated with giants
 			<description>You gain the following features for 1 minute:
 				• If you are smaller than Large, you became Large with anything you are wearing. If you lack the space your size doesn't change. 
 				• You have advantage on STR checks and saving throw
-				• Once per turn, one your weapon or unarmed attack deal extra 1d{{giant_might}} damage.
-			</description>
+				• Once per turn, one your weapon or unarmed attack deal extra 1d{{giant_might}} damage.</description>
 		</sheet>
 		<rules>
 			<stat name="giant_might" value="6" level="3" />
