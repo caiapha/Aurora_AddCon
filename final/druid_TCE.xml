@@ -91,7 +91,7 @@
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{fungal_infestation}}/long rest">
-			<description>If a medium or smaller beast or humanoid dies within 10ft from you, you can use your reaction to animate it with 1hp. It uses the Zombie stat block from MM. It remains animate for 1 hour. In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
+			<description>If a medium or smaller beast or humanoid dies within 10ft from you, you can use your reaction to animate it with 1hp. It uses the Zombie stat block from MM. It remains animate for 1 hour. In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.
 			</description>
 		</sheet>
 		<rules>
