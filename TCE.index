@@ -7,7 +7,7 @@
 		</update>
 	</info>
 	<files>
-		<file name="barbarian_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/barbarian_TCE.xml" />
+		<file name="barbarian_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/barbarian_TCE.xml" />
 		<file name="bard_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/bard_TCE.xml" />
 		<file name="class_artificer.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/class_artificer.xml" />
 		<file name="cleric_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/cleric_TCE.xml" />
