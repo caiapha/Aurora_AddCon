@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>New Languages</name>
+		<update version="0.0.7">
+			<file name="languages_new.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/languages_new.xml" />
+		</update>
+	</info>
+
+	<!-- standard -->
+	<element name="Primordial" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_PRIMORDIAL">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Aquan" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_AQUAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Water Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Water Elementals and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Auran" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_AURAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Air Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Air Elementals and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Ignan" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_IGNAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Fire Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Fire Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Terran" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_TERRAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Earth Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Earth Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+</elements>
