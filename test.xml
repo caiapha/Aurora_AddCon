@@ -1,3 +1,13 @@
-<p>testo
-testo
-testo</p>
+<elements>
+  <info>
+    <name>test</name>
+    <update version="0.0.0">
+      <file name="test.xml" url="https://absent/TCE/spells_TCE.xml" />
+    </update>
+  </info>
+  <element name="test">
+    <p>testo
+      testo
+      testo</p>
+  </element>
+</elements>
