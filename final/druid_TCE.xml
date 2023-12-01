@@ -4,12 +4,12 @@
 		<name>Druid Cirlces form TCE</name>
 		<description>The new Circles for Cleric class from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="1.0.0">
 			<file name="druid_TCE.xml" url="https://absent/" />
 		</update>
 	</info>
 	
-	<!-- Druid Circle: Circle of Spores -->
+<!-- Druid Circle: Circle of Spores -->
 	<element name="Circle of Spores" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_DRUID_CIRCLE_OF_SPORES">
 		<supports>Druid Circle</supports>
 		<description>
@@ -77,11 +77,10 @@
 			<p>These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again</p>
 		</description>
 		<sheet action="Action">
-			<description><p>You can spend one Wild Shape to awaken spores. You gain 4 temporery HP per druid level and you gain the following: 
+			<description>You can spend one Wild Shape to awaken spores. You gain 4 temporery HP per druid level and you gain the following: 
 				- 1 - When you deal your Halo of Spores damage, roll the damage die a second time adn add it to the total.
 				- 2 - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target you hit.
-				The effects lats for 10 minutes, until you lose the temporary HP or until you use the Wild Shape feature again.</p>
-			</description>
+				The effects lats for 10 minutes, until you lose the temporary HP or until you use the Wild Shape feature again.</description>
 		</sheet>		
 	</element>
 	<element name="Fungal Infestation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_INFESTATION">
@@ -92,8 +91,7 @@
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
 		</description>
 		<sheet action="Reaction" usage="{{fungal_infestation}}/long rest">
-			<description><p>If a medium or smaller beast or humanoid dies within 10ft from you, you can use your reaction to animate it with 1hp. It uses the Zombie stat block from MM. It remains animate for 1 hour.
-				In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
+			<description>If a medium or smaller beast or humanoid dies within 10ft from you, you can use your reaction to animate it with 1hp. It uses the Zombie stat block from MM. It remains animate for 1 hour. In combat, the zombie's turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack.</p>
 			</description>
 		</sheet>
 		<rules>
@@ -109,10 +107,7 @@
 			<p class="indent">While the cube of spores persists, you can't use your Halo of Spores reaction.</p>
 		</description>
 		<sheet action="Bonus action">
-			<description><p>While your Symbiotic Entity feature is active, you hurl a 10-foot cube of spores up to 30ft away from you.
-				Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn.
-				The spores last 1 minute. They disappear if you use this feature again, if you dismiss them with a bonus action or if the Symbiotic Entity is not longer active.
-				You can't use the Halo of Spores reaction until the cube persists.</p>
+			<description><p>While your Symbiotic Entity feature is active, you hurl a 10-foot cube of spores up to 30ft away from you. Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn. The spores last 1 minute. They disappear if you use this feature again, if you dismiss them with a bonus action or if the Symbiotic Entity is not longer active. You can't use the Halo of Spores reaction until the cube persists.</p>
 			</description>
 		</sheet>		
 	</element>
@@ -126,7 +121,7 @@
 		</sheet>		
 	</element>
 	
-	<!-- Druid Circle: Circle of Stars -->
+<!-- Druid Circle: Circle of Stars -->
 	<element name="Circle of Stars" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_DRUID_CIRCLE_OF_STARS">
 		<supports>Druid Circle</supports>
 		<description>
@@ -162,12 +157,11 @@
 			<p class="indent">If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a short or long rest, and it destroys the previous map.</p>
 		</description>
 		<sheet>
-			<description><p>You create a map which can be used as spell-casting focus. Holding the map you gain the following benefits:
+			<description>You create a map which can be used as spell-casting focus. Holding the map you gain the following benefits:
 				- 1 - you know the Guidance cantrip.
 				- 2 - you have the Guiding bolt spell prepared. It count as duird spell and it doesn't count against the number of prepared spell
 				- 3 - you can cast Guiding bolt without expending a spell slot. You can do so {{proficiency}} times for long rest.
-				You can create a map performing a 1-hour ceremony during a short or a long rest. It destroys the previous map.</p>
-			</description>
+				You can create a map performing a 1-hour ceremony during a short or a long rest. It destroys the previous map.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="2" spellcasting="Druid" prepared="true" />
@@ -187,18 +181,17 @@
 			</ul>
 		</description>
 		<sheet action="Bonus action">
-			<description level="2"><p>Spend one Wild Shape feature to gain a starry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
+			<description level="2">Spend one Wild Shape feature to gain a starry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
 				This form lasts 10 minute or until you dismiss it (no action req.), are incapacitated, die or you use this feature again. Choose one of the followign:
 				- 1 - Archer: as bonus action you can make a ranged spell attack to a target within 60 feet, dealing 1d8+{{wisdom:modifier}}.
 				- 2 - Chalice: When you use a spell slot to restore hit points to a creature, you or a creature within 30ft of you can regain 1d8+{{wisdom:modifier}} hp.
-				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10.</p>
+				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10.
 			</description>
-			<description level="10"><p>Spend one Wild Shape feature to gain a sarry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
+			<description level="10">Spend one Wild Shape feature to gain a sarry form. Your body sheds bright light in a 10-foot radius and dim light in additional 10 feet.
 				This form lasts 10 minute or until you dismiss it (no action req.), are incapacitated, die or you use this feature again. Choose one of the followign:
 				- 1 - Archer: as bonus action you can make a ranged spell attack to a target within 60 feet, dealing 2d8+{{wisdom:modifier}}.
 				- 2 - Chalice: When you use a spell slot to restore hit points to a creature, you or a creature within 30ft of you can regain 2d8+{{wisdom:modifier}} hp.
-				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10. Moreover you have a flying speed of 20 feet.</p>
-			</description>
+				- 3 - Dragon: When you make and Intelligence or Wisdom check or a Constitution Saving Throw to maintain concentration, you can treat a 9 or lower on the d20 as a 10. Moreover you have a flying speed of 20 feet.</description>
 		</sheet>
 	</element>
 	<element name="Cosmic Omen" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_COSMIC_OMEN">
@@ -214,8 +207,7 @@
 		<sheet action="reaction" usage="{{proficiency}}/long rest">
 			<description>Whenever you finish a long rest, you can consult your Star Map. Roll a die. Until your next long rest you gain one of the following special reaction:
 				- 1 - Weal (even):Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and add the number rolled to the total.
-				- 2 - Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.
-			</description>
+				- 2 - Whenever a creature you can see within 30 feet of you is about to make an attack roll, a saving throw, or an ability check, you can use your reaction to roll a d6 and subtract the number rolled from the total.</description>
 		</sheet>
 	</element>
 	<element name="Twinkling Constallation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_STARS_TWINKLING_CONSTELLATIONS">
@@ -289,9 +281,7 @@
 			<p class="indent">The spirit manifests for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the spirit again, or until you die.</p>
 		</description>
 		<sheet action="Action">
-			<description><p>Spening a Wild Shape feature, you summon a wildfire spirit assuming a beast form. It appears within 30ft form you. All creature, other than you, within 10ft from the spirit must succeded a DES Saving Throw or take 2d6 fire damage. For the spirit's stats see related Statblock (TCE pag.40)</p>
-				<p> In combat, the spirit shares your initiative and act immeadiately after you. He takes only Dodge action, unless you spend a Bonus Action to give him a different command.</p>
-				<p> It lasts 1 hour, or until it is reduced to 0 HP, you dismiss it, you use this feature again or you die.</p>
+			<description>Spening a Wild Shape feature, you summon a wildfire spirit assuming a beast form. It appears within 30ft form you. All creature, other than you, within 10ft from the spirit must succeded a DES Saving Throw or take 2d6 fire damage. For the spirit's stats see related Statblock (TCE pag.40). In combat, the spirit shares your initiative and act immeadiately after you. He takes only Dodge action, unless you spend a Bonus Action to give him a different command. It lasts 1 hour, or until it is reduced to 0 HP, you dismiss it, you use this feature again or you die.
 			</description>
 		</sheet>
 	</element>
@@ -302,8 +292,7 @@
 			<p class="indent">In addition, when you cast a spell with a range other than self, the spell can originate from you or your wildfire spirit.</p>
 		</description>
 		<sheet>
-			<description>While your spirit is summoned, add 1d8 to each damage fire spell or cure you cast.
-			In addition, any spell you cast with a range other than self, can originate for the spirit.</description>
+			<description>While your spirit is summoned, add 1d8 to each damage fire spell or cure you cast. In addition, any spell you cast with a range other than self, can originate for the spirit.</description>
 		</sheet>
 	</element>
 	<element name="Cauterizing Flames" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_CAUTERIZING_FLAMES">
@@ -313,9 +302,7 @@
 			<p class="indent">You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{proficiency}}/long rest">
-			<description>When a Small or larger creature dies within 30ft from you or your Spirit, a spectral flame origins in that space.
-			 If a creautre you can see enters that space, you can use your reaction to estinguish the flame and heal or deal fire damage to the creature equal to 2d10+{{wisdom:modifier}}.
-			</description>
+			<description>When a Small or larger creature dies within 30ft from you or your Spirit, a spectral flame origins in that space. If a creautre you can see enters that space, you can use your reaction to estinguish the flame and heal or deal fire damage to the creature equal to 2d10+{{wisdom:modifier}}.</description>
 		</sheet>
 	</element>
 	<element name="Blazing Revival" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_WILDFIRE_BLAZING_REVIVAL">
@@ -325,7 +312,7 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/long rest">
-			<description><p>If your spirit is within 120ft from you when you are reduced to 0 HP, you can cause the spirit to drop to 0 HP. You regain half of your HP and rise to your feet.</p></description>
+			<description>If your spirit is within 120ft from you when you are reduced to 0 HP, you can cause the spirit to drop to 0 HP. You regain half of your HP and rise to your feet.</description>
 		</sheet>
 	</element>
 </elements>
