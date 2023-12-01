@@ -12,6 +12,7 @@
 		<file name="class_artificer.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/class_artificer.xml" />
 		<file name="cleric_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/cleric_TCE.xml" />
 		<file name="druid_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/druid_TCE.xml" />
+		<file name="fighter_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/fighter_TCE.xml" />
 		<file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
 		<file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/spell_TCE.xml" />
 	</files>
