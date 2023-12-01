@@ -4,7 +4,7 @@
 		<name>Cleric Domains form TCE</name>
 		<description>The new domains for Cleric class from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="cleric_TCE.xml" url="https://absent/" />
 		</update>
 	</info>
@@ -340,11 +340,9 @@
 			
 		</description>
 		<sheet alt="Twilight Sanctuary" action="Action" usage="Channel Divinity">
-			<description>
-				You create a 30-foor radius sphere centered on you. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:
+			<description>You create a 30-foor radius sphere centered on you. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:
 				• You grant it temporary hit points equal to ld6 plus your cleric level
-				• You end one effect on it causing it to be charmed or frightened.
-			</description>	
+				• You end one effect on it causing it to be charmed or frightened.</description>	
 		</sheet>
 	</element>
 	
