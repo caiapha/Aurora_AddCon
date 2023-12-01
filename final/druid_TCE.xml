@@ -106,8 +106,7 @@
 			<p class="indent">While the cube of spores persists, you can't use your Halo of Spores reaction.</p>
 		</description>
 		<sheet action="Bonus action">
-			<description><p>While your Symbiotic Entity feature is active, you hurl a 10-foot cube of spores up to 30ft away from you. Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn. The spores last 1 minute. They disappear if you use this feature again, if you dismiss them with a bonus action or if the Symbiotic Entity is not longer active. You can't use the Halo of Spores reaction until the cube persists.</p>
-			</description>
+			<description>While your Symbiotic Entity feature is active, you hurl a 10-foot cube of spores up to 30ft away from you. Whenever a creature moves into the cube or starts its turn there, that creature takes your Halo of Spores damage, unless the creature succeeds on a Constitution saving throw against your spell save DC. A creature can take this damage no more than once per turn. The spores last 1 minute. They disappear if you use this feature again, if you dismiss them with a bonus action or if the Symbiotic Entity is not longer active. You can't use the Halo of Spores reaction until the cube persists.</description>
 		</sheet>		
 	</element>
 	<element name="Fungal Body" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_DRUID_CIRCLE_OF_SPORES_FUNGAL_BODY">
