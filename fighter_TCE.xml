@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Martial Archetype form TCE</name>
+		<description>The Martial Archetype from the Tasha's Cauldron of Evertything.</description>
+		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
+		<update version="0.0.0">
+			<file name="fighter_TCE.xml" url="absent"/>
+		</update>
+	</info>
+	<!-- Psi Warrior -->
+	<element name="Psi Warrior" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FIGHTER_PSI_WARRIOR">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Awake to the psionic power within, a Psi Warrior is a fighter who augments their physical might with psi-infused weapon strikes, telekinetic lashes, and barriers of mental force. Many githyanki train to become such warriors, as do some of the most disciplined high elves. In the world of Eberron, many young kalashtar dream of becoming Psi Warriors.</p>
+			<p class="indent">As a Psi Warrior, you might have honed your psionic abilities through solo discipline, unlocked it under the tutelage of a master, or refined it at an academy dedicated to wielding the mind's power as both weapon and shield.</p>
+				
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_PSIONIC_POWER" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_ADEPT" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_GUARDED_MIND" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_BULWARK_OF_FORCE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_MASTER" />	
+		</description>
+		<sheet display="false">
+			<description>Martial Archetype: Psi Warrior</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_PSIONIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_ADEPT" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_GUARDED_MIND" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_BULWARK_OF_FORCE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_MASTER" level="18" />
+		</rules>
+	</element>
+	<element name="Psionic Power" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_PSIONIC_POWER">
+		<description>
+			<p><em>3rd-level Psi Warrior feature</em></p>
+			<p>You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. Youhave a number of these dice equal to twice your  proficiency bonus, and they fuel various psionic powers you have, which are detailed below.</p>
+			<p class="indent">Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.</p> 
+			<p class="indent">When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (dlO), and 17th level (dl2). The powers below use your Psionic enrgy dice.</p>
+			<ul class="unstyled">
+				<li><strong>Protective Field:</strong> When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1 ), as you create a momentary shield of telekinetic force.</li>
+				<li><strong>Psionic Strike:</strong>You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.</li>
+				<li><strong>Telekinetic Movement</strong>You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your Psionic Energy is represented by {{psionic_dice_number}} d{{psionic_dice_type}} Psionic Energy Dice. You regain all Psionic Energy Dice at the end of a long rest. As bonus action, you can regain one Dice once per short or long rest. You gain the following Psionic powers:
+				• Protective Field: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus {{intelligence:modifier}} (minimum 1 ).
+				• Psionic Strike: Once on each of your turns, when you deal damage to a target with a weapon attack, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus {{intelligence:modifier}} 
+				• Telekinetic Movement: As an action, target a Large or smaller loose object or a willing creature other than you within 30ft from you. You can move it up to 30ft in any direction. Alternatively, you can move a tiny object to or from your hand. You can do it once per short or long rest, unless you spend an Energy die to do it again.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="psionic_dice_type" value="6" level="3" />
+			<stat name="psionic_dice_type" value="2" level="5" />
+			<stat name="psionic_dice_type" value="2" level="11" />
+			<stat name="psionic_dice_type" value="2" level="17" />
+			<stat name="psionic_dice_number" value="proficiency" />
+			<stat name="psionic_dice_number" value="proficiency" />
+		</rules>	
+	</element>
+	<element name="Telekinetic Adept" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_ADEPT">
+		<description>
+			<p><em>7th-level Psi Warrior feature</em></p>
+			<p>You have mastered new ways to use your telekinetic abilities, detailed below</p>
+				<ul>
+					<li><strong>Psi-Powered Leap:</strong> As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.</li>
+					<li><strong>Telekinetic Thrust:</strong> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</li>
+				</ul>			
+		</description>
+		<sheet>
+			<description>You gain the following ability:
+				• Psi-Powered Leap: as a bonus action, you gain a flying speed equal to twice your walking speed until the end of the current turn. You can do it once per short or long rest, unless you spend an Energy die to do it again. 		
+				• Telekinetic Thrust: When you deal damage to a target with your Psionic Strike you can force the target to make a Strength saving throw against a DC equal to {{telekinetic_trust_DC}}. If it fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.  
+			</description>
+			</sheet>
+		<rules>
+			<stat name="telekinetic_trust_DC" value="8" />
+			<stat name="telekinetic_trust_DC" value="proficiency" />
+			<stat name="telekinetic_trust_DC" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Guarded Mind" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_GUARDED_MIND">
+		<description>
+			<p><em>10th-level Psi Warrior feature</em></p>
+			<p>The psionic energy flowing through you has bolstered your mind. You have resistance to psychic damage. Moreover, if you start your turn charmed or frightened, you can expend a Psionic Energy die and end every effect on yourself subjecting you to those conditions.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to psychic damage. Moreover, if you start a turn charmed or frightened, you can spend a Psionic Energy Die and end the effect.</description>
+		</sheet>
+	</element>
+	<element name="Bulwark of Force" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_BULWARK_OF_FORCE">
+		<description>
+			<p><em>15th-level Psi Warrior feature</em></p>
+			<p>You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a ·number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you're incapacitated.</p>
+			<p class="indent">Once you take this bonus action, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to take it again</p>
+		</description>
+		<sheet action="bonus action" usage="1/long rest OR spend 1 Energy Die">
+			<description>Choose up to {{bulwark_of_force}} creatures within 30ft from you (can include yourself). Each creture is protected by half-cover for 1 minute or until you're incapacitated.  </description>
+		</sheet>
+		<rules>
+			<stat name="bulwark_of_force" value="1" />
+			<stat name="bulwark_of_force" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Telekinetic Master" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_PSI_WARRIOR_TELEKINETIC_MASTER">
+		<description>
+			<p><em>18th-level Psi Warrior feature</em></p>
+			<p>Your ability to move creatures and objects with your mind is matched by few. You can cast the telekinesis spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again.</p>
+		</description>
+		<sheet usage="1/long rest OR spend 1 Energy Die">
+			<description>You can cast the telekinesis spell, requiring no components and your spellcasting ability is INT. When you cast and on each turn while you concentrate, you can make a weapon attack as a bonus action.</description>
+		</sheet>
+	</element>
+
+<!-- Rune Knight -->
+	<element name="Rune Knight" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FIGHTER_RUNE_KNIGHT">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Rune Knights enhance their martial prowess using
+the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment.</p>
+							
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_BONUS_PROFICIENCY" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNE_CARVER" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GIANTS_MIGHT" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_SHIELD" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GREAT_STATURE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_MASTER_OF_RUNES" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_JUGGERNAUT" />	
+		</description>
+		<sheet display="false">
+			<description>Martial Archetype: Psi Warrior</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNE_CARVER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GIANTS_MIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_SHIELD" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GREAT_STATURE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_MASTER_OF_RUNES" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_JUGGERNAUT" level="18" />
+		</rules>
+	</element>
+	<element name="Rune Knight: bonus proficiency" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_BONUS_PROFICIENCY">
+		<description>
+			<p><em>3rd-level Rune Knight feature</em></p>
+			<p>You gain proficiency with smith's tools, and you learn to speak, read, and write Giant.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with smith's tools, and you learn to speak, read, and write Giant.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+		</rules>
+	</element>
+	<element name="Rune Carver" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNE_CARVER">
+		<description>
+			<p><em>3rd-level Rune Knight feature</em></p>
+			<p>You can use magic runes to enhance your gear. You learn two runes of your choice, from among the runes described below, and each time you gain a level in this class, you can replace one rune you know with a different one from this feature. When you reach certain levels in this class, you learn additional runes, as shown in the Runes Known table.</p>
+			<h5 class="caption">Rune Known</h5>
+			<table>
+				<thead>
+					<tr><td>Fighter Level</td><td>Number of runes</td></tr>
+				</thead>
+					<tr><td>3st</td><td><em>2</em></td></tr>
+					<tr><td>7rd</td><td><em>3</em></td></tr>
+					<tr><td>10th</td><td><em>4</em></td></tr>
+					<tr><td>15th</td><td><em>5</em></td></tr>
+				</table>
+			<p class="indent">Whenever you finish a long rest, you can touch a number of objects equal to the number of runes you know, and you inscribe a different rune onto each of the objects. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. Your rune remains on an object until you finish a long rest, and an object can bear only one of your runes at a time.</p>
+			<p class="indent">The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+			<ul>
+				<li>Cloud Rune</li>
+				<li>Fire Rune</li>
+				<li>Frost Rune</li>
+				<li>Stone Rune</li>
+				<li>Hill Rune (7th Level or Higher)</li>
+				<li>Storm Rune (7th Level or Higher</li>
+			</ul>
+		</description>
+		<sheet usage="after long rest">
+			<description>
+				<p>You can choose up to {{rune_known}} different objects and apply a single different rune on it. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. The sawing throw DC is {{rune_carver_dc}}. You know the following runes:</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="rune_carver_dc" value="8" />
+			<stat name="rune_carver_dc" value="proficiency" />
+			<stat name="rune_carver_dc" value="constitution:modifier" />
+			<stat name="rune_known" value="2" level="3" />
+			<stat name="rune_known" value="1" level="7" />
+			<stat name="rune_known" value="1" level="10" />
+			<stat name="rune_known" value="1" level="15" />
+			<select type="Class Feature" name="Knight's Runes" supports="Rune Knight" number="2" level="3" />
+			<select type="Class Feature" name="Knight's Runes" supports="Rune Knight" number="1" level="7" />
+			<select type="Class Feature" name="Knight's Runes" supports="Rune Knight" number="1" level="10" />
+			<select type="Class Feature" name="Knight's Runes" supports="Rune Knight" number="1" level="15" />
+		</rules>
+	</element>
+	<element name="Giant Might" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GIANTS_MIGHT">
+		<description>
+			<p><em>3rd-level Rune Knight feature</em></p>
+			<p>You have learned how to imbue yourself with the might of giants. As a bonus action, you magically gain the following benefits, which last for 1 minute:</p>
+			<ul>
+				<li>If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change.</li>
+				<li>You have advantage on Strength checks and Strength saving throws</li>
+				<li>Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra ld6 damage to a target on a hit</li>
+			</ul>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet action="bonus action" usage="{{proficiency}}/long rest">
+			<description>You gain the following features for 1 minute:
+				• If you are smaller than Large, you became Large with anything you are wearing. If you lack the space your size doesn't change. 
+				• You have advantage on STR checks and saving throw
+				• Once per turn, one your weapon or unarmed attack deal extra 1d{{giant_might}} damage.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="giant_might" value="6" level="3" />
+			<stat name="giant_might" value="2" level="10" /> <!-- this is the effect of "Great Stature" feature -->
+			<stat name="giant_might" value="2" level="18" /> <!-- this is the effect of "Runic juggernaut" feature -->
+		</rules>
+	</element>
+	<element name="Runic shield" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_SHIELD">
+		<description>
+			<p><em>7th-level Rune Knight feature</em></p>
+			<p>You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an attack roll, you can use your reaction to force the attacker to reroll the d20 and use the new roll.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="reaction" usage="{{proficiency}}/long rest">
+			<description>When a creature you can see within 60ft id hit by and attack roll, you can use your reaction to force the attacker to reroll the d20 and use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Great stature" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_GREAT_STATURE">
+		<description>
+			<p><em>10th-level Rune Knight feature</em></p>
+			<p>The magic of your runes permanently alters you. When you gain this feature, roll 3d4. You grow a number of inches in height equal to the roll.</p>
+			<p class="indent">Moreover, the extra damage you deal with your Giant's Might feature increases to ld8.</p>
+		</description>
+		<sheet display="false">
+			<description>The extra damage you deal with your Giant's Might feature increases to ld8 (see the ability).</description>
+		</sheet>
+	</element>
+	<element name="Master of Runes" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_MASTER_OF_RUNES">
+		<description>
+			<p><em>15th-level Rune Knight feature</em></p>
+			<p>You can invoke each rune you know from your Rune Carver feature twice, rather than once, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can invoke your runes twice. You regain all expended uses after a short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Runic Juggernaut" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_FIGHTER_RUNE_KNIGHT_RUNIC_JUGGERNAUT">
+		<description>
+			<p><em>18th-level Rune Knight feature</em></p>
+			<p>You learn how to amplify your rune-powered transformation. As a result, the extra damage you deal with the Giant's Might feature increases to ldlO. Moreover, when you use that feature, your size can increase to Huge, and while you are that size, your reach increases by 5 feet.</p>
+		</description>
+		<sheet>
+			<description>The extra damage you deal with your Giant's Might feature increases to ld10 (see the ability). The size you reach is Huge and the reach increases by 5ft.</description>
+		</sheet>
+	</element>
+
+
+<!-- Runes -->
+	<element name="Cloud Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_CLOUD_RUNE">
+	<supports>Rune Knight</supports>
+		<description>
+			<p>This rune emulates the deceptive magic used by some cloud giants. While wearing or carrying an object inscribed with this rune, you have advantage on Dexterity (Sleight of Hand) checks and Charisma (Deception) checks. In addition, when you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack's effects regardless of the attack's range. Once you invoke this rune, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Sleight of Hand) and Charisma (Deception) checks. In addition, when you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Fire Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_FIRE_RUNE">
+	<supports>Rune Knight</supports>
+		<description>
+			<p>This rune's magic channels the masterful craftsmanship of great smiths. While wearing or carrying an object inscribed with this rune, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool. In addition, when you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra 2d6 fire damage, and it must succeed on a Strength saving throw or be restrained for 1 minute. While restrained by the shackles, the target takes 2d6 fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest</p>
+		</description>
+		<sheet>
+			<description>Your proficiency on any ability check made using a tool is doubled. In addition, when you hit a creature with a weapon, you can invoke the rune to deal extra 2d6 fire damage. The target must succeded a STR Saving Throw or be restained for 1 minute. A the start of each following turn while it is restained, the creature takes extra 2d6 fire damage. The target can repeat the Sawing Throw on each turn to end the effect. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Frost Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_FROST_RUNE">
+	<supports>Rune Knight</supports>
+		<description>
+			<p>This rune's magic evokes the might of those who survive in the wintry wilderness, such as frost giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (Animal Handling) checks and Charisma (Intimidation) checks.</p>
+			<p class="indent">In addition, you can invoke the rune as a bonus action to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all ability checks and saving throws that use Strength or Constitution. Once you invoke this rune, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Animal Handling) checks and Charisma (Intimidation) checks. In addition, as a bonus action you can invoke the rune and gain for 10 minutes a +2 bonus to any ability check or saving throw that use STR or CON. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Stone Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_STONE_RUNE">
+	<supports>Rune Knight</supports>
+		<description>
+			<p>This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (Insight) checks, and you have darkvision out to a range of 120 feet. In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom saving throw. Unless the save succeeds, the creature is charmed by you for 1 minute. While charmed in this way, the creature has a speed of 0 and is incapacitated, descending into a dreamy stupor. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Insight) checks, and you have darkvision out to a range of 120 feet. In addition, when a creature ends its turn within 30ft from you, as a reaction you can invoke the rune and force the creature to make a WIS Saving Throw. If failed, the creature is charmed by you for 1 minute, has 0 speed and is incapacitated. The creature repeat the Saving Throw at the end of each turn to end the effect. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Hill Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_HILL_RUNE">
+	<supports>Rune Knight</supports>
+	<requirements>[level:7]</requirements>
+		<description>
+			<p>This rune's magic bestows a resilience reminiscent of a hill giant. While wearing or carrying an object that bears this rune, you have advantage on saving throws against being poisoned, and you have resistance against poison damage. In addition, you can invoke the rune as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can't do so again until you finish a  short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being poisoned, and you have resistance against poison damage. In addition, you can invoke the rune as a bonus action gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+	<element name="Storm Rune" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_CLASS_FEATURE_FIGHTER_RUNE_KNIGHT_STORM_RUNE">
+	<supports>Rune Knight</supports>
+	<requirements>[level:7]</requirements>
+		<description>
+			<p>Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have advantage on Intelligence (Arcana) checks, and you can't be surprised as long as you aren't incapacitated.</p>
+			<p class="indent">In addition, you can invoke the rune as a bonus action to enter a prophetic state for 1 minute or until you're incapacitated. Until the state ends, when you or another creature you can see within 60 feet of you makes an attack roll, a saving throw, or an ability check, you can use your reaction to cause the roll to have advantage or disadvantage. Once you invoke this rune, you can't do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence (Arcana) checks, and you can't be surprised as long as you aren't incapacitated. In addition, you can invoke the rune as a bonus action and for 1 minute when you or a creature within 60ft makes an attack roll, a savint throw or an ability check you can use your reaction to give advantage or disvantage to that roll. You can invoke this rune once per short or long rest</description>
+		</sheet>
+	</element>
+
+</elements>
