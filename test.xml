@@ -6,8 +6,8 @@
     </update>
   </info>
   <element name="test">
-    <p>testo
+    <description><p>testo
       testo
-      testo</p>
+      testo</p></description>
   </element>
 </elements>
