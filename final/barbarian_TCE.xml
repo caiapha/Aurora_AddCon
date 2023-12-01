@@ -4,17 +4,17 @@
 		<name>Primal Path form TCE</name>
 		<description>The Primal Paths from the Tasha's Cauldron of Evertything.</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.1.9">
+		<update version="1.0.0">
 			<file name="barbarian_TCE.xml" url="absent"/>
 		</update>
 	</info>
-	<!-- Path of the Beast -->
+<!-- Path of the Beast -->
 	<element name="Path of the Beast" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST">
 		<supports>Primal Path</supports>
 		<description>
 			<p>Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.</p>
 			<p class="indent">Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.</p>
-				<table class="Origin_of_the_beast">
+			<table class="Origin_of_the_beast">
 				<thead>
 					<tr><td class="col-10">d4</td><td class="col-60 left">Origin</td></tr>
 				</thead>
@@ -50,12 +50,10 @@
 			</ul>
 		</description>
 		<sheet usage="Entering Rage">
-			<description>
-				<p>You manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:
+			<description>You manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon's form each time you rage:
 				- 1 - Bite: Your mouth transforms. It deals ld8· piercing damage. Once on each of your turns on a hit, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
 				- 2 - Claws: Your hands transforms into a claw, which you can use as a weapon. It deals ld6 slashing damage. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.
-				- 3 - Tail: You grow a tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled</p>
-			</description>
+				- 3 - Tail: You grow a tail, which deals ld8 piercing damage and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled.</description>
 		</sheet>	
 	</element>
 	<element name="Bestial Soul" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_BESTIAL_SOUL">
@@ -68,14 +66,11 @@
 					<li>When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</li>
 				</ul>			
 		</description>
-		<sheet usage="Short/Long Rest">
-			<description>
-				<p>Your natual weapon count as magical. Choose one of the following</p>
-				<p>
+		<sheet usage="Choose at Short/Long Rest">
+			<description>Your natual weapon count as magical. Choose one of the following:
 				- 1 - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
 				- 2 - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-				- 3 - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</p>
-			</description>
+				- 3 - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</description>
 			</sheet>
 	</element>
 	<element name="Infectious Fury" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_THE_BEAST_INFECTIOUS_FURY">
@@ -88,12 +83,10 @@
 			</ul>
 			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>	
 		</description>
-		<sheet usage="Proficiency Bonus/Long Rest">
-			<description>
-				<p>On a hit with your natural weapons while you are raging, the target must succeed on a Wisdom saving throw DC={{Infectious_Fury_dc}} or suffer one of the following effects (your choice):
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>On a hit with your natural weapons while you are raging, the target must succeed on a Wisdom saving throw DC={{Infectious_Fury_dc}} or suffer one of the following effects (your choice):
 				- The target must use its reaction to make a melee attack against another creature of your choice that you can see.
-				- The target takes 2d12 psychic damage</p>
-		</description>
+				- The target takes 2d12 psychic damage</description>
 		</sheet>
 		<rules>
 			<stat name="Infectious_Fury_dc" value="8" />
@@ -107,12 +100,9 @@
 			<p>The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. </p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet usage="Proficiency Bonus/Long Rest">
+		<sheet usage="{{proficiency}}/Long Rest">
 			<description>Entering rage, choose a number of willing creatures you can see in 30ft equal to {{constitution:modifier}}. You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, when a chosen creature hits a target with an attack roll, onche per his turn can roll a d6 and gain a bonus to the damage equal to the number rolled.</description>
 		</sheet>
-		<rules>
-			<stat name="call_the_hunt" value="constitution:modifier" />
-		</rules>
 	</element>
 <!-- Path of the Wild Magic -->
 <element name="Path of Wild Magic" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC">
@@ -142,10 +132,8 @@
 			<p>As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p> 
 		</description>
-		<sheet usage="Proficiency Bonus/Long Rest">
-			<description>
-				<p>As an action, until the end of the next tourn you kwnow the location of any spell or magical effect within 60ft. When you see a spell you learn the school it belongs.</p>
-			</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>As an action, until the end of the next tourn you kwnow the location of any spell or magical effect within 60ft. When you see a spell you learn the school it belongs.</description>
 		</sheet>
 	</element>
 	<element name="Wild Surge" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_WILD_SURGE">
@@ -168,18 +156,15 @@
 			</table>
 		</description>
 		<sheet>
-			<description>
-				<p>When you enter your rage, roll on the Wild Magic table to determine the magical effect produced. If the effect requires a saving throw, the DC is equal to {{wild_magic_dc}}</p>
-				<p>
-				- 1 - Shadowy tendrils lash around you . Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take ldl2 necrotic damage. You also gain ldl2 tem porary hit points.
-				- 2 - You teleport up to 30 feet to an unoccupied space you can see. Until you rrage ends, you can use this effect again on each of your turns as a bonus action
-				- 3 - An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5ft of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5ft of it must succeed on a Dexterity saving throw or take ld6 force damage. Until you rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.
-				- 4 - Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20ft and a long range of 60ft. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.
-				- 5 - Whenever a creature hits you with an attack roll before your rage ends, that creature takes ld6 force damage, as magic lashes out in retribution.
-				- 6 - Until your rage ends, you are surrounded by multicolored, protective lights; you gain a +l bonus to AC, and while within 10 feet of you , your allies gain the same bonus.
-				- 7 - Flowers and vines temporarily grow around you; until your rage ends, the ground within l5 feet of you is difficult terrain for you renemies.
-				- 8 - A bolt of light shoots from your chest. Another creature of your choice that you can see within 30ft of you must succeed on a Constitution saving throw or take ld6 radiant damage and be blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</p>
-			</description>
+			<description>When you enter your rage, roll on the Wild Magic table to determine the magical effect produced. If the effect requires a saving throw, the DC is equal to {{wild_magic_dc}}
+				1 - Shadowy tendrils lash around you . Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take ldl2 necrotic damage. You also gain ldl2 tem porary hit points.
+				2 - You teleport up to 30 feet to an unoccupied space you can see. Until you rrage ends, you can use this effect again on each of your turns as a bonus action
+				3 - An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5ft of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5ft of it must succeed on a Dexterity saving throw or take ld6 force damage. Until you rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.
+				4 - Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20ft and a long range of 60ft. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.
+				5 - Whenever a creature hits you with an attack roll before your rage ends, that creature takes ld6 force damage, as magic lashes out in retribution.
+				6 - Until your rage ends, you are surrounded by multicolored, protective lights; you gain a +l bonus to AC, and while within 10 feet of you , your allies gain the same bonus.
+				7 - Flowers and vines temporarily grow around you; until your rage ends, the ground within l5 feet of you is difficult terrain for you renemies.
+				8 - A bolt of light shoots from your chest. Another creature of your choice that you can see within 30ft of you must succeed on a Constitution saving throw or take ld6 radiant damage and be blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.</description>
 			</sheet>
 			<rules>
 				<stat name="wild_magic_dc" value="8" />
@@ -197,12 +182,10 @@
 			</ul>
 			<p> You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet usage="Proficiency Bonus/Long Rest">
-			<description>
-				<p>As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:
 				- For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.
-				- Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.</p>
-		</description>
+				- Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.</description>
 		</sheet>
 	</element>
 	<element name="Unstable Backlash" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PATH_OF_WILD_MAGIC_UNSTABLE_BACKLASH">
