@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>TCE.index</name>
-		<update version="1.7.0">
+		<update version="1.8.0">
 			<file name="TCE.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/TCE.index" />
 		</update>
 	</info>
@@ -13,8 +13,10 @@
 		<file name="cleric_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/cleric_TCE.xml" />
 		<file name="druid_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/druid_TCE.xml" />
 		<file name="fighter_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/fighter_TCE.xml" />
-		<file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
 		<file name="monk_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/monk_TCE.xml" />
+		<file name="paladin_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/paladin_TCE.xml" />
+		
+		<file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
 		<file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/spell_TCE.xml" />
 	</files>
 </index>
