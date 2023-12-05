@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Paladin Sacred Oaths form TCE</name>
-		<description>The new Sacred Oath for Cleric class from the Tasha's Cauldron of Everything</description>
+		<description>The new Sacred Oath for Paladin class from the Tasha's Cauldron of Everything</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
 		<update version="0.0.0">
 			<file name="paladin_TCE.xml" url="https://absent/" />
