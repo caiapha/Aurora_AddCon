@@ -278,7 +278,7 @@
 				<li>When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn.</li>	
 			</ul>
 		</description>
-		<sheet><description>Your swarm grows stronger (see gathering swarm feature).</description> <!-- improvements included in "gather swarm" feature -->
+		<sheet><description>Your swarm grows stronger (see gathering swarm feature).</description></sheet> <!-- improvements included in "gather swarm" feature -->
 	</element>
 	<element name="Swarming Dispersal" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_RANGER_SWARMKEEPER_SWARMING_DISPERSAL">
 		<description>
