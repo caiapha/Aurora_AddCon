@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	
-	<!-- Phantom Archetype -->
+<!-- Phantom Archetype -->
 	<element name="Phantom" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_ROGUE_PHANTOM">
 		<supports>Roguish Archetype</supports>
 		<description>
