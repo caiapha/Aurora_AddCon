@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Feats_TCOE</name>
-		<description>Feats from the Tasha Cauldron of Everithing</description>
-		<update version="0.1.6">
-			<file name="feats.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/feats_new.xml" />
+		<name>Feats</name>
+		<description>New feats from the Tasha's Cauldron of Everithing Manual</description>
+		<update version="0.0.0">
+			<file name="feats_TCE.xml" url="absent" />
 		</update>
 	</info>
 
-	<element name="Artificer Initiate" type="Feat" source="Tasha Cauldron of Everything" id="ID_PHB_FEAT_ARTIFICER_INITIATE">
+	<element name="Artificer Initiate" type="Feat" source="Tasha's Cauldron of Everything" id="ID_TCE_FEAT_ARTIFICER_INITIATE">
 		<description>
 			<p>You've learned some of an artificer's inventiveness:</p>
 			<ul>
@@ -18,16 +18,16 @@
 			</ul>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>
-				You learn one cantrip of your choice from the artificer spell list, and you learn one 1st-level spell. You can cast this feat's 1st-level spell without a spell slot. You can also cast the spell using any spell slots you have. You gain proficiency with one type of artisan's tools and you can use that type of tool as a spellcasting focus.
-			</description>
+			<description>You learn one 1st-level spell. You can cast this feat's 1st-level spell without a spell slot. You can also cast the spell using any spell slots you have. You gain proficiency with one type of artisan's tools and you can use that type of tool as a spellcasting focus.</description>
 		</sheet>
 		<rules>
-			<stat name="intelligence" value="1" />
+			<select type="Spell" name="Cantrip (Artificer Initiate)" supports="0,Artificer" number="1" />
+			<select type="Spell" name="1st-level Spell (Arificer Initiate)" supports="1,Artificer" number="1" />
+			<select type="Proficiency" name="Artisan Tool, Artificer Initiate" supports="Artisan tools" />
 		</rules>
 	</element>
 	
-	<element name="Chef" type="Feat" source="Tasha Cauldron of Everything" id="ID_PHB_FEAT_CHEF">
+	<element name="Chef" type="Feat" source="Tasha's Cauldron of Everything" id="ID_TCE_FEAT_CHEF">
 		<description>
 			<p>Time spent mastering the culinary arts has paid off, granting you the following benefits:</p>
 			<ul>
@@ -38,16 +38,14 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>
-				You gain proficiency with cook's utensils; As part of a short rest, all party membwers regain an extra 1d8 hit points. With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus. 
-			</description>
+			<description>As part of a short rest, all party members regain an extra 1d8 hit points. With one hour of work or when you finish a long rest, you cook {{proficiency}} treats, which last 8 hours. As a bonus action a creature can eat one to gain {{proficiency}} temporary hit points</description>
 		</sheet>
 		<rules>
-			<select type="Ability Score Improvement" name="Crusher" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+			<select type="Ability Score Improvement" name="Chef" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
 		</rules>
 	</element>
 	
-	<element name="Crusher" type="Feat" source="Tasha Cauldron of Everything" id="ID_PHB_FEAT_CRUSHER">
+	<element name="Crusher" type="Feat" source="Tasha's Cauldron of Everything" id="ID_TCE_FEAT_CRUSHER">
 		<description>
 			<p>You are practiced in the art of crushing your enemies, granting you the following benefits:</p>
 			<ul>
@@ -66,17 +64,19 @@
 		</rules>
 	</element>
 	
-	<element name="Eldritch Adept" type="Feat" source="Tasha Cauldron of Everything" id="ID_PHB_FEAT_ELDRITCH_ADEPT">
+	<element name="Eldritch Adept" type="Feat" source="Tasha's Cauldron of Everything" id="ID_TCE_FEAT_ELDRITCH_ADEPT">
 		<description>
 			<p>Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite. Whenever you gain a level, you can replace the invocation with another one from the warlock class.</p>	
 		</description>
 		<sheet>
-			<description>you learn one Eldritch Invocation option. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose one). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite. Whenever you gain a level, you can replace the invocation with another one from the warlock class.
-			</description>
+			<description>you learn one Eldritch Invocation option. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose one). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite. Whenever you gain a level, you can replace the invocation with another one from the warlock class.</description>
 		</sheet>
+		<rules>
+			<select type="Class feature" name="Eldritch Adept" support="Eldritch Invocation" number="1" />
+		</rules>
 	</element>
 	
-	<element name="Fey Touched" type="Feat" source="Tasha Cauldron of Everything" id="ID_PHB_FEAT_FEY_TOUCHED">
+	<element name="Fey Touched" type="Feat" source="Tasha Cauldron of Everything" id="ID_TCE_FEAT_FEY_TOUCHED">
 		<description>
 			<p>Your exposure to the Feywild's magic has changed you, granting you the following benefits:</p>
 			<ul>
@@ -85,12 +85,13 @@
 			</ul>			
 		</description>
 		<sheet>
-			<description>
-				You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.
+			<description>You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.
 			</description>
 		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Fey Touched" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Spell" name="1st-level Spell Fey touched)" supports="1,divination|enchantment" number="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
 		</rules>
 	</element>
 	
