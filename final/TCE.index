@@ -18,7 +18,7 @@
 		<file name="ranger_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/ranger_TCE.xml" />
 		<file name="rogue_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/rogue_TCE.xml" />
 
-		<file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/languages_new.xml" />
-		<file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/spell_TCE.xml" />
+		<file name="languages_new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/languages_new.xml" />
+		<file name="spell_TCE.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/main/final/spell_TCE.xml" />
 	</files>
 </index>
