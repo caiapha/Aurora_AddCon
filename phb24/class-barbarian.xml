@@ -58,7 +58,7 @@
 				</thead>
 				<tr><td>1st</td><td>+2</td><td>2</td><td>+2</td><td>2</td><td class="left">Rage, Unarmored Defense, Weapon Mastery</td></tr>
 				<tr><td>2nd</td><td>+2</td><td>2</td><td>+2</td><td>2</td><td class="left">Reckless Attack, Danger Sense</td></tr>
-				<tr><td>3rd</td><td>+2</td><td>3</td><td>+2</td><td>2</td><td class="left">Primal Knoledge, Barbarian Subclass</td></tr>
+				<tr><td>3rd</td><td>+2</td><td>3</td><td>+2</td><td>2</td><td class="left">Primal Knowledge, Barbarian Subclass</td></tr>
 				<tr><td>4th</td><td>+2</td><td>3</td><td>+2</td><td>3</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>5th</td><td>+3</td><td>3</td><td>+2</td><td>3</td><td class="left">Extra Attack, Fast Movement</td></tr>
 				<tr><td>6th</td><td>+3</td><td>4</td><td>+2</td><td>3</td><td class="left">Subclass feature</td></tr>
@@ -82,7 +82,7 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOLEDGE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" />
@@ -118,7 +118,7 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_DANGER_SENSE" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS" level="3" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOLEDGE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT" level="5" />
@@ -259,7 +259,7 @@
 			<select type="Archetype" name="Barbarian subclass" supports="Barbarian subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Primal Knoledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOLEDGE">
+	<element name="Primal Knoledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p class="indent">You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
