@@ -410,9 +410,7 @@
 			<select type="Feet" name="Epic Boon" number="1" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
 		</rules>
 	</element>
-	
-	
-	<element name="Primal Champion" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
+	<element name="Primal Champion" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION</requirements>
 		<description>
 			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</p>
