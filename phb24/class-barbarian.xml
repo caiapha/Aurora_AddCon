@@ -49,7 +49,7 @@
 			<p>You start with the following equipment (choose A or B), in addition to the equipment granted by your background:</p>
 			<ul>
 				<li><i>(a)</i> a greataxe, four handaxes, an explorer’s pack and and 15 GP, or</li>
-				<li><i>(b)</i>75 GP</li> 
+				<li><i>(b)</i> 75 GP</li> 
 			</ul>
 			<h5 class="caption">THE BARBARIAN</h5>
 			<table class="class-features">
@@ -127,9 +127,9 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE" level="9" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE" level="11" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE" level="15" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" level="18" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_EPIC_BOON" level="19" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT" level="18" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION" level="20" />
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_BARBARIAN">
 			<prerequisite>Strength 13</prerequisite>
@@ -155,6 +155,7 @@
 				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
 			</ul>
 			<p>If you are able to cast spells, you can’t cast them or concentrate on them while raging.</p>
+			<p> </p>
 			<p class="indent">The Rage lasts until the end of your next turn, and it ends early if you drop on Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:</p>
 			<p class="indent">
 			<ul>
@@ -162,6 +163,7 @@
 				<li>Force an enemy to make a saving throw.</li>
 				<li>Take a Bonus Action to extend your Rage.</li>
 			</ul></p>
+			<p> </p>
 			<p class="indent">Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.</p>
 			<p class="indent">You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
@@ -190,7 +192,6 @@
 			-->
 		</rules>
 	</element> 
-<!--  QUI -->
 	<element name="Unarmored Defense" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE</requirements>
 		<description>
@@ -211,39 +212,67 @@
 			<stat name="ac:calculation" value="ac:unarmored defense barbarian" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Barbarian)" />
 		</rules>
 	</element>
-	<element name="Reckless Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
+	
+	
+	<element name="Weapon Mastery" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices. When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.</p>
+		</description>
+		<sheet>
+			<description>You gain {{barbarian weapon mastery}}. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</description>
+		</sheet>
+		<rules>
+			<stat name="barbarian weapon mastery" value="2"  level="1"/>
+			<stat name="barbarian weapon mastery" value="1"  level="5"/>
+			<stat name="barbarian weapon mastery" value="1"  level="10"/>
+		</rules>	
+	</element>
+	<element name="Reckless Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK</requirements>
 		<description>
-			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with increased ferocity. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
 		</description>
 		<sheet>
-			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
+			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</description>
 		</sheet>
 	</element>
-	<element name="Danger Sense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
+	<element name="Danger Sense" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE</requirements>
 		<description>
-			<p>At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.</p>
-			<p class="indent">You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</p>
+			<p>At 2nd level, you gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils.</p>
+			<p class="indent">You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</description>
+			<description>You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</description>
 		</sheet>
 		<rules>
 			<!--<stat name="advantage:Dexterity Saving Throws" condition="against effects that you can see, such as traps and spells. While not blinded, deafened, or incapacitated." />-->
 		</rules>
 	</element>
-	<element name="Primal Path" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_PRIMAL_PATH">
+	<element name="Barbarian Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
-			<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
+			<p>At 3rd level, You gain a Barbarian subclass of your choice. A subclass is a specialization that grants you features at certain Barbarian levels. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Primal Path" supports="Primal Path" level="3" />
+			<select type="Archetype" name="Barbarian subclass" supports="Barbarian subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
+	<element name="Primal Knoledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOLEDGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
+		<description>
+			<p class="indent">You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
+			<p class="indent"> In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check on Acrobatics, Intimidation, Perception, Stealth, or Survival, you can make it as a Strength check.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="1" supports="Skill,Barbarian" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
+		</rules>
+	<!-- QUI -->
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
