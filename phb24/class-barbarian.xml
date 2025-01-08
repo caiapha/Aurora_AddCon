@@ -391,7 +391,7 @@
 			<p class="indent">In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.</p>
 		</description>
 		<sheet>
-			<description usage="1/Long Rest">Rolling initiative, you can regain all expended use of Rage. Now your Rage last for 10 minutes without any action to extend it. Moreover, it ends if you have the Unconscious condition or don an heavy armor.<</description>
+			<description usage="1/Long Rest">Rolling initiative, you can regain all expended use of Rage. Now your Rage last for 10 minutes without any action to extend it. Moreover, it ends if you have the Unconscious condition or don an heavy armor.</description>
 		</sheet>
 	</element>
 	<element name="Indomitable Might" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
