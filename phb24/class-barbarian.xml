@@ -407,7 +407,7 @@
 		<description><p>You gain an Epic Boon feat or another feat of your choice for which you qualify</p></description>
 		<sheet display="false" />
 		<rules>
-			<select type="Feet" name="Epic Boon" number="1" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
+			<select type="Feats" name="Epic Boon" number="1" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
 		</rules>
 	</element>
 	<element name="Primal Champion" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
@@ -421,8 +421,8 @@
 		<rules>
 			<stat name="strength" value="4" />
 			<stat name="constitution" value="4" />
-			<stat name="strength:max" value="4" />
-			<stat name="constitution:max" value="4" />
+			<stat name="strength:max" value="5" />
+			<stat name="constitution:max" value="5" />
 		</rules>
 	</element>
 
