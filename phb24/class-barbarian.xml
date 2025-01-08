@@ -223,7 +223,7 @@
 		</sheet>
 		<rules>
 			<stat name="barbarian weapon mastery" value="2"  level="1"/>
-			<stat name="barbarian weapon mastery" value="1"  level="5"/>
+			<stat name="barbarian weapon mastery" value="1"  level="4"/>
 			<stat name="barbarian weapon mastery" value="1"  level="10"/>
 		</rules>	
 	</element>
