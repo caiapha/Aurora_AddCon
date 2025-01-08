@@ -364,7 +364,7 @@
 			<description>If you drop to 0 hp while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to {{rentless rage hp}} hp instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
 		</sheet>
 		<rules>
-			<stat name="rentless rage hp">2*{{level}}</stat>
+			<stat name="rentless rage hp">[2*{{level}}]</stat>
 		</rules>	
 	</element>
 	<!-- QUI -->
