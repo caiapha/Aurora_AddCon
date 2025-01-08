@@ -404,7 +404,7 @@
 		</sheet>
 	</element>
 	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EPIC_BOON">
-		<description><p>You gain an Epic Boon feat or another feat of your choice for which you qualify</p><description>
+		<description><p>You gain an Epic Boon feat or another feat of your choice for which you qualify</p></description>
 		<sheet display="false" />
 		<rules>
 			<select type="Feet" name="Epic Boon" number="1" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
