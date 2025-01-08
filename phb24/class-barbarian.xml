@@ -346,11 +346,29 @@
 				<li><strong>Forceful Blow.</strong> The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.</li>
 				<li><strong>Hamstring Blow.</strong> The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.</li>
 			</ul>
+			<p class="indent">At 13th level, the following effects are now among your Brutal Strike options.</p>
+			<ul>
+				<li><strong>Staggering Blow.</strong> The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn</li>
+				<li><strong>Sundering Blow.</strong> Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.</li>
+			</ul>
+			<p class="indent"> At 17th level, the extra damage of your Brutal Strike increases to 2d10. In addition, you can use two different Brutal Strike effects whenever you use your Brutal Strike feature.</p>
 		</description>
 		<sheet>
-			<description><p>While using Reckless Attack, you can forego any Advantage on a attack of your choice. If it hits, you can apply one of the following effect:</p>
-				<p><strong>Forceful Blow.</strong> The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.</p>
-				<p><strong>Hamstring Blow.</strong> The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.</p>	
+			<description level="9">While using Reckless Attack, you can forego any Advantage on a attack of your choice. If it hits, the target takes an extra 1d10 damage and you can apply one of the following effect:
+				Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+				Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.	
+			</description>
+			<description level="13">While using Reckless Attack, you can forego any Advantage on a attack of your choice. If it hits, the target takes an extra 1d10 damage , you can apply one of the following effect:
+				Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+				Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
+				Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn
+				Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
+			</description>
+			<description level="17">While using Reckless Attack, you can forego any Advantage on a attack of your choice. If it hits, the target takes an extra 2d10 damage , you can apply two of the following effect:
+				Forceful Blow. The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.
+				Hamstring Blow. The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.
+				Staggering Blow. The target has Disadvantage on the next saving throw it makes, and it can't make Opportunity Attacks until the start of your next turn
+				Sundering Blow. Before the start of your next turn, the next attack roll made by another creature against the target gains a +5 bonus to the roll. An attack roll can gain only one Sundering Blow bonus.
 			</description>
 		</sheet>
 	</element>
