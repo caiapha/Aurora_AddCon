@@ -215,8 +215,6 @@
 			<stat name="ac:calculation" value="ac:unarmored defense barbarian" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Barbarian)" />
 		</rules>
 	</element>
-	
-	
 	<element name="Weapon Mastery" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
 		<description>
 			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices. When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.</p>
@@ -386,14 +384,15 @@
 			<stat name="rentless rage hp" value="level" />
 		</rules>	
 	</element>
-	<!-- QUI -->
-	<element name="Persistant Rage" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
+	<element name="Persistant Rage" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG</requirements>
 		<description>
-			<p>Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</p>
+			<p>Beginning at 15th level, when you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent">In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.</p>
 		</description>
 		<sheet>
-			<description>Your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</description>
+			<description>Your Rage last for 10 minutes without any action to extend it. Moreover, it ends if you have the Unconscious condition or don an heavy armor.</description>
+			<description usage="1/Long Rest">Rolling initiative, you can regain all expended use of Rage.</description>
 		</sheet>
 	</element>
 	<element name="Indomitable Might" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
