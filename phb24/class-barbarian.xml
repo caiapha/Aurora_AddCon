@@ -170,7 +170,10 @@
 		<sheet action="Bonus Action">
 			<description usage="{{barbarian rage:count}}/Long Rest">Advantage on Strength checks and Strength Saves. 
 			A +{{barbarian rage:damage}} to damage rolls with strength weapon attacks. 
-			You have resistance to bludgeoning, piercing, and slashing damage. </description>
+			You have resistance to bludgeoning, piercing, and slashing damage.
+			You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the reage to ne next turn.
+			You can’t cast or concentrate on spell while raging.
+			You regain one expended use when you finish a Short Rest</description>
 		</sheet>
 		<rules>
 			<stat name="barbarian rage:count" value="2" level="1" />
@@ -259,10 +262,10 @@
 			<select type="Archetype" name="Barbarian subclass" supports="Barbarian subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Primal Knoledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
+	<element name="Primal Knowledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
-			<p class="indent">You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
+			<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
 			<p class="indent"> In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>
 		</description>
 		<sheet>
@@ -272,13 +275,11 @@
 			<select type="Proficiency" name="Skill Proficiency (Barbarian)" number="1" supports="Skill,Barbarian" requirements="!ID_WOTC_PHB24_MULTICLASS_BARBARIAN" />
 		</rules>
 	</element>
-	
-	<!-- QUI -->
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -286,10 +287,9 @@
 			<select type="Class Feature" name="Improvement Option (Barbarian 8)" supports="Improvement Option,Barbarian,8" level="8" />
 			<select type="Class Feature" name="Improvement Option (Barbarian 12)" supports="Improvement Option,Barbarian,12" level="12" />
 			<select type="Class Feature" name="Improvement Option (Barbarian 16)" supports="Improvement Option,Barbarian,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Barbarian 19)" supports="Improvement Option,Barbarian,19" level="19" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
@@ -301,7 +301,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Fast Movement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
+	<element name="Fast Movement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT</requirements>
 		<description>
 			<p>Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.</p>
@@ -317,30 +317,41 @@
 			<stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
-	<element name="Feral Instinct" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
+	<element name="Feral Instinct" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
 			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
-			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on initiative rolls. 
-			If you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</description>
+			<description>You have advantage on initiative rolls.</description>
 		</sheet>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
 		</rules>
 	</element>
-	<element name="Brutal Critical" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_BRUTAL_CRITICAL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
+	<element name="Instinct Pounce" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_INSTINCT_POUNCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
-			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
-			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+			<p>By 7th level, as part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p>
 		</description>
 		<sheet>
-			<description>One additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
-			<description level="13">Two additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
-			<description level="17">Three additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+			<description>As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed</description>
+		</sheet>
+	</element>
+	<element name="Brutal Strike" type="Class Feature" source="Player’s Handbook Revò. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
+		<description>
+			<p>Beginning at 9th level, If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn't have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.</p>
+			<ul>
+				<li><strong>Forceful Blow.</strong> The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.</li>
+				<li><strong>Hamstring Blow.</strong> The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description><p>While using Reckless Attack, you can forego any Advantage on a attack of your choice. If it hits, you can apply one of the following effect:</p>
+				<p><strong>Forceful Blow.</strong> The target is pushed 15 feet straight away from you. You can then move up to half your Speed straight toward the target without provoking Opportunity Attacks.</p>
+				<p><strong>Hamstring Blow.</strong> The target's Speed is reduced by 15 feet until the start of your next turn. A target can be affected by only one Hamstring Blow at a time—the most recent one.</p>	
+			</description>
 		</sheet>
 	</element>
 	<element name="Relentless Rage" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
