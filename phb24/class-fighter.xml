@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Fighter</name>
-		<update version="0.4.2">
-			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-fighter.xml" />
+		<name>Fighter from the Player’s Handbook Rev. 2024</name>
+		<update version="0.0.0">
+			<file name="class-fighter.xml" url="class-fighter.xml" />
 		</update>
 	</info>
 
-	<element name="Fighter" type="Class" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FIGHTER">
+	<element name="Fighter" type="Class" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FIGHTER">
 		<description>
 			<p>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.</p>
 			<p class="indent">A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.</p>
