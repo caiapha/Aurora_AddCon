@@ -76,8 +76,8 @@
 			</table>
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" />
-			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" />
+			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
@@ -107,8 +107,8 @@
 			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" level="1"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" level="1"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" level="2"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" level="2"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
@@ -180,6 +180,14 @@
 			<stat name="second wind usage" value="1" level="10"/>
 		</rules>
 	</element>
+	
+	
+	
+	
+	
+	
+	
+	
 	<!-- QUI -->	
 	<element name="Action Surge" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ACTION_SURGE</requirements>
@@ -334,7 +342,7 @@
 			<description>When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.</description>
 		</sheet>
 	</element>
-	<element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook rEV. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+	<element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
 			<p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</p>
@@ -343,7 +351,7 @@
 			<description>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</description>
 		</sheet>
 	</element>
-	<element name="Unarmed Fighting" type="Class Feature" source="Player’s Handbook rEV. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_UNARMED_FIGHTING">
+	<element name="Unarmed Fighting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_UNARMED_FIGHTING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
 			<p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</p>
