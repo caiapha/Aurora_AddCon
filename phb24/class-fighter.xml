@@ -78,8 +78,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" />
-			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
+			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
@@ -109,8 +109,8 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" level="2"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" level="2"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" level="2"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
@@ -196,7 +196,7 @@
 			<stat name="Fighter weapon mastery" value="1"  level="16"/>
 		</rules>	
 	</element>
-	<element name="Action Surge" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE">
+	<element name="Action Surge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ACTION_SURGE</requirements>
 		<description>
 			<p>Starting at 2nd level, You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.</p>
@@ -207,6 +207,22 @@
 			<description usage="2/Short Rest" level="17">On your turn, you can take one additional action on top of your regular action.</description>
 		</sheet>
 	</element>
+	<element name="Tactical Mind" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ACTION_SURGE</requirements>
+		<description>
+			<p>You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>
+		</description>
+		<sheet>
+			<description>When you fail an ability check, you can expend a second wind use to roll 1d10 and add the result to the ability check. If the check still fails, this use of Second Wind isn't expended.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
+	<!-- QUI -->
 	<element name="Martial Archetype" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MARTIALARCHETYPE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_MARTIAL_ARCHETYPE</requirements>
 		<description>
