@@ -39,49 +39,54 @@
             </ul>
             <ul class="unstyled">
                 <li><strong>Saving Throws:</strong> Strength, Constitution</li>
-                <li><strong>Skills:</strong> Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival</li>
+                <li><strong>Skills:</strong> Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, and Survival</li>
             </ul>
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
 			<ul>
-				<li><i>(a)</i> chain mail or <i>(b)</i> leather armor, longbow, and 20 arrows</li>
-				<li><i>(a)</i> a martial weapon and a shield or <i>(b)</i> two martial weapons</li>
-				<li><i>(a)</i> a light crossbow and 20 bolts or <i>(b)</i> two handaxes</li>
-				<li><i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
+				<li><i>(a)</i>Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4 GP</li>
+				<li><i>(b)</i>Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack, and 11 GP</li>
+				<li><i>(c)</i>155 GP</li> 
 			</ul>
 			<h5 class="caption">THE FIGHTER</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td></tr>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td>Second Wind</td><td>Weapon Masteries</td><td class="left">Features</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Fighting Style, Second Wind</td></tr>
-				<tr><td> 2nd</td><td class="left">Action Surge (one use)</td></tr>
-				<tr><td> 3rd</td><td class="left">Martial Archetype</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td> 5th</td><td class="left">Extra Attack</td></tr>
-				<tr><td> 6th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td> 7th</td><td class="left">Martial Archetype feature</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td> 9th</td><td class="left">Indomitable (one use)</td></tr>
-				<tr><td>10th</td><td class="left">Martial Archetype feature</td></tr>
-				<tr><td>11th</td><td class="left">Extra Attack (2)</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>13th</td><td class="left">Indomitable (two uses)</td></tr>
-				<tr><td>14th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>15th</td><td class="left">Martial Archetype feature</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td class="left">Action Surge (two uses), Indomitable (three uses)</td></tr>
-				<tr><td>18th</td><td class="left">Martial Archetype feature</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>20th</td><td class="left">Extra Attack (3)</td></tr>
+				<tr><td> 1st</td><td>+2</td><td>2</td><td>3</td><td class="left">Fighting Style, Second Wind, Weapon Mastery</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td>2</td><td>3</td><td class="left">Action Surge, Tactical Mind</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td>2</td><td>3</td><td class="left">Fighter subclass</td></tr>
+				<tr><td> 4th</td><td>+2</td><td>3</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 5th</td><td>+3</td><td>3</td><td>4</td><td class="left">Extra Attack, Tactical shift</td></tr>
+				<tr><td> 6th</td><td>+3</td><td>3</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 7th</td><td>+3</td><td>3</td><td>4</td><td class="left">Fighter subclass feature</td></tr>
+				<tr><td> 8th</td><td>+3</td><td>3</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>+4</td><td>3</td><td>4</td><td class="left">Indomitable, Tactical Master</td></tr>
+				<tr><td>10th</td><td>+4</td><td>4</td><td>5</td><td class="left">Fighter Subclass feature</td></tr>
+				<tr><td>11th</td><td>+4</td><td>4</td><td>5</td><td class="left">Two Extra Attacks</td></tr>
+				<tr><td>12th</td><td>+4</td><td>4</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>+5</td><td>4</td><td>5</td><td class="left">Indomitable, Studied Attacks</td></tr>
+				<tr><td>14th</td><td>+5</td><td>4</td><td>5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>15th</td><td>+5</td><td>4</td><td>5</td><td class="left">Fighter subclass feature</td></tr>
+				<tr><td>16th</td><td>+5</td><td>4</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>+6</td><td>4</td><td>6</td><td class="left">Action Surge, Indomitable</td></tr>
+				<tr><td>18th</td><td>+6</td><td>4</td><td>6</td><td class="left">Fighter subclass feature</td></tr>
+				<tr><td>19th</td><td>+6</td><td>4</td><td>6</td><td class="left">Epic Boon</td></tr>
+				<tr><td>20th</td><td>+6</td><td>4</td><td>6</td><td class="left">Three Extra Attacks</td></tr>
 			</table>
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_MARTIALARCHETYPE" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_INDOMITABLE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" />
+			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" /> -->
 		</description>
 		<sheet display="false">
 			<description>A master of martial combat, skilled with a variety of weapons and armor.</description>
@@ -91,22 +96,28 @@
 			<set name="hd">d10</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE" level="2"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MARTIALARCHETYPE" level="3"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="5"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_INDOMITABLE" level="9"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_FIGHTER"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND" level="1"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" level="2"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" level="19"/> -->
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_FIGHTER">
 			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
@@ -124,37 +135,52 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE">
+	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_FIGHTING_STYLE</requirements>
 		<description>
-			<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p>You have honed your martial prowess and gain a Fighting Style feat of your choice. Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.</p>
 			<h5 class="caption">ARCHERY</h5>
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<h5 class="caption">BLIND FIGHTING</h5>
+			<p>You have Blindsight with a range of 10 feet.</p>
 			<h5 class="caption">DEFENSE</h5>
 			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
 			<h5 class="caption">DUELING</h5>
 			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
 			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
-			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<p>When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.</p>
+			<h5 class="caption">INTERCEPTION</h5>
+			<p>When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d10 plus your Proficiency Bonus. You must be holding a Shield or a Simple or Martial weapon to use this Reaction.</p>
 			<h5 class="caption">PROTECTION</h5>
-			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.</p>
+			<h5 class="caption">THROWN WEAPON FIGHTING</h5>
+			<p>When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.</p>
 			<h5 class="caption">TWO-WEAPON FIGHTING</h5>
-			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+			<p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage</p>
+			<h5 class="caption">UNARMED FIGHTING</h5>
+			<p>When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d6 plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8. 
+			At the start of each of your turns, you can deal 1d4 Bludgeoning damage to one creature Grappled by you.</p>
 		</description>
 		<rules>
 			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Fighter" level="1"/>
 		</rules>
 	</element>
-	<element name="Second Wind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND">
+	<element name="Second Wind" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_SECONDWIND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_SECOND_WIND</requirements>
 		<description>
-			<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</p>
-			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+			<p>You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.</p>
+			<p class="indent">You can use this feature {{second wind usage}} times. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet action="Bonus Action" usage="1/Short Rest">
+		<sheet action="Bonus Action" usage="{{second wind usage}}/Long Rest">
 			<description>You regain 1d10+{{level:fighter}} hp.</description>
 		</sheet>
+		<rules>
+			<stat name="second wind usage" value="2" level="1"/>
+			<stat name="second wind usage" value="1" level="4"/>
+			<stat name="second wind usage" value="1" level="10"/>
+		</rules>
 	</element>
+	<!-- QUI -->	
 	<element name="Action Surge" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ACTIONSURGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ACTION_SURGE</requirements>
 		<description>
@@ -227,8 +253,8 @@
 	</element>
 
 	<!-- Fighting Styles -->
-	<element name="Archery" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
-		<supports>Fighting Style, Fighter, Ranger</supports>
+	<element name="Archery" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
 			<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
 		</description>
@@ -239,7 +265,16 @@
 			<stat name="ranged:attack" value="2" />
 		</rules>
 	</element>
-	<element name="Defense" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+	<element name="Blind Fighting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_BLIND_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>You have Blindsight with a range of 10 feet.</p>
+		</description>
+		<sheet>
+			<description>You have Blindsight with a range of 10 feet.</description>
+		</sheet>
+	</element>
+	<element name="Defense" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
 			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
@@ -251,43 +286,70 @@
 			<stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Defense (Fighting Style)" />
 		</rules>
 	</element>
-	<element name="Dueling" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+	<element name="Dueling" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<p>When you're holding a Melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
 		</description>
 		<sheet>
-			<description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
+			<description>When you're holding a Melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</description>
 		</sheet>
 		<rules>
 			<!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
 		</rules>
 	</element>
-	<element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
-		<supports>Fighting Style, Fighter, Paladin</supports>
+	<element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<p>When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.</p>
 		</description>
 		<sheet>
-			<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+			<description>When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.</description>
 		</sheet>
 	</element>
-	<element name="Protection" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
-		<supports>Fighting Style, Fighter, Paladin</supports>
+	<element name="Interception" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_INTERCEPTION">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+			<p>When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d10 plus your Proficiency Bonus. You must be holding a Shield or a Simple or Martial weapon to use this Reaction.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</description>
+			<description>When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d10 plus your Proficiency Bonus. You must be holding a Shield or a Simple or Martial weapon to use this Reaction.</description>
 		</sheet>
 	</element>
-	<element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
-		<supports>Fighting Style, Fighter, Ranger</supports>
+	<element name="Protection" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
 		<description>
-			<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see attacks a target other than you that is within 5 feet of you, you can take a Reaction to interpose your Shield if you're holding one. You impose Disadvantage on the triggering attack roll and all other attack rolls against the target until the start of your next turn if you remain within 5 feet of the target.</description>
+		</sheet>
+	</element>
+	<element name="Thrown Weapon Fighting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_THROWN_WEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.</p>
 		</description>
 		<sheet>
-			<description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+			<description>When you hit with a ranged attack roll using a weapon that has the Thrown property, you gain a +2 bonus to the damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Two-Weapon Fighting" type="Class Feature" source="Player’s Handbook rEV. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</p>
+		</description>
+		<sheet>
+			<description>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</description>
+		</sheet>
+	</element>
+	<element name="Unarmed Fighting" type="Class Feature" source="Player’s Handbook rEV. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_UNARMED_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<description>
+			<p>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</p>
+		</description>
+		<sheet>
+			<description>When you make an extra attack as a result of using a weapon that has the Light property, you can add your ability modifier to the damage of that attack if you aren't already adding it to the damage.</description>
 		</sheet>
 	</element>
 
