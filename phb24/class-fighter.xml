@@ -79,9 +79,9 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
-			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
+			<!-- <div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
@@ -110,9 +110,9 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WEAPON_MASTERY" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ACTIONSURGE" level="2"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MIND" level="2"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
@@ -216,28 +216,21 @@
 			<description>When you fail an ability check, you can expend a second wind use to roll 1d10 and add the result to the ability check. If the check still fails, this use of Second Wind isn't expended.</description>
 		</sheet>
 	</element>
-	
-	
-	
-	
-	
-	
-	<!-- QUI -->
-	<element name="Martial Archetype" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MARTIALARCHETYPE">
+	<element name="Fighter subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_MARTIAL_ARCHETYPE</requirements>
 		<description>
-			<p>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
+			<p>At 3rd level, You gain a Fighter subclass of your choice. A subclass is a specialization that grants you features at certain Fighter levels. For the rest of your career, you gain each of your subclass's features that are of your Fighter level or lower.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Martial Archetype" supports="Martial Archetype" level="3" />
+			<select type="Archetype" name="Fighter subclass" supports="Fighter subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER">
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -247,9 +240,9 @@
 			<select type="Class Feature" name="Improvement Option (Fighter 12)" supports="Improvement Option,Fighter,12" level="12" />
 			<select type="Class Feature" name="Improvement Option (Fighter 14)" supports="Improvement Option,Fighter,14" level="14" />
 			<select type="Class Feature" name="Improvement Option (Fighter 16)" supports="Improvement Option,Fighter,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Fighter 19)" supports="Improvement Option,Fighter,19" level="19" />
 		</rules>
 	</element>
+	<!-- QUI -->
 	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_EXTRA_ATTACK</requirements>
 		<description>
