@@ -12,8 +12,8 @@
 		<description>
 			<p>Eldritch Knights combine the martial mastery common to all Fighters with a careful study of magic. Their spells both complement and extend their combat skills, providing additional protection to shore up their armor and also allowing them to engage many foes at once with explosive magic.</p>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING"/>
-			<!-- <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND"/>
-			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND"/>
+			<!--<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC"/> -->
@@ -23,8 +23,8 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" level="3"/>
-		<!-- 	<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" level="7"/>
+		 	<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND" level="3"/>
+			<!--<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" level="7"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE" level="15"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" level="18"/> -->
@@ -103,8 +103,7 @@
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
 		</rules>
 	</element>
-	<!-- QUI -->
-	<element name="Weapon Bond" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND">
+	<element name="Weapon Bond" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WEAPON_BOND</requirements>
 		<description>
 			<p>At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</p>
@@ -117,6 +116,7 @@
 			You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</description>
 		</sheet>
 	</element>
+	<!-- QUI -->
 	<element name="War Magic" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC</requirements>
 		<description>
