@@ -84,8 +84,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
-			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
+			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" /> -->
 		</description>
 		<sheet display="false">
@@ -115,8 +115,8 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" level="19"/> -->
 		</rules>
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_FIGHTER">
@@ -242,7 +242,6 @@
 			<select type="Class Feature" name="Improvement Option (Fighter 16)" supports="Improvement Option,Fighter,16" level="16" />
 		</rules>
 	</element>
-	<!-- QUI -->
 	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_EXTRA_ATTACK</requirements>
 		<description>
@@ -260,7 +259,6 @@
 			<stat name="extra attack:count" value="4" level="20" bonus="extra attack" />
 		</rules>
 	</element>
-	<!-- QUI -->
 	<element name="Tactical Shift" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_INDOMITABLE</requirements>
 		<description>
@@ -286,7 +284,17 @@
 			<stat name="indomitable bonus" value="level" />	
 		</rules>
 	</element>
+	<element name="Tactical Master" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_INDOMITABLE</requirements>
+		<description>
+			<p>Beginning at 9th level, When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.</p>
+		</description>
+		<sheet >
+			<description>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.</description>
+		</sheet>
+	</element>
 
+	
 	<!-- Fighting Styles -->
 	<element name="Archery" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
 		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
