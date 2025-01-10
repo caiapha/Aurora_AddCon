@@ -83,8 +83,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
-			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
+			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" /> -->
 		</description>
@@ -114,8 +114,8 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" level="19"/> -->
 		</rules>
@@ -270,25 +270,20 @@
 			<description> whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</description>
 		</sheet>
 	</element>
-	
-	
-	
-	
-	
-	
-	<element name="Indomitable" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_INDOMITABLE">
+	<element name="Indomitable" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_INDOMITABLE</requirements>
 		<description>
-			<p>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.</p>
-			<p class="indent">You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</p>
+			<p>Beginning at 9th level, if you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest.</p>
+			<p class="indent">You can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17</p>
 		</description>
 		<sheet usage="{{indomitable:usage}}/Long Rest">
-			<description>You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
+			<description>You can reroll a saving throw that you fail. If you do so, you add {{indomitable bonus}} to the roll and you must use the new roll.</description>
 		</sheet>
 		<rules>
 			<stat name="indomitable:usage" value="1" level="9" />
 			<stat name="indomitable:usage" value="1" level="13" />
 			<stat name="indomitable:usage" value="1" level="17" />
+			<stat name="indomitable bonus" value="level" />	
 		</rules>
 	</element>
 
