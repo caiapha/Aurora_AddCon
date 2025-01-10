@@ -82,8 +82,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" />
-			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
+			<!--<div element="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" /> -->
@@ -113,8 +113,8 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_FIGHTER_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" level="4"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EXTRAATTACK" level="5"/>
-			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" level="5"/>
+			<!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_INDOMITABLE" level="9"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_MASTER" level="9"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_EPIC_BOON" level="19"/> -->
@@ -261,6 +261,21 @@
 		</rules>
 	</element>
 	<!-- QUI -->
+	<element name="Tactical Shift" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_TACTICAL_SHIFT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_INDOMITABLE</requirements>
+		<description>
+			<p>Beginning at 5th level, whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet>
+			<description> whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+	
+	
+	
+	
+	
+	
 	<element name="Indomitable" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_INDOMITABLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_INDOMITABLE</requirements>
 		<description>
