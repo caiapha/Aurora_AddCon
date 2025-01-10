@@ -91,16 +91,16 @@
 			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), 1" level="3" number="2" spellcasting="Eldritch Knight" />
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="($(spellcasting:list)||Wizard), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
 		</rules>
 	</element>
 	<!-- QUI -->
