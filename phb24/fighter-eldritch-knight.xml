@@ -111,7 +111,7 @@
 			<p class="indent">You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</p>
 		</description>
 		<sheet>
-			<description>You learn a 1 hour ritual that magically bond up to two weapons to you. You can perform the ritual during a short rest. you can’t be disarmed of that weapon unless you are incapacitated. As a Bonus Action, you can summon one weapon per turn.</description>
+			<description>You learn a 1 hour ritual that magically bond up to two weapons to you. You can perform the ritual during a short rest. You can’t be disarmed of that weapon unless you are incapacitated. As a Bonus Action, you can summon one of these weapon per turn.</description>
 		</sheet>
 	</element>
 	<!-- QUI -->
