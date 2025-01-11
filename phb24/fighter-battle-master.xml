@@ -89,7 +89,7 @@
 			<stat name="superiority dice:size" value="12" level="18" bonus="size"/>
 		</rules>
 	</element>
-	<element name="Relentless" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
+	<element name="Relentless" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_RELENTLESS</requirements>
 		<description>
 			<p>Starting at 15th level, once per turn, when you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.</p>
