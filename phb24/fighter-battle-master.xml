@@ -15,7 +15,7 @@
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
-			<!--<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>	-->
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>
 		</description>
 		<sheet display="false">
 			<description>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations.</description>
@@ -25,7 +25,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
-			<!--<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/> -->
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/>
 		</rules>
 	</element>
 	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook Rev 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
@@ -92,10 +92,10 @@
 	<element name="Relentless" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_RELENTLESS</requirements>
 		<description>
-			<p>Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</p>
+			<p>Starting at 15th level, once per turn, when you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.</p>
 		</description>
-		<sheet>
-			<description>When you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</description>
+		<sheet usage="1/Turn">
+			<description>When you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.</description>
 		</sheet>
 	</element>
 
