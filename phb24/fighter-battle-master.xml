@@ -8,7 +8,7 @@
 
 	<!-- Battle Master Archetype -->
 	<element name="Battle Master" type="Archetype" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FIGHTER_BATTLE_MASTER">
-		<supports>Martial Archetype</supports>
+		<supports>Fighter subclass</supports>
 		<description>
 			<p>Battle Masters are students of the art of battle, learning martial techniques passed down through generations. The most accomplished Battle Masters are well-rounded figures who combine their carefully honed combat skills with academic study in the fields of history, theory, and the arts.</p>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
