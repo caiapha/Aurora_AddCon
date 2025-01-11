@@ -12,8 +12,8 @@
 		<description>
 			<p>Battle Masters are students of the art of battle, learning martial techniques passed down through generations. The most accomplished Battle Masters are well-rounded figures who combine their carefully honed combat skills with academic study in the fields of history, theory, and the arts.</p>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
-			<!-- <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
-			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
+			<!--<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>	-->
 		</description>
@@ -22,8 +22,8 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" level="3"/>
-			<!-- <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
+			<!-- <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/> -->
 		</rules>
@@ -55,14 +55,15 @@
 			<select type="Archetype Feature" name="Combat Superiority (Level 15)" supports="Maneuver,Battle Master" number="2" level="15" />
 		</rules>
 	</element>
-	<element name="Student of War" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
+	<element name="Student of War" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_STUDENT_OF_WAR</requirements>
 		<description>
-			<p>At 3rd level, you gain proficiency with one type of artisan’s tools of your choice.</p>
+			<p>At 3rd level, you gain proficiency with one type of Artisan's Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Student of War" supports="Artisan tools" />
+			<select type="Proficiency" name="Student of War tool" supports="Artisan tools" />
+			<select type="Proficiency" name="Student of War skill" support="skillist:Fighter" />
 		</rules>
 	</element>
 	<element name="Know Your Enemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY">
