@@ -63,7 +63,7 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="Student of War tool" supports="Artisan tools" />
-			<select type="Proficiency" name="Student of War skill" support="skillist:Fighter" />
+			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="1" />
 		</rules>
 	</element>
 	<element name="Know Your Enemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY">
