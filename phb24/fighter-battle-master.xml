@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-battle-master.xml" />
+		<update version="0.0.0">
+			<file name="fighter-battle-master.xml" url="fighter-battle-master.xml" />
 		</update>
 	</info>
 
 	<!-- Battle Master Archetype -->
-	<element name="Battle Master" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FIGHTER_BATTLE_MASTER">
+	<element name="Battle Master" type="Archetype" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FIGHTER_BATTLE_MASTER">
 		<supports>Martial Archetype</supports>
 		<description>
-			<p>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations. To a Battle Master, combat is an academic field, sometimes including subjects beyond battle such as weaponsmithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Battle Master archetype, but those who do are well-rounded fighters of great skill and knowledge.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>
+			<p>Battle Masters are students of the art of battle, learning martial techniques passed down through generations. The most accomplished Battle Masters are well-rounded figures who combine their carefully honed combat skills with academic study in the fields of history, theory, and the arts.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
+			<!-- <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>	-->
 		</description>
 		<sheet display="false">
 			<description>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" level="3"/>
+			<!-- <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/> -->
 		</rules>
 	</element>
-	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
+	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook Rev 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY</requirements>
 		<description>
-			<p>When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.</p>
-			<p class="indent"><strong><em>Maneuvers.</em></strong> You learn three maneuvers of your choice, which are detailed under “Maneuvers” below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
-			<p class="indent"><strong><em>Superiority Dice.</em></strong> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p>
-			<p class="indent"><strong><em>Saving Throws.</em></strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:</p>
-			<center>
-				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
-			</center>
+			<p>Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by special dice called Superiority Dice.</p>
+			<p class="indent"><strong><em>Maneuvers.</em></strong> You learn three maneuvers of your choice from the "Maneuvers Options" section later in this subclass's description. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice when you reach Fighter levels 7, 10, and 15. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
+			<p class="indent"><strong><em>Superiority Dice.</em></strong>  You have four Superiority Dice, which are d8s. A Superiority Die is expended when you use it. You regain all expended Superiority Dice when you finish a Short or Long Rest. You gain an additional Superiority Die when you reach Fighter levels 7 (five dice total) and 15 (six dice total).</p>
+			<p class="indent"><strong><em>Saving Throws.</em></strong>  If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and Proficiency Bonus.</p>
 		</description>
 		<sheet>
 			<description>You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. DC {{superiority dice:dc}}</description>
