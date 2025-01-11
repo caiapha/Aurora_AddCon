@@ -28,7 +28,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/>
 		</rules>
 	</element>
-	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook Rev 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
+	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY</requirements>
 		<description>
 			<p>Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by special dice called Superiority Dice.</p>
