@@ -30,7 +30,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" level="18"/>
 		</rules>
 	</element>
-	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
+	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING</requirements>
 		<description>
 			<p>You have learned to cast spells. See chapter 7 for the rules on spellcasting. The information below details how you use those rules as an Eldritch Knight.</p>
@@ -115,7 +115,7 @@
 		</sheet>
 	</element>
 	
-	<element name="War Magic" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
+	<element name="War Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC</requirements>
 		<description>
 			<p>Beginning at 7th level, when you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</p>
@@ -125,7 +125,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Eldritch Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE">
+	<element name="Eldritch Strike" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ELDRITCH_STRIKE</requirements>
 		<description>
 			<p>At 10th level, You learn how to make your weapon strikes undercut a creature's ability to withstand your spells. When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</p>
@@ -134,7 +134,7 @@
 			<description>When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Arcane Charge" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE">
+	<element name="Arcane Charge" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ARCANE_CHARGE</requirements>
 		<description>
 			<p>At 15th level, when you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</p>
@@ -143,7 +143,7 @@
 			<description>When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</description>
 		</sheet>
 	</element>
-	<element name="Improved War Magic" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC">
+	<element name="Improved War Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC</requirements>
 		<description>
 			<p>Starting at 18th level, when you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action.</p>
