@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Barbarian PHB'24</name>
+		<name>Barbarian</name>
 		<description>The Barbarian class from the Player’s Handbook Rev 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
 		<update version="0.0.1">
@@ -370,7 +370,7 @@
 			</description>
 		</sheet>
 	</element>
-	<element name="Relentless Rage" type="Class Feature" source="Player’s Handbook Rev 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
+	<element name="Relentless Rage" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE</requirements>
 		<description>
 			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
