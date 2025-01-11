@@ -172,7 +172,7 @@
 			<description>You can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.</description>
 		</sheet>
 	</element>
-	<element name="Goading Attack" type="Archetype Feature" source="Player’s Handbook Rev.2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_GOADING_ATTACK">
+	<element name="Goading Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_GOADING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
 			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>
