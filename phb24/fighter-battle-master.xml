@@ -37,7 +37,7 @@
 			<p class="indent"><strong><em>Saving Throws.</em></strong>  If a maneuver requires a saving throw, the DC equals 8 plus your Strength or Dexterity modifier (your choice) and Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. Your DC is {{superiority dice:dc}}</description>
+			<description>You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. Your DC is {{superiority dice:dc}}. You can use only one maneuver per attack.</description>
 		</sheet>
 		<rules>
 			<stat name="superiority dice:amount" value="4" />
@@ -100,148 +100,184 @@
 	</element>
 
 	<!-- Combat Maneuvers -->
-	<element name="Commander’s Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_COMMANDERS_STRIKE">
+	<element name="Ambush" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_AMBUSH">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack’s damage roll.</p>
+			<p>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</p>
 		</description>
 		<sheet>
-			<description>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack’s damage roll.</description>
+			<description>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</description>
 		</sheet>
 	</element>
-	<element name="Disarming Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_DISARMING_ATTACK">
+	<element name="Bait and Switch" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_BAIT_AND_SWITCH">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it’s holding. You add the superiority die to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
+			<p>When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks. Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it’s holding. You add the superiority die to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</description>
+			<description>When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks. Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</description>
 		</sheet>
 	</element>
-	<element name="Distracting Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_DISTRACTING_STRIKE">
+	<element name="Commander’s Strike" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_COMMANDERS_STRIKE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack's damage roll on a hit.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</description>
+			<description>When you take the Attack action on your turn, you can forego one of your attacks and expend a Superioriti Die. A willing creature of your choice can expend his Reaction to immediately attack adding the Superiority Die to the damage roll on a hit.</description>
 		</sheet>
 	</element>
-	<element name="Evasive Footwork" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_EVASIVE_FOOTWORK">
+	<element name="Commanding Presence" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_COMMANDING_PRESENCE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p>
+			<p>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll</p>
 		</description>
 		<sheet>
-			<description>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</description>
+			<description>When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll</description>
 		</sheet>
 	</element>
-	<element name="Feinting Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_FEINTING_ATTACK">
+	<element name="Disarming Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_DISARMING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack’s damage roll.</p>
+			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</p>
 		</description>
 		<sheet>
-			<description>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack’s damage roll.</description>
+			<description>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.</description>
 		</sheet>
 	</element>
-	<element name="Goading Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_GOADING_ATTACK">
+	<element name="Distracting Strike" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_DISTRACTING_STRIKE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>
+			<description>When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Lunging Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_LUNGING_ATTACK">
+	<element name="Evasive Footwork" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_EVASIVE_FOOTWORK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack’s damage roll.</p>
+			<p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus action">
+			<description>You can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Feinting Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_FEINTING_ATTACK">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Goading Attack" type="Archetype Feature" source="Player’s Handbook Rev.2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_GOADING_ATTACK">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</p>
 		</description>
 		<sheet>
-			<description>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack’s damage roll.</description>
+			<description>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Maneuvering Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_MANEUVERING_ATTACK">
+	<element name="Lunging Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_LUNGING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack’s damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</p>
+			<p> As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Maneuvering Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_MANEUVERING_ATTACK">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack’s damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</description>
+			<description>When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.</description>
 		</sheet>
 	</element>
-	<element name="Menacing Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_MENACING_ATTACK">
+	<element name="Menacing Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_MENACING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</p>
+			<p>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</description>
+			<description>When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Parry" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_PARRY">
+	<element name="Parry" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_PARRY">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier.</p>
+			<p>When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).</p>
 		</description>
 		<sheet action="Reaction">
 			<description>When another creature damages you with a melee attack, you can expend one superiority die to reduce the damage by the number you roll on your superiority die + {{dexterity:modifier}}.</description>
 		</sheet>
 	</element>
-	<element name="Precision Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_PRECISION_ATTACK">
+	<element name="Precision Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_PRECISION_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</p>
+			<p>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.</p>
 		</description>
 		<sheet>
-			<description>When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</description>
+			<description>When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.</description>
 		</sheet>
 	</element>
-	<element name="Pushing Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_PUSHING_ATTACK">
+	<element name="Pushing Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_PUSHING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
+			<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>
+			<description>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.</description>
 		</sheet>
 	</element>
-	<element name="Rally" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_RALLY">
+	<element name="Rally" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_RALLY">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.</p>
+			<p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>On your turn, you can expend one superiority die. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hp equal to the superiority die roll + {{charisma:modifier}}.</description>
-		</sheet>
+			<description>You can expend one Superiority Die to choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus {{level:fighter:half}}.</description>
+		</sheet>	
 	</element>
-	<element name="Riposte" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_RIPOSTE">
+	<element name="Riposte" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_RIPOSTE">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</p>
+			<p>When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When a creature misses you with a melee attack, you can expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</description>
+			<description>When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage.</description>
 		</sheet>
 	</element>
-	<element name="Sweeping Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_SWEEPING_ATTACK">
+	<element name="Sweeping Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_SWEEPING_ATTACK">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</p>
+			<p>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</description>
+			<description>When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.</description>
 		</sheet>
 	</element>
-	<element name="Trip Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_TRIP_ATTACK">
+	<element name="Tactical Assessment" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_TACTICAL_ASSESSMENT">
 		<supports>Maneuver, Battle Master</supports>
 		<description>
-			<p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
+			<p>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</description>
+			<description>When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.</description>
+		</sheet>
+	</element>
+	<element name="Trip Attack" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MANEUVER_TRIP_ATTACK">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</description>
 		</sheet>
 	</element>
 	
