@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.0">
-			<file name="sources.xml" url="/source.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/source.xml" />
 		</update>
 	</info>
 	<element name="Player’s Handbook 2024 Revision" type="Source" source="Core" id="ID_WOTC_SOURCE_PLAYERS_HANDBOOK_24">
