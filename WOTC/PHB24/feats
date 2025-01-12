@@ -1,0 +1,19 @@
+<elements>
+	<info>
+		<name>Feats from the PHB'24</name>
+		<description>Feats from the Player’s Handbook.</description>
+		<author url="">Wizards of the Coast</author>
+		<update version="0.0.0">
+		<file name="feats.xml" url="feats.xml"/>
+		</update>
+	</info>
+<element name="Epic Boon" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_EPIC_BOON">
+	<requirements>[Level:19]</requirements>
+	<description>
+		<p>Epic Boon</p>
+	</description>
+	<sheet>
+		<description>Epic Boon</description>
+	</sheet>
+</element>
+</elements>
