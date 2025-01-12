@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<!-- <file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/feats.xml" /> -->
+		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/feats.xml" />
 		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" />
 		<file name="class-fighter.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-fighter.xml" />
 			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-battle-master.xml" />
