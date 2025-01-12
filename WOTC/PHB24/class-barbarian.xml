@@ -4,7 +4,7 @@
 		<name>Barbarian</name>
 		<description>The Barbarian class from the Player’s Handbook Rev 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-barbarian.xml" url="class-barbarian.xml" />
 		</update>
 	</info>
@@ -168,11 +168,10 @@
 			<p class="indent">You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description usage="{{barbarian rage:count}}/Long Rest">
-				<p>You gain Advantage on Strength checks and Strength Saves and a +{{barbarian rage:damage}} to damage rolls with strength weapon attacks.
+			<description usage="{{barbarian rage:count}}/Long Rest">You gain Advantage on Strength checks and Strength Saves and a +{{barbarian rage:damage}} to damage rolls with strength weapon attacks.
 					You have resistance to bludgeoning, piercing, and slashing damage.
 					You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the reage to ne next turn. You can’t cast or concentrate on spell while raging.
-					You regain one expended use when you finish a Short Rest</p>
+					You regain one expended use when you finish a Short Rest
 			</description>
 		</sheet>
 		<rules>
