@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ASI2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase 2" supports="ASI2" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement (2 STAT +1)" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_1">
@@ -26,7 +26,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" value="2" supports="ASI1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase 1" value="2" supports="ASI1" />
 		</rules>
 	</element>
 
