@@ -20,7 +20,7 @@
 			<file name="fighter-psi.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-psi.xml" />
 
 		<!-- Misc -->
-		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/feats.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/feats.xml" />
 
 	</files>
 </index>
