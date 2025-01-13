@@ -4,7 +4,7 @@
 		<name>Player's Handbook - 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/PHB24.index" />
 		</update>
 	</info>
@@ -15,5 +15,6 @@
 		<file name="class-fighter.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-fighter.xml" />
 			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-battle-master.xml" />
 			<file name="fighter-eldritch-knight.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-eldritch-knight.xml" />
+			<file name="fighter-champion.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/fighter-champion.xml" />
 	</files>
 </index>
