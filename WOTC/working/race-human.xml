@@ -49,8 +49,8 @@
 		<rules>
 			<select type="Size" name="Human Size" id="ID_SIZE_MEDIUM||ID_SIZE_SMALL" />
 			<stat name="innate speed" value="30" bonus="base"/>
-			<select type="proficiency" name="Skill Proficiency (Human)" number="1"/>
-			<select type="feat" name="Additional Feat (Human)" number="1" />
+			<select type="Proficiency" name="Skill Proficiency (Human)" number="1" support="Skill" />
+			<select type="Feat" name="Additional Feat (Human)"/>
 		</rules>
 	</element>
 </elements>
