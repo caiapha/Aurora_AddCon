@@ -56,7 +56,10 @@
 
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_MEDIUM">
 		<supports>Human size</supports>
-		<description display="false" />
+		<description>
+			<p>Your body size is Medium. You are roughly 4 to 8 feet tall.</p>
+			<p class="indent">You occupy a 5 by 5 ft square.</p>
+		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Size" name="Size: Medium" id="ID_SIZE_MEDIUM" />
@@ -64,7 +67,10 @@
 	</element>
 	<element name="Small" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_SMALL">
 		<supports>Human size</supports>
-		<description display="false" />
+		<description>
+			<p>Your body size is Small. You are roughly 2 to 4 feet tall.</p>
+			<p class="indent">You occupy a 5 by 5 ft square.</p>
+		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Size" name="Size: Small" id="ID_SIZE_SMALL" />
