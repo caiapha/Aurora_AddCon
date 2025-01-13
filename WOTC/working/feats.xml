@@ -32,15 +32,7 @@
 			<stat name="strength" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	
-</elements>
-
-	
-	
-	
-	
-	
-	<!--
+<!--
 	
 <element name="Epic Boon" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_EPIC_BOON">
 	<requirements>[Level:19]</requirements>
@@ -59,4 +51,12 @@
 	<sheet>
 		<description>Test Feat</description>
 	</sheet>
-</element> -->
+</element> -->	
+</elements>
+
+	
+	
+	
+	
+	
+	
