@@ -34,7 +34,7 @@
 			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_CHARISMA" />
 			<stat name="actor dc" value="8" />
 			<stat name="actor dc" value="charisma:modifier" />
-			<stat name="actor dc" value="proficiency"  />
+			<stat name="actor dc" value="proficiency" />
 		</rules>
 	</element>
 		<element name="Alert" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ALERT">
