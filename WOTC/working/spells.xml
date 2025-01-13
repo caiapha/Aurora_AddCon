@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Spells</name>
-		<update version="0.5.5">
-			<file name="spells.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/spells.xml" />
+		<name>Spells from the Player's Handbook Rev. 2024</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="/spells.xml" />
 		</update>
 	</info>
 
-	<element name="Acid Splash" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ACID_SPLASH">
+	<!-- <element name="Acid Splash" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ACID_SPLASH">
 		<supports>Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
 		<description>
 			<p>You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.</p>
@@ -7281,8 +7281,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Telekinesis" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TELEKINESIS">
+	</element> -->
+	<element name="Telekinesis" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_TELEKINESIS">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
 			<p>You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p>
@@ -7307,6 +7307,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<!--
 	<element name="Telepathy" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TELEPATHY">
 		<supports>Wizard</supports>
 		<description>
@@ -8139,5 +8140,5 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
+	</element> -->
 </elements>
