@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Player's Handbook - 2024 Revision</name>
+		<name>Player's Handbook 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/PHB24.index" />
 		</update>
 	</info>
@@ -24,6 +24,7 @@
 
 		<!-- Misc -->
 		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/feats.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" />
 
 	</files>
 </index>
