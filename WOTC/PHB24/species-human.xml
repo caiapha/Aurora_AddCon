@@ -50,7 +50,7 @@
 			<select type="Racial Trait" name="Human size" supports="Human size" id="ID_PHB24_RACE_HUMAN_SIZE" />
 			<stat name="innate speed" value="30" bonus="base"/>
 			<select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
-			<select type="Feat" name="Additional Feat (Human) supports="Origin Feat"/>
+			<select type="Feat" name="Additional Feat (Human) supports="Origin Feat" />
 		</rules>
 	</element>
 
