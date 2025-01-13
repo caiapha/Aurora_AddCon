@@ -16,4 +16,13 @@
 		<description>Epic Boon</description>
 	</sheet>
 </element>
+<element name="Test Feat" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_TEST">
+	<supports>Origin Feat</supports>
+	<description>
+		<p>Test Feat</p>
+	</description>
+	<sheet>
+		<description>Test Feat</description>
+	</sheet>
+</element>
 </elements>
