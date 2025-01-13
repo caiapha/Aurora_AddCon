@@ -32,9 +32,9 @@
 		</sheet>
 		<rules>
 			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_CHARISMA" />
-			<stat name="actor dc" value="8" bonus="base" />
-			<stat name="actor dc" value="charisma:modifier" bonus="base" />
-			<stat name="actor dc" value="proficiency" bonus="base" />
+			<stat name="actor dc" value="8" />
+			<stat name="actor dc" value="charisma:modifier" />
+			<stat name="actor dc" value="proficiency"  />
 		</rules>
 	</element>
 		<element name="Alert" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ALERT">
@@ -46,7 +46,7 @@
 			<p><strong>Initiative Swap.</strong>Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</p>
 		</description>
 		<sheet>
-			<description>you have Advantage on Charisma (Deception or Performance) checks to convince others that you are a different person. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check against DC {{actor dc}}.</description>
+			<description>Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</description>
 		</sheet>
 		<rules>
 			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_CHARISMA" />
