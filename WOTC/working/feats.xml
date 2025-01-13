@@ -3,11 +3,11 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
-	<element name="Ability Score improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_IMPROVEMENT_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_IMPROVEMENT_SCORE_IMPROVEMENT">
 		<supports>Origin Feat</supports>
 		<description>
 			<p>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.</p>
@@ -15,13 +15,13 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability score improvement" supports="Ability score improvement" />
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Ability score increase" />
 		</rules>
 	</element>
 
 <!-- Ability score improvement -->
 	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_STRENGTH">
-		<supports>Ability score improvement</supports>
+		<supports>Ability score increase</supports>
 		<description>
 			<p>Your Strength increases by 1.</p>
 		</description>
