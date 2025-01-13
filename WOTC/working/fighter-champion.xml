@@ -79,7 +79,7 @@
 		<description>
 			<p>At 18th level, You attain the pinnacle of resilience in battle, giving you these benefits.</p>
 			<p class="indent"><strong><i>Defy Death.</i></strong> You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving Throw, you gain the benefit of rolling a 20 on it.</p>
-			<p class="indent"><strong><i>Heroic Rally.</i></strong> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.
+			<p class="indent"><strong><i>Heroic Rally.</i></strong> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.</p>
 		</description>
 		<sheet>
 			<description>At the start of each of your turns, you regain {{survivor:hp}} hp if you have no more than half of your hp left. You don’t gain this benefit if you have 0 hp.</description>
