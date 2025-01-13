@@ -7,7 +7,7 @@
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
-	<element name="Ability Score Improvement (any +2)" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2">
+	<element name="Ability Score Improvement (one STAT +2)" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_2">
 		<supports>Origin Feat</supports>
 		<description>
 			<p>Increase one ability score of your choice by 2. This feat can't increase an ability score above 20.</p>
@@ -15,10 +15,10 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" supports="Ability score increase 2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase" supports="ASI2" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement (any 2 +1)" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_1">
+	<element name="Ability Score Improvement (2 STAT +1)" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT_1">
 		<supports>Origin Feat</supports>
 		<description>
 			<p>Two ability scores of your choice by 1. This feat can't increase an ability score above 20.</p>
@@ -26,13 +26,13 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase" value="2" supports="Ability score increase 1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase" value="2" supports="ASI1" />
 		</rules>
 	</element>
 
 <!-- Ability score improvement -->
 	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_STRENGTH_2">
-		<supports>Ability score increase 2</supports>
+		<supports>ASI2</supports>
 		<description>
 			<p>Your Strength increases by 2.</p>
 		</description>
@@ -43,8 +43,20 @@
 			<stat name="strength" value="2" alt="Ability Score Increase" />
 		</rules>
 	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_DEXTERITY_2">
+		<supports>ASI2</supports>
+		<description>
+			<p>Your Dexterity increases by 2.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" alt="Ability Score Increase" />
+		</rules>
+	</element>
 	<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_STRENGTH_1">
-		<supports>Ability score increase 1</supports>
+		<supports>ASI1</supports>
 		<description>
 			<p>Your Strength increases by 1.</p>
 		</description>
@@ -56,7 +68,7 @@
 		</rules>
 	</element>
 	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_DEXTERITY_1">
-		<supports>Ability score increase 1</supports>
+		<supports>ASI1</supports>
 		<description>
 			<p>Your Dexterity increases by 1.</p>
 		</description>
