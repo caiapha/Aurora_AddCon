@@ -10,7 +10,10 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/source.xml" />
-		
+
+		<!-- Species -->
+		<file name="species-human" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/species-human.xml" />
+
 		<!-- Classes and Subclassess -->
 		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" />
 		<file name="class-fighter.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-fighter.xml" />
