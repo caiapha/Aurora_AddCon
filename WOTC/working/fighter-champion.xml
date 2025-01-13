@@ -65,9 +65,9 @@
 	<element name="Heroic Warrior" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_HEROIC_WARRIOR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE</requirements>
 		<description>
-			<p>At 7h level,the thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>
+			<p>At 10h level,the thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 			<description>During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</description>
 		</sheet>
 	</element>
