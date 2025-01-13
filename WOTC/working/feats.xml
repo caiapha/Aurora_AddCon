@@ -15,7 +15,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability score improvement" supports="Ability score improvement"/>
+			<select type="Ability Score Improvement" name="Ability score improvement" supports="Ability score improvement" />
 		</rules>
 	</element>
 
