@@ -15,7 +15,6 @@
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_REMARKABLEATHLETE"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_HEROIC_WARRIOR" />
-			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SUPERIORCRITICAL"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SURVIVOR"/>
 		</description>
 		<sheet display="false">
@@ -26,7 +25,6 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_REMARKABLEATHLETE" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE" level="7" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_HEROIC_WARRIOR" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SUPERIORCRITICAL" level="15" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SURVIVOR" level="18" />
 		</rules>
 	</element>
@@ -34,9 +32,11 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_IMPROVED_CRITICAL</requirements>
 		<description>
 			<p>Beginning at 3rd level, your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+			<p>Beginning at 15th level, Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.</p>
 		</description>
 		<sheet>
 			<description>Your weapon and Unarmed Strikes attacks score a critical hit on a roll of 19 or 20.</description>
+			<description level="15">Your weapon and Unarmed Strikes attacks score a critical hit on a roll of 18 or 20.</description>
 		</sheet>
 	</element>
 	<element name="Remarkable Athlete" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_REMARKABLEATHLETE">
@@ -62,20 +62,24 @@
 			<select type="Class Feature" name="Additional Fighting Style" supports="Fighting Style, Fighter" level="7"/>
 		</rules>
 	</element>
-	<!-- QUI -->
-	<element name="Superior Critical" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SUPERIORCRITICAL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_SUPERIOR_CRITICAL</requirements>
+	<element name="Heroic Warrior" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_HEROIC_WARRIOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE</requirements>
 		<description>
-			<p>Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20.</p>
+			<p>At 7h level,the thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>
 		</description>
-		<sheet>
-			<description>Your weapon attacks score a critical hit on a roll of 18–20.</description>
+		<sheet display="false">
+			<description>During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</description>
 		</sheet>
 	</element>
-	<element name="Survivor" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_SURVIVOR">
+	
+	<!-- SUPERIOR CRITICAL INCLUDED IN IMPROVED CRITICAL -->
+	
+	<element name="Survivor" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SURVIVOR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_SURVIVOR</requirements>
 		<description>
-			<p>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.</p>
+			<p>At 18th level, You attain the pinnacle of resilience in battle, giving you these benefits.</p>
+			<p class="indent"><strong><i>Defy Death.</i></strong> You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving Throw, you gain the benefit of rolling a 20 on it.</p>
+			<p class="indent"><strong><i>Heroic Rally.</i></strong> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.
 		</description>
 		<sheet>
 			<description>At the start of each of your turns, you regain {{survivor:hp}} hp if you have no more than half of your hp left. You don’t gain this benefit if you have 0 hp.</description>
