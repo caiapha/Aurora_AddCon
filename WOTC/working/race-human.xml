@@ -47,10 +47,27 @@
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
 		<rules>
-			<select type="Size" name="Human Size" id="ID_SIZE_MEDIUM||ID_SIZE_SMALL" />
+			<select type="Racial Trait" name="Human size" supports="Human size" id="ID_PHB24_RACE_HUMAN_SIZE" />
 			<stat name="innate speed" value="30" bonus="base"/>
-			<select type="Proficiency" name="Skill Proficiency (Human)" number="1" support="Skill" />
+			<select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 			<select type="Feat" name="Additional Feat (Human)"/>
 		</rules>
+	</element>
+
+	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_MEDIUM">
+		<supports>Human size</supports>
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" name="Size: Medium" id="ID_SIZE_MEDIUM" />
+		</rules>		
+	</element>
+	<element name="Small" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_SMALL">
+		<supports>Human size</supports>
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" name="Size: Small" id="ID_SIZE_SMALL" />
+		</rules>		
 	</element>
 </elements>
