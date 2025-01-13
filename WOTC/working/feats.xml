@@ -7,7 +7,7 @@
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
-	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_IMPROVEMENT_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT">
 		<supports>Origin Feat</supports>
 		<description>
 			<p>Increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. This feat can't increase an ability score above 20.</p>
