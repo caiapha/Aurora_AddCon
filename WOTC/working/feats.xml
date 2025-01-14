@@ -68,7 +68,7 @@
 		</sheet>
 		<rules>
 			<grant name="Ability improvement (Athlete)" type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_STRENGHT||ID_PHB_FEAT_ASI_DEXTERITY" />
-			<set name="speed:climb" value="speed" />
+			<stat name="speed:climb" value="speed" />
 		</rules>
 	</element>
 
