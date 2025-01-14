@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -71,9 +71,29 @@
 			<stat name="speed:climb" value="speed" />
 		</rules>
 	</element>
+	<element name="Boon of Combat Prowess" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_COMBAT_POWESS">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Peerless Aim. </strong>  When you miss with an attack roll, you can hit instead. Once you use this benefit, you can't use it again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you miss with an attack roll, you can hit instead.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+		</rules>
+	</element>
 
 
- 
+
+
+	
+
+
+
 
 
 
@@ -106,7 +126,7 @@
 		</rules>
 	</element>
 	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_CONSTITUTION">
-		<supports>ASI</supports>
+		<supports>ASI, Constitution</supports>
 		<description>
 			<p>Your Constitution increases by 1.</p>
 		</description>
@@ -118,7 +138,7 @@
 		</rules>
 	</element>
 	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_INTELLIGENCE">
-		<supports>ASI</supports>
+		<supports>ASI, Intelligence</supports>
 		<description>
 			<p>Your Intelligence increases by 1.</p>
 		</description>
@@ -130,7 +150,7 @@
 		</rules>
 	</element>
 	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_WISDOM">
-		<supports>ASI</supports>
+		<supports>ASI, Wisdom</supports>
 		<description>
 			<p>Your Wisdom increases by 1.</p>
 		</description>
@@ -142,7 +162,7 @@
 		</rules>
 	</element>
 	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_CHARISMA">
-		<supports>ASI</supports>
+		<supports>ASI, Charisma</supports>
 		<description>
 			<p>Your Charisma increases by 1.</p>
 		</description>
@@ -151,6 +171,87 @@
 		</setters>
 		<rules>
 			<stat name="charisma" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	
+	<!-- Epic Boon Ability Score Increase -->
+	
+	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_STRENGTH">
+		<supports>ASI, Epic Boon, Strenght</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+			<stat name="strength:max" value="10" />
+		</rules>
+	</element>
+	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_DEXTERITY">
+		<supports>ASI, Epic Boon, Dexterity</supports>
+		<description>
+			<p>Your Dexterity increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+			<stat name="dexterity:max" value="10" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_CONSTITUTION">
+		<supports>ASI, Epic Boon, Constitution</supports>
+		<description>
+			<p>Your Constitution increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
+			<stat name="constitution:max" value="10" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_INTELLIGENCE">
+		<supports>ASI, Epic Boon, Intelligence</supports>
+		<description>
+			<p>Your Intelligence increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+			<stat name="intelligence:max" value="10" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_WISDOM">
+		<supports>ASI, Epic Boon, Wisdom,</supports>
+		<description>
+			<p>Your Wisdom increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" alt="Ability Score Increase" />
+			<stat name="wisdom:max" value="10" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_CHARISMA">
+		<supports>ASI, Epic Boon, Charisma</supports>
+		<description>
+			<p>Your Charisma increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
+			<stat name="charisma:max" value="10" />
 		</rules>
 	</element>
 <!--
