@@ -19,7 +19,7 @@
 		</rules>
 	</element>
 	<element name="Actor" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ACTOR">
-		<requirement>[level:4], [cha:13]</requirement>
+		<requirements>[level:4], [cha:13]</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
@@ -54,7 +54,7 @@
 		</rules>
 	</element>
 	<element name="Athlete" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ATHLETE">
-		<requirement>[level:4], [str:13]|[dex:13]</requirement>
+		<requirements>[level:4], ([str:13]||[dex:13])</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
@@ -67,7 +67,7 @@
 			<description>When you have the Prone condition, you can right yourself with only 5 feet of movement. You can make a running Long or High Jump after moving only 5 feet.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability improvement (Athlete)" type="Ability Score Improvement" id="ID_PHB_FEAT_ASI_STRENGHT||ID_PHB_FEAT_ASI_DEXTERITY" />
+			<select name="Ability improvement (Athlete)" type="Ability Score Improvement" supports="ASI, (Strenght||Dexterity)" />
 			<stat name="speed:climb" value="speed" />
 		</rules>
 	</element>
@@ -82,7 +82,7 @@
 	
 <!-- Ability score improvement -->
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_STRENGTH">
-		<supports>ASI</supports>
+		<supports>ASI, Strenght</supports>
 		<description>
 			<p>Your Strength increases by 1.</p>
 		</description>
@@ -94,7 +94,7 @@
 		</rules>
 	</element>
 	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_ASI_DEXTERITY">
-		<supports>ASI</supports>
+		<supports>ASI, Dexterity</supports>
 		<description>
 			<p>Your Dexterity increases by 1.</p>
 		</description>
