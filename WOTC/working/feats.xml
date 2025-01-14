@@ -86,15 +86,75 @@
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
 		</rules>
 	</element>
+	<element name="Boon of Dimensional Travel" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_DIMENSIONAL_TRAVEL">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Blink Steps. </strong>  Immediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.</p>
+		</description>
+		<sheet>
+			<description>Immediately after you take the Attack action or the Magic action, you can teleport up to 30 feet to an unoccupied space you can see.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+		</rules>
+	</element>
+	<element name="Boon of Energy Resistance" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_RESISTANCE">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Energy Resistances. </strong> You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a Long Rest, you can change your choices.</p>
+			<p><strong>Energy Redirection. </strong>  When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. You can change the choice after a Long Rest. Moreover, when you take damage for the choosen type, you can take a Reaction to deal 2d12+{{constitution:modifier}} to a creature you can see within 60ft. A Dexterity Saving Throw against DC {{Epic Boon Resistance}} negates.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+			<stat name="Epic Boon Resistance" value="8" />
+			<stat name="Epic Boon Resistance" value="proficiency" />
+			<stat name="Epic Boon Resistance" value="constitution:modifier" />
+		</rules>
+	</element>
+ 	<element name="Boon of Fate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_FATE">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Improve Fate.</strong> When you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Initiative or Long rest">
+			<description>When you or a creature within 60 ft from you roll a d20 die, you can roll 2d4 and add or subtract the result to that d20 roll.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+		</rules>
+	</element>
+	<element name="Boon of Fortitude" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_FORTITUDE">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Fortified Health.</strong> Your Hit Point maximum increases by 40. In addition, whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, when you regain Hit Points, you can regain {{constitution:modifier}} additional Hit Points.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+			<stat name="hp" value="40" />
+		</rules>
+	</element>
 
 
 
-
-	
-
-
-
-
+ 
 
 
 
