@@ -199,7 +199,7 @@
 			<grant name="Skill Proficiency (Animal Handling)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
 			<grant name="Skill Proficiency (Arcana)" id="ID_PROFICIENCY_SKILL_ARCANA" />
 			<grant name="Skill Proficiency (Athletics)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
-			<grant name="Skill Proficiency (Deception)" id="ID_PROFICIENCY_SKILL_DECEPTION	" />
+			<grant name="Skill Proficiency (Deception)" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant name="Skill Proficiency (History)" id="ID_PROFICIENCY_SKILL_HISTORY" />
 			<grant name="Skill Proficiency (Insight)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant name="Skill Proficiency (Intimidation)" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
