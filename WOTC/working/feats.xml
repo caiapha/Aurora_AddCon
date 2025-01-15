@@ -312,7 +312,8 @@
 		<rules>
 			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="ASI, (Constitution||Wisdom)" />
 			<stat name="Replenishing Meal" value="4" bonus="base" />
-			<stat name="Replenishing Meal" value="proficiency" />	
+			<stat name="Replenishing Meal" value="proficiency" />
+			<grant name="Tool Proficiency (Chef)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> <!-- REFERENCE TO BE UPDATED TO THE PHB24 --> 
 		</rules>
 	</element>
 	<element name="Crafter" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CRAFTER">
@@ -322,12 +323,23 @@
 			<p><strong>Tool Proficiency</strong> You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.</p>
 			<p><strong>Discount.</strong> Whenever you buy a nonmagical item, you receive a 20 percent discount on it.</p>
 			<p><strong>Fast Crafting. </strong> When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</p>
+			<table>
+				<thead><td>Artisan's Tool</td><td>Crafted Gear</td></thead>
+				<tr><td>Carpenter's Tool</td><td>Ladder, Torch</td></tr>
+				<tr><td>Leatherworker's Tools</td><td>Crossbow Bolt Case, Map or Scroll Case, Pouch</td></tr>
+				<tr><td>Mason's Tools</td><td>Block and Tackle</td></tr>
+				<tr><td>Potter's Tools</td><td>Jug, Lamp</td></tr>
+				<tr><td>Smith's Tools</td><td>Ball Bearings, Bucket, Caltrops, Grappling Hook, Iron Pot</td></tr>
+				<tr><td>Tinker's Tools</td><td>	Bell, Shovel, Tinderbox</td></tr>	
+				<tr><td>Weaver's Tools</td><td>Basket, Rope, Net, Tent</td></tr>
+				<tr><td>Woodcarver's Tools</td><td>Club, Greatclub, Quarterstaff</td></tr>
+				</table>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You have a 20 percent discount buying non-magical items. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</description>
 		</sheet>
 		<rules>
-			<select name="Tool Proficiency (Crafter)" type="proficiency" support="Tool" number="3" />
+			<select type="Proficiency" name="Tool Proficiency (Crafter)" supports="Artisan tools" number="3" /> <!-- AGGIUNGERE SUPPORT CRAFTER SIA QUI CHE AI TOOLS-->
 		</rules>
 	</element>
  
