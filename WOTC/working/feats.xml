@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -149,12 +149,61 @@
 			<stat name="hp" value="40" />
 		</rules>
 	</element>
-
+	<element name="Boon of Irresistible Offense" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_IRRESISTIBLE_OFFENSE">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Overcome Defenses.</strong> The Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance.</p>
+			<p><strong>Overwhelming Strike.</strong> When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type.</p>
+		</description>
+		<sheet>
+			<description>The Bludgeoning, Piercing, and Slashing damage you deal always ignores Resistance. When you roll a 20 on the d20 for an attack roll. When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. </description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+		</rules>
+	</element>
+	<element name="Boon of Recovery" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_RECOVERY">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>Last Stand.</strong>  When you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Once you use this benefit, you can't use it again until you finish a Long Rest.</p>
+			<p><strong>Recover Vitality.</strong> You have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, when you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Moreover, you have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+		</rules>
+	</element>
+	<element name="Boon of Skill" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL">
+		<requirements>[level:19]</requirements>
+		<supports>Boon Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p><strong>All-Around Adept.</strong>  You gain proficiency in all skills.</p>
+			<p><strong>Expertise.</strong> Choose one skill in which you lack Expertise. You gain Expertise in that skill.</p>
+		</description>
+		<sheet>
+			<description>You gain a proficiency and an expertise.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+			<select name="Proficiency (Epic Boon)" type="proficiency" />
+			<select name="Expertise (Epic Boon)" type="expertise" />
+		</rules>
+	</element>
 
 
  
-
-
+ 
+ 
 
  
 	
