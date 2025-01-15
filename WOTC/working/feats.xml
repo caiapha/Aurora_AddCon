@@ -307,7 +307,7 @@
 			<p><strong>Bolstering Treats.</strong> With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>During a short rest, you can prepare {{Replenishing Meal}} rations of food. The creature who eat it can regain 1d8 of extra Hit Points. Moreover, with an hour of work or at the end of a Long Rest, you can prepare {{proficiency}} treats, which lasts 8 hours. A creature can expend a Bonus action to eat it to gain {{proficiency}} Temporary Hit Point.</description>
+			<description>During a short rest, you can prepare {{Replenishing Meal}} rations of food. The creature regaining Hit Points during the Short Rest can eat one of it and regain 1d8 extra Hit Points. Moreover, with an hour of work or at the end of a Long Rest, you can prepare {{proficiency}} treats, which lasts 8 hours. A creature can expend a Bonus action to eat it to gain {{proficiency}} Temporary Hit Point.</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="ASI, (Constitution||Wisdom)" />
