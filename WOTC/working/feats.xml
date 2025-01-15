@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -213,7 +213,7 @@
 			<grant name="Skill Proficiency (Sleight of Hand)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 			<grant name="Skill Proficiency (Stealth)" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<grant name="Skill Proficiency (Survival)" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
-			<select name="Expertise (Epic Boon)" type="Skill" />
+			<select type="Feat Feature" name="Skill Expertise (Boon of Skill)" supports="Boon expertise" number="1" />			
 		</rules>
 	</element>
 
@@ -378,6 +378,173 @@
 			<stat name="charisma:max" value="10" />
 		</rules>
 	</element>
+	
+	<!-- Epic Boon Expertise -->
+	
+	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Acrobatics.</p>
+		</description>
+		<rules>
+			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Animal Handling" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_ANIMALHANDLING">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Animal Handling.</p>
+		</description>
+		<rules>
+			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Arcana" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_ARCANA">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Arcana.</p>
+		</description>
+		<rules>
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Athletics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_ATHLETICS">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Athletics.</p>
+		</description>
+		<rules>
+			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Deception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_DECEPTION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Deception.</p>
+		</description>
+		<rules>
+			<stat name="deception:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="History" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_HISTORY">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in History.</p>
+		</description>
+		<rules>
+			<stat name="history:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Insight" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_INSIGHT">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Insight.</p>
+		</description>
+		<rules>
+			<stat name="insight:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="intimidation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_INTIMIDATION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Intimidation.</p>
+		</description>
+		<rules>
+			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Investigation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_INVESTIGATION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Investigation.</p>
+		</description>
+		<rules>
+			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Medicine" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_MEDICINE">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Medicine.</p>
+		</description>
+		<rules>
+			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Nature" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_NATURE">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Nature.</p>
+		</description>
+		<rules>
+			<stat name="nature:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Perception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_PERCEPTION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Perception.</p>
+		</description>
+		<rules>
+			<stat name="perception:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Performance" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_PERFORMANCE">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Performance.</p>
+		</description>
+		<rules>
+			<stat name="performance:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Persuasion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_PERSUASION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Persuasion.</p>
+		</description>
+		<rules>
+			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Religion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_RELIGION">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Religion.</p>
+		</description>
+		<rules>
+			<stat name="religion:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Sleight of Hand" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_SLEIGHTOFHAND">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Sleight of Hand.</p>
+		</description>
+		<rules>
+			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Stealth" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_STEALTH">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Stealth.</p>
+		</description>
+		<rules>
+			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Survival" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_BOON_OF_SKILL_EXP_SURVIVAL">
+		<supports>Boon expertise</supports>
+		<description>
+			<p>You gain Expertise in Survival.</p>
+		</description>
+		<rules>
+			<stat name="survival:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+
+	
 <!--
 	
 <element name="Epic Boon" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_EPIC_BOON">
