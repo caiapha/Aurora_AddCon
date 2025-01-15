@@ -274,7 +274,7 @@
 			<p><strong>Truesight.</strong> You have Truesight with a range of 60 feet.</p>	
 		</description>
 		<sheet>
-			<description>While within Dim Light or Darkness, you can give the Invisible condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction. Moreover While within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant.</description>
+			<description>You have Truesight with a range of 60 feet.</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
