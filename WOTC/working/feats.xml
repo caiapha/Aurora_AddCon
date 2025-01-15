@@ -311,8 +311,8 @@
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="ASI, (Constitution||Wisdom)" />
-			<set name="Replenishing Meal" value="4" bonus="base" />
-			<set name="Replenishing Meal" value="proficiency" />	
+			<stat name="Replenishing Meal" value="4" bonus="base" />
+			<stat name="Replenishing Meal" value="proficiency" />	
 		</rules>
 	</element>
 	<element name="Crafter" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CRAFTER">
