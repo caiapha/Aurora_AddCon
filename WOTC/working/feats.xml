@@ -247,7 +247,6 @@
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
-			<stat name="speed" value"30" />
 		</rules>
 	</element>
  	<element name="Boon of the Night Spirit" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_NIGHT_SPIRIT">
