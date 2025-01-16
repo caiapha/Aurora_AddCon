@@ -529,8 +529,8 @@
 			<description>If you have a Healer's Kit, you can take the Utilize action. A creature within 5ft from you can expend one Hit Point Die, roll it and regain Hit Points equal to the roll +{{proficiency}}. Moreover, if you roll a 1 try to restore Hip Points, you can reroll the die and thake it.</description>
 		</sheet>
 	</element>
-	<element name="Heavily Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_HEVILY_ARMORED">
-		<requirements>[level:4], [medium armor:proficiency]|</requirements>
+	<element name="Heavily Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_HEAVILY_ARMORED">
+		<requirements>[level:4], [medium armor:proficiency]</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
