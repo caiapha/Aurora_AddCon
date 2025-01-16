@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="/spells.xml" />
 		</update>
 	</info>
@@ -5231,7 +5231,8 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Misty Step" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MISTY_STEP">
+	-->
+	<element name="Misty Step" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_MISTY_STEP">
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
@@ -5251,6 +5252,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<!--
 	<element name="Modify Memory" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MODIFY_MEMORY">
 		<supports>Bard, Wizard, Spell Saving Throw</supports>
 		<description>
