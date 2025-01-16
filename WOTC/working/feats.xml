@@ -552,7 +552,7 @@
 			<p><strong>Damage Reduction.</strong> When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by that attack by {{proficiency}}.</description>
+			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
 		</sheet>	
 		<rules>
 			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Constitution)" />
