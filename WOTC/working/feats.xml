@@ -482,7 +482,7 @@
 		<rules>
 			<select name="Ability improvement (Fey-Touchd)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Misty Step (Fey-Touched)" type="spell" id="ID_PHB24_SPELL_MISTY_STEP" />
-			<select name="Misty Step (spell)" type="spell" supports="1, (Divination||Enchantment)" number="1" />
+			<select name="Misty Step (spell)" type="spell" supports="1,(Divination||Enchantment)" />
 		</rules>										 	
 	</element>
 
