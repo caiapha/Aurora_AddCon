@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.12">
+		<update version="0.0.13">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -485,9 +485,73 @@
 			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment)" />
 		</rules>										 	
 	</element>
+	<element name="Grappler" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_GRAPPLER">
+		<requirements>[level:4], ([str:13]||[dex:13])</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Attack Advantage.</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+			<p><strong>Improved Dash.</strong> You have Advantage on attack rolls against a creature Grappled by you.</p>
+			<p><strong>Fast Wrestler.</strong> You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+		</description>
+		<sheet>
+			<description>Once per Turn, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. Moreover, you have Advantage on attack rolls against a creature grappled by you. You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Charger)" type="Ability Score Improvement" supports="ASI, Standard, (Strenght||Dexterity)" />
+		</rules>
+	</element>
+ 	<element name="Great Weapon Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_GREAT_WEAPON_MASTER">
+		<requirements>[level:4], [str:13]|</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Heavy Weapon Mastery.</strong> When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.</p>
+			<p><strong>Hew.</strong> Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage with a Heavy weapon as part of you Attack Action, you can deal {{proficiency}} extra damage. Moreover, when you score a Critical Hit or reduce a creature to 0 Hit Points with a melee weapon, you can make one extra attack with a Bonus Attack.</description>
+		</sheet>
+		<rules>
+			<grant name="Ability improvement (Great Weapon Master)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_STRENGHT" />
+		</rules>
+	</element>
+	<element name="Healer" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_HEALER">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Battle Medic.</strong> If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</p>
+			<p><strong>Healing Rerolls.</strong> Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
+		</description>
+		<sheet>
+			<description>If you have a Healer's Kit, you can take the Utilize action. A creature within 5ft from you can expend one Hit Point Die, roll it and regain Hit Points equal to the roll +{{proficiency}}. Moreover, if you roll a 1 try to restore Hip Points, you can reroll the die and thake it.</description>
+		</sheet>
+	</element>
+	<element name="Heavily Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_HEVILY_ARMORED">
+		<requirements>[level:4], [medium armor:proficiency]|</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Armor Training.</strong> You gain training with Heavy armor.</p>
+		</description>
+		<sheet display="false">
+		<rules>
+			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strenght||Constitution)" />
+			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+
 
  
-	
+
+  
+
+ 
+
+
 
 <!-- Ability score improvement -->
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH">
