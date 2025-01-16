@@ -31,7 +31,7 @@
 			<description>you have Advantage on Charisma (Deception or Performance) checks to convince others that you are a different person. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check against DC{{actor dc}}.</description>
 		</sheet>
 		<rules>
-			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB24__FEAT_ASI_CHARISMA" />
+			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_CHARISMA" />
 			<stat name="actor dc" value="8" />
 			<stat name="actor dc" value="charisma:modifier" />
 			<stat name="actor dc" value="proficiency" />
@@ -355,7 +355,7 @@
 			<description>You ignore the Loading property of any type of Crossbow and can reload without free hand. You add your ability modifier to the damage of an extra attack of the Light property if made with a crossbow.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability Score Increase (Crossbow Expert)" type="Ability Score Improvement" id="ID_PHB24__FEAT_ASI_DEXTERITY"/>
+			<grant name="Ability Score Increase (Crossbow Expert)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY"/>
 		</rules>
 	</element>
 	<element name="Crusher" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CRUSHER">
@@ -386,7 +386,7 @@
 			<description>If you're holding a Finesse weapon and a creature hits you with a melee attack, you add +{{proficiency}} to your AC for any melee attack until the start of your next turn.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability Score Increase (Defensive Duelist)" type="Ability Score Improvement" id="ID_PHB24__FEAT_ASI_DEXTERITY"/>
+			<grant name="Ability Score Increase (Defensive Duelist)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY"/>
 		</rules>
 	</element>
  	<element name="Durable" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DUAL_WIELDER">
@@ -403,7 +403,7 @@
 		</sheet>
 		<rules>
 			<grant name="Ability improvement (Durable)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_CONSTITUTION" />
-		</rules>
+		</rules>										 	
 	</element>
 	<element name="Elemental Adept" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT">
 		<requirements>[level:4], [type:spell]</requirements>
@@ -486,7 +486,7 @@
 			<stat name="strength" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_ASI_DEXTERITY">
+	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY">
 		<supports>ASI, Standard, Dexterity</supports>
 		<description>
 			<p>Your Dexterity increases by 1.</p>
@@ -498,7 +498,7 @@
 			<stat name="dexterity" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_ASI_CONSTITUTION">
+	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CONSTITUTION">
 		<supports>ASI, Standard, Constitution</supports>
 		<description>
 			<p>Your Constitution increases by 1.</p>
@@ -510,7 +510,7 @@
 			<stat name="constitution" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_ASI_INTELLIGENCE">
+	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE">
 		<supports>ASI, Standard, Intelligence</supports>
 		<description>
 			<p>Your Intelligence increases by 1.</p>
@@ -522,7 +522,7 @@
 			<stat name="intelligence" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_ASI_WISDOM">
+	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_WISDOM">
 		<supports>ASI, Standard, Wisdom</supports>
 		<description>
 			<p>Your Wisdom increases by 1.</p>
@@ -534,7 +534,7 @@
 			<stat name="wisdom" value="1" alt="Ability Score Increase" />
 		</rules>
 	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_ASI_CHARISMA">
+	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA">
 		<supports>ASI, Standard, Charisma</supports>
 		<description>
 			<p>Your Charisma increases by 1.</p>
@@ -549,7 +549,7 @@
 	
 	<!-- Epic Boon Ability Score Increase -->
 	
-	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_STRENGTH">
+	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_STRENGTH">
 		<supports>ASI, Epic Boon, Strenght</supports>
 		<description>
 			<p>Your Strength increases by 1.</p>
@@ -562,7 +562,7 @@
 			<stat name="strength:max" value="10" />
 		</rules>
 	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_DEXTERITY">
+	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_DEXTERITY">
 		<supports>ASI, Epic Boon, Dexterity</supports>
 		<description>
 			<p>Your Dexterity increases by 1.</p>
@@ -575,7 +575,7 @@
 			<stat name="dexterity:max" value="10" />
 		</rules>
 	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_CONSTITUTION">
+	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_CONSTITUTION">
 		<supports>ASI, Epic Boon, Constitution</supports>
 		<description>
 			<p>Your Constitution increases by 1.</p>
@@ -588,7 +588,7 @@
 			<stat name="constitution:max" value="10" />
 		</rules>
 	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_INTELLIGENCE">
+	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_INTELLIGENCE">
 		<supports>ASI, Epic Boon, Intelligence</supports>
 		<description>
 			<p>Your Intelligence increases by 1.</p>
@@ -601,7 +601,7 @@
 			<stat name="intelligence:max" value="10" />
 		</rules>
 	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_WISDOM">
+	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_WISDOM">
 		<supports>ASI, Epic Boon, Wisdom,</supports>
 		<description>
 			<p>Your Wisdom increases by 1.</p>
@@ -614,7 +614,7 @@
 			<stat name="wisdom:max" value="10" />
 		</rules>
 	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_ASI_CHARISMA">
+	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_ASI_CHARISMA">
 		<supports>ASI, Epic Boon, Charisma</supports>
 		<description>
 			<p>Your Charisma increases by 1.</p>
@@ -630,7 +630,7 @@
 	
 	<!-- Epic Boon Expertise -->
 	
-	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
+	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Acrobatics.</p>
@@ -639,7 +639,7 @@
 			<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Animal Handling" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_ANIMALHANDLING">
+	<element name="Animal Handling" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ANIMALHANDLING">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Animal Handling.</p>
@@ -648,7 +648,7 @@
 			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Arcana" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_ARCANA">
+	<element name="Arcana" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24FEAT_BOON_OF_SKILL_EXP_ARCANA">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Arcana.</p>
@@ -657,7 +657,7 @@
 			<stat name="arcana:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Athletics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_ATHLETICS">
+	<element name="Athletics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ATHLETICS">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Athletics.</p>
@@ -666,7 +666,7 @@
 			<stat name="athletics:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Deception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_DECEPTION">
+	<element name="Deception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_DECEPTION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Deception.</p>
@@ -675,7 +675,7 @@
 			<stat name="deception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="History" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_HISTORY">
+	<element name="History" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_HISTORY">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in History.</p>
@@ -684,7 +684,7 @@
 			<stat name="history:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Insight" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_INSIGHT">
+	<element name="Insight" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INSIGHT">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Insight.</p>
@@ -693,7 +693,7 @@
 			<stat name="insight:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="intimidation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_INTIMIDATION">
+	<element name="intimidation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INTIMIDATION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Intimidation.</p>
@@ -702,7 +702,7 @@
 			<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Investigation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_INVESTIGATION">
+	<element name="Investigation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INVESTIGATION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Investigation.</p>
@@ -711,7 +711,7 @@
 			<stat name="investigation:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Medicine" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_MEDICINE">
+	<element name="Medicine" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_MEDICINE">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Medicine.</p>
@@ -720,7 +720,7 @@
 			<stat name="medicine:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Nature" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_NATURE">
+	<element name="Nature" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_NATURE">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Nature.</p>
@@ -729,7 +729,7 @@
 			<stat name="nature:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Perception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_PERCEPTION">
+	<element name="Perception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERCEPTION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Perception.</p>
@@ -738,7 +738,7 @@
 			<stat name="perception:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Performance" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_PERFORMANCE">
+	<element name="Performance" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERFORMANCE">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Performance.</p>
@@ -747,7 +747,7 @@
 			<stat name="performance:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Persuasion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_PERSUASION">
+	<element name="Persuasion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERSUASION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Persuasion.</p>
@@ -756,7 +756,7 @@
 			<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Religion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_RELIGION">
+	<element name="Religion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_RELIGION">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Religion.</p>
@@ -765,7 +765,7 @@
 			<stat name="religion:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Sleight of Hand" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_SLEIGHTOFHAND">
+	<element name="Sleight of Hand" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_SLEIGHTOFHAND">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Sleight of Hand.</p>
@@ -774,7 +774,7 @@
 			<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Stealth" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_STEALTH">
+	<element name="Stealth" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_STEALTH">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Stealth.</p>
@@ -783,7 +783,7 @@
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Survival" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24__FEAT_BOON_OF_SKILL_EXP_SURVIVAL">
+	<element name="Survival" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_SURVIVAL">
 		<supports>Boon expertise</supports>
 		<description>
 			<p>You gain Expertise in Survival.</p>
