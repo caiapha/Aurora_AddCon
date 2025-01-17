@@ -590,7 +590,7 @@
 		</sheet>	
 		<rules>
 			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_INTELLIGENCE" />
-			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="Skill:Arcana||Skill:History||Skill:Investigation||Skill:Nature||Skill:Religion)" />
+			<select name="Skill Proficiency (Knee Mind)" type="Feat Feature" supports="Boon expertise, (Arcana||History||Investigation||Nature||Religion)" />
 		</rules>
 	</element>
 
@@ -757,7 +757,7 @@
 	<!-- Epic Boon Expertise -->
 	
 	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Acrobatics</supports>
 		<description>
 			<p>You gain Expertise in Acrobatics.</p>
 		</description>
@@ -766,7 +766,7 @@
 		</rules>
 	</element>
 	<element name="Animal Handling" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ANIMALHANDLING">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Animal Handling</supports>
 		<description>
 			<p>You gain Expertise in Animal Handling.</p>
 		</description>
@@ -775,7 +775,7 @@
 		</rules>
 	</element>
 	<element name="Arcana" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24FEAT_BOON_OF_SKILL_EXP_ARCANA">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Arcana</supports>
 		<description>
 			<p>You gain Expertise in Arcana.</p>
 		</description>
@@ -784,7 +784,7 @@
 		</rules>
 	</element>
 	<element name="Athletics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ATHLETICS">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Athletics</supports>
 		<description>
 			<p>You gain Expertise in Athletics.</p>
 		</description>
@@ -793,7 +793,7 @@
 		</rules>
 	</element>
 	<element name="Deception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_DECEPTION">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Deception</supports>
 		<description>
 			<p>You gain Expertise in Deception.</p>
 		</description>
@@ -802,7 +802,7 @@
 		</rules>
 	</element>
 	<element name="History" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_HISTORY">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, History</supports>
 		<description>
 			<p>You gain Expertise in History.</p>
 		</description>
@@ -811,7 +811,7 @@
 		</rules>
 	</element>
 	<element name="Insight" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INSIGHT">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Insight</supports>
 		<description>
 			<p>You gain Expertise in Insight.</p>
 		</description>
@@ -819,8 +819,8 @@
 			<stat name="insight:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="intimidation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INTIMIDATION">
-		<supports>Boon expertise</supports>
+	<element name="Intimidation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INTIMIDATION">
+		<supports>Boon expertise, Intimidation</supports>
 		<description>
 			<p>You gain Expertise in Intimidation.</p>
 		</description>
@@ -829,7 +829,7 @@
 		</rules>
 	</element>
 	<element name="Investigation" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_INVESTIGATION">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Investigation</supports>
 		<description>
 			<p>You gain Expertise in Investigation.</p>
 		</description>
@@ -838,7 +838,7 @@
 		</rules>
 	</element>
 	<element name="Medicine" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_MEDICINE">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Medicine</supports>
 		<description>
 			<p>You gain Expertise in Medicine.</p>
 		</description>
@@ -847,7 +847,7 @@
 		</rules>
 	</element>
 	<element name="Nature" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_NATURE">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Nature</supports>
 		<description>
 			<p>You gain Expertise in Nature.</p>
 		</description>
@@ -856,7 +856,7 @@
 		</rules>
 	</element>
 	<element name="Perception" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERCEPTION">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Perception</supports>
 		<description>
 			<p>You gain Expertise in Perception.</p>
 		</description>
@@ -865,7 +865,7 @@
 		</rules>
 	</element>
 	<element name="Performance" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERFORMANCE">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Performance</supports>
 		<description>
 			<p>You gain Expertise in Performance.</p>
 		</description>
@@ -874,7 +874,7 @@
 		</rules>
 	</element>
 	<element name="Persuasion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_PERSUASION">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Persuasion</supports>
 		<description>
 			<p>You gain Expertise in Persuasion.</p>
 		</description>
@@ -883,7 +883,7 @@
 		</rules>
 	</element>
 	<element name="Religion" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_RELIGION">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Religion</supports>
 		<description>
 			<p>You gain Expertise in Religion.</p>
 		</description>
@@ -892,7 +892,7 @@
 		</rules>
 	</element>
 	<element name="Sleight of Hand" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_SLEIGHTOFHAND">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Sleigth of Hand</supports>
 		<description>
 			<p>You gain Expertise in Sleight of Hand.</p>
 		</description>
@@ -901,7 +901,7 @@
 		</rules>
 	</element>
 	<element name="Stealth" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_STEALTH">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Stealth</supports>
 		<description>
 			<p>You gain Expertise in Stealth.</p>
 		</description>
@@ -910,7 +910,7 @@
 		</rules>
 	</element>
 	<element name="Survival" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_SURVIVAL">
-		<supports>Boon expertise</supports>
+		<supports>Boon expertise, Survival</supports>
 		<description>
 			<p>You gain Expertise in Survival.</p>
 		</description>
