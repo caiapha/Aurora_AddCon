@@ -590,7 +590,7 @@
 		</sheet>	
 		<rules>
 			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_INTELLIGENCE" />
-			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="Skill:Arcana||Skill:History||Skill:Investigation||Skill:Nature||Skill:Religion)"
+			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="Skill:Arcana||Skill:History||Skill:Investigation||Skill:Nature||Skill:Religion)" />
 		</rules>
 	</element>
 
