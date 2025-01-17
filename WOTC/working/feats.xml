@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.14">
+		<update version="0.0.15">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -558,10 +558,25 @@
 			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Constitution)" />
 		</rules>
 	</element>
-
+	<element name="Inspiring Leader" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_INSPIRING LEADER">
+		<requirements>[level:4], ([wis:13]||[cha:13])</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Bolstering Performance.</strong> When you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Up to 6 allies (can include yourself) gain {{inspiring leader hp}} Temporary Hit Points.</description>
+		</sheet>	
+		<rules>
+			<select name="Ability improvement (Inspiring Leader)" type="Ability Score Improvement" supports="ASI, Standard, (Wisdom||Charisma)" />
+			<stat name="inspiring leader hp" value="level" bonus="base" />
+			<stat name="inspiring leader hp" value="wisdom:modifier" bonus="base" />
+			<stat name="inspiring leader hp" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
  
-
- Ability Score Increase. Increase your Constitution or Strength by 1, to a maximum of 20.
 
  
  
