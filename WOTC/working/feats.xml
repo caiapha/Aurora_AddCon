@@ -630,15 +630,26 @@
 			<p><strong>Guarded Mind.</strong> If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration. Moreover, once per Short Rest in you fail a Wisdom or Charisma saving throw, you can succeed instead.</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexteriry)" />
-			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
-		</rules>
 	</element>
- 
+ 	<element name="Magic Initiate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Two Cantrips</strong> You learn two cantrips from the Cleric, Druid or Wizard spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
+			<p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
+			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
+		</description>
+		<sheet>
+			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
+		</sheet>
+		<rules>
+			<select name="Cantrip (Maginc Initiate)" type="Cantrip" supports="(Wizard||Druid||Cleric)" />
+	</element>
 
 
 
