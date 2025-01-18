@@ -738,9 +738,7 @@
 			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
 			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
-		<sheet>
-			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Origin Feat, Magic Initiate" />
 		</rules>	
@@ -755,9 +753,7 @@
 			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
 			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
-		<sheet>
-			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Origin Feat, Magic Initiate" />
 		</rules>	
