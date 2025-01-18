@@ -725,7 +725,7 @@
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
 		</sheet>
 		<rules>
-			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Magic Initiate" />
+			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Origin Feat, Magic Initiate" />
 		</rules>	
 	</element>
 	<element name="Magic Initiate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_2">
@@ -742,7 +742,7 @@
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
 		</sheet>
 		<rules>
-			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Magic Initiate" />
+			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Origin Feat, Magic Initiate" />
 		</rules>	
 	</element>
 	<element name="Magic Initiate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_3">
@@ -759,12 +759,12 @@
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
 		</sheet>
 		<rules>
-			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Magic Initiate" />
+			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Origin Feat, Magic Initiate" />
 		</rules>	
 	</element>
 <!-- MAGIC INITIATE SPELL LIST -->
 	<element name="Magic Initiate (Wizard)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
-		<supports>Magic Initate</supports>
+		<supports>Origin Feat, Magic Initate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Wizard Spell List</p>
 		</description>
@@ -775,7 +775,7 @@
 		</rules>	
 	</element>
 	<element name="Magic Initiate (Cleric)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
-		<supports>Magic Initate</supports>
+		<supports>Origin Feat, Magic Initate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Cleric Spell List</p>
 		</description>
@@ -786,7 +786,7 @@
 		</rules>	
 	</element>
 	<element name="Magic Initiate (Druid)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
-		<supports>Magic Initate</supports>
+		<supports>Origin Feat, Magic Initate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Druid Spell List</p>
 		</description>
