@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.17">
+		<update version="0.0.18">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -389,7 +389,23 @@
 			<grant name="Ability Score Increase (Defensive Duelist)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY"/>
 		</rules>
 	</element>
- 	<element name="Durable" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DUAL_WIELDER">
+ 	<element name="Dual Wielder" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DUAL_WIELDER">
+		<requirements>[level:4],([str:13||[dex:13])</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strenngth or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Enhanced Dual Wielding.</strong> When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.</p>
+			<p><strong>Quick Draw.</strong> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
+		</description>
+		<sheet>
+			<description>When you use the Two-Weapon Fighting rule, you can make the bonus attack with any weapon that lacks the Two-Handed property. Moreover, you can drow or stow two one-hand weapon instead of one.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Dual Wielder)" type="Ability Score Improvement" supports="ASI, (Strength||Dexterity)" />
+		</rules>										 	
+	</element>
+	<element name="Durable" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DURABLE">
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
@@ -648,6 +664,9 @@
 		<sheet>
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
 		</sheet>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
 		<rules>
 			<select name="Spell List (Maginc Initiate)" type="Feat Feature" supports="Spell List, (Cleric||Wizard||Druid)" />
 		</rules>	
