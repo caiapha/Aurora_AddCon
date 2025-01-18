@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.16">
+		<update version="0.0.17">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -648,8 +648,19 @@
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
 		</sheet>
 		<rules>
-			<select name="Cantrip (Maginc Initiate)" type="Cantrip" supports="(Wizard||Druid||Cleric)" />
+			<select name="Spell List (Maginc Initiate)" type="Feat Feature" supports="Spell List, (Cleric||Wizard||Druid)" />
+		</rules>	
 	</element>
+	<element name="Wizard Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
+		<supports>Spell List, Wizard</supports>
+		<description>
+			<p>Select spells from the Wizard Spell list</p>
+			</description>
+		<sheet display="false"> 
+		<rules>
+			<select name="Wizard Spell List (Maginc Initiate)" type="Spell" supports="0, Wizard" />
+	</element>
+	
 
 
 
