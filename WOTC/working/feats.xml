@@ -652,17 +652,37 @@
 			<select name="Spell List (Maginc Initiate)" type="Feat Feature" supports="Spell List, (Cleric||Wizard||Druid)" />
 		</rules>	
 	</element>
+<!-- MAGIC INITIATE SPELL LIST SELECTION -->
 	<element name="Wizard Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
 		<supports>Spell List, Wizard</supports>
 		<description>
 			<p>Select spells from the Wizard Spell list</p>
-			</description>
-		<sheet display="false"> 
+		</description>
+		<sheet display="false" /> 
 		<rules>
 			<select name="Wizard Spell List (Maginc Initiate)" type="Spell" supports="0, Wizard" />
+		</rules>
 	</element>
-	
-
+	<element name="Cleric Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
+		<supports>Spell List, Cleric</supports>
+		<description>
+			<p>Select spells from the Cleric Spell list</p>
+		</description>
+		<sheet display="false" /> 
+		<rules>
+			<select name="Cleric Spell List (Maginc Initiate)" type="Spell" supports="0, Cleric" />
+		</rules>
+	</element>
+	<element name="Druid Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
+		<supports>Spell List, Druid</supports>
+		<description>
+			<p>Select spells from the Druid Spell list</p>
+		</description>
+		<sheet display="false" /> 
+		<rules>
+			<select name="Druid Spell List (Maginc Initiate)" type="Spell" supports="0, Druid" />
+		</rules>
+	</element>
 
 
 <!-- Ability score improvement -->
