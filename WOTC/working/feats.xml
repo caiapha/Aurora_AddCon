@@ -634,6 +634,7 @@
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexteriry)" />
+		</rules>	
 	</element>
  	<element name="Magic Initiate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE">
 		<supports>Origin Feat</supports>
