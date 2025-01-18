@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.22">
+		<update version="0.0.23">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -804,7 +804,7 @@
 		<sheet display="false" />
 		<rules>
 			<select name="Ability improvement (Martial Weapon Training)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
-			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant name="Martial Weapon Training" type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</element>
 	<element name="Medium Armor Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MEDIUM_ARMOR_MASTER">
@@ -819,12 +819,66 @@
 			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
 		</sheet>	
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Medium Armor Master)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
 			<stat name="ac:armored:dexterity:cap" value="3" bonus="base"/>
 		</rules>
 	</element>
+	<element name="Moderately Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MODERATELY_ARMORED">
+		<requirements>[level:4], ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Armor Training.</strong> You gain training with Light armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Ability improvement (Moderately Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+		</rules>
+	</element>
+	<element name="Mounted Combatant" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MOUNTED_COMBATANT">
+		<requirements>[level:4]</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase</strong> Increase your Strength, Dexterity or Wisdom by 1, to a maximum of 20.</p>
+			<p><strong>Mounted Strike.</strong> While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.</p>
+			<p><strong>Leap Aside.</strong> If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.</p>
+			<p><strong>Veer.</strong> While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount. Moreover, while mounting, when your mount make a Dexterity Saving Throw to save damage, it takes half damage on a fail and no damage on a success. While mounting, you can force an attack that hits your mount to hit you instead.</description>
+		</sheet>
+		<rules>
+			<select name="Ability improvement (Mounted Combatant)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity||Wisdom)" />
+		</rules>
+	</element>
+	<element name="Musician" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MUSICIAN">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Instrument Training.</strong> You gain proficiency with three Musical Instruments of your choice.</p>
+			<p><strong>Encouraging Song.</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</p>
+		</description>
+		<sheet>
+			<description>After a Short or Long Rest, you give an Heroic Inspiration to {{proficiency}} allies who ear your song.</description>
+		</sheet>
+		<rules>
+			<select name="Instrument Proficiency (Musician)" type="Proficiency" supports="Musical Instruments" number="3" />
+		</rules>
+	</element>	
 
 
+ 
+
+ 
+
+ 
+
+ 
+	
+	
 <!-- Ability score improvement -->
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH">
 		<supports>ASI, Standard, Strength</supports>
