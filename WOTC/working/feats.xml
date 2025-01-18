@@ -390,7 +390,7 @@
 		</rules>
 	</element>
  	<element name="Dual Wielder" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DUAL_WIELDER">
-		<requirements>[level:4],([str:13||[dex:13])</requirements>
+		<requirements>[level:4],([str:13]||[dex:13])</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
@@ -402,7 +402,7 @@
 			<description>When you use the Two-Weapon Fighting rule, you can make the bonus attack with any weapon that lacks the Two-Handed property. Moreover, you can drow or stow two one-hand weapon instead of one.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Dual Wielder)" type="Ability Score Improvement" supports="ASI, (Strength||Dexterity)" />
+			<select name="Ability improvement (Dual Wielder)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
 		</rules>										 	
 	</element>
 	<element name="Durable" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DURABLE">
@@ -678,8 +678,12 @@
 			<p>Select spells from the Wizard Spell list</p>
 		</description>
 		<sheet display="false" /> 
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
 		<rules>
-			<select name="Wizard Spell List (Maginc Initiate)" type="Spell" supports="0, Wizard" />
+			<select name="Wizard Spell List (Maginc Initiate)" type="Spell" supports="0, Wizard" number="2" />
+			<select name="Wizard Spell List (Maginc Initiate)" type="Spell" supports="1, Wizard" />
 		</rules>
 	</element>
 	<element name="Cleric Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
@@ -688,8 +692,12 @@
 			<p>Select spells from the Cleric Spell list</p>
 		</description>
 		<sheet display="false" /> 
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
 		<rules>
-			<select name="Cleric Spell List (Maginc Initiate)" type="Spell" supports="0, Cleric" />
+			<select name="Cleric Spell List (Maginc Initiate)" type="Spell" supports="0, Cleric" number="2" />
+			<select name="Cleric Spell List (Maginc Initiate)" type="Spell" supports="1, Cleric" />
 		</rules>
 	</element>
 	<element name="Druid Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
@@ -698,8 +706,12 @@
 			<p>Select spells from the Druid Spell list</p>
 		</description>
 		<sheet display="false" /> 
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
 		<rules>
-			<select name="Druid Spell List (Maginc Initiate)" type="Spell" supports="0, Druid" />
+			<select name="Druid Spell List (Maginc Initiate)" type="Spell" supports="0, Druid" number="2" />
+			<select name="Druid Spell List (Maginc Initiate)" type="Spell" supports="1, Druid" />
 		</rules>
 	</element>
 
