@@ -759,7 +759,7 @@
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="Magic Initiate" />
 		</rules>	
-<!-- MAgic
+<!-- MAGIC INITIATE SPELL LIST -->
 	</element>
 	<element name="Magic Initiate (Wizard)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
 		<supports>Magic Initate</supports>
