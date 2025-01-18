@@ -763,7 +763,7 @@
 		</rules>	
 	</element>
 <!-- MAGIC INITIATE SPELL LIST -->
-	<element name="Magic Initiate (Wizard)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
+	<element name="Wizard Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Wizard Spell List</p>
@@ -774,7 +774,7 @@
 			<select name="Wizard Spell List (Magic Initiate)" type="Spell" supports="1, Wizard" />
 		</rules>	
 	</element>
-	<element name="Magic Initiate (Cleric)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
+	<element name="Cleric Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Cleric Spell List</p>
@@ -785,7 +785,7 @@
 			<select name="Cleric Spell List (Magic Initiate)" type="Spell" supports="1, Cleric" />
 		</rules>	
 	</element>
-	<element name="Magic Initiate (Druid)" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
+	<element name="Druid Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
 			<p>Your cantrips and spell will be from the Druid Spell List</p>
