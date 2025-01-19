@@ -1339,7 +1339,7 @@
 		</rules>
 	</element>
 	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA_RESILIENT">
-		requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
 		<supports>Resilient</supports>
 		<description>
 			<p>Your Charisma increases by 1.</p>
