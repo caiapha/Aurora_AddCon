@@ -931,7 +931,7 @@
 			<p><strong>Reactive Strike.</strong> While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</p>
 		</description>
 		<sheet>
-			<description>Immediately after you take the Attack Action with a Quaretrstaff, a Spear or a weapon that has the Heavy and Reach properties, as a Bonus Action tou can make a melee attack, dealing bludgeoning damage. The damage die is a d4. Moreover, you can take a Reaction to make a melee attack to a creature that enters the reach. of your weapon.</description>
+			<description>Immediately after you take the Attack Action with a Quaretrstaff, a Spear or a weapon that has the Heavy and Reach properties, as a Bonus Action you can make a melee attack, dealing bludgeoning damage. The damage die is a d4. Moreover, you can take a Reaction to make a melee attack to a creature that enters the reach of your weapon.</description>
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Polearm Master)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
@@ -1284,6 +1284,7 @@
 		</setters>
 		<rules>
 			<stat name="Strength" value="1" alt="Ability Score Increase" />
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY_RESILIENT">
@@ -1297,6 +1298,7 @@
 		</setters>
 		<rules>
 			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 		</rules>
 	</element>
 	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CONSTITUTION_RESILIENT">
@@ -1309,7 +1311,8 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="constitution" value="1" alt="Ability Score Increase" />
+			<stat name="constitution" value="1" alt="Ability Score Increase" />ù
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
 	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE_RESILIENT">
@@ -1323,6 +1326,7 @@
 		</setters>
 		<rules>
 			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 		</rules>
 	</element>
 	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_WISDOM_RESILIENT">
@@ -1336,6 +1340,7 @@
 		</setters>
 		<rules>
 			<stat name="wisdom" value="1" alt="Ability Score Increase" />
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
 		</rules>
 	</element>
 	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA_RESILIENT">
@@ -1349,6 +1354,7 @@
 		</setters>
 		<rules>
 			<stat name="charisma" value="1" alt="Ability Score Increase" />
+			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
 	
