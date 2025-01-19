@@ -1283,7 +1283,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Strength" value="1" alt="Ability Score Increase" />
+			<stat name="strength" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
@@ -1297,7 +1297,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Dexterity" value="1" alt="Ability Score Increase" />
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Dexterity)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 		</rules>
 	</element>
@@ -1311,7 +1311,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Constitution" value="1" alt="Ability Score Increase" />
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Constitution)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
@@ -1325,7 +1325,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Intelligence" value="1" alt="Ability Score Increase" />
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Intelligence)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 		</rules>
 	</element>
@@ -1339,7 +1339,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Wisdom" value="1" alt="Ability Score Increase" />
+			<stat name="wisdom" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Wisdom)" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
 		</rules>
 	</element>
@@ -1353,7 +1353,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="Charisma" value="1" alt="Ability Score Increase" />
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Charisma)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
