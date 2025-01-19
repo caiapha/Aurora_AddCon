@@ -1311,7 +1311,7 @@
 			<set name="allow duplicate">true</set>
 		</setters>
 		<rules>
-			<stat name="constitution" value="1" alt="Ability Score Increase" />ù
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
