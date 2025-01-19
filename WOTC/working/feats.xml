@@ -938,7 +938,7 @@
 		</rules>
 	</element>
 	<element name="Resilient" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_RESILIENT">
-		<requirements>[level:4]</requirements
+		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
