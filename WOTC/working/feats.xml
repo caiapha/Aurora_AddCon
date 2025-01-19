@@ -862,10 +862,10 @@
 			<p><strong>Encouraging Song.</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>After a Short or Long Rest, you give an Heroic Inspiration to {{proficiency}} allies who ear your song.</description>
+			<description>After a Short or Long Rest, you can give an Heroic Inspiration up to {{proficiency}} allies who ear your song.</description>
 		</sheet>
 		<rules>
-			<select name="Instrument Proficiency (Musician)" type="Proficiency" supports="Musical Instruments" number="3" />
+			<select name="Instrument Proficiency (Musician)" type="Proficiency" supports="Musical Instrument" number="3" />
 		</rules>
 	</element>	
 
