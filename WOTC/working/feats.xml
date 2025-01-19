@@ -1284,7 +1284,7 @@
 		</setters>
 		<rules>
 			<stat name="Strength" value="1" alt="Ability Score Increase" />
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY_RESILIENT">
@@ -1298,7 +1298,7 @@
 		</setters>
 		<rules>
 			<stat name="dexterity" value="1" alt="Ability Score Increase" />
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 		</rules>
 	</element>
 	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CONSTITUTION_RESILIENT">
@@ -1312,7 +1312,7 @@
 		</setters>
 		<rules>
 			<stat name="constitution" value="1" alt="Ability Score Increase" />ù
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
 	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE_RESILIENT">
@@ -1326,7 +1326,7 @@
 		</setters>
 		<rules>
 			<stat name="intelligence" value="1" alt="Ability Score Increase" />
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 		</rules>
 	</element>
 	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_WISDOM_RESILIENT">
@@ -1340,7 +1340,7 @@
 		</setters>
 		<rules>
 			<stat name="wisdom" value="1" alt="Ability Score Increase" />
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
 		</rules>
 	</element>
 	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA_RESILIENT">
@@ -1354,7 +1354,7 @@
 		</setters>
 		<rules>
 			<stat name="charisma" value="1" alt="Ability Score Increase" />
-			<grant name"Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
 	
