@@ -1065,7 +1065,7 @@
 		<rules> 
 			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="ASI, Standard" />
 			<select name="Skill Proficiency (Skill Expert)" type="Skill" />
-			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Epic Boon" />
+			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" />
 		</rules>
 	</element>
 	
