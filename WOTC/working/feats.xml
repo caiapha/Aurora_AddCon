@@ -1234,8 +1234,9 @@
 		</description>
 		<sheet display="false" />
 		<rules> 
-			<stat name="hp" value="level" />
-			<stat name="hp" value="level" />
+			<stat name="tough:hp" value="level" />
+			<stat name="tough:hp" value="level" />
+			<stat name="hp" value="tough:hp" />
 		</rules>
 	</element> 
 	<element name="War Caster" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_WAR_CASTER">
