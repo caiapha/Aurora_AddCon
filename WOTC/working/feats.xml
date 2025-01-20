@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.23">
+		<update version="0.0.24">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -950,7 +950,28 @@
 			<select name="Ability improvement (Resilient)" type="Ability Score Improvement" supports="Resilient" />
 		</rules>
 	</element>
- 	
+	<element name="Ritual Caster" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_RITUAL_CASTER">
+		<requirements>[level:4],([int:13]||[wis:13]]||[cha:13])</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Ritual Spells.</strong> Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</p>
+			<p><strong>Quick Ritual.</strong> With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>Choose {{proficiency}} 1st level spell that have the Ritual tag. These spell are always prepared. Each time you proficiency increases, you can add new 1st level Ritual spells. Moreover, once per Long Rest, you can cast a prepared Ritual spell with regular casting time, without expend a spel slot.</description>
+		</sheet>
+		<rules> 
+			<select name="Ability improvement (Resilient)" type="Ability Score Improvement" supports="Asi, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ritual Caster's Spells" type="spell" supports="1, Ritual" />
+		</rules>
+	</element>
+
+
+
+
+	
 	
 <!-- Ability score improvement -->
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH">
@@ -1272,7 +1293,7 @@
 		</rules>
 	</element>
 
-	<!-- RESILIENT ABILITI SCORE IMPROVEMENT -->
+	<!-- RESILIENT ABILITI SCORE IMPROVEMENT --> <!-- NON SEMPRE ATTIVA IL BONUS QUANDO SI SELEZIONA LA STAT!!!!! -->
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<supports>Resilient</supports>
