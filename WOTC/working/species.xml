@@ -32,29 +32,27 @@
 	</description>
 	<sheet>
 		<description>You gain Resistance to Necrotic and Radiant Damage.
-		You gain Darkvision with a range of 60 feet.
-		Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
+			You gain Darkvision with a range of 60 feet.
+			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
 		</description>
 		<description level="3">You gain Resistance to Necrotic and Radiant Damage.
-		You gain Darkvision with a range of 60 feet.
-		Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
-		Celestial Revelation: Once per Long Rest, as a Bonus Action you can manifest one of the following manifestation for 1 minute:
-		Heavly Wings: you have a Fly Speed equal to your Speed.
-		Inner Radiance: you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.
-		Necrotic Shroud: creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.
-		Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.
+			You gain Darkvision with a range of 60 feet.
+			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
+			Celestial Revelation: Once per Long Rest, as a Bonus Action you can manifest one of the following manifestation for 1 minute:
+			Heavly Wings: you have a Fly Speed equal to your Speed.
+			Inner Radiance: you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.
+			Necrotic Shroud: creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.
+			Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.
 		</description>
 	</sheet>
-		<setters>
-			<set name="height" modifier="2d10">4'8"</set>
-			<set name="weight" modifier="2d4">110 lb.</set>
-
-		</setters>
-		<rules>
-			<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
-			<stat name="innate speed" value="30" />
-			<grant name="Light Bearer" id="ID_PHB24_SPELL_LIGHT" />
-		</rules>
+	<rules>
+		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
+		<stat name="innate speed" value="30" />
+		<grant name="Light Bearer" id="ID_PHB24_SPELL_LIGHT" />
+		<stat name="Necrotic Shroud:dc" value="8" />
+		<stat name="Necrotic Shroud:dc" value="proficiency" />
+		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
+	</rules>
 </element>
 
 <!-- <element name="Human" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
@@ -110,6 +108,10 @@
 			<p class="indent">You occupy a 5 by 5 ft square.</p>
 		</description>
 		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">6'</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
 		<rules>
 			<grant type="Size" name="Size: Medium" id="ID_SIZE_MEDIUM" />
 		</rules>		
@@ -121,6 +123,10 @@
 			<p class="indent">You occupy a 5 by 5 ft square.</p>
 		</description>
 		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">3'</set>
+			<set name="weight" modifier="2d4">55 lb.</set>
+		</setters>
 		<rules>
 			<grant type="Size" name="Size: Small" id="ID_SIZE_SMALL" />
 		</rules>		
