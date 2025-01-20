@@ -53,7 +53,7 @@
 		<rules>
 			<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
 			<stat name="innate speed" value="30" />
-			<grant name="Light" id="ID_" />
+			<grant name="Light Bearer" id="ID_PHB24_SPELL_LIGHT" />
 		</rules>
 </element>
 
@@ -101,10 +101,10 @@
 			<select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" />
 			<select type="Feat" name="Additional Feat (Human)" supports="Origin Feat" />
 		</rules>
-	</element>
+	</element> -->
 
-	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_MEDIUM">
-		<supports>Human size</supports>
+	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
+		<supports>Creature Size</supports>
 		<description>
 			<p>Your body size is Medium. You are roughly 4 to 8 feet tall.</p>
 			<p class="indent">You occupy a 5 by 5 ft square.</p>
@@ -114,8 +114,8 @@
 			<grant type="Size" name="Size: Medium" id="ID_SIZE_MEDIUM" />
 		</rules>		
 	</element>
-	<element name="Small" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN_SIZE_SMALL">
-		<supports>Human size</supports>
+	<element name="Small" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_SMALL">
+		<supports>Creature Size</supports>
 		<description>
 			<p>Your body size is Small. You are roughly 2 to 4 feet tall.</p>
 			<p class="indent">You occupy a 5 by 5 ft square.</p>
@@ -124,5 +124,5 @@
 		<rules>
 			<grant type="Size" name="Size: Small" id="ID_SIZE_SMALL" />
 		</rules>		
-	</element> -->
+	</element>
 </elements>
