@@ -1199,11 +1199,16 @@
 			<p><strong>Telekinetic Shove.</strong> As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can cast Mage Hand without Verbal or Somatic components, you can make the hand Invisible and the range increase by 30ft. Moreover, as a bonus action, you can telikinetically shove a creature within 30 ft. On a failed Strength Saving Throw against DC{{telekinetic dc}} the creature is moved by 5ft toward or away from you.</description>
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Telekinetic)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_MAGE_HAND" />
+			<stat name="telekinetic dc" value="8" />
+			<stat name="telekinetic dc" value="proficiency" />
+			<stat name="telekinetic dc" value="intelligence:modifier" bonus="base" />
+			<stat name="telekinetic dc" value="wisdom:modifier" bonus="base" />
+			<stat name="telekinetic dc" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
 
