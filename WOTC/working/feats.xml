@@ -1082,6 +1082,48 @@
 			<select name="Skill Proficiency (Skilled)" type="Proficiency" supports="(Skill||Tool)" number="3" />
 		</rules>
 	</element>
+	<element name="Skilled" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILLED_2">
+		<requirements>ID_PHB24_FEAT_SKILLED</requirements>
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules> 
+			<select name="Skill Proficiency (Skilled 2)" type="Proficiency" supports="(Skill||Tool)" number="3" />
+		</rules>
+	</element>
+	<element name="Skilled" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILLED_3">
+		<requirements>ID_PHB24_FEAT_SKILLED_2</requirements>
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules> 
+			<select name="Skill Proficiency (Skilled 3)" type="Proficiency" supports="(Skill||Tool)" number="3" />
+		</rules>
+	</element>
+		<element name="Skilled" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILLED_4">
+		<requirements>ID_PHB24_FEAT_SKILLED_3</requirements>
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules> 
+			<select name="Skill Proficiency (Skilled 4)" type="Proficiency" supports="(Skill||Tool)" number="3" />
+		</rules>
+	</element>
 	<element name="Skulker" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKULKER">
 		<requirements>[level:4],[dex:13]</requirements>
 		<supports>General Feat</supports>
