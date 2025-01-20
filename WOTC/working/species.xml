@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-<element name="Aasimar" type="race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
+<element name="Aasimar" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
 	<description>
 		<h4>AASIMAR TRAITS</h4>
 		<p><strong>Creature Type:</strong> Humanoid</p>
