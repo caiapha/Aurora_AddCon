@@ -1064,8 +1064,8 @@
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="ASI, Standard" />
-			<select name="Skill Proficiency (Skill Expert)" type="Skill" />
-			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise, Athletics" />
+			<select name="Skill Proficiency (Skill Expert)" type="Proficiency" supports="Skill" />
+			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" />
 		</rules>
 	</element>
 	
@@ -1224,11 +1224,10 @@
 			<stat name="charisma:max" value="10" />
 		</rules>
 	</element>
-	<!-- SKILL PROFICIENCY -->
 	
+	<!-- AGGIUNGERE LE VOCI PER LA SKILL PROFICIENCY -->
 	
-	
-	<!-- Epic Boon Expertise -->
+	<!-- Epic Boon Expertise --> <!-- AGGIUNGERE REQUIREMENT DELLA PROFICIENCY --> <!-- RICONTROLLARE I FEAT CHE LE RICHIAMANO PER DARE PROFICIENCY -->
 	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
 		<supports>Boon expertise, Acrobatics</supports>
 		<description>
