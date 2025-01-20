@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.26">
+		<update version="0.0.27">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -997,7 +997,7 @@
 			<select name="Ability improvement (Sentinel)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
-		<element name="Shadow-Touched" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHADOW_TOUCHED">
+	<element name="Shadow-Touched" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHADOW_TOUCHED">
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
@@ -1009,12 +1009,44 @@
 			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. Once per Long Rest, you can cast each of these spells without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Shadow-Touched)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
 			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy)" prepared="true" />
 			<grant name="Invisibility (Shadow-Touched)" id="ID_PHB24_SPELL_INVISIBILITY" prepared="true" />
 		</rules>
 	</element>
-
+	<element name="Sharpshooter" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHARPSHOOTER">
+		<requirements>[level:4], [dex:13]</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase.</strong> Increase your Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Bypass Cover.</strong> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.</p>
+			<p><strong>Firing in Melee.</strong> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+			<p><strong>Long Shots.</strong> Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+		</description>
+		<sheet>
+			<description> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover. Use Ranged weapon in Melee or at Long Range doesn't impose Disvantage to attack rolls.</description>
+		</sheet>
+		<rules> 
+			<grant name="Ability improvement (Sharpshooter)" type="Ability Score Improvement" is="ID_PHB24_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Shield Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHIELD_MASTER">
+		<requirements>[level:4], ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</requirements>
+		<supports>General Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<p><strong>Ability Score Increase.</strong> Increase your Strength by 1, to a maximum of 20.</p>
+			<p><strong>Shield Bash.</strong> If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.</p>
+			<p><strong>Interpose Shield.</strong> If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.</p>
+		</description>
+		<sheet>
+			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC {{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
+		</sheet>
+		<rules> 
+			<grant name="Ability improvement (Shield Master)" type="Ability Score Improvement" is="ID_PHB24_FEAT_ASI_STRENGTH" />
+		</rules>
+	</element>
 	
 	
 <!-- Ability score improvement -->
