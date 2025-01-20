@@ -980,7 +980,6 @@
 		<sheet usage="1/Turn">
 			<description>When you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</description>
 		</sheet>
-		<rules> 
 	</element>
 	<element name="Sentinel" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SENTINEL">
 		<requirements>[level:4],([str:13]||[dex:13])</requirements>
