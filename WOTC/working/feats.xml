@@ -1010,8 +1010,8 @@
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
-			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy)" prepared="true" prepared="true" />
-			<grant name="Invisibility (Shadow-Touched)" id="ID_PHB24_SPELL_INVISIBILITY" prepared="true" prepared="true" />
+			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy)" prepared="true" />
+			<grant name="Invisibility (Shadow-Touched)" id="ID_PHB24_SPELL_INVISIBILITY" prepared="true" />
 		</rules>
 	</element>
 
