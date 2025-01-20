@@ -1075,9 +1075,6 @@
 			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
 		<rules> 
 			<select name="Skill Proficiency (Skilled)" type="Proficiency" supports="(Skill||Tool)" number="3" />
 		</rules>
@@ -1089,9 +1086,6 @@
 			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
 		<rules> 
 			<select name="Skill Proficiency (Skilled 2)" type="Proficiency" supports="(Skill||Tool)" number="3" />
 		</rules>
@@ -1103,9 +1097,6 @@
 			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
 		<rules> 
 			<select name="Skill Proficiency (Skilled 3)" type="Proficiency" supports="(Skill||Tool)" number="3" />
 		</rules>
@@ -1117,9 +1108,6 @@
 			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
 		<rules> 
 			<select name="Skill Proficiency (Skilled 4)" type="Proficiency" supports="(Skill||Tool)" number="3" />
 		</rules>
