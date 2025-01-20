@@ -2205,8 +2205,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">true</set>
 		</setters>
-	</element>
-	<element name="Detect Thoughts" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DETECT_THOUGHTS">
+	</element> -->
+	<element name="Detect Thoughts" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_DETECT_THOUGHTS">
 		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected.</p>
@@ -2230,7 +2230,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Dimension Door" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DIMENSION_DOOR">
+<!--	<element name="Dimension Door" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DIMENSION_DOOR">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as “200 feet straight downward” or “upward to the northwest at a 45-degree angle, 300 feet.”</p>
