@@ -1057,7 +1057,7 @@
 			<p>You gain the following benefits:</p>
 			<p><strong>Ability Score Increase.</strong> Increase one ability score by 1, to a maximum of 20.</p>
 			<p><strong>Skill Proficiency.</strong> You gain proficiency in one skill of your choice.</p>
-			<p><strong>Expertise.</strong> hoose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>
+			<p><strong>Expertise.</strong> Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>
 		</description>
 		<sheet>
 			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
@@ -1065,7 +1065,21 @@
 		<rules> 
 			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="ASI, Standard" />
 			<select name="Skill Proficiency (Skill Expert)" type="Proficiency" supports="Skill" />
-			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" />
+			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" /> <!-- generalizzate indipendente da Epic Boon -->
+		</rules>
+	</element>
+	<element name="Skilled" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILLED">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules> 
+			<select name="Skill Proficiency (Skilled)" type="Proficiency" supports="Skill, Tools" number="3" />
 		</rules>
 	</element>
 	
