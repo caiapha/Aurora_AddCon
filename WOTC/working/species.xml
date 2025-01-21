@@ -270,7 +270,7 @@
 	<rules>
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
-		<select name="Fiendish Legacy" type="Racial Trait" suppoerts="Fiendish Legacy" />
+		<select name="Fiendish Legacy" type="Racial Trait" supports="Fiendish Legacy" />
 	</rules>
 </element>	
 <!-- DRACONIC ANCESTRY -->
