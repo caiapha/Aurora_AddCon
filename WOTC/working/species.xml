@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Species</name>
+		<description>Species from the Player's Handbook Rev. 2024</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+		<update version="0.0.1">
+		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
+		</update>
+	</info>
+
+<element name="Aasimar" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
+	<description>
+		<h4>AASIMAR TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 4-7 feet tall) or Small (about 2-4 feet tall), chosen when you select this species</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Celestial Resistance.</strong> You have Resistance to Necrotic damage and Radiant damage.</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
+		<p><strong>Healing Hands.</strong> As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+		<p><strong>Light Bearer.</strong> You know the Light cantrip. Charisma is your spellcasting ability for it.</p>
+		<p><strong>Celestial Revelation.</strong> When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform).
+			The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest.</p>
+		<p class="indet">Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell.
+			The extra damage equals your Proficiency Bonus, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.</p>
+		<p class="indent">Here are the transformation options:</p>
+		<ul>
+			<li><strong>Heavenly Wings.</strong> Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.</li>
+			<li><strong>Inner Radiance.</strong> Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.</li>
+			<li><strong>Necrotic Shroud.</strong> Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.</li>
+		</ul>
+	</description>
+	<sheet>
+		<description>You gain Resistance to Necrotic and Radiant Damage.
+			You gain Darkvision with a range of 60 feet.
+			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
+		</description>
+		<description level="3">You gain Resistance to Necrotic and Radiant Damage.
+			You gain Darkvision with a range of 60 feet.
+			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
+			Celestial Revelation: Once per Long Rest, as a Bonus Action you can manifest one of the following manifestation for 1 minute:
+			Heavly Wings: you have a Fly Speed equal to your Speed.
+			Inner Radiance: you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.
+			Necrotic Shroud: creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.
+			Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.
+		</description>
+	</sheet>
+	<rules>
+		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
+		<stat name="innate speed" value="30" />
+		<grant name="Light Bearer" id="ID_PHB24_SPELL_LIGHT" />
+		<stat name="Necrotic Shroud:dc" value="8" />
+		<stat name="Necrotic Shroud:dc" value="proficiency" />
+		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
+	</rules>
+</element>
+
+<!-- CREATURE SIZE -->
+
+	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
+		<supports>Creature Size</supports>
+		<description>
+			<p>Your body size is Medium. You are roughly 4 to 8 feet tall.</p>
+			<p class="indent">You occupy a 5 by 5 ft square.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">6'</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<grant type="Size" name="Size: Medium" id="ID_SIZE_MEDIUM" />
+		</rules>		
+	</element>
+	<element name="Small" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_SMALL">
+		<supports>Creature Size</supports>
+		<description>
+			<p>Your body size is Small. You are roughly 2 to 4 feet tall.</p>
+			<p class="indent">You occupy a 5 by 5 ft square.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">3'</set>
+			<set name="weight" modifier="2d4">55 lb.</set>
+		</setters>
+		<rules>
+			<grant type="Size" name="Size: Small" id="ID_SIZE_SMALL" />
+		</rules>		
+	</element>
+</elements>
