@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.9">
+		<update version="0.0.10">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -121,7 +121,7 @@
 </element>	
 <element name="Elf" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ELF">
 	<description>
-		<h4>Elf TRAITS</h4>
+		<h4>ELF TRAITS</h4>
 		<p><strong>Creature Type:</strong> Humanoid</p>
 		<p><strong>Size:</strong> Medium (about 5-6 feet tall)</p>
 		<p><strong>Speed:</strong> 30 feet</p>
@@ -146,6 +146,24 @@
 		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage" />
 	</rules>
 </element>
+<element name="Gnome" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GNOME">
+	<description>
+		<h4>GNOME TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Small (about 3-4 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
+		<p><strong>Gnomish Cunning.</strong> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+		<h5>Gnomish Lineage.</h5>
+		<p>You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
+		<p class="indent"><strong>Forest Gnome.</strong> You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+		<p class="indent"><strong>Rock Gnome.</strong> You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+	</description>
+	<sheet display="false" />
+	<rules>
+		<select name="Gnome Lineage" type="Racial Trait" supports="Gnome Lineage" />
+	</rules>
+</element>	
 <!-- DRACONIC ANCESTRY -->
 <element name="Black Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLACK_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -306,7 +324,37 @@
 		<grant name="Pass Without Trace (Wood Elf)" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" />
 	</rules>
 </element>	
-	
+<!-- GNOME LINEAGE -->
+<element name="Forest Gnome" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GNOME_FOREST">
+	<supports>Gnome Lineage</supports>
+	<description>
+		<p>Your belong to the Forest Gnome Lineage.</p>
+	</description>
+	<sheet>
+		<description>You know Minor Illusion cantrip and always have the Speak with Animal spell Prepared. {{proficiency}} times per Long Rest you can cast it without expend a spell slot.</description>
+	</sheet>
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+		<grant name="Minor Illusion (Forest Gnome)" id="ID_PHB24_SPELL_MINOR_ILLUSION" />
+		<grant name="Speak with Animals (Forest Gnome)" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" prepared="true" />
+	</rules>
+</element>
+<element name="Rock Gnome" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GNOME_ROCK">
+	<supports>Gnome Lineage</supports>
+	<description>
+		<p>Your belong to the Rock Gnome Lineage.</p>
+	</description>
+	<sheet>
+		<description>You know Mending and Prestidigitation cantrips. Spending 10 minute casting Prestidigitation you can create a Tiny clockwork device (AC 5, 1 HP), which reproduce one effect of the cantrip when activated with a Bonus Action. Each device lasts up to 8 hours or until you dismantel it. You can have up to 3 devices at the same time.</description>
+	</sheet>
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+		<grant name="Mending (Rock Gnome)" id="ID_PHB_SPELL_MENDING" />
+		<grant name="Prestidigitation (Forest Gnome)" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+	</rules>
+</element>	
 <!-- CREATURE SIZE -->
 
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
