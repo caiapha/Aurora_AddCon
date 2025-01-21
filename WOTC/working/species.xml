@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -143,9 +143,7 @@
 		<p><strong>Trance.</strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
 		
 	</description>
-	<sheet>
-		<description>You have Advantage on Saving Throw against Charmed condition. You don't need to sleep. You can finish a Long Rest in 4 hour of trancelike meditation, during which you retain consciousness.</description>
-	</sheet>
+	<sheet display="false" />
 	<rules>
 		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage" />
 	</rules>
@@ -268,7 +266,7 @@
 		<p>Your belong to the Drow Elf Lineage.</p>
 	</description>
 	<sheet>
-		<description> You have Darkvision with a range of 120 feet.</description>
+		<description> You have Darkvision with a range of 120 feet. You have Advantage on Saving Throw against Charmed condition. You don't need to sleep. You can finish a Long Rest in 4 hour of trancelike meditation, during which you retain consciousness. Once per Long Rest, you can cast the innate spells without expend a spell slot.</description>
 	</sheet>
 	<rules>
 		<stat name="innate speed" value="30" />
@@ -284,7 +282,7 @@
 		<p>Your belong to the High Elf Lineage.</p>
 	</description>
 	<sheet>
-		<description> You have Darkvision with a range of 60 feet. You can replace the cantrip know after each Long Rest.</description>
+		<description> You have Darkvision with a range of 60 feet. You have Advantage on Saving Throw against Charmed condition. You don't need to sleep. You can finish a Long Rest in 4 hour of trancelike meditation, during which you retain consciousness. Once per Long Rest, you can cast the innate spells without expend a spell slot. You can replace the cantrip know after each Long Rest.</description>
 	</sheet>
 	<rules>
 		<stat name="innate speed" value="30" />
@@ -300,7 +298,7 @@
 		<p>Your belong to the Wood Elf Lineage.</p>
 	</description>
 	<sheet>
-		<description> You have Darkvision with a range of 60 feet.</description>
+		<description> You have Darkvision with a range of 60 feet. You have Advantage on Saving Throw against Charmed condition. You don't need to sleep. You can finish a Long Rest in 4 hour of trancelike meditation, during which you retain consciousness. Once per Long Rest, you can cast the innate spells without expend a spell slot.</description>
 	</sheet>
 	<rules>
 		<stat name="innate speed" value="35" />
