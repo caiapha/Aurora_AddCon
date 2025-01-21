@@ -145,7 +145,7 @@
 	</sheet>
 	<rules>
 		<stat name="innate speed" value="30" />
-		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage">
+		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage" />
 	</rules>
 </element>
 <!-- DRACONIC ANCESTRY -->
