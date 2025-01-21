@@ -39,11 +39,10 @@
 			You gain Darkvision with a range of 60 feet.
 			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
 			Celestial Revelation: Once per Long Rest, as a Bonus Action you can manifest one of the following manifestation for 1 minute:
-			Heavly Wings: you have a Fly Speed equal to your Speed.
+			Heavenly Wings: you have a Fly Speed equal to your Speed.
 			Inner Radiance: you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.
 			Necrotic Shroud: creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.
-			Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.
-		</description>
+			Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.</description>
 	</sheet>
 	<rules>
 		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
