@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.13">
+		<update version="0.0.14">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -214,7 +214,7 @@
 	<description>
 		<h4>HUMAN TRAITS</h4>
 		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Medium or Small.</p>
+		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
 		<p><strong>Speed:</strong> 30 feet</p>
 		<p><strong>Resourceful.</strong> You gain Heroic Inspiration whenever you finish a Long Rest.</p>
 		<p><strong>Skillful.</strong> You gain proficiency in one skill of your choice</p>
@@ -246,6 +246,31 @@
 	<rules>
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+	</rules>
+</element>
+	<element name="Tiefling" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TIEFLING">
+	<description>
+		<h4>TIEFLING TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> ou have Darkvision with a range of 60 feet.</p>
+		<h5>Fiendish Legacy.</h5>
+		<p>You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.</p>
+		<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p>
+		<table>
+			<thead><td>Legacy</td><td>Level 1</td><td>Level 3</td><td>Level 5</td></thead>
+			<tr><td><strong>Abyssal</strong></td><td>You have Resistance to Poison damage. You also know the Poison Spray cantrip.</td><td>Ray of Sickness</td><td>Hold Person</td></tr>
+			<tr><td><strong>Chthonic</strong></td><td>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.</td><td>False Life</td><td>Ray of Enfeeblement</td></tr>
+			<tr><td><strong>Infernal</strong></td><td>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.</td><td>Hellish Rebuke</td><td>Darkness</td></tr>
+		</table>
+		<p><strong>Otherworldly Presence.</strong> You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.</p>
+	</description>
+	<sheet display="false">	
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+		<select name="Fiendish Legacy" type="Ratial Trait" suppoerts="Fiendish Legacy" />
 	</rules>
 </element>	
 <!-- DRACONIC ANCESTRY -->
@@ -372,8 +397,8 @@
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
 		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_DANCING_LIGHTS" />
-		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_FAERIE_FIRE" />
-		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_DARKNESS" />
+		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_FAERIE_FIRE" level="3" />
+		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_DARKNESS" level="5" />
 	</rules>
 </element>
 <element name="High Elf" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_ELF_HIGH">
@@ -388,8 +413,8 @@
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<grant name="Prestidigitation (High Elf)" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
-		<grant name="Detect Magic (High ELf)" id="ID_PHB24_SPELL_DETECT_MAGIC" />
-		<grant name="Misty Step (High Elf)" id="ID_PHB24_SPELL_MISTY_STEP" />
+		<grant name="Detect Magic (High ELf)" id="ID_PHB24_SPELL_DETECT_MAGIC" level="3" />
+		<grant name="Misty Step (High Elf)" id="ID_PHB24_SPELL_MISTY_STEP" level="5" />
 	</rules>
 </element>
 <element name="Wood Elf" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_ELF_WOOD">
@@ -404,8 +429,8 @@
 		<stat name="innate speed" value="35" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<grant name="Druidcraft (Wood Elf)" id="ID_PHB24_SPELL_DRUIDCRAFT" />
-		<grant name="Long Strider (Wood ELf)" id="ID_PHB24_SPELL_LONGSTRIDER " />
-		<grant name="Pass Without Trace (Wood Elf)" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" />
+		<grant name="Long Strider (Wood ELf)" id="ID_PHB24_SPELL_LONGSTRIDER" level="3" />
+		<grant name="Pass Without Trace (Wood Elf)" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
 	</rules>
 </element>	
 <!-- GNOME LINEAGE -->
@@ -502,7 +527,49 @@
 		<description>When you take damage from a creature within 60ft of you, you can deal 1d8 Thunder damage to that creature.</description>
 	</sheet>
 </element>
-
+<!-- TIEFLING FIENDISH LEGACY -->
+<element name="Abyssal" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_ABYSSAL">
+	<supports>Fiendish Legacy</supports>
+	<description>
+		<p>You descend from an Abyssal creature</p>
+	</description>
+	<sheet>
+		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
+	</sheet>
+	<rules>
+		<grant name="Poison Spray (Abyssal)" id="ID_PHB24_SPELL_POISON_SPRAY" />
+		<grant name="Ray of Sickness (Abyssal)" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+		<grant name="Darkness (Abyssl)" id="ID_PHB24_SPELL_HOLD_PERSON" level="5" />
+	</rules>
+</element>
+<element name="Chthonic" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_CHTHONIC">
+	<supports>Fiendish Legacy</supports>
+	<description>
+		<p>You descend from a Chthonic creature</p>
+	</description>
+	<sheet>
+		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
+	</sheet>
+	<rules>
+		<grant name="Chill Touch (Chthonic)" id="ID_PHB24_SPELL_CHILL_TOUCH" />
+		<grant name="False Life (Chthonic)" id="ID_PHB24_SPELL_FALSE_LIFE" level="3" />
+		<grant name="Ray of Enfeeblement (Chthonic)" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
+	</rules>
+</element>
+<element name="Infernal" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_INFERNAL">
+	<supports>Fiendish Legacy</supports>
+	<description>
+		<p>You descend from a Infernal creature</p>
+	</description>
+	<sheet>
+		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
+	</sheet>
+	<rules>
+		<grant name="Fire Bolt (Infernal)" id="ID_PHB_SPELL_FIRE_BOLT" />
+		<grant name="Hellish Rebuke (Infernal)" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+		<grant name="Darkness (Infernal)" id="ID_PHB24_SPELL_DARKNESS" level="5" />
+	</rules>
+</element>	
 	 
 <!-- CREATURE SIZE -->
 
