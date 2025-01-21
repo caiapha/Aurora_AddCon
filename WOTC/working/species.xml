@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.10">
+		<update version="0.0.11">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -162,6 +162,34 @@
 	<sheet display="false" />
 	<rules>
 		<select name="Gnome Lineage" type="Racial Trait" supports="Gnome Lineage" />
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+	</rules>
+</element>
+<element name="Goliath" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GOLIATH">
+	<description>
+		<h4>GOLIATH TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 7-8 feet tall)</p>
+		<p><strong>Speed:</strong> 35 feet</p>
+		<p><strong>Powerful Build.</strong> You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>
+		<p><strong>Large Form.</strong> Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+		<h5>Giant Ancestry</h5>
+		<p><strong>You are descended from Giants. Choose one of the following benefits, a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p>
+		<p class="indent"><strong>Cloud's Jaunt (Cloud Giant)</strong> As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+		<p class="indent"><strong>Fire's Burn (Fire Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+		<p class="indent"><strong>Frost's Chill (Frost Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+		<p class="indent"><strong>Hill's Tumble (Hill Giant).</strong> When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+		<p class="indent"><strong>Stone's Endurance (Stone Giant).</strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+		<p class="indent"><strong>Storm's Thunder (Storm Giant).</strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+	</description>
+	<sheet>
+		<description>You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity.</description>
+		<description level="5">You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity. Once per Long Rest, as a Bonus Action, you can change your size to Large. For 10 minutes, or until you end it (no action required), you have Advantage on Strength Checks and your speed increases by 10 ft.</description>
+	</sheet>	
+	<rules>
+		<select name="Goliath Lineage" type="Racial Trait" supports="Goliath Lineage" />
+		<stat name="innate speed" value="30" />
 	</rules>
 </element>	
 <!-- DRACONIC ANCESTRY -->
@@ -334,8 +362,6 @@
 		<description>You know Minor Illusion cantrip and always have the Speak with Animal spell Prepared. {{proficiency}} times per Long Rest you can cast it without expend a spell slot.</description>
 	</sheet>
 	<rules>
-		<stat name="innate speed" value="30" />
-		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<grant name="Minor Illusion (Forest Gnome)" id="ID_PHB24_SPELL_MINOR_ILLUSION" />
 		<grant name="Speak with Animals (Forest Gnome)" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" prepared="true" />
 	</rules>
@@ -349,12 +375,73 @@
 		<description>You know Mending and Prestidigitation cantrips. Spending 10 minute casting Prestidigitation you can create a Tiny clockwork device (AC 5, 1 HP), which reproduce one effect of the cantrip when activated with a Bonus Action. Each device lasts up to 8 hours or until you dismantel it. You can have up to 3 devices at the same time.</description>
 	</sheet>
 	<rules>
-		<stat name="innate speed" value="30" />
-		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<grant name="Mending (Rock Gnome)" id="ID_PHB_SPELL_MENDING" />
 		<grant name="Prestidigitation (Forest Gnome)" id="ID_PHB_SPELL_PRESTIDIGITATION" />
 	</rules>
+</element>
+<!-- GOLIATH LINEAGE -->
+<element name="Cloud's Jaunt (Cloud Giant)" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_CLOUD">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Cloud Giants.</p>
+		<p>As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+		<description>You teleport yourself up to 30ft to an unoccupied space you can see.</description>
+	</sheet>
+</element>
+<element name="Fire's Burn (Fire Giant)" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_FIRE">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Fire Giants.</p>
+		<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest">
+		<description>When you hit with an attack roll and deal damage, you can add 1d10 Fire extra damage.</description>
+	</sheet>
 </element>	
+<element name="Frost's Chill (Frost Giant)" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_FROST">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Frost Giants.</p>
+		<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest">
+		<description>When you hit with an attack roll and deal damage, you can add 1d6 Cold extra damage and reduce the target's speed by 10ft until the start of your next turn.</description>
+	</sheet>
+</element>
+<element name="Hill's Tumble (Hill Giant)" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_HILL">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Hill Giants.</p>
+		<p>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest">
+		<description>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</description>
+	</sheet>
+</element>
+<element name="Stone's Endurance (Stone Giant)" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_STONE">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Stone Giants.</p>
+		<p>When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+		<description>When you take damage, you can reduce the damage by 1d12+{{constitution:modifier}}</description>
+	</sheet>
+</element>
+<element name="Storm's Thunder (Storm Giant)." type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLIATH_STORM">
+	<supports>Goliath Lineage</supports>
+	<description>
+		<p>You descend from Storm Giants.</p>
+		<p>When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+	</description>
+	<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+		<description>When you take damage from a creature within 60ft of you, you can deal 1d8 Thunder damage to that creature.</description>
+	</sheet>
+</element>
+
+	 
 <!-- CREATURE SIZE -->
 
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
