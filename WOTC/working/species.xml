@@ -225,7 +225,7 @@
 	</sheet>	
 	<rules>
 		<stat name="innate speed" value="30" />
-		<select name="Skillful (Human)" type="proficiency" supports="Skill" />
+		<select name="Skillful (Human)" type="proficiency" supports="skill" />
 		<select name="Versatile (Human)" type="Feat" supports="Origin Feat" />
 	</rules>
 </element>	
