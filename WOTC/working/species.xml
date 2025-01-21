@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -87,7 +87,7 @@
 	<rules>
 		<grant type="Racial Trait" name="Dragonborn size" id="ID_PHB24_RACE_SIZE_MEDIUM" />
 		<stat name="innate speed" value="30" />
-		<select name="Draconic Ancestry" type="Racial Traits" supports="Draconic Ancestry" />
+		<select name="Draconic Ancestry" type="Racial Trait" supports="Draconic Ancestry" />
 		<stat name="dragon breath.dc" value="8" />
 		<stat name="dragon breath.dc" value="proficiency" />
 		<stat name="dragon breath.dc" value="constitution:modifier" />
@@ -106,7 +106,7 @@
 		<p>Your gain resistance to Acid damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Acid damages. During an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
+		<description>You are resistant to Acid damages. {{proficiency}} times per Long Rest, during an attack action you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Blue Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLUE_ANCESTRY">
@@ -117,7 +117,7 @@
 		<p>Your gain resistance to Lightning damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Lightning damages. During an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
+		<description>You are resistant to Lightning damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Brass Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRASS_ANCESTRY">
@@ -128,7 +128,7 @@
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Bronze Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRONZE_ANCESTRY">
@@ -139,7 +139,7 @@
 		<p>Your gain resistance to Lightning damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Lightning damages. During an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
+		<description>You are resistant to Lightning damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Copper Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_COPPER_ANCESTRY">
@@ -150,7 +150,7 @@
 		<p>Your gain resistance to Acid damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Acid damages. During an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
+		<description>You are resistant to Acid damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Gold Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLD_ANCESTRY">
@@ -161,7 +161,7 @@
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Green Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GREEN_ANCESTRY">
@@ -172,7 +172,7 @@
 		<p>Your gain resistance to Poison damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Poison damages. During an attack action, you can replace one attack with a Poison Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Poison Damages. On a save, damage halves.</description>
+		<description>You are resistant to Poison damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Poison Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Poison Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Red Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RED_ANCESTRY">
@@ -183,7 +183,7 @@
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="Silver Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_SILVER_ANCESTRY">
@@ -194,7 +194,7 @@
 		<p>Your gain resistance to Cold damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Cold damages. During an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
+		<description>You are resistant to Cold damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <element name="White Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_WHITE_ANCESTRY">
@@ -205,7 +205,7 @@
 		<p>Your gain resistance to Cold damages.</p>		
 	</description>
 	<sheet>
-		<description>You are resistant to Cold damages. During an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
+		<description>You are resistant to Cold damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
 	</sheet>
 </element>	
 <!-- CREATURE SIZE -->
