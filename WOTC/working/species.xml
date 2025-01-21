@@ -185,13 +185,32 @@
 	</description>
 	<sheet>
 		<description>You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity.</description>
-		<description level="5">You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity. Once per Long Rest, as a Bonus Action, you can change your size to Large. For 10 minutes, or until you end it (no action required), you have Advantage on Strength Checks and your speed increases by 10 ft.</description>
+		<description level="5">You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity. Once per Long Rest, as a Bonus Action, you can change your size to Large for 10 minutes, or until you end it (no action required). In this form you have Advantage on Strength Checks and your speed increases by 10 ft.</description>
 	</sheet>	
 	<rules>
 		<select name="Goliath Lineage" type="Racial Trait" supports="Goliath Lineage" />
+		<stat name="innate speed" value="35" />
+	</rules>
+</element>
+<element name="Halflings" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HALFLINGS">
+	<description>
+		<h4>HALFLINGS TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Small (about 2-3 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Brave.</strong> You have Advantage on saving throws you make to avoid or end the Frightened condition.</p>
+		<p><strong>Halfling Nimbleness.</strong> You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>
+		<p><strong>Luck.</strong> When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>
+		<p><strong>Naturally Stealthy.</strong> You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
+	</description>
+	<sheet>
+		<description>You have Advantage on Saving Throw against the Frightened condition. Moreover, you can move through a space of any creature large than you, but you can't stop in it. You can take the Hide action when obscured by a creature at least one size larger than you. Moreover, when you roll a 1, you can reroll and take the new result.</description>
+	</sheet>	
+	<rules>
 		<stat name="innate speed" value="30" />
 	</rules>
-</element>	
+</element>
+	
 <!-- DRACONIC ANCESTRY -->
 <element name="Black Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLACK_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -385,6 +404,7 @@
 	<description>
 		<p>You descend from Cloud Giants.</p>
 		<p>As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
 		<description>You teleport yourself up to 30ft to an unoccupied space you can see.</description>
@@ -395,6 +415,7 @@
 	<description>
 		<p>You descend from Fire Giants.</p>
 		<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest">
 		<description>When you hit with an attack roll and deal damage, you can add 1d10 Fire extra damage.</description>
@@ -405,6 +426,7 @@
 	<description>
 		<p>You descend from Frost Giants.</p>
 		<p>When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest">
 		<description>When you hit with an attack roll and deal damage, you can add 1d6 Cold extra damage and reduce the target's speed by 10ft until the start of your next turn.</description>
@@ -415,6 +437,7 @@
 	<description>
 		<p>You descend from Hill Giants.</p>
 		<p>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest">
 		<description>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</description>
@@ -425,6 +448,7 @@
 	<description>
 		<p>You descend from Stone Giants.</p>
 		<p>When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
 		<description>When you take damage, you can reduce the damage by 1d12+{{constitution:modifier}}</description>
@@ -435,6 +459,7 @@
 	<description>
 		<p>You descend from Storm Giants.</p>
 		<p>When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+		<p>You can use this feature a numer of times equal to your Proficiency Bonus per Long Rest.</p>
 	</description>
 	<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
 		<description>When you take damage from a creature within 60ft of you, you can deal 1d8 Thunder damage to that creature.</description>
