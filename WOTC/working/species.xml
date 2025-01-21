@@ -4,12 +4,12 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
 
-<element name="Aasimar" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
+<element name="Aasimar" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR">
 	<description>
 		<h4>AASIMAR TRAITS</h4>
 		<p><strong>Creature Type:</strong> Humanoid</p>
@@ -53,7 +53,161 @@
 		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
 	</rules>
 </element>
-
+<element name="Dragonborn" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DRAGONBORN">
+	<description>
+		<h4>DRAGONBORN TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 5-7 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<h5>Draconic Ancestry.</h5>
+		<p>Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.</p>
+		<table>
+			<thead><td><strong>Dragon</strong></td><td><strong>Damage type</strong></td></thead>
+			<tr><td>Black</td><td>Acid</td></tr>
+			<tr><td>Blue</td><td>Lightning</td></tr>
+			<tr><td>Brass</td><td>Fire</td></tr>
+			<tr><td>Bronze</td><td>Lightning</td></tr>
+			<tr><td>Copper</td><td>Acid</td></tr>
+			<tr><td>Gold</td><td>Fire</td></tr>
+			<tr><td>Green</td><td>Poison</td></tr>
+			<tr><td>Red</td><td>Fire</td></tr>
+			<tr><td>Silver</td><td>Cold</td></tr>
+			<tr><td>White</td><td>Cold</td></tr>
+		</table>
+		<p><strong>Breath Weapon.</strong> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>
+		<p class="indent">You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+		<p><strong>Damage Resistance.</strong> You have Resistance to the damage type determined by your Draconic Ancestry trait.</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
+		<p><strong>Draconic Flight.</Strong> When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+	</description>
+	<sheet>
+		<description>You have 60ft of Darkvision. </description>
+		<description level="5">Once per Long Rest, as a Bonus Action, you gain a {{speed}}ft Fly Speed for 10 minutes, or until you end it (no action) or are Incapacitated.</description>
+	</sheet>
+	<rules>
+		<grant type="Racial Trait" name="Dragonborn size" id="ID_PHB24_RACE_SIZE_MEDIUM" />
+		<stat name="innate speed" value="30" />
+		<select name="Draconic Ancestry" type="Racial Traits" supports="Draconic Ancestry" />
+		<stat name="dragon breath.dc" value="8" />
+		<stat name="dragon breath.dc" value="proficiency" />
+		<stat name="dragon breath.dc" value="constitution:modifier" />
+		<stat name="dragon breath:damage" value="1" />
+		<stat name="dragon breath:damage" value="1" level="5" />
+		<stat name="dragon breath:damage" value="1" level="11" />
+		<stat name="dragon breath:damage" value="1" level="17" />
+	</rules>
+</element>
+<!-- DRACONIC ANCESTRY -->
+<element name="Black Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLACK_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Black dragon progenitor.</p>
+		<p>Your dragon breath is Acid type.</p>
+		<p>Your gain resistance to Acid damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Acid damages. During an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Blue Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLUE_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Blue dragon progenitor.</p>
+		<p>Your dragon breath is Lightning type.</p>
+		<p>Your gain resistance to Lightning damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Lightning damages. During an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Brass Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRASS_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Brass dragon progenitor.</p>
+		<p>Your dragon breath is Fire type.</p>
+		<p>Your gain resistance to Fire damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Bronze Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRONZE_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Bronze dragon progenitor.</p>
+		<p>Your dragon breath is Lightning type.</p>
+		<p>Your gain resistance to Lightning damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Lightning damages. During an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Copper Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_COPPER_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Copper dragon progenitor.</p>
+		<p>Your dragon breath is Acid type.</p>
+		<p>Your gain resistance to Acid damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Acid damages. During an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Gold Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLD_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Gold dragon progenitor.</p>
+		<p>Your dragon breath is Fire type.</p>
+		<p>Your gain resistance to Fire damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Green Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GREEN_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Green dragon progenitor.</p>
+		<p>Your dragon breath is Poisone type.</p>
+		<p>Your gain resistance to Poison damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Poison damages. During an attack action, you can replace one attack with a Poison Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Poison Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Red Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RED_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Red dragon progenitor.</p>
+		<p>Your dragon breath is Fire type.</p>
+		<p>Your gain resistance to Fire damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Fire damages. During an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="Silver Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_SILVER_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a Silver dragon progenitor.</p>
+		<p>Your dragon breath is Cold type.</p>
+		<p>Your gain resistance to Cold damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Cold damages. During an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
+	</sheet>
+</element>
+<element name="White Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_WHITE_ANCESTRY">
+	<supports>Draconic Ancestry</supports>
+	<description>
+		<p>Your lineage stems from a White dragon progenitor.</p>
+		<p>Your dragon breath is Cold type.</p>
+		<p>Your gain resistance to Cold damages.</p>		
+	</description>
+	<sheet>
+		<description>You are resistant to Cold damages. During an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
+	</sheet>
+</element>	
 <!-- CREATURE SIZE -->
 
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
