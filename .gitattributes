@@ -1,2 +1,2 @@
 * text=auto
-*.xml eol=crlf
+*.xml text eol=crlf
