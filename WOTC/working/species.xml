@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.12">
+		<update version="0.0.13">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/species.xml" />
 		</update>
 	</info>
@@ -204,7 +204,7 @@
 		<p><strong>Naturally Stealthy.</strong> You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
 	</description>
 	<sheet>
-		<description>You have Advantage on Saving Throw against the Frightened condition. Moreover, you can move through a space of any creature large than you, but you can't stop in it. You can take the Hide action when obscured by a creature at least one size larger than you. Moreover, when you roll a 1, you can reroll and take the new result.</description>
+		<description>You have Advantage on Saving Throw against the Frightened condition. Moreover, you can move through a space of any creature large than you, but you can't stop in it. You can take the Hide action when obscured by a creature at least one size larger than you. Moreover, when you roll a 1 on a D20 Test, you can reroll and take the new result.</description>
 	</sheet>	
 	<rules>
 		<stat name="innate speed" value="30" />
@@ -227,6 +227,25 @@
 		<stat name="innate speed" value="30" />
 		<select name="Skillful (Human)" type="Proficiency" supports="Skill" />
 		<select name="Versatile (Human)" type="Feat" supports="Origin Feat" />
+	</rules>
+</element>
+<element name="Orc" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ORC">
+	<description>
+		<h4>ORC TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (6-7 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Adrenaline Rush.</strong> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
+		<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p>
+		<p><strong>Relentless Endurance.</strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+	</description>
+	<sheet>
+		<description>As a Bonus Action, you can take the Dash action, gaining {{proficiency}} temporary HP. You can use this feature {{proficiency}} times per Short Rest. Moreover, once per Long Rest, when you are reduced to 0 HP but not killed, you can drop to 1 HP instead.</description>
+	</sheet>	
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
 	</rules>
 </element>	
 <!-- DRACONIC ANCESTRY -->
