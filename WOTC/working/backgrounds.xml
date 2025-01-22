@@ -22,15 +22,41 @@
 		</descripion>
     <sheet display="false" /> 
     <rules>
-      <select name="Ability Score Improvement (Acolyte)" type="Background Feature" suports="Background" />
+      <select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background" />
     </rules>
    </element>
+<!-- BACKGROUND FEATURES -->	
    <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1">
      <supports>Background</supports>
      <rules>
        <select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Intelligence||Wisdom||Charisma)" />
-       <select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Single, (Intelligence||Wisdom||Charisma)" />
+       <select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
      </rules> 
    </element>
-  <element
+	
+  <!-- ABILITY SCORE IMPROVEMENT -->
+   <element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE">
+		<supports>Standard, Intelligence</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="Intelligence" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE2">
+		<supports>Double, Intelligence</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="Intelligence" value="2" alt="Ability Score Increase" />
+		</rules>
+	</element>
 </elements>
