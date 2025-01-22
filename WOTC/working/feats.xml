@@ -7,7 +7,7 @@
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
-	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT">
+<!--	<element name="Ability Score Improvement" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT">
 		<supports>General Feat</supports>
 		<description>
 			<p>Increase one ability score of your choice by 2 or two ability scores of your choice by 1. This feat can't increase an ability score above 20.</p>
@@ -17,7 +17,7 @@
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase" number="2" supports="ASI, Standard" />
 		</rules>
-	</element>
+	</element> -->
 	<element name="Actor" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ACTOR">
 		<requirements>[level:4], [cha:13]</requirements>
 		<supports>General Feat</supports>
@@ -31,7 +31,7 @@
 			<description>you have Advantage on Charisma (Deception or Performance) checks to convince others that you are a different person. You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom (Insight) check against DC{{actor dc}}.</description>
 		</sheet>
 		<rules>
-			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_CHARISMA" />
+			<grant name="Charisma improvement (Actor)" type="Ability Score Improvement" id="ID_PHB24_ASI_CHARISMA" />
 			<stat name="actor dc" value="8" />
 			<stat name="actor dc" value="charisma:modifier" />
 			<stat name="actor dc" value="proficiency" />
@@ -65,11 +65,11 @@
 			<description>When you have the Prone condition, you can right yourself with only 5 feet of movement. You can make a running Long or High Jump after moving only 5 feet.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Athlete)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Athlete)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 			<stat name="speed:climb" value="speed" />
 		</rules>
 	</element>
-	<element name="Boon of Combat Prowess" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_COMBAT_POWESS">
+<!--	<element name="Boon of Combat Prowess" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_COMBAT_POWESS">
 		<requirements>[level:19]</requirements>
 		<supports>Boon Feat</supports>
 		<description>
@@ -279,7 +279,7 @@
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
 		</rules>
-	</element>
+	</element> -->
 	<element name="Charger" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CHARGER">
 		<requirements>[level:4], ([str:13]||[dex:13])</requirements>
 		<supports>General Feat</supports>
@@ -293,7 +293,7 @@
 			<description>When you take the Dash action, your Speed increases by 10 feet for that action. Moreover, once per Turn, if you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Charger)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Charger)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
  	<element name="Chef" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CHEF">
@@ -310,7 +310,7 @@
 			<description>During a short rest, you can prepare {{Replenishing Meal}} rations of food. The creature regaining Hit Points during the Short Rest can eat one of it and regain 1d8 extra Hit Points. Moreover, with an hour of work or at the end of a Long Rest, you can prepare {{proficiency}} treats, which lasts 8 hours. A creature can expend a Bonus action to eat it to gain {{proficiency}} Temporary Hit Point.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="ASI, Standard, (Constitution||Wisdom)" />
+			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="Standard, (Constitution||Wisdom)" />
 			<stat name="Replenishing Meal" value="4" bonus="base" />
 			<stat name="Replenishing Meal" value="proficiency" />
 			<grant name="Tool Proficiency (Chef)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> <!-- REFERENCE TO BE UPDATED TO THE PHB24 --> 
@@ -355,7 +355,7 @@
 			<description>You ignore the Loading property of any type of Crossbow and can reload without free hand. You add your ability modifier to the damage of an extra attack of the Light property if made with a crossbow.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability Score Increase (Crossbow Expert)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY"/>
+			<grant name="Ability Score Increase (Crossbow Expert)" type="Ability Score Improvement" id="ID_PHB24_ASI_DEXTERITY"/>
 		</rules>
 	</element>
 	<element name="Crusher" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_CRUSHER">
@@ -371,7 +371,7 @@
 			<description>Once per turn, when you hit a creature dealing bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you. Moreover, when you score a Critical Hit dealing bludgeoning damage, attack rolls aganinst that creature have Advantage until the start of your next turn.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Crusher)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Crusher)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
  	<element name="Defensive Duelist" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DEFENSIVE_DUELIST">
@@ -386,7 +386,7 @@
 			<description>If you're holding a Finesse weapon and a creature hits you with a melee attack, you add +{{proficiency}} to your AC for any melee attack until the start of your next turn.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability Score Increase (Defensive Duelist)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY"/>
+			<grant name="Ability Score Increase (Defensive Duelist)" type="Ability Score Improvement" id="ID_PHB24_ASI_DEXTERITY"/>
 		</rules>
 	</element>
  	<element name="Dual Wielder" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DUAL_WIELDER">
@@ -402,7 +402,7 @@
 			<description>When you use the Two-Weapon Fighting rule, you can make the bonus attack with any weapon that lacks the Two-Handed property. Moreover, you can drow or stow two one-hand weapon instead of one.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Dual Wielder)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Dual Wielder)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>										 	
 	</element>
 	<element name="Durable" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_DURABLE">
@@ -418,7 +418,7 @@
 			<description>You have Advantage on Death Saving Throws. Moreover, as a Bonus Action you can expend one Hit Point Die, roll it and ragain a number of Hit Points equal to the roll</description>
 		</sheet>
 		<rules>
-			<grant name="Ability improvement (Durable)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_CONSTITUTION" />
+			<grant name="Ability improvement (Durable)" type="Ability Score Improvement" id="ID_PHB24_ASI_CONSTITUTION" />
 		</rules>										 	
 	</element>
 	<element name="Elemental Adept" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT">
@@ -432,7 +432,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept"/>
 		</rules>
 	</element>
@@ -447,7 +447,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept"/>
 		</rules>
 	</element>
@@ -462,7 +462,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept"/>
 		</rules>
 	</element>
@@ -477,7 +477,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept"/>
 		</rules>
 	</element>
@@ -492,7 +492,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Elemental Adept)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select type="Feat Feature" name="Elemental Adept" supports="Elemental Adept"/>
 		</rules>
 	</element>
@@ -556,7 +556,7 @@
 			<description>You can cast the spell you learned and Misty Step once per Long Rest, without expending a spell slot.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Fey-Touchd)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Fey-Touchd)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Misty Step (Fey-Touched)" type="spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" />
 			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment)" prepared="true" />
 		</rules>										 	
@@ -575,7 +575,7 @@
 			<description>Once per Turn, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. Moreover, you have Advantage on attack rolls against a creature grappled by you. You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Grappler)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Grappler)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
  	<element name="Great Weapon Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_GREAT_WEAPON_MASTER">
@@ -591,7 +591,7 @@
 			<description>When you deal damage with a Heavy weapon as part of you Attack Action, you can deal {{proficiency}} extra damage. Moreover, when you score a Critical Hit or reduce a creature to 0 Hit Points with a melee weapon, you can make one extra attack with a Bonus Attack.</description>
 		</sheet>
 		<rules>
-			<grant name="Ability improvement (Great Weapon Master)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_STRENGTH" />
+			<grant name="Ability improvement (Great Weapon Master)" type="Ability Score Improvement" id="ID_PHB24_ASI_STRENGTH" />
 		</rules>
 	</element>
 	<element name="Healer" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_HEALER">
@@ -615,7 +615,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Constitution)" />
+			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Constitution)" />
 			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 		</rules>
 	</element>
@@ -631,7 +631,7 @@
 			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
 		</sheet>	
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Constitution)" />
+			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Constitution)" />
 		</rules>
 	</element>
 	<element name="Inspiring Leader" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_INSPIRING_LEADER">
@@ -646,7 +646,7 @@
 			<description>Up to 6 allies (can include yourself) gain {{inspiring leader hp}} Temporary Hit Points.</description>
 		</sheet>	
 		<rules>
-			<select name="Ability improvement (Inspiring Leader)" type="Ability Score Improvement" supports="ASI, Standard, (Wisdom||Charisma)" />
+			<select name="Ability improvement (Inspiring Leader)" type="Ability Score Improvement" supports="Standard, (Wisdom||Charisma)" />
 			<stat name="inspiring leader hp" value="level" />
 			<stat name="inspiring leader hp" value="wisdom:modifier" bonus="base" />
 			<stat name="inspiring leader hp" value="charisma:modifier" bonus="base" />
@@ -665,7 +665,7 @@
 			<description>You can take the Study action as a Bonus Action</description>
 		</sheet>	
 		<rules>
-			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_INTELLIGENCE" />
+			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" />
 			<select name="Skill Proficiency (Knee Mind)" type="Feat Feature" supports="Boon expertise, (Arcana||History||Investigation||Nature||Religion)" />
 		</rules>
 	</element>
@@ -679,7 +679,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexteriry)" />
+			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexteriry)" />
 			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<grant name="Heavily Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
 		</rules>
@@ -709,7 +709,7 @@
 			<description>When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration. Moreover, once per Short Rest in you fail a Wisdom or Charisma saving throw, you can succeed instead.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexteriry)" />
+			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexteriry)" />
 		</rules>	
 	</element>
  	<element name="Magic Initiate" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE">
@@ -803,7 +803,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Martial Weapon Training)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Martial Weapon Training)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 			<grant name="Martial Weapon Training" type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</element>
@@ -819,7 +819,7 @@
 			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
 		</sheet>	
 		<rules>
-			<select name="Ability improvement (Medium Armor Master)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Medium Armor Master)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 			<stat name="ac:armored:dexterity:cap" value="3" bonus="base"/>
 		</rules>
 	</element>
@@ -833,7 +833,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Ability improvement (Moderately Armored)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Moderately Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 		</rules>
 	</element>
@@ -851,7 +851,7 @@
 			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount. Moreover, while mounting, when your mount make a Dexterity Saving Throw to save damage, it takes half damage on a fail and no damage on a success. While mounting, you can force an attack that hits your mount to hit you instead.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Mounted Combatant)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity||Wisdom)" />
+			<select name="Ability improvement (Mounted Combatant)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity||Wisdom)" />
 		</rules>
 	</element>
 	<element name="Musician" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MUSICIAN">
@@ -881,7 +881,7 @@
 			<description>You can take the Search action as a Bonus Action</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Observant)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom)" />
+			<select name="Ability improvement (Observant)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom)" />
 			<select name="Skill Proficiency (Observant)" type="Feat Feature" supports="Boon expertise, (Insight||Investigation||Perception)" />
 		</rules>
 	</element>
@@ -898,7 +898,7 @@
 			<description>Once per Turn, you can reroll one damage roll dealt with a Piercing weapon. Moreover, when you score a Critical Hit dealing piercing damage, you roll one extra damage die.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Piercer)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Piercer)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
 	<element name="Poisoner" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_POISONER">
@@ -914,7 +914,7 @@
 			<description>You ignore the Resistance to Poison Damage. Moreover, using a Poisoner's Kit for 1 hour and expending 50GP worth materials, you create {{proficiency}} poison doses. As a Bonus Action you can apply the poison to a weapon or ammunition. The applied poison lasts for 1 minute or until you deal damage with that weapon. A creature hit with the poisonous weapon must succeed on a Constitution Saving Throw against DC{{poisoner dc}} or take 2d8 of extra poisonous damage and suffer the poisoned condition until the End of your next turn.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Poisoner)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Dexterity)" />
+			<select name="Ability improvement (Poisoner)" type="Ability Score Improvement" supports="Standard, (Intelligence||Dexterity)" />
 			<stat name="poisoner dc" value="8" />
 			<stat name="poisoner dc" value="proficiency" />
 			<stat name="poisoner dc" value="dexterity:modifier" bonus="base" />
@@ -934,7 +934,7 @@
 			<description>Immediately after you take the Attack Action with a Quaretrstaff, a Spear or a weapon that has the Heavy and Reach properties, as a Bonus Action you can make a melee attack, dealing bludgeoning damage. The damage die is a d4. Moreover, you can take a Reaction to make a melee attack to a creature that enters the reach of your weapon.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Polearm Master)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Polearm Master)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
 	<element name="Resilient" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_RESILIENT">
@@ -963,7 +963,7 @@
 			<description>Choose {{proficiency}} 1st level spell that have the Ritual tag. These spell are always prepared. Each time you proficiency increases, you can add new 1st level Ritual spells. Moreover, once per Long Rest, you can cast a prepared Ritual spell with regular casting time, without expend a spel slot.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="2" level="4" prepared="true" />
 			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="5" prepared="true" />
 			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="9" prepared="true" />
@@ -994,7 +994,7 @@
 			<description>Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature. Moreover, when you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Sentinel)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Sentinel)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
 	<element name="Shadow-Touched" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHADOW_TOUCHED">
@@ -1009,7 +1009,7 @@
 			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. Once per Long Rest, you can cast each of these spells without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Shadow-Touched)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Shadow-Touched)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy)" prepared="true" />
 			<grant name="Invisibility (Shadow-Touched)" id="ID_PHB24_SPELL_INVISIBILITY" prepared="true" />
 		</rules>
@@ -1028,7 +1028,7 @@
 			<description> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover. Use Ranged weapon in Melee or at Long Range doesn't impose Disvantage to attack rolls.</description>
 		</sheet>
 		<rules> 
-			<grant name="Ability improvement (Sharpshooter)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY" />
+			<grant name="Ability improvement (Sharpshooter)" type="Ability Score Improvement" id="ID_PHB24_ASI_DEXTERITY" />
 		</rules>
 	</element>
 	<element name="Shield Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SHIELD_MASTER">
@@ -1044,7 +1044,7 @@
 			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
 		</sheet>
 		<rules> 
-			<grant name="Ability improvement (Shield Master)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_STRENGTH" />
+			<grant name="Ability improvement (Shield Master)" type="Ability Score Improvement" id="ID_PHB24_ASI_STRENGTH" />
 			<stat name="Shield Master dc" value="8" />
 			<stat name="Shield Master dc" value="proficiency" />
 			<stat name="Shield Master dc" value="strength:modifier" />
@@ -1063,7 +1063,7 @@
 			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="ASI, Standard" />
+			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="Standard" />
 			<select name="Skill Proficiency (Skill Expert)" type="Proficiency" supports="Skill" />
 			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" /> <!-- generalizzate indipendente da Epic Boon -->
 		</rules>
@@ -1125,7 +1125,7 @@
 			<description>You have Blindsight with a range of 10 feet. You have Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat. Moreover, if you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</description>
 		</sheet>	
 		<rules> 
-			<grant name="Ability improvement (Skulker)" type="Ability Score Improvement" id="ID_PHB24_FEAT_ASI_DEXTERITY" />
+			<grant name="Ability improvement (Skulker)" type="Ability Score Improvement" id="ID_PHB24_ASI_DEXTERITY" />
 			<!-- AGGIUNGERE IL GRANT BLIDSIGHT -->
 		</rules>
 	</element>
@@ -1141,7 +1141,7 @@
 			<description>Once per Turn, when you deal Slashing damages, you can reduce the speed of the target by 10 ft until the start of your next turn. Moreover, when you score a Critical Hit dealing Slashing damages, it hasit has Disadvantage on attack rolls until the start of your next turn.</description>
 		</sheet>	
 		<rules> 
-			<select name="Ability improvement (Slasher)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Slasher)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>	
 	<element name="Speedy" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SPEEDY">
@@ -1157,7 +1157,7 @@
 			<description>When you take the Dash action, Difficult Terrain doesen't cost you extra movement. Moreover, Opportunity attacks have Disvantage against you.</description>
 		</sheet>	
 		<rules> 
-			<select name="Ability improvement (Speedy)" type="Ability Score Improvement" supports="ASI, Standard, (Constitution||Dexterity)" />
+			<select name="Ability improvement (Speedy)" type="Ability Score Improvement" supports="Standard, (Constitution||Dexterity)" />
 			<stat name="speed" value="10" />
 		</rules>
 	</element>
@@ -1174,7 +1174,7 @@
 			<description>Your Spell Attacks ignore Half and Three-Quarter Cover and have no Disvantage when you are at 5ft form an enemy. The spell range of your spell with a range of at least 10 ft and requiring an attack roll, increase by 60 ft.</description>
 		</sheet>	
 		<rules> 
-			<select name="Ability improvement (Sniper)" type="Ability Score Improvement" supports="ASI, Standard, (Constitution||Dexterity)" />
+			<select name="Ability improvement (Sniper)" type="Ability Score Improvement" supports="Standard, (Constitution||Dexterity)" />
 			<stat name="speed" value="10" />
 		</rules>
 	</element>
@@ -1202,7 +1202,7 @@
 			<description>You can cast Mage Hand without Verbal or Somatic components, you can make the hand Invisible and the range increase by 30ft. Moreover, as a bonus action, you can telekinetically shove a creature within 30 ft. On a failed Strength Saving Throw against DC{{telekinetic dc}} the creature is moved by 5ft toward or away from you.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Telekinetic)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Telekinetic)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_MAGE_HAND" />
 			<stat name="telekinetic dc" value="8" />
 			<stat name="telekinetic dc" value="proficiency" />
@@ -1223,7 +1223,7 @@
 			<description>You can speak telepatichally in your language to any creature you can see within 60 ft. The creature doesn't gain the ability to respond telepathically. Moreover, you learn the Detect Thought spell that is always prepared. Once per Long Rest, you can cast it without spending a spell slot.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Telepatic)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Telepatic)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_DETECT_THOUGHTS" />
 		</rules>
 	</element>
@@ -1252,7 +1252,7 @@
 			<description>You have Advantage on Constitution Saving Throw to maintain Concentration. You can perform Somatic components of spell, even when you have weapon or shield in both hands. Moreover, when a creature provokes an Opportunity Attack from you, you can take a Reaction to cast a spell, instead of make the attack. The spell must target only that creature.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (War Caster)" type="Ability Score Improvement" supports="ASI, Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (War Caster)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 		</rules>
 	</element>
 	<element name="Weapon Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_WEAPON_MASTER">
@@ -1266,83 +1266,11 @@
 			<description>Whenever you finish a Long Rest, you can choose a weapon you are proficient in. After that, you can use the mastery property of that weapon.</description>
 		</sheet>
 		<rules> 
-			<select name="Ability improvement (Weapon Master)" type="Ability Score Improvement" supports="ASI, Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Weapon Master)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>
 	</element>
 		
-<!-- Ability score improvement -->
-	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH">
-		<supports>ASI, Standard, Strength</supports>
-		<description>
-			<p>Your Strength increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="Strength" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY">
-		<supports>ASI, Standard, Dexterity</supports>
-		<description>
-			<p>Your Dexterity increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="dexterity" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CONSTITUTION">
-		<supports>ASI, Standard, Constitution</supports>
-		<description>
-			<p>Your Constitution increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="constitution" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE">
-		<supports>ASI, Standard, Intelligence</supports>
-		<description>
-			<p>Your Intelligence increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="intelligence" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_WISDOM">
-		<supports>ASI, Standard, Wisdom</supports>
-		<description>
-			<p>Your Wisdom increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="wisdom" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA">
-		<supports>ASI, Standard, Charisma</supports>
-		<description>
-			<p>Your Charisma increases by 1.</p>
-		</description>
-		<setters>
-			<set name="allow duplicate">true</set>
-		</setters>
-		<rules>
-			<stat name="charisma" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
+
 	
 	<!-- Epic Boon Ability Score Increase -->
 	
