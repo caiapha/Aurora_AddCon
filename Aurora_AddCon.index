@@ -9,6 +9,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="PHB24.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
+		<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
 	</files>
 </index>
