@@ -32,13 +32,13 @@
 	<supports>Background</supports>
 	<rules>
 		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Intelligence||Wisdom||Charisma)" />
-		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 	</rules> 
 </element>
 <element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1">
 	<supports>Background</supports>
 	<rules>
-		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Double, (Intelligence||Wisdom||Charisma)" number="3" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" number="3" />
 	</rules> 
 </element>	
 
