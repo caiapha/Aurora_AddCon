@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description>Backgrounds from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 		  <file name="backgrounds.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/backgrounds.xml" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 			  <li><strong>Tool Proficiency</strong> Calligrapher's Supplies</li>
 			  <li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8GP; or (B) 50GP.</li>
 		  </ul>
+	  	  <p></strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.
 	  </description>
 	  <sheet display="false" /> 
 	  <rules>
@@ -26,7 +27,7 @@
 	  </rules>
  </element>
 
-	<!-- BACKGROUND FEATURES -->
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOICE -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1">
 	<supports>Background</supports>
 	<rules>
@@ -34,30 +35,11 @@
 		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 	</rules> 
 </element>
-	
-<!-- ABILITY SCORE IMPROVEMENT -->
-<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE">
-	<supports>Standard, Intelligence</supports>
-	<description>
-		<p>Your Strength increases by 1.</p>
-	</description>
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1">
+	<supports>Background</supports>
 	<rules>
-		<stat name="Intelligence" value="1" alt="Ability Score Increase" />
-	</rules>
-</element>
-<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE2">
-	<supports>Double, Intelligence</supports>
-	<description>
-		<p>Your Strength increases by 1.</p>
-	</description>
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
-	<rules>
-		<stat name="Intelligence" value="2" alt="Ability Score Increase" />
-	</rules>
-</element>
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Double, (Intelligence||Wisdom||Charisma)" number="3" />
+	</rules> 
+</element>	
+
 </elements>
