@@ -10,7 +10,7 @@
 	</info>
 	<element name="Acolyte" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ACOLYTE">
 		<description>
-			<p>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
+			<p>Acolyte: you devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
 			<p>Magic initiate (Cleric): once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
@@ -26,11 +26,12 @@
 			<grant name="Magic Initiate (Acolyte)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
 			<grant name="Insight proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant name="Religion proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant name="Calligrapher's Supplies (Acolyte)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES " />
 		</rules>
 	</element>
 	<element name="Artisan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ARTISAN">
 		<description>
-			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<p>Artisan: XXXXXXX</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Strenght, Dexterity, Intelligence</li>
 				<li><strong>Feat:</strong> Crafter</li>
@@ -46,11 +47,12 @@
 		  <grant name="Crafter (Artisan)" type="Feat Feature" id="ID_PHB24_FEAT_CRAFTER" />
 		  <grant name="Investigation proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		  <select name="Artisan's Tool Proficiency (Artisan)" type="proficiency" supports="Artisan tools" />
 	  </rules>
  	</element>
 	<element name="Charlatan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CHARLATAN">
 		<description>
-			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<p>Charlatan: XXXXXXX</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Charisma</li>
 				<li><strong>Feat:</strong> Skilled</li>
@@ -66,11 +68,12 @@
 		  <grant name="Skilled (Charlatan)" type="Feat Feature" id="ID_PHB24_FEAT_SKILLED" />
 		  <grant name="Deception proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		  <grant name="Forgery Kit proficiency (Charlatan)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
 	  </rules>
  	</element>
 	<element name="Criminal" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CRIMINAL">
 		<description>
-			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<p>Criminal: XXXXX</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
 				<li><strong>Feat:</strong> Alert</li>
@@ -85,9 +88,29 @@
 		  <grant name="Alert (Criminal)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
 		  <grant name="Stealth proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_STEALTH" />
 		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		  <grant name="Thieve's Tools proficiency (Criminal)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
 	  </rules>
  	</element>
-
+	<element name="Entertainer" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ENTERTAINER">
+		<description>
+			<p>Entertainer: XXXXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</li>
+				<li><strong>Feat:</strong> Musician</li>
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Performance</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Musical Instrument</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) A Musical Instrument (same as above), 2 costumes, Mirror, Perfume, Traveler's Clothes, 11GP; or (B) 50GP.</li>
+			</ul>
+	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+	  </description>
+	  <rules>
+		  <select name="Ability Score Improvement (Entertainer)" type="Background Feature" supports="Background, Entertainer" />
+		  <grant name="Musician (Entertainer)" type="Feat Feature" id="ID_PHB24_FEAT_ENTERTAINER" />
+		  <grant name="Acrobatics Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		  <grant name="Performance Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		  <select name="Musical Instrument Proficiency (Entertainer)" type="proficiency" supports="Musical Instruments" />
+	  </rules>
+ 	</element>
 	
 	
 <!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
@@ -147,11 +170,27 @@
 	</rules> 
 </element>
 <element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_CHARLATAN">
-	<supports>Background, Charlatan</supports>
+	<supports>Background, Criminal</supports>
 	<rules>
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+	</rules> 
+</element>
+	<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ENTERTAINER -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ENTERTAINER">
+	<supports>Background, Entertainer</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Dexterity||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_ENTERTAINER">
+	<supports>Background, Entertainer</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
 	</rules> 
 </element>
 </elements>
