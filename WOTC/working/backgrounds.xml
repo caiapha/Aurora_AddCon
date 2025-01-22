@@ -24,7 +24,7 @@
 	  <sheet display="false" /> 
 	  <rules>
 		  <select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background" />
-		  <grant name="Magic Initiate (Acolyte)" type="Feat" ID="
+		  <grant name="Magic Initiate (Acolyte)" type="Feat" ID="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
 	  </rules>
  </element>
 
