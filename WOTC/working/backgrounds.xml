@@ -8,29 +8,48 @@
 		  <file name="backgrounds.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/backgrounds.xml" />
 		</update>
 	</info>
-  
-  <element name="Acolyte" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ACOLYTE">
-	  <description>
-		  <p>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
-		  <ul class="unstyled">
-			  <li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
-			  <li><strong>Feat:</strong> Magic Initiate (Cleric)</li>
-			  <li><strong>Skill Proficiencies:</strong>Insight, Religion</li>
-			  <li><strong>Tool Proficiency</strong> Calligrapher's Supplies</li>
-			  <li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8GP; or (B) 50GP.</li>
-		  </ul>
+	<element name="Acolyte" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ACOLYTE">
+		<description>
+			<p>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Magic Initiate (Cleric)</li>
+				<li><strong>Skill Proficiencies:</strong>Insight, Religion</li>
+				<li><strong>Tool Proficiency:</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>
+		<sheet display="false" /> 
+		<rules>
+			<select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background, Acolyte" />
+			<grant name="Magic Initiate (Acolyte)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
+			<grant name="Insight proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant name="Religion proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
+	</element>
+	<element name="Artisan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ARTISAN">
+		<description>
+			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strenght, Dexterity, Intelligence</li>
+				<li><strong>Feat:</strong> Crafter</li>
+				<li><strong>Skill Proficiencies:</strong> Investigation, Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Artisan Tool</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Artisan's Tool (same above), 2 Pouches, Travelers's Clothes, 32GP; or (B) 50GP.</li>
+			</ul>
 	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
 	  </description>
 	  <sheet display="false" /> 
 	  <rules>
-		  <select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background, Acolyte" />
-		  <grant name="Magic Initiate (Acolyte)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
-		  <grant name="Insight proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-		  <grant name="Religion proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_RELIGION" />
+		  <select name="Ability Score Improvement (Artisan)" type="Background Feature" supports="Background, Artisan" />
+		  <grant name="Crafter (Artisan)" type="Feat Feature" id="ID_PHB24_FEAT_CRAFTER" />
+		  <grant name="Investigation proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 	  </rules>
  </element>
-
-<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOICE -->
+	
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ARTISAN -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ACOLYTE">
 	<supports>Background, Acolyte</supports>
 	<rules>
@@ -39,10 +58,27 @@
 	</rules> 
 </element>
 <element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_ACOLYTE">
-	<supports>Background</supports>
+	<supports>Background, Acolyte</supports>
 	<rules>
-		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" number="3" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
 	</rules> 
 </element>	
-
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ARTISAN -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ARTISAN">
+	<supports>Background, Artisan</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Dexterity||Intelligence)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity||Intelligence)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_ARTISAN">
+	<supports>Background, Artisan</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+	</rules> 
+</element>	
 </elements>
