@@ -124,7 +124,7 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Farmer)" type="Background Feature" supports="Background, Farmer" />
-		  <grant name="Tough (Farmer)" type="Feat Feature" id="ID_PHB24_FEAT_FARMER" />
+		  <grant name="Tough (Farmer)" type="Feat Feature" id="ID_PHB24_FEAT_TOUGH" />
 		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
 		  <grant name="Nature Proficiency (Nature)" id="ID_PROFICIENCY_SKILL_NATURE" />
 		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
@@ -256,7 +256,7 @@
 	</rules> 
 </element>
 <element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_GUARD">
-	<supports>Background, Farmer</supports>
+	<supports>Background, Guard</supports>
 	<rules>
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
