@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Backgrounds</name>
+		<description>Backgrounds from the Player's Handbook Rev. 2024</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+		<update version="0.0.1">
+		  <file name="backgrounds.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/backgrounds.xml" />
+		</update>
+	</info>
+  
+  <element name="Acolyte" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ACOLYTE">
+    <description>
+      <p>You devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest’s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
+        <li><strong>Feat:</strong> Magic Initiate (Cleric)</li>
+        <li><strong>Skill Proficiencies:</strong>Insight, Religion</li>
+        <li><strong>Tool Proficiency</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8GP; or (B) 50GP.</li>
+			</ul>
+		</descripion>
+    <sheet display="false" /> 
+    <rules>
+      <select name="Ability Score Improvement (Acolyte)" type="Background Feature" suports="Background" />
+    </rules>
+   </element>
+   <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1">
+     <supports>Background</supports>
+     <rules>
+       <select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Intelligence||Wisdom||Charisma)" />
+       <select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Single, (Intelligence||Wisdom||Charisma)" />
+     </rules> 
+   </element>
+  <element
+</elements>
