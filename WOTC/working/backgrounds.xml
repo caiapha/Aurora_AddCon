@@ -20,7 +20,9 @@
 			</ul>
 			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
 		</description>
-		<sheet display="false" /> 
+		<sheet>
+			<description>Once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
+		</sheet>	
 		<rules>
 			<select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background, Acolyte" />
 			<grant name="Magic Initiate (Acolyte)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
@@ -47,9 +49,29 @@
 		  <grant name="Investigation proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 	  </rules>
- </element>
+ 	</element>
+	<element name="Caharlatan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CHARLATAN">
+		<description>
+			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> Deception, Sleight of Hand</li>
+				<li><strong>Tool Proficiency:</strong> Forgery Kit</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15GP; or (B) 50GP.</li>
+			</ul>
+	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+	  </description>
+	  <sheet display="false" /> 
+	  <rules>
+		  <select name="Ability Score Improvement (Artisan)" type="Background Feature" supports="Background, Charlatan" />
+		  <grant name="Skilled (Charlatan)" type="Feat Feature" id="ID_PHB24_FEAT_SKILLED" />
+		  <grant name="Deception proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+	  </rules>
+ 	</element>
 	
-<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ARTISAN -->
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ACOLYTE">
 	<supports>Background, Acolyte</supports>
 	<rules>
@@ -81,4 +103,21 @@
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
 	</rules> 
 </element>	
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - CHARLATAN -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_CHARLATAN">
+	<supports>Background, Charlatan</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Constitution||Dexterity||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Constitution||Dexterity||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_CHARLATAN">
+	<supports>Background, Charlatan</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+	</rules> 
+</element>
+
 </elements>
