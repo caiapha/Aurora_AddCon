@@ -47,7 +47,7 @@
 		  <grant name="Crafter (Artisan)" type="Feat Feature" id="ID_PHB24_FEAT_CRAFTER" />
 		  <grant name="Investigation proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
-		  <select name="Artisan's Tool Proficiency (Artisan)" type="proficiency" supports="Artisan tools" />
+		  <select name="Artisan's Tool Proficiency (Artisan)" type="proficiency" supports="Tools" />
 	  </rules>
  	</element>
 	<element name="Charlatan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CHARLATAN">
@@ -107,7 +107,7 @@
 		  <grant name="Musician (Entertainer)" type="Feat Feature" id="ID_PHB24_FEAT_MUSICIAN" />
 		  <grant name="Acrobatics Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
 		  <grant name="Performance Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-		  <select name="Musical Instrument Proficiency (Entertainer)" type="proficiency" supports="Musical Instruments" />
+		  <select name="Musical Instrument Proficiency (Entertainer)" type="proficiency" supports="Musical Instrument" />
 	  </rules>
  	</element>
 	
