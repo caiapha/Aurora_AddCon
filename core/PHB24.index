@@ -12,7 +12,7 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/source.xml" />
 
 		<!-- Species -->
-		<file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
+		<file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/source.xml" />
 
 
 		<!-- Classes and Subclassess -->
