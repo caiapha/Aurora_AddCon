@@ -48,7 +48,7 @@
 		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 	  </rules>
  	</element>
-	<element name="Caharlatan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CHARLATAN">
+	<element name="Charlatan" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CHARLATAN">
 		<description>
 			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
 			<ul class="unstyled">
@@ -68,6 +68,27 @@
 		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 	  </rules>
  	</element>
+	<element name="Criminal" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CRIMINAL">
+		<description>
+			<p>DA RIEMPIRE CON IL TESTO DAL PHB24</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Sleight of Hand, Stealth</li>
+				<li><strong>Tool Proficiency:</strong> Thieves' Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16GP; or (B) 50GP.</li>
+			</ul>
+	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+	  </description>
+	  <rules>
+		  <select name="Ability Score Improvement (Criminal)" type="Background Feature" supports="Background, Criminal" />
+		  <grant name="Alert (Criminal)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
+		  <grant name="Stealth proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+	  </rules>
+ 	</element>
+
+	
 	
 <!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ACOLYTE">
@@ -117,5 +138,20 @@
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
 	</rules> 
 </element>
-
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - CRIMINAL -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_CRIMINAL">
+	<supports>Background, Criminal</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Constitution||Dexterity||Intelligence)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Constitution||Dexterity||Intelligence)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_CHARLATAN">
+	<supports>Background, Charlatan</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+	</rules> 
+</element>
 </elements>
