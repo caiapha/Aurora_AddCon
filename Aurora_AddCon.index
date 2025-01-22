@@ -2,10 +2,10 @@
 <index>
 	<info>
 		<name>Aurora Additional Content</name>
-		<description>The index for all the Additional Contento for Aurora Character Builder</description>
+		<description>The index for all the Additional Content for Aurora Character Builder</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
 		<update version="0.1.0">
-			<file name="Aurora_AddCon.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
+			<file name="Aurora_AddCon.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/Aurora_AddCon.index" />
 		</update>
 	</info>
 	<files>
