@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ability and Skill Improvements</name>
+		<description>Code related to the Ability and Skill Improvements</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+		<update version="0.0.1">
+		  <file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/Ability-Skill-Improvements.xml" />
+		</update>
+	</info>
+  
+<!-- STANDARD ABILITY SCORE IMPROVEMENT -->
+<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_STRENGTH">
+	<supports>Standard, Strength</supports>
+	<description>
+		<p>Your Strength increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Strength" value="1" />
+	</rules>
+</element>
+<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_DEXTERITY">
+	<supports>Standard, Dexterity</supports>
+	<description>
+		<p>Your Dexterity increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Dexterity" value="1" />
+	</rules>
+</element>
+<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CONSTITUTION">
+	<supports>Standard, Constitution</supports>
+	<description>
+		<p>Your Constitution increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Constitution" value="1" />
+	</rules>
+</element> 
+<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_INTELLIGENCE">
+	<supports>Standard, Intelligence</supports>
+	<description>
+		<p>Your Intelligence increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Intelligence" value="1" />
+	</rules>
+</element> 
+<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_WISDOM">
+	<supports>Standard, Wisdom</supports>
+	<description>
+		<p>Your Wisdom increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Wisdom" value="1" />
+	</rules>
+</element>
+<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CHARISMA">
+	<supports>Standard, Charisma</supports>
+	<description>
+		<p>Your Charisma increases by 1.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Charisma" value="1" />
+	</rules>
+</element>  
+<!-- DOUBLE ABILITY SCORE IMPROVEMENT -->
+<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_STRENGTH_DOUBLE">
+	<supports>Double, Strength</supports>
+	<description>
+		<p>Your Strength increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Strength" value="2" />
+	</rules>
+</element>
+<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY_DOUBLE">
+	<supports>Double, Dexterity</supports>
+	<description>
+		<p>Your Dexterity increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Dexterity" value="2" />
+	</rules>
+</element>
+<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CONSTITUTION_DOUBLE">
+	<supports>Double, Constitution</supports>
+	<description>
+		<p>Your Constitution increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Constitution" value="2" />
+	</rules>
+</element> 
+<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_INTELLIGENCE_DOUBLE">
+	<supports>Double, Intelligence</supports>
+	<description>
+		<p>Your Intelligence increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Intelligence" value="2" />
+	</rules>
+</element> 
+<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_WISDOM_DOUBLE">
+	<supports>Double, Wisdom</supports>
+	<description>
+		<p>Your Wisdom increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Wisdom" value="2" />
+	</rules>
+</element>
+<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CHARISMA_DOUBLE">
+	<supports>Double, Charisma</supports>
+	<description>
+		<p>Your Charisma increases by 2.</p>
+	</description>
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<stat name="Charisma" value="2" />
+	</rules>
+</element>    
