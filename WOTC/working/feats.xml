@@ -1227,7 +1227,7 @@
 			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_DETECT_THOUGHTS" />
 		</rules>
 	</element>
- 	<element name="Tough" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_THOUGH">
+ 	<element name="Tough" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_TOUGH">
 		<supports>Origin Feat</supports>
 		<description>
 			<p>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</p>
