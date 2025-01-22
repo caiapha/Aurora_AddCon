@@ -147,7 +147,7 @@
 		  <grant name="Alert (Guard)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
 		  <grant name="Athletics Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 		  <grant name="Perception Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-		  <select name="Gaming Set Proficiency (Guard)" type="proficiency" supports="Gaming Set" />
+		  <select name="Gaming Set Proficiency (Guard)" type="Proficiency" supports="Gaming Set" />
 	  </rules>
  	</element>
 	
