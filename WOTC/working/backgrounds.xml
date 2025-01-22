@@ -110,7 +110,46 @@
 		  <select name="Musical Instrument Proficiency (Entertainer)" type="Proficiency" supports="Musical Instrument" />
 	  </rules>
  	</element>
-	
+	<element name="Farmer" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_FARMER">
+		<description>
+			<p>Farmer: XXXXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Tough</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling, Nature</li>
+				<li><strong>Tool Proficiency:</strong> Carpenter's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, 30GP; or (B) 50GP.</li>
+			</ul>
+	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+	  </description>
+	  <rules>
+		  <select name="Ability Score Improvement (Farmer)" type="Background Feature" supports="Background, Farmer" />
+		  <grant name="Tough (Farmer)" type="Feat Feature" id="ID_PHB24_FEAT_FARMER" />
+		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+		  <grant name="Nature Proficiency (Nature)" id="ID_PROFICIENCY_SKILL_NATURE" />
+		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+	  </rules>
+ 	</element>
+		<element name="Guard" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_GUARD">
+		<description>
+			<p>Farmer: XXXXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics, Perseption</li>
+				<li><strong>Tool Proficiency:</strong> Choose a kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP; or (B) 50 GP</li>
+			</ul>
+	  	  <p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+	  </description>
+	  <rules>
+		  <select name="Ability Score Improvement (Guard)" type="Background Feature" supports="Background, Guard" />
+		  <grant name="Alert (Guard)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
+		  <grant name="Athletics Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		  <grant name="Perception Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		  <select name="Gaming Set Proficiency (Guard)" type="proficiency" supports="Gaming Set" />
+	  </rules>
+ 	</element>
 	
 <!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ACOLYTE">
@@ -190,6 +229,38 @@
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+	</rules> 
+</element>
+		<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - FARMER -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_FARMER">
+	<supports>Background, Farmer</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Constitution||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Constitution||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_FARMER">
+	<supports>Background, Farmer</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+			<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - GUARD -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_GUARD">
+	<supports>Background, Guard</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Intelligence||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Intelligence||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_GUARD">
+	<supports>Background, Farmer</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
 	</rules> 
 </element>
 </elements>
