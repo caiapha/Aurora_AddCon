@@ -157,6 +157,70 @@
 	</rules>
 </element>
 
+<!-- EPIC BOON ABILITY SCORE IMPROVEMENT -->
+
+<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_STRENGTH">
+	<supports>Epic Boon, Strength</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="Strength" value="1" alt="Ability Score Increase" />
+			<stat name="strength:max" value="10" bonus="base" />
+		</rules>
+</element>
+<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_DEXTERITY">
+	<supports>Epic Boon, Dexterity</supports>
+	<description>
+		<p>Your Dexterity increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		<stat name="dexterity:max" value="10" bonus="base" />
+	</rules>
+</element>
+<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_CONSTITUTION">
+	<supports>Epic Boon, Constitution</supports>
+	<description>
+		<p>Your Constitution increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="constitution" value="1" alt="Ability Score Increase" />
+		<stat name="constitution:max" value="10" bonus="base" />
+	</rules>
+</element>
+<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_INTELLIGENCE">
+	<supports>Epic Boon, Intelligence</supports>
+	<description>
+		<p>Your Intelligence increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="intelligence" value="1" alt="Ability Score Increase" />
+		<stat name="intelligence:max" value="10" bonus="base" />
+	</rules>
+</element>
+<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_WISDOM">
+	<supports>Epic Boon, Wisdom,</supports>
+	<description>
+		<p>Your Wisdom increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="wisdom" value="1" alt="Ability Score Increase" />
+		<stat name="wisdom:max" value="10" bonus="base" />
+	</rules>
+</element>
+<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_CHARISMA">
+	<supports>Epic Boon, Charisma</supports>
+	<description>
+		<p>Your Charisma increases by 1.</p>
+	</description>
+	<rules>
+		<stat name="charisma" value="1" alt="Ability Score Increase" />
+		<stat name="charisma:max" value="10" bonus="base" />
+	</rules>
+</element>	
+
+	
 <!-- SKILL EXPERTISE -->
 
 <element name="Acrobatics (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ACROBATICS">
