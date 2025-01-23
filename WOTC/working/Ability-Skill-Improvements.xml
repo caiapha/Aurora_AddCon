@@ -159,7 +159,7 @@
 
 <!-- SKILL EXPERTISE -->
 
-<element name="Acrobatics" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ACROBATICS">
+<element name="Acrobatics (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ACROBATICS">
 	<requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
 	<supports>Expertise, Acrobatics</supports>
 	<description>
@@ -169,7 +169,7 @@
 		<stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Animal Handling" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ANIMALHANDLING">
+<element name="Animal Handling (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ANIMALHANDLING">
 	<requirements>ID_PROFICIENCY_SKILL_ANIMALHANDLING</requirements>
 	<supports>Expertise, Animal Handling</supports>
 	<description>
@@ -179,7 +179,7 @@
 		<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Arcana" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ARCANA">
+<element name="Arcana (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ARCANA">
 	<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
 	<supports>Expertise, Arcana</supports>
 	<description>
@@ -189,7 +189,7 @@
 		<stat name="arcana:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Athletics" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ATHLETICS">
+<element name="Athletics (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_ATHLETICS">
 	<requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 	<supports>Expertise, Athletics</supports>
 	<description>
@@ -199,7 +199,7 @@
 		<stat name="athletics:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Deception" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_DECEPTION">
+<element name="Deception (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_DECEPTION">
 	<requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
 	<supports>Expertise, Deception</supports>
 	<description>
@@ -209,7 +209,7 @@
 		<stat name="deception:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="History" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_HISTORY">
+<element name="History (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_HISTORY">
 	<requirements>ID_PROFICIENCY_SKILL_HISTORY</requirements>
 	<supports>Expertise, History</supports>
 	<description>
@@ -219,7 +219,7 @@
 		<stat name="history:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Insight" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INSIGHT">
+<element name="Insight (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INSIGHT">
 	<requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
 	<supports>Expertise, Insight</supports>
 	<description>
@@ -229,7 +229,7 @@
 		<stat name="insight:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Intimidation" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INTIMIDATION">
+<element name="Intimidation (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INTIMIDATION">
 	<requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
 	<supports>Expertise, Intimidation</supports>
 	<description>
@@ -239,7 +239,7 @@
 		<stat name="intimidation:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Investigation" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INVESTIGATION">
+<element name="Investigation (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_INVESTIGATION">
 	<requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
 	<supports>Expertise, Investigation</supports>
 	<description>
@@ -249,7 +249,7 @@
 		<stat name="investigation:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Medicine" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_MEDICINE">
+<element name="Medicine (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_MEDICINE">
 	<requirements>ID_PROFICIENCY_SKILL_MEDICINE</requirements>
 	<supports>Expertise, Medicine</supports>
 	<description>
@@ -259,7 +259,7 @@
 		<stat name="medicine:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Nature" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_NATURE">
+<element name="Nature (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_NATURE">
 	<requirements>ID_PROFICIENCY_SKILL_NATURE</requirements>
 	<supports>Expertise, Nature</supports>
 	<description>
@@ -269,7 +269,7 @@
 		<stat name="nature:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Perception" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERCEPTION">
+<element name="Perception (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERCEPTION">
 	<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
 	<supports>Expertise, Perception</supports>
 	<description>
@@ -279,7 +279,7 @@
 		<stat name="perception:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Performance" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERFORMANCE">
+<element name="Performance (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERFORMANCE">
 	<requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
 	<supports>Expertise, Performance</supports>
 	<description>
@@ -289,7 +289,7 @@
 		<stat name="performance:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Persuasion" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERSUASION">
+<element name="Persuasion (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_PERSUASION">
 	<requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
 	<supports>Expertise, Persuasion</supports>
 	<description>
@@ -299,7 +299,7 @@
 		<stat name="persuasion:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Religion" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_RELIGION">
+<element name="Religion (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_RELIGION">
 	<requirements>ID_PROFICIENCY_SKILL_RELIGION</requirements>
 	<supports>Expertise, Religion</supports>
 	<description>
@@ -309,7 +309,7 @@
 		<stat name="religion:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Sleight of Hand" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_SLEIGHTOFHAND">
+<element name="Sleight of Hand (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_SLEIGHTOFHAND">
 	<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
 	<supports>Expertise, Sleight of Hand</supports>
 	<description>
@@ -319,7 +319,7 @@
 		<stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Stealth" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_STEALTH">
+<element name="Stealth (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_STEALTH">
 	<requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
 	<supports>Expertise, Stealth</supports>
 	<description>
@@ -329,7 +329,7 @@
 		<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 	</rules>
 </element>
-<element name="Survival" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_SURVIVAL">
+<element name="Survival (Expertise)" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_SURVIVAL">
 	<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
 	<supports>Expertise, Survival</supports>
 	<description>
