@@ -166,7 +166,7 @@
 		</description>
 		<rules>
 			<stat name="Strength" value="1" alt="Ability Score Increase" />
-			<stat name="strength:max" value="10" bonus="base" />
+			<stat name="strength:max" value="10" />
 		</rules>
 </element>
 <element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_DEXTERITY">
@@ -176,7 +176,7 @@
 	</description>
 	<rules>
 		<stat name="dexterity" value="1" alt="Ability Score Increase" />
-		<stat name="dexterity:max" value="10" bonus="base" />
+		<stat name="dexterity:max" value="10" />
 	</rules>
 </element>
 <element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_CONSTITUTION">
@@ -186,7 +186,7 @@
 	</description>
 	<rules>
 		<stat name="constitution" value="1" alt="Ability Score Increase" />
-		<stat name="constitution:max" value="10" bonus="base" />
+		<stat name="constitution:max" value="10" />
 	</rules>
 </element>
 <element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_INTELLIGENCE">
@@ -196,7 +196,7 @@
 	</description>
 	<rules>
 		<stat name="intelligence" value="1" alt="Ability Score Increase" />
-		<stat name="intelligence:max" value="10" bonus="base" />
+		<stat name="intelligence:max" value="10" />
 	</rules>
 </element>
 <element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_WISDOM">
@@ -206,7 +206,7 @@
 	</description>
 	<rules>
 		<stat name="wisdom" value="1" alt="Ability Score Increase" />
-		<stat name="wisdom:max" value="10" bonus="base" />
+		<stat name="wisdom:max" value="10" />
 	</rules>
 </element>
 <element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_BOON_ASI_CHARISMA">
@@ -216,7 +216,7 @@
 	</description>
 	<rules>
 		<stat name="charisma" value="1" alt="Ability Score Increase" />
-		<stat name="charisma:max" value="10" bonus="base" />
+		<stat name="charisma:max" value="10" />
 	</rules>
 </element>	
 
