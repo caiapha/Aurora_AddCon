@@ -251,7 +251,6 @@
 			<grant name="Calligrapher's Supplies (Sage)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
 		</rules>
 	</element>
-	</element>
 	<element name="Sailor" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SAILOR">
 		<description>
 			<p>Sailor: XXX</p>
