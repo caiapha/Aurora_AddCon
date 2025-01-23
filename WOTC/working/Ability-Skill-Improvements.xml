@@ -310,8 +310,8 @@
 	</rules>
 </element>
 <element name="Sleight of Hand" type="Proficiency" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SKILL_EXPERTISE_SLEIGHTOFHAND">
-	<requirements>ID_PROFICIENCY_SKILL_SLETIGHTOFHAND</requirements>
-	<supports>Expertise, Sleigth of Hand</supports>
+	<requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
+	<supports>Expertise, Sleight of Hand</supports>
 	<description>
 		<p>You gain Expertise in Sleight of Hand.</p>
 	</description>
