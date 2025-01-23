@@ -12,10 +12,14 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/source.xml" />
 
 		<!-- Character Creation -->
+
 		<file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/backgrounds.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/feats.xml" />
+		<file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/Ability-Skill-Improvements.xml" />
 
 		<!-- Classes and Subclassess -->
+
 <!--		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" />
 		<file name="class-fighter.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-fighter.xml" />
 			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-battle-master.xml" />
@@ -24,7 +28,7 @@
 			<file name="fighter-psi.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-psi.xml" />  -->
 
 		<!-- Misc -->
-		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/feats.xml" />
+			
 	<!--	<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" />  -->
 
 	</files>
