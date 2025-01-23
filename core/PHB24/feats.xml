@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.30">
+		<update version="0.1.0">
 		<file name="feats.xml" url="feats.xml"/>
 		</update>
 	</info>
@@ -115,7 +115,7 @@
 			<p><strong>Ability Score Increase:</strong> increase one ability score of your choice by 1, to a maximum of 30.</p>
 			<p><strong>Improve Fate:</strong> when you or another creature within 60 feet of you succeeds on or fails a D20 Test, you can roll 2d4 and apply the total rolled as a bonus or penalty to the d20 roll. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest.</p>
 		</description>
-		<sheet usage="1/Initiative or Long rest">
+		<sheet usage="1/Initiative or Short rest">
 			<description>When you or a creature within 60 ft from you roll a d20 die, you can roll 2d4 and add or subtract the result to that d20 roll.</description>
 		</sheet>
 		<rules>
@@ -131,7 +131,7 @@
 			<p><strong>Fortified Health:</strong> your Hit Point maximum increases by 40. In addition, whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn.</p>
 		</description>
 		<sheet usage="1/Turn">
-			<description>Once per turn, when you regain Hit Points, you can regain {{constitution:modifier}} additional Hit Points.</description>
+			<description>When you regain Hit Points, you can regain {{constitution:modifier}} additional Hit Points.</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
@@ -164,7 +164,7 @@
 			<p><strong>Recover Vitality:</strong> you have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, when you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Moreover, you have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
+			<description>Once per Long Rest, when you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Moreover, you have a pool of 10d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest.</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
@@ -263,7 +263,7 @@
 			<description>You have Truesight with a range of 60 feet.</description> <!-- ADD GRANT TRUESIGHT -->
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
 		</rules>
 	</element> 
 	
