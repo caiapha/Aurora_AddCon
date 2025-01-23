@@ -179,7 +179,7 @@
 			<p><strong>All-Around Adept:</strong> you gain proficiency in all skills.</p>
 			<p><strong>Expertise:</strong> choose one skill in which you lack Expertise. You gain Expertise in that skill.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="false" />
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
 			<grant name="Skill Proficiency (Acrobatics)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
