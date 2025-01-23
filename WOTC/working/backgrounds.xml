@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description>Backgrounds from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 		  <file name="backgrounds.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/backgrounds.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 	  <sheet display="false" /> 
 	  <rules>
 		  <select name="Ability Score Improvement (Artisan)" type="Background Feature" supports="Background, Artisan" />
-		  <grant name="Crafter (Artisan)" type="Feat Feature" id="ID_PHB24_FEAT_CRAFTER" />
+		  <grant name="Crafter (Artisan)" type="Feat" id="ID_PHB24_FEAT_CRAFTER" />
 		  <grant name="Investigation proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
 		  <grant name="Persuasion proficiency (Artisan)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 		  <select name="Artisan's Tool Proficiency (Artisan)" type="Proficiency" supports="Artisan tools" />
@@ -64,7 +64,7 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Charlatan)" type="Background Feature" supports="Background, Charlatan" />
-		  <grant name="Skilled (Charlatan)" type="Feat Feature" id="ID_PHB24_FEAT_SKILLED" />
+		  <grant name="Skilled (Charlatan)" type="Feat" id="ID_PHB24_FEAT_SKILLED" />
 		  <grant name="Deception proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 		  <grant name="Forgery Kit proficiency (Charlatan)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
@@ -72,7 +72,7 @@
  	</element>
 	<element name="Criminal" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_CRIMINAL">
 		<description>
-			<p>Criminal: XXXXX</p>
+			<p>Criminal: You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves’ guild and more fearsome lawbreakers.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
 				<li><strong>Feat:</strong> Alert</li>
@@ -84,7 +84,7 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Criminal)" type="Background Feature" supports="Background, Criminal" />
-		  <grant name="Alert (Criminal)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
+		  <grant name="Alert (Criminal)" type="Feat" id="ID_PHB24_FEAT_ALERT" />
 		  <grant name="Stealth proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_STEALTH" />
 		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 		  <grant name="Thieve's Tools proficiency (Criminal)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
@@ -104,7 +104,7 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Entertainer)" type="Background Feature" supports="Background, Entertainer" />
-		  <grant name="Musician (Entertainer)" type="Feat Feature" id="ID_PHB24_FEAT_MUSICIAN" />
+		  <grant name="Musician (Entertainer)" type="Feat" id="ID_PHB24_FEAT_MUSICIAN" />
 		  <grant name="Acrobatics Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
 		  <grant name="Performance Proficiency (Entertainer)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
 		  <select name="Musical Instrument Proficiency (Entertainer)" type="Proficiency" supports="Musical Instrument" />
@@ -124,13 +124,13 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Farmer)" type="Background Feature" supports="Background, Farmer" />
-		  <grant name="Tough (Farmer)" type="Feat Feature" id="ID_PHB24_FEAT_TOUGH" />
+		  <grant name="Tough (Farmer)" type="Feat" id="ID_PHB24_FEAT_TOUGH" />
 		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
 		  <grant name="Nature Proficiency (Nature)" id="ID_PROFICIENCY_SKILL_NATURE" />
 		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
 	  </rules>
  	</element>
-		<element name="Guard" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_GUARD">
+	<element name="Guard" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_GUARD">
 		<description>
 			<p>Farmer: XXXXX</p>
 			<ul class="unstyled">
@@ -144,13 +144,194 @@
 	  </description>
 	  <rules>
 		  <select name="Ability Score Improvement (Guard)" type="Background Feature" supports="Background, Guard" />
-		  <grant name="Alert (Guard)" type="Feat Feature" id="ID_PHB24_FEAT_ALERT" />
+		  <grant name="Alert (Guard)" type="Feat" id="ID_PHB24_FEAT_ALERT" />
 		  <grant name="Athletics Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 		  <grant name="Perception Proficiency (Guard)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
 		  <select name="Gaming Set Proficiency (Guard)" type="Proficiency" supports="Gaming Set" />
 	  </rules>
  	</element>
-	
+	<element name="Guide" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_GUIDE">
+		<description>
+			<p>Guide: XXX</p>
+			<p>Magic initiate (Druid): once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Druid)</li>
+				<li><strong>Skill Proficiencies:</strong> Stealth, Survival</li>
+				<li><strong>Tool Proficiency:</strong> Cartographer's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Guide)" type="Background Feature" supports="Background, Guide" />
+			<grant name="Magic Initiate (Guide)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID" />
+			<grant name="Stealth proficiency (Guide)" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant name="Survival proficiency (Guide)" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant name="Cartographer's Tools (Guide)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Hermit" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_HERMIT">
+		<description>
+			<p>Hermit: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Healer</li>
+				<li><strong>Skill Proficiencies:</strong> Medicine, Religion</li>
+				<li><strong>Tool Proficiency:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Hermit)" type="Background Feature" supports="Background, Hermit" />
+			<grant name="Healer (Hermit)" type="Feat" id="ID_PHB24_FEAT_HEALER" />
+			<grant name="Medicine proficiency (Hermit)" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant name="Religion proficiency (Hermit)" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant name="Herbalism Kit (Hermit)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+	<element name="Merchant" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_MERCHANT">
+		<description>
+			<p>Merchant: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Lucky</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling, Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Navigator's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Merchant)" type="Background Feature" supports="Background, Merchant" />
+			<grant name="Lucky (Merchant)" type="Feat" id="ID_PHB24_FEAT_LUCKY" />
+			<grant name="Animal Handling proficiency (Merchant)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant name="Persuasion proficiency (Merchant)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant name="Navigator's Tools (Merchant)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Noble" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_NOBLE">
+		<description>
+			<p>Noble: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> History, Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Choose one kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfume, 29GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Noble)" type="Background Feature" supports="Background, Noble" />
+			<grant name="Skilled (Noble)" type="Feat" id="ID_PHB24_FEAT_SKILLED" />
+			<grant name="History proficiency (Noble)" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant name="Persuasion proficiency (Noble)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select name="Gaming Set Proficiency (Noble)" type="Proficiency" supports="Gaming Set" />
+		</rules>
+	</element>
+	<element name="Sage" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SAGE">
+		<description>
+			<p>Sage: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana, History</li>
+				<li><strong>Tool Proficiency:</strong> Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Sage)" type="Background Feature" supports="Background, Sage" />
+			<grant name="Magic Initiate (Sage)" type="Feat Feature" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD" />
+			<grant name="Arcana proficiency (Sage)" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant name="History proficiency (Sage)" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant name="Calligrapher's Supplies (Sage)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	</element>
+	<element name="Sailor" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SAILOR">
+		<description>
+			<p>Sailor: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</li>
+				<li><strong>Feat:</strong> Tavern Brawler</li>
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Perception</li>
+				<li><strong>Tool Proficiency:</strong> Navigator's Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A)  Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Sailor)" type="Background Feature" supports="Background, Sailor" />
+			<grant name="Tavern Brawler (Sailor)" type="Feat" id="ID_PHB24_FEAT_TAVERN_BRAWLER" />
+			<grant name="Acrobatics proficiency (Sailor)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant name="Perception proficiency (Sailor)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant name="Navigator's Kit (Sailor)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Scribe" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SCRIBE">
+		<description>
+			<p>Scribe: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> Investigation, Perception</li>
+				<li><strong>Tool Proficiency:</strong>Calligrapher's Supplies</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Scribe)" type="Background Feature" supports="Background, Scribe" />
+			<grant name="Skilled (Scribe)" type="Feat" id="ID_PHB24_FEAT_SKILLED" />
+			<grant name="Investigation proficiency (Scribe)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant name="Perception proficiency (Scribe)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant name="Calligrapher's Supplies (Scribe)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Soldier" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SOLDIER">
+		<description>
+			<p>Soldier: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Constitution</li>
+				<li><strong>Feat:</strong> Savage Attacker</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics, Intimidation</li>
+				<li><strong>Tool Proficiency:</strong>Choose one kind of Gaming Set</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Soldier)" type="Background Feature" supports="Background, Soldier" />
+			<grant name="Savage Attacker (Soldier)" type="Feat" id="ID_PHB24_FEAT_SAVAGAE_ATTACKER" />
+			<grant name="Athletics proficiency (Soldier)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant name="Intimidation proficiency (Soldier)" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select name="Gaming Set Proficiency (Soldier)" type="Proficiency" supports="Gaming Set" />
+		</rules>
+	</element>
+	<element name="Wayfarer" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_WAYFARER">
+		<description>
+			<p>Wayfarer: XXX</p>
+			<ul class="unstyled">
+				<li><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Lucky</li>
+				<li><strong>Skill Proficiencies:</strong> Insight, Stealth</li>
+				<li><strong>Tool Proficiency:</strong>Thieves' Tools</li>
+				<li><strong>Equipment:</strong> Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16GP; or (B) 50GP.</li>
+			</ul>
+			<p><strong>Ability Score choices:</strong> You can choice to improve one Ability by 2 and one by 1 OR three Ability by 1.</p>
+		</description>	
+		<rules>
+			<select name="Ability Score Improvement (Wayfarer)" type="Background Feature" supports="Background, Wayfarer" />
+			<grant name="Lucky (Wayfarer)" type="Feat" id="ID_PHB24_FEAT_LUCKY" />
+			<grant name="Insight proficiency (Wayfarer)" id="ID_PROFICIENCY_SKILL_INSTIGHT" />
+			<grant name="Stealth proficiency (Wayfarer)" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant name="Thieve's Tools proficiency (Wayfarer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+		</rules>
+	</element>
 <!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ACOLYTE">
 	<supports>Background, Acolyte</supports>
@@ -215,7 +396,7 @@
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
 	</rules> 
 </element>
-	<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ENTERTAINER -->
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ENTERTAINER -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_ENTERTAINER">
 	<supports>Background, Entertainer</supports>
 	<rules>
@@ -231,7 +412,7 @@
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
 	</rules> 
 </element>
-		<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - FARMER -->
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - FARMER -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_FARMER">
 	<supports>Background, Farmer</supports>
 	<rules>
@@ -243,11 +424,11 @@
 	<supports>Background, Farmer</supports>
 	<rules>
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
-		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
 	</rules> 
 </element>
-			<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - GUARD -->
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - GUARD -->
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_GUARD">
 	<supports>Background, Guard</supports>
 	<rules>
@@ -259,8 +440,152 @@
 	<supports>Background, Guard</supports>
 	<rules>
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - GUIDE -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_GUIDE">
+	<supports>Background, Guide</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Dexterity||Constitution||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Dexterity||Constitution||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_GUIDE">
+	<supports>Background, Guide</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
 		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
 	</rules> 
 </element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - HERMIT -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_HERMIT">
+	<supports>Background, Hermit</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Constitution||Wisdom||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Constitution||Wisdom||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_HERMIT">
+	<supports>Background, Hermit</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - MERCHANT -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_MERCHANT">
+	<supports>Background, Merchant</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Constitution||Intelligence||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Constitution||Intelligence||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_MERCHANT">
+	<supports>Background, Merchant</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - NOBLE -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_NOBLE">
+	<supports>Background, Noble</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Intelligence||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Intelligence||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_NOBLE">
+	<supports>Background, Noble</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - SAGE -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_SAGE">
+	<supports>Background, Sage</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Constitution||Intelligence||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Constitution||Intelligence||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_SAGE">
+	<supports>Background, Sage</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - SAILOR -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_SAILOR">
+	<supports>Background, Sailor</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Dexterity||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_SAILOR">
+	<supports>Background, Sailor</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - SCRIBE -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_SCRIBE">
+	<supports>Background, Scribe</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Intelligence||Dexterity||Wisdom)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Intelligence||Dexterity||Wisdom)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_SCRIBE">
+	<supports>Background, Scribe</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_INTELLIGENCE" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - SOLDIER -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_SOLDIER">
+	<supports>Background, Soldier</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strenght||Dexterity||Constitution)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strenght||Dexterity||Constitution)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_SOLDIER">
+	<supports>Background, Soldier</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_STRENGTH" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CONSTITUTION" />
+	</rules> 
+</element>
+<!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - WAYFARER -->
+<element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_WAYFARER">
+	<supports>Background, Wayfarer</supports>
+	<rules>
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Dexterity||Wisdom||Charisma)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Dexterity||Wisdom||Charisma)" />
+	</rules> 
+</element>
+<element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_WAYFARER">
+	<supports>Background, Wayfarer</supports>
+	<rules>
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_WISDOM" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_DEXTERITY" />
+		<grant name="Ability Improvement 1" id="ID_PHB24_ASI_CHARISMA" />
+	</rules> 
+</element>	
 </elements>
