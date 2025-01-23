@@ -101,7 +101,7 @@
 			<description>You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. You can change the choice after a Long Rest. Moreover, when you take damage for the choosen type, you can take a Reaction to deal 2d12+{{constitution:modifier}} to a creature you can see within 60ft. A Dexterity Saving Throw against DC {{Epic_Boon_Resistance}} negates.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="ASI, Epic Boon" />
+			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
 			<stat name="Epic_Boon_Resistance" value="8" />
 			<stat name="Epic_Boon_Resistance" value="proficiency" />
 			<stat name="Epic_Boon_Resistance" value="constitution:modifier" />
