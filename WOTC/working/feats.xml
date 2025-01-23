@@ -368,8 +368,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Parry.</strong> If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Parry:</strong> if you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>If you're holding a Finesse weapon and a creature hits you with a melee attack, you add +{{proficiency}} to your AC for any melee attack until the start of your next turn.</description>
@@ -383,9 +383,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strenngth or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Enhanced Dual Wielding.</strong> When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.</p>
-			<p><strong>Quick Draw.</strong> You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strenngth or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Enhanced Dual Wielding:</strong> when you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.</p>
+			<p><strong>Quick Draw:</strong> you can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.</p>
 		</description>
 		<sheet>
 			<description>When you use the Two-Weapon Fighting rule, you can make the bonus attack with any weapon that lacks the Two-Handed property. Moreover, you can drow or stow two one-hand weapon instead of one.</description>
@@ -399,9 +399,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Constitution by 1, to a maximum of 20.</p>
-			<p><strong>Defy Death.</strong>  You have Advantage on Death Saving Throws.</p>
-			<p><strong>Speedy Recovery.</strong> As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Constitution by 1, to a maximum of 20.</p>
+			<p><strong>Defy Death:</strong> you have Advantage on Death Saving Throws.</p>
+			<p><strong>Speedy Recovery:</strong> as a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.</p>
 		</description>
 		<sheet>
 			<description>You have Advantage on Death Saving Throws. Moreover, as a Bonus Action you can expend one Hit Point Die, roll it and ragain a number of Hit Points equal to the roll</description>
@@ -415,9 +415,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Energy Mastery.</strong> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Energy Mastery:</strong> choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -430,9 +430,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Energy Mastery.</strong> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Energy Mastery:</strong> choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -445,9 +445,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Energy Mastery.</strong> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Energy Mastery:</strong> choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -460,9 +460,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Energy Mastery.</strong> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Energy Mastery:</strong> choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -475,9 +475,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Energy Mastery.</strong> Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Energy Mastery:</strong> choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore Resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once, but you must choose a different damage type each time for Energy Mastery.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -489,37 +489,37 @@
 	<element name="Acid" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT_ACID">
 		<supports>Elemental Adept</supports>
 		<description>
-			<p>Spells you cast ignore acid resistance. In addition, when you roll damage for a spell you cast that deals acid damage, you can treat any 1 on a damage die as a 2.</p>
+			<p>Spells you cast ignore Acid resistance. In addition, when you roll damage for a spell you cast that deals Acid damage, you can treat any 1 on a damage die as a 2.</p>
 		</description>
 		<sheet alt="Elemental Adept, Acid">
-			<description>Spells you cast ignore acid resistance. Treat any 1 on a damage die as a 2 with acid spells.</description>
+			<description>Spells you cast ignore Acid resistance. Treat any 1 on a damage die as a 2 with Acid spells.</description>
 		</sheet>
 	</element>	
 	<element name="Cold" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT_COLD">
 		<supports>Elemental Adept</supports>
 		<description>
-			<p>Spells you cast ignore cold resistance. In addition, when you roll damage for a spell you cast that deals cold damage, you can treat any 1 on a damage die as a 2.</p>
+			<p>Spells you cast ignore Cold resistance. In addition, when you roll damage for a spell you cast that deals Cold damage, you can treat any 1 on a damage die as a 2.</p>
 		</description>
 		<sheet alt="Elemental Adept, Cold">
-			<description>Spells you cast ignore cold resistance. Treat any 1 on a damage die as a 2 with cold spells.</description>
+			<description>Spells you cast ignore Cold resistance. Treat any 1 on a damage die as a 2 with Cold spells.</description>
 		</sheet>
 	</element>
  	<element name="Fire" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT_FIRE">
 		<supports>Elemental Adept</supports>
 		<description>
-			<p>Spells you cast ignore fire resistance. In addition, when you roll damage for a spell you cast that deals fire damage, you can treat any 1 on a damage die as a 2.</p>
+			<p>Spells you cast ignore Fire resistance. In addition, when you roll damage for a spell you cast that deals Fire damage, you can treat any 1 on a damage die as a 2.</p>
 		</description>
 		<sheet alt="Elemental Adept, Fire">
-			<description>Spells you cast ignore fire resistance. Treat any 1 on a damage die as a 2 with fire spells.</description>
+			<description>Spells you cast ignore Fire resistance. Treat any 1 on a damage die as a 2 with Fire spells.</description>
 		</sheet>
 	</element>
 	<element name="Lightning" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT_LIGHTNING">
 		<supports>Elemental Adept</supports>
 		<description>
-			<p>Spells you cast ignore lightning resistance. In addition, when you roll damage for a spell you cast that deals lightning damage, you can treat any 1 on a damage die as a 2.</p>
+			<p>Spells you cast ignore Lightning resistance. In addition, when you roll damage for a spell you cast that deals Lightning damage, you can treat any 1 on a damage die as a 2.</p>
 		</description>
 		<sheet alt="Elemental Adept, Lightning">
-			<description>Spells you cast ignore lightning resistance. Treat any 1 on a damage die as a 2 with lightning spells.</description>
+			<description>Spells you cast ignore Lightning resistance. Treat any 1 on a damage die as a 2 with Lightning spells.</description>
 		</sheet>
 	</element>
 	<element name="Thunder" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT_THUNDER">
@@ -538,8 +538,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Fey Magic.</strong> Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Fey Magic:</strong> choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
 		</description>
 		<sheet>
 			<description>You can cast the spell you learned and Misty Step once per Long Rest, without expending a spell slot.</description>
@@ -555,10 +555,10 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Attack Advantage.</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
-			<p><strong>Improved Dash.</strong> You have Advantage on attack rolls against a creature Grappled by you.</p>
-			<p><strong>Fast Wrestler.</strong> You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Attack Advantage:</strong> when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. You can use this benefit only once per turn.</p>
+			<p><strong>Improved Dash:</strong> you have Advantage on attack rolls against a creature Grappled by you.</p>
+			<p><strong>Fast Wrestler:</strong> you don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</p>
 		</description>
 		<sheet>
 			<description>Once per Turn, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Grapple option. Moreover, you have Advantage on attack rolls against a creature grappled by you. You don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller.</description>
@@ -572,9 +572,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength by 1, to a maximum of 20.</p>
-			<p><strong>Heavy Weapon Mastery.</strong> When you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.</p>
-			<p><strong>Hew.</strong> Immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength by 1, to a maximum of 20.</p>
+			<p><strong>Heavy Weapon Mastery:</strong> when you hit a creature with a weapon that has the Heavy property as part of the Attack action on your turn, you can cause the weapon to deal extra damage to the target. The extra damage equals your Proficiency Bonus.</p>
+			<p><strong>Hew:</strong> immediately after you score a Critical Hit with a Melee weapon or reduce a creature to 0 Hit Points with one, you can make one attack with the same weapon as a Bonus Action.</p>
 		</description>
 		<sheet>
 			<description>When you deal damage with a Heavy weapon as part of you Attack Action, you can deal {{proficiency}} extra damage. Moreover, when you score a Critical Hit or reduce a creature to 0 Hit Points with a melee weapon, you can make one extra attack with a Bonus Attack.</description>
@@ -587,8 +587,8 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Battle Medic.</strong> If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</p>
-			<p><strong>Healing Rerolls.</strong> Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
+			<p><strong>Battle Medic:</strong> if you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</p>
+			<p><strong>Healing Rerolls:</strong> whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
 		</description>
 		<sheet>
 			<description>If you have a Healer's Kit, you can take the Utilize action. A creature within 5ft from you can expend one Hit Point Die, roll it and regain Hit Points equal to the roll +{{proficiency}}. Moreover, if you roll a 1 try to restore Hip Points, you can reroll the die and thake it.</description>
@@ -599,8 +599,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Contitution by 1, to a maximum of 20.</p>
-			<p><strong>Armor Training.</strong> You gain training with Heavy armor.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Contitution by 1, to a maximum of 20.</p>
+			<p><strong>Armor Training:</strong> you gain training with Heavy armor.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -613,8 +613,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Constitution by 1, to a maximum of 20.</p>
-			<p><strong>Damage Reduction.</strong> When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Constitution by 1, to a maximum of 20.</p>
+			<p><strong>Damage Reduction:</strong> when you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.</p>
 		</description>
 		<sheet>
 			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
@@ -628,17 +628,17 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Bolstering Performance.</strong> When you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Bolstering Performance:</strong> when you finish a Short or Long Rest, you can give an inspiring performance: a speech, song, or dance. When you do so, choose up to six allies (which can include yourself) within 30 feet of yourself who witness the performance. The chosen creatures each gain Temporary Hit Points equal to your character level plus the modifier of the ability you increased with this feat.</p>
 		</description>
 		<sheet usage="1/Short Rest">
-			<description>Up to 6 allies (can include yourself) gain {{inspiring leader hp}} Temporary Hit Points.</description>
+			<description>Up to 6 allies (can include yourself) gain {{inspiring_leader:hp}} Temporary Hit Points.</description>
 		</sheet>	
 		<rules>
 			<select name="Ability improvement (Inspiring Leader)" type="Ability Score Improvement" supports="Standard, (Wisdom||Charisma)" />
-			<stat name="inspiring leader hp" value="level" />
-			<stat name="inspiring leader hp" value="wisdom:modifier" bonus="base" />
-			<stat name="inspiring leader hp" value="charisma:modifier" bonus="base" />
+			<stat name="inspiring_leader:hp" value="level" />
+			<stat name="inspiring_leader:hp" value="wisdom:modifier" bonus="base" />
+			<stat name="inspiring_leader:hp" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
  	<element name="Knee Mind" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_KNEE_MIND">
@@ -646,16 +646,16 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Intelligence by 1, to a maximum of 20.</p>
-			<p><strong>Lore Knowledge. </strong> Choose one of the following skills: Arcana, History, Investigation, Nature, or Religion. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
-			<p><strong>Quick Study.</strong> You can take the Study action as a Bonus Action.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence by 1, to a maximum of 20.</p>
+			<p><strong>Lore Knowledge:</strong> choose one of the following skills: Arcana, History, Investigation, Nature, or Religion. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
+			<p><strong>Quick Study:</strong> you can take the Study action as a Bonus Action.</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>You can take the Study action as a Bonus Action</description>
 		</sheet>	
 		<rules>
 			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" />
-			<select name="Skill Proficiency (Knee Mind)" type="Feat Feature" supports="Boon expertise, (Arcana||History||Investigation||Nature||Religion)" />
+			<select name="Skill Proficiency (Knee Mind)" type="Feat Feature" supports="Boon expertise, (Arcana||History||Investigation||Nature||Religion)" /> <!-- CORREGGERE LE BOON EXPERTISE -->
 		</rules>
 	</element>
 	<element name="Lightly Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LIGHTLY_ARMORED">
@@ -663,8 +663,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexteriry by 1, to a maximum of 20.</p>
-			<p><strong>Armor Training.</strong> You gain training with Light armor and Shields.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexteriry by 1, to a maximum of 20.</p>
+			<p><strong>Armor Training:</strong> you gain training with Light armor and Shields.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -677,9 +677,9 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Luck Points.</strong> You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</p>
-			<p><strong>Advantage.</strong> When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.</p>
-			<p><strong>Disvantage.</strong> When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</p>
+			<p><strong>Luck Points:</strong> you have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.</p>
+			<p><strong>Advantage:</strong> when you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.</p>
+			<p><strong>Disvantage:</strong> when a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.</p>
 		</description>
 		<sheet usage="{{proficiency}}/Long Rest">
 			<description>When you roll a D20 test, you can spend 1 Luck Point to give Advantage to yourself. Otherwhise, you can spend 1 Luck Point to impose Disvanage to an attack roll against you.</description>
@@ -690,9 +690,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexteriry by 1, to a maximum of 20.</p>
-			<p><strong>Concentration Breaker.</strong> When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
-			<p><strong>Guarded Mind.</strong> If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexteriry by 1, to a maximum of 20.</p>
+			<p><strong>Concentration Breaker:</strong> when you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
+			<p><strong>Guarded Mind:</strong> if you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet>
 			<description>When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration. Moreover, once per Short Rest in you fail a Wisdom or Charisma saving throw, you can succeed instead.</description>
@@ -705,10 +705,10 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Two Cantrips</strong> You learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
-			<p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
-			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
-			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
+			<p><strong>Two Cantrips:</strong> you learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
+			<p><strong>Level 1 Spell:</strong> choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
+			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
 		<sheet>
 			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
@@ -722,10 +722,10 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Two Cantrips</strong> You learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
-			<p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
-			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
-			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
+			<p><strong>Two Cantrips:</strong> you learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
+			<p><strong>Level 1 Spell:</strong> choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
+			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -737,10 +737,10 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Two Cantrips</strong> You learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
-			<p><strong>Level 1 Spell.</strong> Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
-			<p><strong>Spell Change.</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
-			<p><strong>Repetable</strong> You can take this feat more than once, but you must choose a different spell list each time.</p>
+			<p><strong>Two Cantrips:</strong> you learn two cantrips from the Wizard, Cleric or Druid spell list. Intelligence, Wisdom or Charisma is your spellcasting ability for that spell.</p>
+			<p><strong>Level 1 Spell:</strong> choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</p>
+			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
+			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -751,7 +751,7 @@
 	<element name="Wizard Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
-			<p>Your cantrips and spell will be from the Wizard Spell List</p>
+			<p>Your learn two cantrips and one 1st level spell from the Wizard Spell List</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -762,7 +762,7 @@
 	<element name="Cleric Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
-			<p>Your cantrips and spell will be from the Cleric Spell List</p>
+			<p>Your learn two cantrips and one 1st level spell from the Cleric Spell List</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -773,7 +773,7 @@
 	<element name="Druid Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
 		<supports>Origin Feat, Magic Initiate</supports>
 		<description>
-			<p>Your cantrips and spell will be from the Druid Spell List</p>
+			<p>Your learn two cantrips and one 1st level spell from the Druid Spell List</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -782,13 +782,14 @@
 		</rules>	
 	</element>
 <!-- END OF MAGIC INITIATE SPELL LISTS -->
+	
 	<element name="Martial Weapon Training" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MARTIAL_WEAPON_TRAINING">
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Armor Training.</strong> ou gain proficiency with Martial weapons.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Weapon Proficiency.</strong> you gain proficiency with Martial Weapons.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -801,12 +802,10 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Dexterous Wearer</strong> While you're wearing Medium armor, you can add 3, rather than 2 to your AC if you have a Dexterity score of 16 or higher.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Dexterous Wearer</strong> while you're wearing Medium armor, you can add 3, rather than 2 to your AC if you have a Dexterity score of 16 or higher.</p>
 		</description>
-		<sheet>
-			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
-		</sheet>	
+		<sheet display="false" />	
 		<rules>
 			<select name="Ability improvement (Medium Armor Master)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 			<stat name="ac:armored:dexterity:cap" value="3" bonus="base"/>
@@ -817,8 +816,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Armor Training.</strong> You gain training with Light armor.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Armor Training:</strong> you gain training with Light armor.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -831,10 +830,10 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase</strong> Increase your Strength, Dexterity or Wisdom by 1, to a maximum of 20.</p>
-			<p><strong>Mounted Strike.</strong> While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.</p>
-			<p><strong>Leap Aside.</strong> If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.</p>
-			<p><strong>Veer.</strong> While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength, Dexterity or Wisdom by 1, to a maximum of 20.</p>
+			<p><strong>Mounted Strike:</strong> while mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.</p>
+			<p><strong>Leap Aside:</strong> if your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.</p>
+			<p><strong>Veer:</strong> while mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.</p>
 		</description>
 		<sheet>
 			<description>While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount. Moreover, while mounting, when your mount make a Dexterity Saving Throw to save damage, it takes half damage on a fail and no damage on a success. While mounting, you can force an attack that hits your mount to hit you instead.</description>
@@ -847,11 +846,11 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Instrument Training.</strong> You gain proficiency with three Musical Instruments of your choice.</p>
-			<p><strong>Encouraging Song.</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</p>
+			<p><strong>Instrument Training:</strong> you gain proficiency with three Musical Instruments of your choice.</p>
+			<p><strong>Encouraging Song:</strong> as you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</p>
 		</description>
 		<sheet>
-			<description>After a Short or Long Rest, you can give an Heroic Inspiration up to {{proficiency}} allies who ear your song.</description>
+			<description>After a Short or Long Rest, you can give an Heroic Inspiration up to {{proficiency}} allies who hear your song.</description>
 		</sheet>
 		<rules>
 			<select name="Instrument Proficiency (Musician)" type="Proficiency" supports="Musical Instrument" number="3" />
@@ -862,16 +861,16 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence or Wisdom by 1, to a maximum of 20.</p>
-			<p><strong>Keen Observer.</strong> Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
-			<p><strong>Quick Search.</strong>  You can take the Search action as a Bonus Action.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence or Wisdom by 1, to a maximum of 20.</p>
+			<p><strong>Keen Observer:</strong> choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.</p>
+			<p><strong>Quick Search:</strong> you can take the Search action as a Bonus Action.</p>
 		</description>
 		<sheet>
 			<description>You can take the Search action as a Bonus Action</description>
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Observant)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom)" />
-			<select name="Skill Proficiency (Observant)" type="Feat Feature" supports="Boon expertise, (Insight||Investigation||Perception)" />
+			<select name="Skill Proficiency (Observant)" type="Feat Feature" supports="Boon expertise, (Insight||Investigation||Perception)" /> <!-- CORREGGERE BOON EXPERTISE -->
 		</rules>
 	</element>
 	<element name="Piercer" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_PIERCER">
@@ -879,9 +878,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Puncture.</strong> Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.</p>
-			<p><strong>Enhanced Critical.</strong> When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Puncture:</strong> once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.</p>
+			<p><strong>Enhanced Critical:</strong> when you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.</p>
 		</description>
 		<sheet>
 			<description>Once per Turn, you can reroll one damage roll dealt with a Piercing weapon. Moreover, when you score a Critical Hit dealing piercing damage, you roll one extra damage die.</description>
@@ -895,9 +894,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Dexterity or Intelligence by 1, to a maximum of 20.</p>
-			<p><strong>Potent Poison.</strong> When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.</p>
-			<p><strong>Brew Poison.</strong> You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Dexterity or Intelligence by 1, to a maximum of 20.</p>
+			<p><strong>Potent Poison:</strong> when you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.</p>
+			<p><strong>Brew Poison:</strong> you gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.</p>
 		</description>
 		<sheet>
 			<description>You ignore the Resistance to Poison Damage. Moreover, using a Poisoner's Kit for 1 hour and expending 50GP worth materials, you create {{proficiency}} poison doses. As a Bonus Action you can apply the poison to a weapon or ammunition. The applied poison lasts for 1 minute or until you deal damage with that weapon. A creature hit with the poisonous weapon must succeed on a Constitution Saving Throw against DC{{poisoner dc}} or take 2d8 of extra poisonous damage and suffer the poisoned condition until the End of your next turn.</description>
@@ -907,7 +906,7 @@
 			<stat name="poisoner dc" value="8" />
 			<stat name="poisoner dc" value="proficiency" />
 			<stat name="poisoner dc" value="dexterity:modifier" bonus="base" />
-			<stat name="poisoner dc" value="intelligence:modifier" bonus="base" />
+			<stat name="poisoner dc" value="intelligence:modifier" bonus="base" /> <!-- DOVREBBE ESSERE COLLEGATO ALLA STAT AUMENTATA -->
 		</rules>
 	</element>
  	<element name="Polearm Master" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_POLEARM_MASTER">
@@ -915,9 +914,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Pole Strike.</strong> Immediately after you take the Attack action and attack with a Quarterstaff , a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.</p>
-			<p><strong>Reactive Strike.</strong> While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Pole Strike:</strong> immediately after you take the Attack action and attack with a Quarterstaff , a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.</p>
+			<p><strong>Reactive Strike:</strong> while you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.</p>
 		</description>
 		<sheet>
 			<description>Immediately after you take the Attack Action with a Quaretrstaff, a Spear or a weapon that has the Heavy and Reach properties, as a Bonus Action you can make a melee attack, dealing bludgeoning damage. The damage die is a d4. Moreover, you can take a Reaction to make a melee attack to a creature that enters the reach of your weapon.</description>
@@ -931,8 +930,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.</p>
-			<p><strong>Saving Throw Proficiency.</strong> You gain saving throw proficiency with the chosen ability.</p>
+			<p><strong>Ability Score Increase:</strong> choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.</p>
+			<p><strong>Saving Throw Proficiency:</strong> you gain Saving Throw proficiency with the chosen ability.</p>
 		</description>
 		<sheet display="false" />
 		<rules> 
@@ -944,12 +943,12 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Ritual Spells.</strong> Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</p>
-			<p><strong>Quick Ritual.</strong> With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Ritual Spells:</strong> choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.</p>
+			<p><strong>Quick Ritual:</strong> with this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.</p>
 		</description>
 		<sheet>
-			<description>Choose {{proficiency}} 1st level spell that have the Ritual tag. These spell are always prepared. Each time you proficiency increases, you can add new 1st level Ritual spells. Moreover, once per Long Rest, you can cast a prepared Ritual spell with regular casting time, without expend a spel slot.</description>
+			<description>Choose {{proficiency}} 1st level spell that have the Ritual tag. These spell are always prepared. Each time your proficiency increases, you can add new 1st level Ritual spells. Moreover, once per Long Rest, you can cast a prepared Ritual Spell with regular casting time, without expend a spel slot.</description>
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
@@ -963,7 +962,6 @@
 	<element name="Savage Attacker" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SAVAGE_ATTACKER">
 		<supports>Origin Feat</supports>
 		<description>
-			<p>You gain the following benefits:</p>
 			<p>You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.</p>
 		</description>
 		<sheet usage="1/Turn">
@@ -975,9 +973,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Guardian.</strong> Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.</p>
-			<p><strong>Halt.</strong> When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Guardian:</strong> immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.</p>
+			<p><strong>Halt:</strong> when you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</p>
 		</description>
 		<sheet>
 			<description>Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature. Moreover, when you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.</description>
@@ -991,8 +989,8 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Shadow Magic.</strong> Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Shadow Magic:</strong> choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</p>
 		</description>
 		<sheet>
 			<description>Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. Once per Long Rest, you can cast each of these spells without expending a spell slot. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</description>
@@ -1008,10 +1006,10 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Bypass Cover.</strong> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.</p>
-			<p><strong>Firing in Melee.</strong> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
-			<p><strong>Long Shots.</strong> Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Bypass Cover:</strong> your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.</p>
+			<p><strong>Firing in Melee:</strong> being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
+			<p><strong>Long Shots:</strong> attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.</p>
 		</description>
 		<sheet>
 			<description> Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover. Use Ranged weapon in Melee or at Long Range doesn't impose Disvantage to attack rolls.</description>
@@ -1025,18 +1023,18 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength by 1, to a maximum of 20.</p>
-			<p><strong>Shield Bash.</strong> If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.</p>
-			<p><strong>Interpose Shield.</strong> If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength by 1, to a maximum of 20.</p>
+			<p><strong>Shield Bash:</strong> if you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.</p>
+			<p><strong>Interpose Shield:</strong> if you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.</p>
 		</description>
 		<sheet>
-			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
+			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield_Master:dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Saving Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
 		</sheet>
 		<rules> 
 			<grant name="Ability improvement (Shield Master)" type="Ability Score Improvement" id="ID_PHB24_ASI_STRENGTH" />
-			<stat name="Shield Master dc" value="8" />
-			<stat name="Shield Master dc" value="proficiency" />
-			<stat name="Shield Master dc" value="strength:modifier" />
+			<stat name="Shield_Master:dc" value="8" />
+			<stat name="Shield_Master:dc" value="proficiency" />
+			<stat name="Shield_Master:dc" value="strength:modifier" />
 		</rules>
 	</element>
 	<element name="Skill Expert" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILL_EXPERT">
@@ -1044,9 +1042,9 @@
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
-			<p><strong>Ability Score Increase.</strong> Increase one ability score by 1, to a maximum of 20.</p>
-			<p><strong>Skill Proficiency.</strong> You gain proficiency in one skill of your choice.</p>
-			<p><strong>Expertise.</strong> Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>
+			<p><strong>Ability Score Increase:</strong> increase one ability score by 1, to a maximum of 20.</p>
+			<p><strong>Skill Proficiency:</strong> you gain proficiency in one skill of your choice.</p>
+			<p><strong>Expertise:</strong> choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.</p>
 		</description>
 		<sheet>
 			<description> Once per Turn, as part of an attack action while using a shield, immediately after the attack you can force the target to make a Strength Savin Throw against DC{{Shield Master dc}}. On a fail, you can push the target 5ft away from you or cause it to have the prone condition. Moreover, when you make a Dexterity Savin Throw to halve a damage, on a success you take no damage, if you are using a shield.</description>
@@ -1061,7 +1059,7 @@
 		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
 		<rules> 
@@ -1072,7 +1070,7 @@
 		<requirements>ID_PHB24_FEAT_SKILLED</requirements>
 		<description>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
 		<rules> 
@@ -1083,7 +1081,7 @@
 		<requirements>ID_PHB24_FEAT_SKILLED_2</requirements>
 		<description>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
 		<rules> 
@@ -1094,7 +1092,7 @@
 		<requirements>ID_PHB24_FEAT_SKILLED_3</requirements>
 		<description>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
-			<p><strong>Repeatable.</strong> You can take this feat more than once.</p>
+			<p><strong>Repeatable:</strong> you can take this feat more than once.</p>
 		</description>
 		<sheet display="false" />
 		<rules> 
@@ -1105,10 +1103,10 @@
 		<requirements>[level:4],[dex:13]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Dexterity score by 1, to a maximum of 20.</p>
-			<p><strong>Blindsight.</strong> You have Blindsight with a range of 10 feet.</p>
-			<p><strong>Fog of War.</strong> You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.</p>
-			<p><strong>Sniper.</strong> If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Dexterity score by 1, to a maximum of 20.</p>
+			<p><strong>Blindsight:</strong> you have Blindsight with a range of 10 feet.</p>
+			<p><strong>Fog of War:</strong> you exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.</p>
+			<p><strong>Sniper:</strong> if you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</p>
 		</description>
 		<sheet>
 			<description>You have Blindsight with a range of 10 feet. You have Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat. Moreover, if you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.</description>
@@ -1122,9 +1120,9 @@
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
-			<p><strong>Hamstring.</strong> Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.</p>
-			<p><strong>Enhanced Critical.</strong> When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p><strong>Hamstring:</strong> once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.</p>
+			<p><strong>Enhanced Critical:</strong> when you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.</p>
 		</description>
 		<sheet>
 			<description>Once per Turn, when you deal Slashing damages, you can reduce the speed of the target by 10 ft until the start of your next turn. Moreover, when you score a Critical Hit dealing Slashing damages, it hasit has Disadvantage on attack rolls until the start of your next turn.</description>
@@ -1137,10 +1135,10 @@
 		<requirements>[level:4], ([dex:13]||[cos:13])</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Constitution or Dexterity score by 1, to a maximum of 20.</p>
-			<p><strong>Speed Increase.</strong> Your Speed increases by 10 feet.</p>
-			<p><strong>Dash over Difficult Terrain.</strong> When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.</p>
-			<p><strong>Agile Movement.</strong> Opportunity Attacks have Disadvantage against you.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Constitution or Dexterity score by 1, to a maximum of 20.</p>
+			<p><strong>Speed Increase:</strong> your Speed increases by 10 feet.</p>
+			<p><strong>Dash over Difficult Terrain:</strong> when you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.</p>
+			<p><strong>Agile Movement:</strong> opportunity Attacks have Disadvantage against you.</p>
 		</description>
 		<sheet>
 			<description>When you take the Dash action, Difficult Terrain doesen't cost you extra movement. Moreover, Opportunity attacks have Disvantage against you.</description>
@@ -1154,26 +1152,25 @@
 		<requirements>[level:4], [type:spell]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</p>
-			<p><strong>Spell Sniper.</strong> Your attack rolls for spells ignore Half Cover and Three-Quarters Cover.</p>
-			<p><strong>Casting in Melee.</strong> Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.</p>
-			<p><strong>Increased Range.</strong>  When you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</p>
+			<p><strong>Spell Sniper:</strong> your attack rolls for spells ignore Half Cover and Three-Quarters Cover.</p>
+			<p><strong>Casting in Melee:</strong> being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.</p>
+			<p><strong>Increased Range:</strong> when you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.</p>
 		</description>
 		<sheet>
-			<description>Your Spell Attacks ignore Half and Three-Quarter Cover and have no Disvantage when you are at 5ft form an enemy. The spell range of your spell with a range of at least 10 ft and requiring an attack roll, increase by 60 ft.</description>
+			<description>Your Spell Attacks ignore Half and Three-Quarter Cover and have no Disvantage when you are at 5ft form an enemy. The spell range of your spells with a range of at least 10 ft and requiring an attack roll, increases by 60 ft.</description>
 		</sheet>	
 		<rules> 
 			<select name="Ability improvement (Sniper)" type="Ability Score Improvement" supports="Standard, (Constitution||Dexterity)" />
-			<stat name="speed" value="10" />
 		</rules>
 	</element>
 	<element name="Tavern Brawler" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_TAVERN_BRAWLER">
 		<supports>Origin Feat</supports>
 		<description>
-			<p><strong>Enhanced Unarmed Strike.</strong> When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
-			<p><strong>Damage Rerolls.</strong> Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
-			<p><strong>Improvised Weaponry.</strong> You have proficiency with improvised weapons.</p>
-			<p><strong>Push.</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</p>
+			<p><strong>Enhanced Unarmed Strike:</strong> when you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p>
+			<p><strong>Damage Rerolls:</strong> whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
+			<p><strong>Improvised Weaponry:</strong> you have proficiency with improvised weapons.</p>
+			<p><strong>Push:</strong> when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</p>
 		</description>
 		<sheet>
 			<description>When you hit with an Unarmed Strike, you can deal 1d4+{{strength:modifier}} Bludgeoning damage, and can reroll a 1 on the damage die and use the new roll. Moreover, you gain proficiency with improvised weapon. Once per turn, when you deal damage with an Unarmed Strike, you can push the target 5ft away.</description>
@@ -1183,30 +1180,30 @@
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Minor Telekinesis.</strong> You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</p>
-			<p><strong>Telekinetic Shove.</strong> As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Minor Telekinesis:</strong> you learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.</p>
+			<p><strong>Telekinetic Shove:</strong> as a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.</p>
 		</description>
 		<sheet>
-			<description>You can cast Mage Hand without Verbal or Somatic components, you can make the hand Invisible and the range increase by 30ft. Moreover, as a bonus action, you can telekinetically shove a creature within 30 ft. On a failed Strength Saving Throw against DC{{telekinetic dc}} the creature is moved by 5ft toward or away from you.</description>
+			<description>You can cast Mage Hand without Verbal or Somatic components, you can make the hand Invisible and the range increase by 30ft. Moreover, as a bonus action, you can telekinetically shove a creature within 30 ft. On a failed Strength Saving Throw against DC{{telekinetic:dc}} the creature is moved by 5ft toward or away from you.</description>
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Telekinetic)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_MAGE_HAND" />
-			<stat name="telekinetic dc" value="8" />
-			<stat name="telekinetic dc" value="proficiency" />
-			<stat name="telekinetic dc" value="intelligence:modifier" bonus="base" />
-			<stat name="telekinetic dc" value="wisdom:modifier" bonus="base" />
-			<stat name="telekinetic dc" value="charisma:modifier" bonus="base" />
+			<stat name="telekinetic:dc" value="8" />
+			<stat name="telekinetic:dc" value="proficiency" />
+			<stat name="telekinetic:dc" value="intelligence:modifier" bonus="base" />
+			<stat name="telekinetic:dc" value="wisdom:modifier" bonus="base" />
+			<stat name="telekinetic:dc" value="charisma:modifier" bonus="base" /> <!-- DOVREBBE ESSERE CORRELATO ALLA SKILL AUMENTATA -->
 		</rules>
 	</element>
 	<element name="Telepathic" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_TELEPATHIC">
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Telepathic Utterance.</strong> You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.</p>
-			<p><strong>Detect Thoughts.</strong> You always have the Detect Thoughts spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Telepathic Utterance:</strong> you can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.</p>
+			<p><strong>Detect Thoughts:</strong> you always have the Detect Thoughts spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.</p>
 		</description>
 		<sheet>
 			<description>You can speak telepatichally in your language to any creature you can see within 60 ft. The creature doesn't gain the ability to respond telepathically. Moreover, you learn the Detect Thought spell that is always prepared. Once per Long Rest, you can cast it without spending a spell slot.</description>
@@ -1232,10 +1229,10 @@
 		<requirements>[level:4], [type:spell]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
-			<p><strong>Concentration.</strong> You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
-			<p><strong>Reactive Spell.</strong> When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</p>
-			<p><strong>Somatic Components.</strong> You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
+			<p><strong>Concentration:</strong> you have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+			<p><strong>Reactive Spell:</strong> when a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.</p>
+			<p><strong>Somatic Components:</strong> you can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.</p>
 		</description>
 		<sheet>
 			<description>You have Advantage on Constitution Saving Throw to maintain Concentration. You can perform Somatic components of spell, even when you have weapon or shield in both hands. Moreover, when a creature provokes an Opportunity Attack from you, you can take a Reaction to cast a spell, instead of make the attack. The spell must target only that creature.</description>
@@ -1248,11 +1245,11 @@
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
 		<description>
-			<p><strong>Ability Score Increase.</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
-			<p><strong>Mastery Property.</strong> Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</p>
+			<p><strong>Ability Score Increase:</strong> increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p><strong>Mastery Property:</strong> your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.</p>
 		</description>
 		<sheet>
-			<description>Whenever you finish a Long Rest, you can choose a weapon you are proficient in. After that, you can use the mastery property of that weapon.</description>
+			<description>Whenever you finish a Long Rest, you can choose a weapon you are proficient in. Until the next Long Rest, you can use the mastery property of that weapon.</description>
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Weapon Master)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
@@ -1509,7 +1506,8 @@
 	</element>
 
 	<!-- RESILIENT ABILITI SCORE IMPROVEMENT --> <!-- NON SEMPRE ATTIVA IL BONUS QUANDO SI SELEZIONA LA STAT!!!!! -->
-	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_STRENGTH_RESILIENT">
+	
+	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_STRENGTH_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1523,7 +1521,7 @@
 			<grant name="Saving Proficiency (Strength)" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
 		</rules>
 	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_DEXTERITY_RESILIENT">
+	<element name="Dexterity" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_DEXTERITY_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1537,7 +1535,7 @@
 			<grant name="Saving Proficiency (Dexterity)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
 		</rules>
 	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CONSTITUTION_RESILIENT">
+	<element name="Constitution" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CONSTITUTION_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1551,7 +1549,7 @@
 			<grant name="Saving Proficiency (Constitution)" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
 	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_INTELLIGENCE_RESILIENT">
+	<element name="Intelligence" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_INTELLIGENCE_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1565,7 +1563,7 @@
 			<grant name="Saving Proficiency (Intelligence)" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 		</rules>
 	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_WISDOM_RESILIENT">
+	<element name="Wisdom" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_WISDOM_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1579,7 +1577,7 @@
 			<grant name="Saving Proficiency (Wisdom)" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
 		</rules>
 	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_ASI_CHARISMA_RESILIENT">
+	<element name="Charisma" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_CHARISMA_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
 		<supports>Resilient</supports>
 		<description>
@@ -1592,26 +1590,5 @@
 			<stat name="charisma" value="1" alt="Ability Score Increase" />
 			<grant name="Saving Proficiency (Charisma)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
-	</element>
-	
-<!--
-	
-<element name="Epic Boon" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_EPIC_BOON">
-	<requirements>[Level:19]</requirements>
-	<description>
-		<p>Epic Boon</p>
-	</description>
-	<sheet>
-		<description>Epic Boon</description>
-	</sheet>
-</element>
-<element name="Test Feat" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB_FEAT_TEST">
-	<supports>Origin Feat</supports>
-	<description>
-		<p>Test Feat</p>
-	</description>
-	<sheet>
-		<description>Test Feat</description>
-	</sheet>
-</element> -->	
+	</element>	
 </elements>
