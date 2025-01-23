@@ -655,7 +655,7 @@
 		</sheet>	
 		<rules>
 			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" />
-			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="(Skill||Expertise), (Arcana||History||Investigation||Nature||Religion)" />
+			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="Skill||(Expertise, Arcana||History||Investigation||Nature||Religion)" />
 		</rules>
 	</element>
 	<element name="Lightly Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LIGHTLY_ARMORED">
@@ -870,7 +870,7 @@
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Observant)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom)" />
-			<select name="Skill Proficiency (Observant)" type="Proficiency" supports="(Expertise||Skill), (Insight||Investigation||Perception)" />
+			<select name="Skill Proficiency (Observant)" type="Proficiency" supports="Skill||(Expertise, Insight||Investigation||Perception)" />
 		</rules>
 	</element>
 	<element name="Piercer" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_PIERCER">
