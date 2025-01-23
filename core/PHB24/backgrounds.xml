@@ -233,7 +233,7 @@
 	</element>
 	<element name="Sage" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SAGE">
 		<description>
-			<p>Sage: XXX</p>
+			<p>Sage: You spent your formative years traveling between manors and monasteries, performing various odd jobs and services in exchange for access to their libraries. You whiled away many a long evening studying books and scrolls, learning the lore of the multiverse—even the rudiments of magic—and your mind yearns for more.</p>
 			<p>Magic initiate (Wizard): once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
@@ -294,7 +294,7 @@
 	</element>
 	<element name="Soldier" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SOLDIER">
 		<description>
-			<p>Soldier: XXX</p>
+			<p>Soldier: You began training for war as soon as you reached adulthood and carry precious few memories of life before you took up arms. Battle is in your blood. Sometimes you catch yourself reflexively performing the basic fighting exercises you learned first. Eventually, you put that training to use on the battlefield, protecting the realm by waging war.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Strength, Dexterity, Constitution</li>
 				<li><strong>Feat:</strong> Savage Attacker</li>
