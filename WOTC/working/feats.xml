@@ -655,7 +655,7 @@
 		</sheet>	
 		<rules>
 			<grant name="Ability improvement (Knee Mind)" type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" />
-			<select name="Skill Proficiency (Knee Mind)" type="Feat Feature" supports="Boon expertise, (Arcana||History||Investigation||Nature||Religion)" /> <!-- CORREGGERE LE BOON EXPERTISE -->
+			<select name="Skill Proficiency (Knee Mind)" type="Proficiency" supports="Skill, Expertise, (Arcana||History||Investigation||Nature||Religion)" />
 		</rules>
 	</element>
 	<element name="Lightly Armored" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LIGHTLY_ARMORED">
@@ -870,7 +870,7 @@
 		</sheet>
 		<rules>
 			<select name="Ability improvement (Observant)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom)" />
-			<select name="Skill Proficiency (Observant)" type="Feat Feature" supports="Boon expertise, (Insight||Investigation||Perception)" /> <!-- CORREGGERE BOON EXPERTISE -->
+			<select name="Skill Proficiency (Observant)" type="Feat Feature" supports="Expertise, Skill, (Insight||Investigation||Perception)" />
 		</rules>
 	</element>
 	<element name="Piercer" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_PIERCER">
@@ -1052,7 +1052,7 @@
 		<rules> 
 			<select name="Ability improvement (Skill Expert)" type="Ability Score Improvement" supports="Standard" />
 			<select name="Skill Proficiency (Skill Expert)" type="Proficiency" supports="Skill" />
-			<select name="Skill Expertise (Skill Expert)" type="Feat Feature" supports="Boon expertise" /> <!-- generalizzate indipendente da Epic Boon -->
+			<select name="Skill Expertise (Skill Expert)" type="Proficiency" supports="Expertise" /> 
 		</rules>
 	</element>
 	<element name="Skilled" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SKILLED">
@@ -1342,7 +1342,7 @@
 	<!-- AGGIUNGERE LE VOCI PER LA SKILL PROFICIENCY -->
 	
 	<!-- Epic Boon Expertise --> <!-- AGGIUNGERE REQUIREMENT DELLA PROFICIENCY --> <!-- RICONTROLLARE I FEAT CHE LE RICHIAMANO PER DARE PROFICIENCY -->
-	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
+<!--	<element name="Acrobatics" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_BOON_OF_SKILL_EXP_ACROBATICS">
 		<supports>Boon expertise, Acrobatics</supports>
 		<description>
 			<p>You gain Expertise in Acrobatics.</p>
@@ -1503,7 +1503,7 @@
 		<rules>
 			<stat name="survival:proficiency" value="proficiency" bonus="double" />
 		</rules>
-	</element>
+	</element> -->
 
 	<!-- RESILIENT ABILITI SCORE IMPROVEMENT --> <!-- NON SEMPRE ATTIVA IL BONUS QUANDO SI SELEZIONA LA STAT!!!!! -->
 	
