@@ -132,7 +132,7 @@
  	</element>
 	<element name="Guard" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_GUARD">
 		<description>
-			<p>Farmer: XXXXX</p>
+			<p>Guard: XXXXX</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</li>
 				<li><strong>Feat:</strong> Alert</li>
@@ -234,6 +234,7 @@
 	<element name="Sage" type="Background" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_SAGE">
 		<description>
 			<p>Sage: XXX</p>
+			<p>Magic initiate (Wizard): once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
 				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
@@ -305,7 +306,7 @@
 		</description>	
 		<rules>
 			<select name="Ability Score Improvement (Soldier)" type="Background Feature" supports="Background, Soldier" />
-			<grant name="Savage Attacker (Soldier)" type="Feat" id="ID_PHB24_FEAT_SAVAGAE_ATTACKER" />
+			<grant name="Savage Attacker (Soldier)" type="Feat" id="ID_PHB24_FEAT_SAVAGE_ATTACKER" />
 			<grant name="Athletics proficiency (Soldier)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 			<grant name="Intimidation proficiency (Soldier)" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 			<select name="Gaming Set Proficiency (Soldier)" type="Proficiency" supports="Gaming Set" />
@@ -326,7 +327,7 @@
 		<rules>
 			<select name="Ability Score Improvement (Wayfarer)" type="Background Feature" supports="Background, Wayfarer" />
 			<grant name="Lucky (Wayfarer)" type="Feat" id="ID_PHB24_FEAT_LUCKY" />
-			<grant name="Insight proficiency (Wayfarer)" id="ID_PROFICIENCY_SKILL_INSTIGHT" />
+			<grant name="Insight proficiency (Wayfarer)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant name="Stealth proficiency (Wayfarer)" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<grant name="Thieve's Tools proficiency (Wayfarer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
 		</rules>
@@ -559,8 +560,8 @@
 <element name="Ability Score Improvement +2 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+2+1_SOLDIER">
 	<supports>Background, Soldier</supports>
 	<rules>
-		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strenght||Dexterity||Constitution)" />
-		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strenght||Dexterity||Constitution)" />
+		<select name="Ability Score Improvement +2" type="Ability Score Improvement" supports="Double, (Strength||Dexterity||Constitution)" />
+		<select name="Ability Score Improvement +1" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity||Constitution)" />
 	</rules> 
 </element>
 <element name="Ability Score Improvement +1 +1 +1" type="Background Feature" source="Player's Handbook Rev. 2024" id="ID_PHB24_BACKGROUND_ASI_+1+1+1_SOLDIER">
