@@ -4,7 +4,7 @@
 		<name>Ability and Skill Improvements</name>
 		<description>Code related to the Ability and Skill Improvements</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 		  <file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/Ability-Skill-Improvements.xml" />
 		</update>
 	</info>
@@ -409,9 +409,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -421,9 +418,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -433,9 +427,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -445,9 +436,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -457,9 +445,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -469,9 +454,6 @@
 	<supports>Level Improvement</supports>
 	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
@@ -480,9 +462,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
@@ -492,9 +471,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
@@ -504,9 +480,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
@@ -516,9 +489,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
@@ -528,9 +498,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
@@ -540,9 +507,6 @@
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
 	<sheet display="false" />
-	<setters>
-		<set name="allow duplicate">true</set>
-	</setters>
 	<rules>
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
