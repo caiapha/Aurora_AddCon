@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.0">
-			<file name="fighter-battle-master.xml" url="fighter-battle-master.xml" />
+			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-battle-master.xml" />
 		</update>
 	</info>
 
