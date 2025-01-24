@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		</update>
 	</info>
@@ -156,8 +156,8 @@
 		<p><strong>Gnomish Cunning.</strong> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
 		<h5>Gnomish Lineage.</h5>
 		<p>You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
-		<p class="indent"><strong>Forest Gnome.</strong> You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
-		<p class="indent"><strong>Rock Gnome.</strong> You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+		<p class="indent"><strong>Forest Gnome.</strong> You know the <strong>Minor Illusion</strong> cantrip. You also always have the <strong>Speak with Animals</strong> spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+		<p class="indent"><strong>Rock Gnome.</strong> You know the <strong>Mending</strong> and <strong>Prestidigitation</strong> cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
 	</description>
 	<sheet display="false" />
 	<rules>
@@ -271,6 +271,7 @@
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<select name="Fiendish Legacy" type="Racial Trait" supports="Fiendish Legacy" />
+		<grant name="Otherworldly Presence" id="ID_PHB24_SPELL_THAUMATURGY" />
 	</rules>
 </element>	
 <!-- DRACONIC ANCESTRY -->
@@ -456,8 +457,8 @@
 		<description>You know Mending and Prestidigitation cantrips. Spending 10 minute casting Prestidigitation you can create a Tiny clockwork device (AC 5, 1 HP), which reproduce one effect of the cantrip when activated with a Bonus Action. Each device lasts up to 8 hours or until you dismantel it. You can have up to 3 devices at the same time.</description>
 	</sheet>
 	<rules>
-		<grant name="Mending (Rock Gnome)" id="ID_PHB_SPELL_MENDING" />
-		<grant name="Prestidigitation (Forest Gnome)" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+		<grant name="Mending (Rock Gnome)" id="ID_PHB24_SPELL_MENDING" />
+		<grant name="Prestidigitation (Forest Gnome)" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
 	</rules>
 </element>
 <!-- GOLIATH LINEAGE -->
