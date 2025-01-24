@@ -26,8 +26,7 @@
 			<file name="fighter-eldritch-knight.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-eldritch-knight.xml" />
 			<file name="fighter-psi.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-psi.xml" />
 
-
-		<!-- <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" /> -->
+		 <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-barbarian.xml" />
 
 		<!-- Misc -->
 			
