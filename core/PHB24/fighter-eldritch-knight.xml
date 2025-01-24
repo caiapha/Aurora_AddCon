@@ -31,7 +31,6 @@
 		</rules>
 	</element>
 	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING</requirements>
 		<description>
 			<p>You have learned to cast spells. See chapter 7 for the rules on spellcasting. The information below details how you use those rules as an Eldritch Knight.</p>
 			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
@@ -104,7 +103,6 @@
 		</rules>
 	</element>
 	<element name="Weapon Bond" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WEAPON_BOND</requirements>
 		<description>
 			<p>At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</p>
 			<p class="indent">Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
@@ -116,7 +114,6 @@
 	</element>
 	
 	<element name="War Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC</requirements>
 		<description>
 			<p>Beginning at 7th level, when you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</p>
 		</description>
@@ -126,7 +123,6 @@
 	</element>
 	
 	<element name="Eldritch Strike" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ELDRITCH_STRIKE</requirements>
 		<description>
 			<p>At 10th level, You learn how to make your weapon strikes undercut a creature's ability to withstand your spells. When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</p>
 		</description>
@@ -135,7 +131,6 @@
 		</sheet>
 	</element>
 	<element name="Arcane Charge" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ARCANE_CHARGE</requirements>
 		<description>
 			<p>At 15th level, when you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</p>
 		</description>
@@ -144,7 +139,6 @@
 		</sheet>
 	</element>
 	<element name="Improved War Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC</requirements>
 		<description>
 			<p>Starting at 18th level, when you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action.</p>
 		</description>
@@ -152,12 +146,4 @@
 			<description>When you take the Attack action, you can replace two attacks with a casting of a level 1 or 2 spell, that has a casting time of one action.</description>
 		</sheet>
 	</element>
-
-	<!--Feature Replacement Grants-->
-	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" />
-	<element name="Weapon Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WEAPON_BOND" />
-	<element name="War Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" />
-	<element name="Eldritch Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ELDRITCH_STRIKE" />
-	<element name="Arcane Charge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_ARCANE_CHARGE" />
-	<element name="Improved War Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" />
 </elements>
