@@ -146,7 +146,6 @@
 		</multiclass>
 	</element>
 	<element name="Rage" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RAGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RAGE</requirements>
 		<description>
 			<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:</p>
 			<ul>
@@ -195,7 +194,6 @@
 		</rules>
 	</element> 
 	<element name="Unarmored Defense" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE</requirements>
 		<description>
 			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
 		</description>
@@ -228,7 +226,6 @@
 		</rules>	
 	</element>
 	<element name="Reckless Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK</requirements>
 		<description>
 			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with increased ferocity. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.</p>
 		</description>
@@ -237,7 +234,6 @@
 		</sheet>
 	</element>
 	<element name="Danger Sense" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE</requirements>
 		<description>
 			<p>At 2nd level, you gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils.</p>
 			<p class="indent">You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.</p>
@@ -250,7 +246,6 @@
 		</rules>
 	</element>
 	<element name="Barbarian Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BARBARIAN_SUBCLASS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p>At 3rd level, You gain a Barbarian subclass of your choice. A subclass is a specialization that grants you features at certain Barbarian levels. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>
 		</description>
@@ -260,7 +255,6 @@
 		</rules>
 	</element>
 	<element name="Primal Knowledge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_KNOWLEDGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH</requirements>
 		<description>
 			<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p>
 			<p class="indent"> In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>
@@ -273,7 +267,6 @@
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_ABILITYSCOREIMPROVEMENT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -287,7 +280,6 @@
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
@@ -299,7 +291,6 @@
 		</rules>
 	</element>
 	<element name="Fast Movement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT</requirements>
 		<description>
 			<p>Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.</p>
 		</description>
@@ -315,7 +306,6 @@
 		</rules>
 	</element>
 	<element name="Feral Instinct" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
 			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
 		</description>
@@ -327,7 +317,6 @@
 		</rules>
 	</element>
 	<element name="Instinct Pounce" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_INSTINCT_POUNCE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT</requirements>
 		<description>
 			<p>By 7th level, as part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.</p>
 		</description>
@@ -336,7 +325,6 @@
 		</sheet>
 	</element>
 	<element name="Brutal Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_BRUTAL_STRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL</requirements>
 		<description>
 			<p>Beginning at 9th level, If you use Reckless Attack, you can forgo any Advantage on one Strength-based attack roll of your choice on your turn. The chosen attack roll mustn't have Disadvantage. If the chosen attack roll hits, the target takes an extra 1d10 damage of the same type dealt by the weapon or Unarmed Strike, and you can cause one Brutal Strike effect of your choice. You have the following effect options.</p>
 			<ul>
@@ -370,7 +358,6 @@
 		</sheet>
 	</element>
 	<element name="Relentless Rage" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE</requirements>
 		<description>
 			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
 			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
@@ -384,7 +371,6 @@
 		</rules>	
 	</element>
 	<element name="Persistant Rage" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG</requirements>
 		<description>
 			<p>Beginning at 15th level, when you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.</p>
 			<p class="indent">In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.</p>
@@ -394,7 +380,6 @@
 		</sheet>
 	</element>
 	<element name="Indomitable Might" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INDOMITABLE_MIGHT</requirements>
 		<description>
 			<p>Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.</p>
 		</description>
@@ -410,7 +395,6 @@
 		</rules>
 	</element>
 	<element name="Primal Champion" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION</requirements>
 		<description>
 			<p>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 25.</p>
 		</description>
@@ -424,20 +408,4 @@
 			<stat name="constitution:max" value="5" />
 		</rules>
 	</element>
-
-	<!--Feature Replacement Grants-->
-	<element name="Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RAGE" />
-	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_UNARMORED_DEFENCE" />
-	<element name="Reckless Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RECKLESS_ATTACK" />
-	<element name="Danger Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_DANGER_SENSE" />
-	<element name="Primal Path Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_PATH" />
-	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_ABILITY_SCORE_IMPROVEMENT" />
-	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_EXTRA_ATTACK" />
-	<element name="Fast Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FAST_MOVEMENT" />
-	<element name="Feral Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_FERAL_INSTINCT" />
-	<element name="Brutal Critical Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BRUTAL_CRITICAL" />
-	<element name="Relentless Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_RELENTLESS_RAGE" />
-	<element name="Persistant Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PERSISTANT_RAG" />
-	<element name="Indomitable Might Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_INDOMITABLE_MIGHT" />
-	<element name="Primal Champion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_PRIMAL_CHAMPION" />
 </elements>
