@@ -4,7 +4,7 @@
 		<name>Player's Handbook 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
 		</update>
 	</info>
@@ -24,17 +24,14 @@
 			<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-battle-master.xml" />
 			<file name="fighter-champion.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-champion.xml" />
 			<file name="fighter-eldritch-knight.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-eldritch-knight.xml" />
+			<file name="fighter-psi.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/fighter-psi.xml" />
 
-<!--		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" />
-		
-			
-			
-			
-			<file name="fighter-psi.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/fighter-psi.xml" />  -->
+
+		<!-- <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/PHB24/class-barbarian.xml" /> -->
 
 		<!-- Misc -->
 			
-	<!--	<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" />  -->
+		<!-- <file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> -->
 
 	</files>
 </index>
