@@ -3,7 +3,7 @@
 	<info>
 		<name>Fighter from the Player’s Handbook Rev. 2024</name>
 		<update version="0.1.0">
-			<file name="class-fighter.xml" url="class-fighter.xml" />
+			<file name="class-fighter.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-fighter.xml" />
 		</update>
 	</info>
 
