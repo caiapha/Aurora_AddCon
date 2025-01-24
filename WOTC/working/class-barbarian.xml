@@ -273,10 +273,10 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Barbarian 4)" supports="Improvement Option,Barbarian,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Barbarian 8)" supports="Improvement Option,Barbarian,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Barbarian 12)" supports="Improvement Option,Barbarian,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Barbarian 16)" supports="Improvement Option,Barbarian,16" level="16" />
+			<select name="Improvement Option (Barbarian 4)" type="Class Feature" supports="Level Improvement" level="4" />
+			<select name="Improvement Option (Barbarian 8)" type="Class Feature" supports="Level Improvement" level="8" />
+			<select name="Improvement Option (Barbarian 12)" type="Class Feature" supports="Level Improvement" level="12" />
+			<select name="Improvement Option (Barbarian 16)" type="Class Feature" supports="Level Improvement" level="16" />
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_EXTRA_ATTACK">
