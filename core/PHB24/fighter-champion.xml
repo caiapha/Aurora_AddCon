@@ -29,7 +29,6 @@
 		</rules>
 	</element>
 	<element name="Improved Critical" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_IMPROVEDCRITICAL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_IMPROVED_CRITICAL</requirements>
 		<description>
 			<p>Beginning at 3rd level, your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
 			<p>Beginning at 15th level, Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.</p>
@@ -51,7 +50,6 @@
 		</sheet>
 	</element>
 	<element name="Additional Fighting Style" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE</requirements>
 		<description>
 			<p>At 7h level, you gain another Fighting Style feat of your choice.</p>
 		</description>
@@ -63,7 +61,6 @@
 		</rules>
 	</element>
 	<element name="Heroic Warrior" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_HEROIC_WARRIOR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE</requirements>
 		<description>
 			<p>At 10h level,the thrill of battle drives you toward victory. During combat, you can give yourself Heroic Inspiration whenever you start your turn without it.</p>
 		</description>
@@ -75,7 +72,6 @@
 	<!-- SUPERIOR CRITICAL INCLUDED IN IMPROVED CRITICAL -->
 	
 	<element name="Survivor" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SURVIVOR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_SURVIVOR</requirements>
 		<description>
 			<p>At 18th level, You attain the pinnacle of resilience in battle, giving you these benefits.</p>
 			<p class="indent"><strong><i>Defy Death.</i></strong> You have Advantage on Death Saving Throws. Moreover, when you roll 18–20 on a Death Saving Throw, you gain the benefit of rolling a 20 on it.</p>
@@ -89,11 +85,4 @@
 			<stat name="survivor:hp" value="constitution:modifier" />
 		</rules>
 	</element>
-
-	<!--Feature Replacement Grants-->
-	<element name="Improved Critical Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_IMPROVED_CRITICAL" />
-	<element name="Remarkable Athlete Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_REMARKABLE_ATHLETE" />
-	<element name="Additional Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_ADDITIONAL_FIGHTING_STYLE" />
-	<element name="Superior Critical Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_SUPERIOR_CRITICAL" />
-	<element name="Survivor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_CHAMPION_SURVIVOR" />
 </elements>
