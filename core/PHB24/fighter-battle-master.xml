@@ -29,7 +29,6 @@
 		</rules>
 	</element>
 	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY</requirements>
 		<description>
 			<p>Your experience on the battlefield has refined your fighting techniques. You learn maneuvers that are fueled by special dice called Superiority Dice.</p>
 			<p class="indent"><strong><em>Maneuvers.</em></strong> You learn three maneuvers of your choice from the "Maneuvers Options" section later in this subclass's description. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice when you reach Fighter levels 7, 10, and 15. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
@@ -56,7 +55,6 @@
 		</rules>
 	</element>
 	<element name="Student of War" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_STUDENT_OF_WAR</requirements>
 		<description>
 			<p>At 3rd level, you gain proficiency with one type of Artisan's Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1.</p>
 		</description>
@@ -90,7 +88,6 @@
 		</rules>
 	</element>
 	<element name="Relentless" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_RELENTLESS</requirements>
 		<description>
 			<p>Starting at 15th level, once per turn, when you use a maneuver, you can roll 1d8 and use the number rolled instead of expending a Superiority Die.</p>
 		</description>
@@ -280,11 +277,4 @@
 			<description>When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.</description>
 		</sheet>
 	</element>
-	
-	<!--Feature Replacement Grants-->
-	<element name="Combat Superiority Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY" />
-	<element name="Student of War Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_STUDENT_OF_WAR" />
-	<element name="Know Your Enemy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_KNOW_YOUR_ENEMY" />
-	<element name="Improved Combat Superiority Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" />
-	<element name="Relentless Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_RELENTLESS" />
 </elements>
