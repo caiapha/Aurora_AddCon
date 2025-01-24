@@ -4,7 +4,7 @@
 		<name>Ability and Skill Improvements</name>
 		<description>Code related to the Ability and Skill Improvements</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 		  <file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/Ability-Skill-Improvements.xml" />
 		</update>
 	</info>
