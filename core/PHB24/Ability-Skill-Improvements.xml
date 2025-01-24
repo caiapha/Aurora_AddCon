@@ -4,7 +4,7 @@
 		<name>Ability and Skill Improvements</name>
 		<description>Code related to the Ability and Skill Improvements</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 		  <file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/Ability-Skill-Improvements.xml" />
 		</update>
 	</info>
@@ -416,6 +416,66 @@
 		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
 	</rules>
 </element>
+<element name="Ability score Improvement (2)" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_LEVEL_IMPROVEMENT_2">
+	<requirements>ID_PHB24_ASI_LEVEL_IMPROVEMENT</requirements>
+	<supports>Level Improvement</supports>
+	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
+	</rules>
+</element>
+<element name="Ability score Improvement (2)" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_LEVEL_IMPROVEMENT_3">
+	<requirements>ID_PHB24_ASI_LEVEL_IMPROVEMENT_2</requirements>
+	<supports>Level Improvement</supports>
+	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
+	</rules>
+</element>
+<element name="Ability score Improvement (2)" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_LEVEL_IMPROVEMENT_4">
+	<requirements>ID_PHB24_ASI_LEVEL_IMPROVEMENT_3</requirements>
+	<supports>Level Improvement</supports>
+	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
+	</rules>
+</element>
+<element name="Ability score Improvement (2)" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_LEVEL_IMPROVEMENT_5">
+	<requirements>ID_PHB24_ASI_LEVEL_IMPROVEMENT_4</requirements>
+	<supports>Level Improvement</supports>
+	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
+	</rules>
+</element>
+<element name="Ability score Improvement (2)" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_LEVEL_IMPROVEMENT_6">
+	<requirements>ID_PHB24_ASI_LEVEL_IMPROVEMENT_5</requirements>
+	<supports>Level Improvement</supports>
+	<description>Increate one Abilty by 2 or two Abilities by 1.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="ASI Level Improvement" type="Ability Score Improvement" supports="Standard" number="2" />
+	</rules>
+</element>	
 <element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT">
 	<supports>Level Improvement</supports>
 	<description>Choose a Feat you are eligible for.</description>
@@ -427,4 +487,64 @@
 		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
 	</rules>
 </element>
+<element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT_2">
+	<requirements>ID_PHB24_FEAT_LEVEL_IMPROVEMENT</requirements>
+	<supports>Level Improvement</supports>
+	<description>Choose a Feat you are eligible for.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
+	</rules>
+</element>
+<element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT_3">
+	<requirements>ID_PHB24_FEAT_LEVEL_IMPROVEMENT_2</requirements>
+	<supports>Level Improvement</supports>
+	<description>Choose a Feat you are eligible for.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
+	</rules>
+</element>
+<element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT_4">
+	<requirements>ID_PHB24_FEAT_LEVEL_IMPROVEMENT_3</requirements>
+	<supports>Level Improvement</supports>
+	<description>Choose a Feat you are eligible for.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
+	</rules>
+</element>
+<element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT_5">
+	<requirements>ID_PHB24_FEAT_LEVEL_IMPROVEMENT_4</requirements>
+	<supports>Level Improvement</supports>
+	<description>Choose a Feat you are eligible for.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
+	</rules>
+</element>
+<element name="Feat" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_LEVEL_IMPROVEMENT_6">
+	<requirements>ID_PHB24_FEAT_LEVEL_IMPROVEMENT_5</requirements>
+	<supports>Level Improvement</supports>
+	<description>Choose a Feat you are eligible for.</description>
+	<sheet display="false" />
+	<setters>
+		<set name="allow duplicate">true</set>
+	</setters>
+	<rules>
+		<select name="Feat Level Improvement" type="Feat" supports="Origin Feat||General Feat" />
+	</rules>
+</element>	
 </elements>	
