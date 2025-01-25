@@ -1254,8 +1254,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
-	</element>
-	<element name="Commune with Nature" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE">
+	</element> -->
+	<element name="Commune with Nature" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_COMMUNE_WITH_NATURE">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn’t function where nature has been replaced by construction, such as in dungeons and towns.</p>
@@ -1284,7 +1284,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="Compelled Duel" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_COMPELLED_DUEL">
+<!--	<element name="Compelled Duel" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_COMPELLED_DUEL">
 		<supports>Paladin, Spell Saving Throw</supports>
 		<description>
 			<p>You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn’t restrict the target’s movement for that turn.</p>
