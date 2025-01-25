@@ -36,8 +36,8 @@
 			<description>You can cast the Beast Sense and Speak with Animals spells but only as Rituals. Wisdom is your spellcasting ability for them.</description>
 		</sheet>
 		<rules>
-			<grant name="Beast Sense (Wild Heart)" id="
-      <grant name="Speak with Animals (Wild Heart)" id="
+			<grant name="Beast Sense (Wild Heart)" id="ID_PHB24_SPELL_BEAST_SENSE" />
+      			<grant name="Speak with Animals (Wild Heart)" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
 		</rules>
 	</element>
 	<element name="Mindless Rage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BERSERKER_MINDLESS_RAGE">
