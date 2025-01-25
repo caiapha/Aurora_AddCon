@@ -44,8 +44,9 @@
 			<p>At 5th level, you have Immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, the condition ends on you.</p>
 		</description>
 		<sheet>
-      <description>You are immune to Charmed and Frightened conditions while in Rage. Entering Rage ends these condition, if present.</description>
-    <sheet> 
+			<description>You are immune to Charmed and Frightened conditions while in Rage. Entering Rage ends these condition, if present.</description>
+		</sheet>
+	</element>	
 	<element name="Retaliation" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BERSERKER_RETALIATION">
 		<description>
 			<p>Starting at 10th level, when you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</p>
