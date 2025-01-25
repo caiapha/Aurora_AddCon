@@ -4,7 +4,7 @@
 		<name>Player's Handbook 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
 		</update>
 	</info>
@@ -31,7 +31,7 @@
 
 		<!-- Misc -->
 			
-		<!-- <file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> -->
+		<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> <!-- TEMPORARY -->
 
 	</files>
 </index>
