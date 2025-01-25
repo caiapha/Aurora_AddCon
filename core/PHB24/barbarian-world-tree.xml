@@ -48,6 +48,11 @@
 		<sheet action="Reaction">
 			<description>While in Rage, a target within 30ft of you must succeed a Strength Saving Throw DC{{branches_tree:dc}} or be teleported to an unoccupied space within 5ft from you or the nearest free space. After that, you can reduce to 0 the target's speed until the end of the current turn.</description>
 		</sheet>
+		<rules>
+			<stat name="branches_tree:dc" value="8" />
+			<stat name="branches_tree:dc" value="proficiency" />
+			<stat name="branches_tree:dc" value="strength:modifier" />
+		</rules>
 	</element>	
 	<element name="Battering Roots" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WORLD_TREE_BATTERING_ROOTS">
 		<description>
