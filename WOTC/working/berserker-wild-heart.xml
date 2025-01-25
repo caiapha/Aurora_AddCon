@@ -22,7 +22,7 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_ANIMAL_SPEAKER" level="3"/>
-      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS" level="3"/>
+      			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS" level="3"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_ASPECT_OF_THE_WILDS" level="6"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_NATURE_SPEAKER" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS" level="14"/>
