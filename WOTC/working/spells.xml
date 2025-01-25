@@ -1013,8 +1013,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Chill Touch" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CHILL_TOUCH">
+	</element> -->
+	<element name="Chill Touch" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_CHILL_TOUCH">
 		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
 		<description>
 			<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target.</p>
@@ -1036,7 +1036,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Chromatic Orb" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CHROMATIC_ORB">
+<!--	<element name="Chromatic Orb" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_CHROMATIC_ORB">
 		<supports>Sorcerer, Wizard, Ranged, Spell Attack</supports>
 		<description>
 			<p>You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes 3d8 damage of the type you choose.</p>
@@ -1970,8 +1970,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Dancing Lights" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DANCING_LIGHTS">
+	</element> -->
+	<element name="Dancing Lights" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_DANCING_LIGHTS">
 		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p>
@@ -1992,7 +1992,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Darkness" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DARKNESS">
+	<element name="Darkness" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_DARKNESS">
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>Magical darkness spreads from a point you choose within range to fill a 15-foot radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</p>
@@ -2014,7 +2014,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Darkvision" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DARKVISION">
+<!--	<element name="Darkvision" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DARKVISION">
 		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.</p>
@@ -2163,8 +2163,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Detect Magic" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DETECT_MAGIC">
+	</element> -->
+	<element name="Detect Magic" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_DETECT_MAGIC">
 		<supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p>
@@ -2185,7 +2185,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="Detect Poison and Disease" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+<!--	<element name="Detect Poison and Disease" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
 		<supports>Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.</p>
@@ -2549,8 +2549,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Druidcraft" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DRUIDCRAFT">
+	</element> -->
+	<element name="Druidcraft" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_DRUIDCRAFT">
 		<supports>Druid</supports>
 		<description>
 			<p>Whispering to the spirits of nature, you create one of the following effects within range:</p>
@@ -2576,7 +2576,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Earthquake" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_EARTHQUAKE">
+<!--	<element name="Earthquake" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_EARTHQUAKE">
 		<supports>Cleric, Druid, Sorcerer, Spell Saving Throw</supports>
 		<description>
 			<p>You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot- radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.</p>
@@ -2869,8 +2869,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Faerie Fire" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FAERIE_FIRE">
+	</element> -->
+	<element name="Faerie Fire" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_FAERIE_FIRE">
 		<supports>Bard, Druid, Artificer, Spell Saving Throw</supports>
 		<description>
 			<p>Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.</p>
@@ -2891,7 +2891,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="False Life" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FALSE_LIFE">
+	<element name="False Life" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_FALSE_LIFE">
 		<supports>Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.</p>
@@ -2912,7 +2912,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Fear" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FEAR">
+<!--	<element name="Fear" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_FEAR">
 		<supports>Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You project a phantasmal image of a creature’s worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p>
@@ -4025,8 +4025,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Hellish Rebuke" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HELLISH_REBUKE">
+	</element> -->
+	<element name="Hellish Rebuke" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_HELLISH_REBUKE">
 		<supports>Warlock, Spell Saving Throw</supports>
 		<description>
 			<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p>
@@ -4047,7 +4047,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Heroes’ Feast" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HEROES_FEAST">
+<!--	<element name="Heroes’ Feast" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HEROES_FEAST">
 		<supports>Cleric, Druid</supports>
 		<description>
 			<p>You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don’t set in until this hour is over. Up to twelve creatures can partake of the feast.</p>
@@ -4131,8 +4131,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Hold Person" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HOLD_PERSON">
+	</element> -->
+	<element name="Hold Person" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_HOLD_PERSON">
 		<supports>Bard, Cleric, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>
@@ -4153,7 +4153,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Holy Aura" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HOLY_AURA">
+<!-- 	<element name="Holy Aura" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_HOLY_AURA">
 		<supports>Cleric, Spell Saving Throw</supports>
 		<description>
 			<p>Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.</p>
@@ -4570,8 +4570,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Light" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHT">
+	</element> -->
+	<element name="Light" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_LIGHT">
 		<supports>Bard, Cleric, Sorcerer, Wizard, Artificer, Spell Saving Throw</supports>
 		<description>
 			<p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.</p>
@@ -4591,8 +4591,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Lightning Arrow" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHTNING_ARROW">
+	</element> 
+<!--	<element name="Lightning Arrow" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LIGHTNING_ARROW">
 		<supports>Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal, The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage.</p>
@@ -4700,8 +4700,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Longstrider" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_LONGSTRIDER">
+	</element> -->
+	<element name="Longstrider" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_LONGSTRIDER">
 		<supports>Bard, Druid, Ranger, Wizard, Artificer</supports>
 		<description>
 			<p>You touch a creature. The target’s speed increases by 10 feet until the spell ends.</p>
@@ -4722,7 +4722,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mage Armor" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MAGE_ARMOR">
+<!--	<element name="Mage Armor" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MAGE_ARMOR">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
 			<p>You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends it if the target dons armor or if you dismiss the spell as an action.</p>
@@ -5055,8 +5055,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Mending" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MENDING">
+	</element> -->
+	<element name="Mending" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_MENDING">
 		<supports>Bard, Cleric, Druid, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p>
@@ -5077,7 +5077,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Message" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MESSAGE">
+<!--	<element name="Message" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MESSAGE">
 		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.</p>
@@ -5138,8 +5138,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Minor Illusion" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MINOR_ILLUSION">
+	</element> -->
+	<element name="Minor Illusion" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_MINOR_ILLUSION">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p>
@@ -5162,7 +5162,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mirage Arcane" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MIRAGE_ARCANE">
+<!--	<element name="Mirage Arcane" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MIRAGE_ARCANE">
 		<supports>Bard, Druid, Wizard</supports>
 		<description>
 			<p>You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain’s general shape remains the same, however. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.</p>
@@ -5531,8 +5531,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Pass without Trace" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE">
+	</element> -->
+	<element name="Pass without Trace" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
@@ -5552,7 +5552,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Passwall" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PASSWALL">
+<!--	<element name="Passwall" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PASSWALL">
 		<supports>Wizard</supports>
 		<description>
 			<p>A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it.</p>
@@ -5730,8 +5730,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Poison Spray" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_POISON_SPRAY">
+	</element> -->
+	<element name="Poison Spray" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_POISON_SPRAY">
 		<supports>Druid, Sorcerer, Warlock, Wizard, Artificer, Spell Saving Throw</supports>
 		<description>
 			<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
@@ -5752,7 +5752,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Polymorph" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_POLYMORPH">
+<!--	<element name="Polymorph" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_POLYMORPH">
 		<supports>Bard, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points.</p>
@@ -5857,8 +5857,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Prestidigitation" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PRESTIDIGITATION">
+	</element> -->
+	<element name="Prestidigitation" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_PRESTIDIGITATION">
 		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
 		<description>
 			<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:</p>
@@ -5887,7 +5887,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Prismatic Spray" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PRISMATIC_SPRAY">
+<!--	<element name="Prismatic Spray" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_PRISMATIC_SPRAY">
 		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.</p>
@@ -6139,8 +6139,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
-	</element>
-	<element name="Ray of Enfeeblement" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT">
+	</element> -->
+	<element name="Ray of Enfeeblement" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT">
 		<supports>Warlock, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
 		<description>
 			<p>A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.</p>
@@ -6161,7 +6161,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Ray of Frost" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_RAY_OF_FROST">
+<!--	<element name="Ray of Frost" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_RAY_OF_FROST">
 		<supports>Sorcerer, Wizard, Artificer, Ranged, Spell Attack</supports>
 		<description>
 			<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p>
@@ -6181,8 +6181,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Ray of Sickness" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_RAY_OF_SICKNESS">
+	</element> -->
+	<element name="Ray of Sickness" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_RAY_OF_SICKNESS">
 		<supports>Sorcerer, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
 		<description>
 			<p>A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.</p>
@@ -6203,7 +6203,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Regenerate" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_REGENERATE">
+<!--	<element name="Regenerate" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_REGENERATE">
 		<supports>Bard, Cleric, Druid</supports>
 		<description>
 			<p>You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).</p>
@@ -6884,8 +6884,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Speak with Animals" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS">
+	</element> -->
+	<element name="Speak with Animals" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS">
 		<supports>Bard, Druid, Ranger</supports>
 		<description>
 			<p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion.</p>
@@ -6905,7 +6905,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="Speak with Dead" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
+<!--	<element name="Speak with Dead" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SPEAK_WITH_DEAD">
 		<supports>Bard, Cleric</supports>
 		<description>
 			<p>You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead. The spell fails if the corpse was the target of this spell within the last 10 days.</p>
@@ -7414,8 +7414,8 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
-	</element>
-	<element name="Thaumaturgy" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THAUMATURGY">
+	</element> -->
+	<element name="Thaumaturgy" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_THAUMATURGY">
 		<supports>Cleric</supports>
 		<description>
 			<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p>
@@ -7443,7 +7443,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Thorn Whip" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THORN_WHIP">
+<!--	<element name="Thorn Whip" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THORN_WHIP">
 		<supports>Druid, Artificer, Melee, Spell Attack</supports>
 		<description>
 			<p>You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.</p>
