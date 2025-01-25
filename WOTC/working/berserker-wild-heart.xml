@@ -15,7 +15,7 @@
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_ASPECT_OF_THE_WILDS"/>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_NATURE_SPEAKER"/>
-      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS"/>
 		</description>
 		<sheet display="false">
 			<description>Those who commune with the nature the most.</description>
@@ -40,34 +40,57 @@
       			<grant name="Speak with Animals (Wild Heart)" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
 		</rules>
 	</element>
-	<element name="Mindless Rage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BERSERKER_MINDLESS_RAGE">
+	<element name="Rage of the Wilds" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_RAGE_OF_THE_WILDS">
 		<description>
-			<p>At 5th level, you have Immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, the condition ends on you.</p>
+			<p>Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.</p>
+			<p class="indent"><strong>Bear:</strong> While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.</p>
+			<p class="indent"><strong>Eagle:</strong> When you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions.</p>
+			<p class="indent"><strong>Wolf:</strong>While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.</p>
 		</description>
 		<sheet>
-			<description>You are immune to Charmed and Frightened conditions while in Rage. Entering Rage ends these condition, if present.</description>
+			<description>When you enter in Rage, choose one of the following additional effects:
+			Bear: while your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant. 
+			Eagle: when you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions. 
+			Wolf: while your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.</description>
 		</sheet>
 	</element>	
-	<element name="Retaliation" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BERSERKER_RETALIATION">
+	<element name="Aspect of the Wilds" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_ASPECT_OF_THE_WILDS">
 		<description>
-			<p>Starting at 10th level, when you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</p>
+			<p>Starting at 6th level, you gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p>
+			<p class="indent"><strong>Owl:</strong> you have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+			<p class="indent"><strong>Panther:</strong> you have a Climb Speed equal to your Speed.</p>
+			<p class="indent"><strong>Salmon:</strong> you have a Swim Speed equal to your Speed.</p>
 		</description>
-		<sheet action="Reaction">
-			<description>When you take damage forma a creature that is within 5ft from you, you can make a melee attack against that creature, using a weapon or an unarmed strike.</description>
+		<sheet>
+			<description>When you finish a Long Rest, choose one of the following option:
+				Owl: you have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet. 
+				Panther: you have a Climb Speed equal to your Speed. 
+				Salmon: you have a Swim Speed equal to your Speed.</description>
 		</sheet>
 	</element>
-	<element name="Intimidation Presence" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_BERSERKER_INTIMIDATING_PRESENCE">
+	<element name="Nature Speaker" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_NATURE_SPEAKER">
 		<description>
-			<p>At 14th level, as a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success.</p>
-      <p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.</p>    
+			<p>At 10th level, you can cast the Commune with Nature spell but only as a Ritual. Wisdom is your spellcasting ability for it.</p>
   	</description>
-		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can force any creature of your choice within 30-foot to make a Wisdom Saving Throw DC{{intimidation_presence:dc}}. On a fail, the creature is Frightened condition for 1 minute. The creature can repeat the Saving Throw at the end of his turn to end the condition.</description>
+		<sheet action="Ritual Cast">
+			<description>You can cast the Commune with Nature spell but only as a Ritual. Wisdom is your spellcasting ability for it.</description>
 		</sheet>
 		<rules>
-			<stat name="intimidation_presence:dc" value="8" />
-			<stat name="intimidation_presence:dc" value="strength:modifier" />
-			<stat name="intimidation_presence:dc" value="proficiency" />	
+			<grant name="Commune with Nature (Wild Heart)" id="ID_PHB24_SPELL_COMMUNE_WITH_NATURE" />
 		</rules>	
+	</element>
+	<element name="Power of the Wild" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WILD_HEART_POWER_OF_THE_WILDS">
+		<description>
+			<p>At 14th level, Whenever you activate your Rage, you gain one of the following options of your choice.</p>
+			<p class="indent"><strong>Falcon:</strong> while your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.</p>
+			<p class="indent"><strong>Lion:</strong> while your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.</p>
+			<p class="indent"><strong>Ram:</strong> while your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.</p>
+  	</description>
+		<sheet>
+			<description>Whenever you activate your Rage, you gain one of the following options of your choice (stacks on Rage of Wild): 
+				Falcon: while your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor. 
+				Lion: while your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active. 
+				Ram: while your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.</description>
+		</sheet>	
 	</element>
 </elements>
