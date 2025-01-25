@@ -28,7 +28,7 @@
 
 		 <file name="class-barbarian.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-barbarian.xml" />
 			<file name="barbarian-berserker.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/barbarian-berserker.xml" />
-			<file name="barbarian-wild-heart" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/berserker-wild-heart.xml" />
+			<file name="barbarian-wild-heart.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/berserker-wild-heart.xml" />
 
 		<!-- Misc -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> <!-- TEMPORARY -->
