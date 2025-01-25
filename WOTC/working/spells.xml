@@ -637,8 +637,8 @@
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>
-	<element name="Beast Sense" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BEAST_SENSE">
+	</element> -->
+	<element name="Beast Sense" type="Spell" source="Player’s Handbook" id="ID_PHB24_SPELL_BEAST_SENSE">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You touch a willing beast. For the duration of the spell, you can use your action to see through the beast’s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses.</p>
@@ -658,7 +658,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="Bestow Curse" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BESTOW_CURSE">
+<!--	<element name="Bestow Curse" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BESTOW_CURSE">
 		<supports>Bard, Cleric, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p>
