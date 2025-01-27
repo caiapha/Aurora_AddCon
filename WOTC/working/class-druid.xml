@@ -308,7 +308,7 @@
 			<h5>Magician</h5>
 			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
 		</description>
-		<sheet>
+		<sheet ald="Primal Order: Magician">
 			<description>You add your Wisdom modifier (minimum +1) to Intelligence (Arcana and Nature) checks.</description>
 		</sheet>	
 		<rules>
