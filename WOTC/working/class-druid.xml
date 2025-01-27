@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Druid</name>
-		<description>The Druid class from the Player’s Handbook Rev. 2024.</description>
+		<description>The Druid class from the Player’s Handbook Rev. 2024 Rev. 2024.</description>
 		<author url="phb">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="class-druid.xml" url="class-druid.xml" />
 		</update>
 	</info>
 
-	<element name="Druid" type="Class" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_DRUID">
+	<element name="Druid" type="Class" source="Player’s Handbook Rev. 2024 Rev. 2024" id="ID_WOTC_PHB24_CLASS_DRUID">
 		<description>
 			<p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
 			<p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.</p>
@@ -97,7 +97,7 @@
 			<set name="short">A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</set>
 			<set name="hd">d8</set>
 		</setters>
-<!--		<rules>
+		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
@@ -129,21 +129,33 @@
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 			</rules>
-		</multiclass> -->
+		</multiclass>
 	</element> 
-<!--	<element name="Druidic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_DRUIDIC</requirements>
+	<element name="Druidic" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_DRUIDIC">
 		<description>
-			<p>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
+			<p>You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the Speak with Animals spell prepared.</p>
+			<p class="indent">You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</p>
 		</description>
 		<sheet>
-			<description>You can use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Perception check but can’t decipher it without magic.</description>
+			<description>You know the secret language of Druids. You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</description>
 		</sheet>
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
 		</rules>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+	<element name="Primal Order" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER">
+		<description>
+			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p class="indent"><strong>Magician:</strong> you know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
+			<p class="indent"><strong>Warden:</strong> trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Primal Order choice" type="Class Feature" support="Primal Order" />
+		</rules>
+	</element>
+	
+<!--	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_SPELLCASTING</requirements>
 		<description>
 			<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
@@ -200,7 +212,7 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid" />
 		</rules>
 	</element>
-	<element name="Wild Shape" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
+	<element name="Wild Shape" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_WILD_SHAPE</requirements>
 		<description>
 			<p>Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
@@ -234,7 +246,7 @@
 			<stat name="druid wildshape:hours" value="level:druid:half" />
 		</rules>
 	</element>
-	<element name="Druid Circle" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
+	<element name="Druid Circle" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_DRUID_CIRCLE</requirements>
 		<description>
 			<p>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
@@ -246,7 +258,7 @@
 			<select type="Archetype" name="Druid Circle" supports="Druid Circle" level="2"/>
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
@@ -261,7 +273,7 @@
 			<select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" level="19" />
 		</rules>
 	</element>
-	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY">
+	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_TIMELESS_BODY</requirements>
 		<description>
 			<p>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</p>
@@ -270,7 +282,7 @@
 			<description>For every 10 years that pass, your body ages only 1 year.</description>
 		</sheet>
 	</element>
-	<element name="Beast Spells" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
+	<element name="Beast Spells" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_BEAST_SPELLS</requirements>
 		<description>
 			<p>Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</p>
@@ -280,7 +292,7 @@
 			You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</description>
 		</sheet>
 	</element>
-	<element name="Archdruid" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
+	<element name="Archdruid" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_ARCHDRUID</requirements>
 		<description>
 			<p>At 20th level, you can use your Wild Shape an unlimited number of times.</p>
@@ -289,4 +301,30 @@
 			<description>You can use your Wild Shape an unlimited number of times.</description>
 		</sheet>
 	</element> -->
+
+	<element name="Magician" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER_MAGICIAN">
+		<supports>Primal Order</supports>
+		<description>
+			<h5>Magician</h5>
+			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
+		</description>
+		<sheet>
+			<description>You add your Wisdom modifier (minimum +1) to Intelligence (Arcana and Nature) checks.</description>
+		</sheet>	
+		<rules>
+			<select name="Additional Cantrips (Primal Order)" type="Spell" supports="Druid, 0" />
+		</rules>	
+	</element>
+	<element name="Warden" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER_WARDEN">
+		<supports>Primal Order</supports>
+		<description>
+			<h5>Warden</h5>
+			<p>Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>	
+	</element>
 </elements>
