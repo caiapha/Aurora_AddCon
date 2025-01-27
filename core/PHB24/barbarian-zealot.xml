@@ -33,7 +33,7 @@
 			<p>You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.</p>
     </description>
 		<sheet>
-			<description>While raging, the first creature you hit with a weapon or an unarmed strike takes 1d6+{{level:barbarian:half}} Necrotic or Radiant (your choice) additional damage.</description>
+			<description>While raging, on each turn, the first creature you hit with a weapon or an unarmed strike takes 1d6+{{level:barbarian:half}} Necrotic or Radiant (your choice) additional damage.</description>
 		</sheet>
 	</element>
   <element name="Warrior of the Gods" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ZEALOT_WARRIOR_OF_THE_GODS">
@@ -81,7 +81,7 @@
        <p class="indent"><strong>Revivification.</strong> when a creature within 30 feet of you would drop to 0 Hit Points, you can take a Reaction to expend a use of your Rage to instead change the target's Hit Points to a number equal to your Barbarian level.</p>
     </description>
 		<sheet usage="1/Long Rest">
-			<description>Entering Rage, choose one of the following effects, which lasts for 1 minute or untile you dorp to 0 Hit Points. Flight: you gain a flying speed equald to your speed. Resistance: you gain risistance to Necrotic, Psychic and Radiant bamages. Revivification: when a craeture wihtin 30ft from you would drop to 0 Hit Points, you can take a Reaction to expend a Rage use to change the target's HP to {{level:barbarian}}.</description>
+			<description>Entering Rage, choose one of the following effects, which lasts for 1 minute or until you dorp to 0 Hit Points. Flight: you gain a flying speed equald to your speed. Resistance: you gain risistance to Necrotic, Psychic and Radiant bamages. Revivification: when a craeture wihtin 30ft from you would drop to 0 Hit Points, you can take a Reaction to expend a Rage use and change the target's HP to {{level:barbarian}}.</description>
 		</sheet>
 	</element>
 </elements>
