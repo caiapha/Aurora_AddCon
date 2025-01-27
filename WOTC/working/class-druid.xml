@@ -54,7 +54,7 @@
 			<h5 class="caption">THE DRUID</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Wild Shape</td><td class="col-10">Cantrips Known</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+					<tr><td class="col-5">Lvl</td><td>Prof. Bonus</td><td class="left">Features</td><td>Wild Shape</td><td class="col-10">Cantrips Known</td><td>Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
 				</thead>
 				<tr><td> 1st</td><td>+2</td><td class="left">Druidic, Primal Order, Spellcasting</td><td>—</td><td>2</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				<tr><td> 2nd</td><td>+2</td><td class="left">Wild Shape, Wild Companion</td><td>2</td><td>2</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
