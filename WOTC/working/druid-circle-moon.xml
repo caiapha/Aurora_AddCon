@@ -58,11 +58,17 @@
       			<p class="indent"><strong>Temporary Hit Points.</strong> You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
 		</description>
 		<sheet>
-			<description>The Challenge Rating of the Beast Form is equal to {{level:druid}}/3. The AC of your Wild Shape is {{wild_shape:ac}}, if higher than the Beast's AC.</description>
+			<description>The Challenge Rating of the Beast Form is equal to {{wild_shape:cr}}. The AC of your Wild Shape is {{wild_shape:ac}}, if higher than the Beast's AC.</description>
 		</sheet>
     		<rules>    
-      			<stat name="wilde_shape:hp" value="level:druid" />
-      			<stat name="wilde_shape:hp" value="level:druid" />
+      			<stat name="wild_shape:cr" value="1" level="3"/>
+			<stat name="wild_shape:cr" value="1" level="6"/>
+			<stat name="wild_shape:cr" value="1" level="9"/>
+			<stat name="wild_shape:cr" value="1" level="12"/>
+			<stat name="wild_shape:cr" value="1" level="15"/>
+			<stat name="wild_shape:cr" value="1" level="18"/>
+			<stat name="wild_shape:hp" value="level:druid" />
+      			<stat name="wild_shape:hp" value="level:druid" />
       			<stat name="wild_shape:ac" value="13" />
       			<stat name="wild_shape:ac" value="wisdom:modifier" />
     		</rules>
