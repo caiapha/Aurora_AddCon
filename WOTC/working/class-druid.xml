@@ -244,6 +244,7 @@
 		</description>
 		<sheet action="Bonus Action" usage="{{wild_shape:exp}}/Long Rest">
 			<description>You can transform in one of the known shape of a beast. You can stay in a beast shape for {{druid wildshape:hours}} hours. You automatically revert if you fall unconscious, drop to 0 hit points, or die. While transformed, you gain {{wilde_shape:hp}} Temporary Hit Points. During Wild Shape you cannont cast spells, but can mantain Concentration on spell previously casted.</description>
+			<description level="18">You can transform in one of the known shape of a beast. You can stay in a beast shape for {{druid wildshape:hours}} hours. You automatically revert if you fall unconscious, drop to 0 hit points, or die. While transformed, you gain {{wilde_shape:hp}} Temporary Hit Points. During Wild Shape you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component. In Wild Form you can mantain Concentration on spell previously casted.</description>
 		</sheet>
 		<rules>
 			<stat name="wild_shape:exp" value="2" />
@@ -262,47 +263,62 @@
 			<select type="Archetype" name="Druid Subclass" supports="Druid subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_ABILITY_SCORE_IMPROVEMENT</requirements>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Druid levels 8, 12, and 16.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Druid 4)" supports="Improvement Option,Druid,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Druid 8)" supports="Improvement Option,Druid,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Druid 12)" supports="Improvement Option,Druid,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Druid 16)" supports="Improvement Option,Druid,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Druid 19)" supports="Improvement Option,Druid,19" level="19" />
+			<select name="Improvement Option (Druid 4)" type="Class Feature" supports="Level Improvement" level="4" />
+			<select name="Improvement Option (Druid 8)" type="Class Feature" supports="Level Improvement" level="8" />
+			<select name="Improvement Option (Druid 12)" type="Class Feature" supports="Level Improvement" level="12" />
+			<select name="Improvement Option (Druid 16)" type="Class Feature" supports="Level Improvement" level="16" />
 		</rules>
 	</element>
-	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_TIMELESS_BODY</requirements>
+	<element name="Wild Resurgence" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE">
 		<description>
-			<p>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</p>
+			<p>Starting at 5th level, once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).</p>
+			<p class="indent">In addition, you can expend one use of Wild Shape (no action required) to give yourself a level 1 spell slot, but you can't do so again until you finish a Long Rest.</p>
 		</description>
-		<sheet>
-			<description>For every 10 years that pass, your body ages only 1 year.</description>
+		<sheet usage="1/Turn">
+			<description>You can spend a spell slot to regain one Wild Shape use. Moreover, once per long rest, you can spend a Wilde Shape use to ragain a 1 level spell slot.</description>
 		</sheet>
+	</element>
+	<element name="Elemental Fury" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY">
+		<description>
+			<p> Beninning at 7th level, the might of the elements flows through you. You gain one of the following options of your choice.</p>
+			<p class="indent"><strong>Potent Spellcasting.</strong> Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
+			<p class="indent"><strong>Primal Strike.</strong> Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Elemental Fury" type="Class Feature" supports="Elemental Fury" />
+		</rules>
 	</element>
 	<element name="Beast Spells" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_BEAST_SPELLS</requirements>
 		<description>
-			<p>Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</p>
+			<p>Beginning at 18th level, while using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component.</p>
 		</description>
-		<sheet>
-			<description>You can cast many of your druid spells in any shape you assume using Wild Shape.
-			You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</description>
-		</sheet>
+		<sheet display="false"> <!-- ADDEDD TO WILD SHAPE -->
 	</element>
-	<element name="Archdruid" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ARCHDRUID">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_ARCHDRUID</requirements>
+	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON">
 		<description>
-			<p>At 20th level, you can use your Wild Shape an unlimited number of times.</p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Epic Boon (Druid)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" />
+		</rules>
+	<element name="Archdruid" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID">
+		<description>
+			<p>At 20th level, the vitality of nature constantly blooms within you, granting you the following benefits.</p>
+			<p class="indent"><strong>Evergreen Wild Shape.</strong> Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p>
+			<p class="indent"><strong>Nature Magician.</strong> You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent"><strong>Longevity.</strong> The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p>
 		</description>
 		<sheet>
-			<description>You can use your Wild Shape an unlimited number of times.</description>
+			<description>When you roll initiative, if you have no Wild Shape uses, you ragain one use of it. Moreover, once per Long Rest, you can expend Wild Shape uses to gain a spell slot. For each use expended this way, you ragain 2 level of spell slot.</description>
 		</sheet>
 	</element> -->
 	
@@ -313,7 +329,7 @@
 			<h5>Magician</h5>
 			<p>You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Arcana or Nature) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).</p>
 		</description>
-		<sheet ald="Primal Order: Magician">
+		<sheet alt="Primal Order: Magician">
 			<description>You add your Wisdom modifier (minimum +1) to Intelligence (Arcana and Nature) checks.</description>
 		</sheet>	
 		<rules>
@@ -332,4 +348,27 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 		</rules>	
 	</element>
+<!-- ELEMENTAL FURY -->
+	<element name="Potent Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY_POTENT_SPELLCASTING">
+		<supports>Elemental Fury</supports>
+		<description>
+			<h5>Potent Spellcasting</h5>
+			<p>Add your Wisdom modifier to the damage you deal with any Druid cantrip.</p>
+		</description>
+		<sheet alt="Elemental Fury.">
+			<description level="7">Add your Wisdom modifier to the damage you deal with any Druid cantrip.</description>
+			<description level="15">Add your Wisdom modifier to the damage you deal with any Druid cantrip. The range of your Druid cantrips with a range of 10 feet or greater, increases by 300 feet.</description>
+		</sheet>		
+	</element>
+	<element name="Primal Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY_POTENT_PRIMAL_STRIKE">
+		<supports>Elemental Fury</supports>
+		<description>
+			<h5>Primal Strike.</h5>
+			<p>Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="7">You deal 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit) to a hit made with a weapon or in Beast Form.</description>
+			<description level="15">You deal 2d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit) to a hit made with a weapon or in Beast Form.</description>
+		</sheet>		
+	</element>	
 </elements>
