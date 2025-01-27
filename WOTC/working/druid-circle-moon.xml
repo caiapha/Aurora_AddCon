@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="druid-moon.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-moon.xml" />
+		</update>
+	</info>
+
+	<!-- Circle of Moon Subclass -->
+	<element name="Circle of the Moon" type="Archetype" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_CIRCLE_OF_THE_MOON">
+		<supports>Druid subclass</supports>
+		<description>
+			<p>Druids of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals.</p>
+      <p class="indent">Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP"/>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" />
+		</description>
+		<sheet display="false">
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" />
+		</rules>
+	</element>
+	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL">
+		<description>
+			<p>When you reach a Druid level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared.</p>
+      <p class="indent">In addition, you can cast the spells from this feature while you're in a Wild Shape form.</p>
+      <h5 class="caption">Circle of the Moon Spells</h5>      
+      <table>
+        <thead><tr><td>Druid Level</td><td></td>Prepared Spell</tr></thead>
+          <tr><td>3</td><td>Cure Wounds, Moonbeam, Starry Wisp</td></tr>
+          <tr><td>5</td><td>Conjure Animals</td></tr>
+          <tr><td>7</td><td>Fount of Moonlight</td></tr>
+          <tr><td>9</td><td>Mass Cure Wounds</td></tr>
+        </table>
+		  </description>
+		  <sheet>
+			  <description>The Circle Spells are always prepared. You can caste them also in Wilde Shape form.</description>
+		  </sheet>
+      <rules>
+        <grant name="Cure Wounds" id="ID_PHB24_SPELL_CURE_WOUNDS" />
+        <grant name="Moonbeam" id="ID_PHB24_SPELL_MOONBEAM" />
+        <grant name="Starry Wisp" id="ID_PHB24_SPELL_STARRY_WISP" />
+        <grant name="Conjure Animals" id="ID_PHB24_SPELL_CONJURE_ANIMALS" />
+        <grant name="Fount of Moonlight" id="ID_PHB24_SPELL_FOUNT_OF_MOONLIGHT" />
+        <grant name="Mass Cure Wounds" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" />
+      </rules>
+</element>
+<element name="Circle Form" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
+		<description>
+			<p>Starting at 3th level, You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.</p>
+			<p class="indent"><strong>Challenge Rating.</strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
+		  <p class="indent"><strong>Armor Class.</strong> Until you leave the form, your AC equals 13 plus your Wisdom modifier if that total is higher than the Beast's AC.</p>
+      <p class="indent"><strong>Temporary Hit Points.</strong> You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
+</description>
+		<sheet>
+			<description>The Challenge Rating of the Beast Form is equal to {{level:druid}}/3. The AC of your Wild Shape is {{wild_shape:ac}}, if higher than the Beast's AC. The Temporary Hit Points you gain is {{wilde_shape:hp}}.</description>
+		</sheet>
+    <rules>    
+      <stat name="wilde_shape:hp" value="level:druid" />
+      <stat name="wilde_shape:hp" value="level:druid" />
+      <stat name="wild_shape:ac" value="13" />
+      <stat name="wild_shape:ac" value="wisdom:modifier" />
+    </rules>
+	</element>
+</elements>
