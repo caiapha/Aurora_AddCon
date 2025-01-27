@@ -82,13 +82,13 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" />
+		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" /> -->
 		</description>
 		<sheet display="false">
 			<description>A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</description>
@@ -110,13 +110,13 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" level="3" />
+		<!--	<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" level="19" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/> -->
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_DRUID">
 			<prerequisite>Wisdom 13</prerequisite>
@@ -154,7 +154,6 @@
 			<select name="Primal Order choice" type="Class Feature" support="Primal Order" />
 		</rules>
 	</element>
-	
 	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
 		<description>
 			<p>You have learned to cast spells through studying the mystical forces of nature. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Druid spells, which appear on the Druid spell list later in the class's description.</p>
@@ -178,15 +177,12 @@
 			<h5>Spellcasting Focus</h5>
 			<p>You can use a Druidic Focus as a Spellcasting Focus for your Druid spells.</p>
 		</description>
-		<sheet> <!-- QUI -->
-			<description>You can prepare {{druid:spellcasting:prepare}} spells from the druid spell list. You can use a druidic focus as your spellcasting focus.</description>
-		</sheet>
+		<sheet display="false">
 		<spellcasting name="Druid" ability="Wisdom" prepare="true">
 			<list known="true">Druid</list>
 		</spellcasting>
 		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
 			<stat name="druid:spellcasting:slots:1" value="2" level="1" />
 			<stat name="druid:spellcasting:slots:1" value="1" level="2" />
 			<stat name="druid:spellcasting:slots:1" value="1" level="3" />
@@ -213,41 +209,51 @@
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Druid" />
 		</rules>
 	</element>
-	<element name="Wild Shape" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_WILD_SHAPE</requirements>
+	<element name="Wild Companion" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION">
 		<description>
-			<p>Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
-			<p class="indent">Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.</p>
+			<p>You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components.</p>
+			<p class="indent">When you cast the spell in this way, the familiar is Fey and disappears when you finish a Long Rest.</p>
+		</description>	
+		<sheet action="Magic Action">
+			<description>You can expend a spell slot or a use of Wild Shape to cast the Find Familiar spell without Material components. The familiar is Fey and disappears when you finish a Long Rest.</description>
+		</sheet>	
+	</element>	
+	<element name="Wild Shape" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE">
+		<description>
+			<p>The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form that you have learned for this feature (see "Known Forms" below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the Incapacitated condition, or die. You can also leave the form early as a Bonus Action.</p>
+			<p class="indent">Number of Uses. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table.</p>
+			<h5>Known Forms</h5>
+			<p>You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed (see appendix B for stat block options). The Rat, Riding Horse, Spider, and Wolf are recommended. Whenever you finish a Long Rest, you can replace one of your known forms with another eligible form.</p>
+			<p class="indent">When you reach certain Druid levels, your number of known forms and the maximum Challenge Rating for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a Fly Speed.</p>
+			<p class="indent">When choosing known forms, you may look in the Monster Manual or elsewhere for eligible Beasts if the Dungeon Master permits you to do so.</p>
 			<h3 class="caption">Beast Shapes</h3>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td>Max. CR</td><td class="left">Limitations</td><td class="left">Example</td></tr>
+					<tr><td class="col-5">Level</td><td>Known Forms</td><td>Max. CR</td><td class="left">Flying speed</td></tr>
 				</thead>
-				<tr><td> 2nd</td><td>1/4</td><td class="left">No flying or swimming speed</td><td class="left">Wolf</td></tr>
-				<tr><td> 4th</td><td>1/2</td><td class="left">No flying speed</td><td class="left">Crocodile</td></tr>
-				<tr><td> 8th</td><td>1</td><td class="left">—</td><td class="left">Giant eagle</td></tr>
+				<tr><td> 2nd</td><td>4</td><td>1/4</td><td class="left">No</td></tr>
+				<tr><td> 4th</td><td>6</td><td>1/2</td><td class="left">No</td></tr>
+				<tr><td> 8th</td><td>8</td><td>1</td><td class="left">Yes</td></tr>
 			</table>
-			<p class="indent">You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
-			<p class="indent">While you are transformed, the following rules apply:</p>
-			<ul>
-				<li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</li>
-				<li>When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
-				<li>You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</li>
-				<li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
-				<li>You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
-			</ul>
+			<p><strong>Rules While Transformed.</strong> While in a form, you retain your personality, memories, and ability to speak, and the following rules apply:</p>
+			<p class="indent"><strong>Temporary Hit Points.</strong> When you assume a Wild Shape form, you gain a number of Temporary Hit Points equal to your Druid level.</p>
+			<p class="indent"><strong>Game Statistics.</strong> Your game statistics are replaced by the Beast's stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block.</p>
+			<p class="indent"><strong>No Spellcasting.</strong> You can't cast spells, but shape-shifting doesn't break your Concentration or otherwise interfere with a spell you've already cast.</p>
+			<p class="indent"><strong>Objects.</strong> Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form.</p>
 		</description>
-		<sheet action="Action" usage="2/Short Rest">
-			<description level="2">You can magically assume the shape of a beast that you have seen before.
-			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
-			<description level="20" usage="">You can magically assume the shape of a beast that you have seen before.
-			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+		<sheet action="Bonus Action" usage="{{wild_shape:exp}}/Long Rest">
+			<description>You can transform in one of the known shape of a beast. You can stay in a beast shape for {{druid wildshape:hours}} hours. You automatically revert if you fall unconscious, drop to 0 hit points, or die. While transformed, you gain {{wilde_shape:hp}} Temporary Hit Points. During Wild Shape you cannont cast spells, but can mantain Concentration on spell previously casted.</description>
 		</sheet>
 		<rules>
+			<stat name="wild_shape:exp" value="2" />
+			<stat name="wild_shape:exp" value="1" level="6" />
+			<stat name="wild_shape:exp" value="1" level="17" />	
 			<stat name="druid wildshape:hours" value="level:druid:half" />
+			<stat name="wilde_shape:hp" value="level:druid" />
 		</rules>
 	</element>
-	<element name="Druid Circle" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
+<!--	<element name="Druid Circle" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_DRUID_CIRCLE</requirements>
 		<description>
 			<p>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
