@@ -82,13 +82,13 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" />
-		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" /> -->
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" />
 		</description>
 		<sheet display="false">
 			<description>A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</description>
@@ -110,13 +110,13 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" level="2" />
-		<!--	<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" level="19" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/> -->
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/> 
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_DRUID">
 			<prerequisite>Wisdom 13</prerequisite>
@@ -253,16 +253,13 @@
 			<stat name="wilde_shape:hp" value="level:druid" />
 		</rules>
 	</element>
-<!--	<element name="Druid Circle" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_DRUID_CIRCLE</requirements>
+	<element name="Druid Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS">
 		<description>
-			<p>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+			<p>At 3nd level, you gain a Druid subclass of your choice. A subclass is a specialization that grants you features at certain Druid levels. For the rest of your career, you gain each of your subclass's features that are of your Druid level or lower.</p>
 		</description>
-		<sheet display="false">
-			<description>You choose to identify with a circle of druids.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Druid Circle" supports="Druid Circle" level="2"/>
+			<select type="Archetype" name="Druid Subclass" supports="Druid subclass" level="3" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID">
