@@ -77,14 +77,18 @@
 				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>4</td><td>4</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
 				<tr><td>20th</td><td>+6</td><td class="left">Archdruid</td><td>4</td><td>4</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
-	<!--		<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ARCHDRUID" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_DRUIDIC" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" />
 		</description>
 		<sheet display="false">
 			<description>A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</description>
@@ -93,48 +97,41 @@
 			<set name="short">A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.</set>
 			<set name="hd">d8</set>
 		</setters>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_DRUID"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" level="1"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="2"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE" level="2"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_TIMELESS_BODY" level="18"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
+<!--		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<select type="Proficiency" name="Skill Proficiency (Druid)" supports="Skill,Druid" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_DRUID" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_DRUIDIC" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_COMPANION" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILDSHAPE" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ABILITYSCOREIMPROVEMENT_DRUID" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_WILD_RESURGENCE" level="5" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ELEMENTAL_FURY" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_BEAST_SPELLS" level="18" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_ARCHDRUID" level="20"/>
 		</rules>
-		<multiclass id="ID_WOTC_PHB_MULTICLASS_DRUID">
+		<multiclass id="ID_WOTC_PHB24_MULTICLASS_DRUID">
 			<prerequisite>Wisdom 13</prerequisite>
 			<requirements>[wis:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)</set>
+				<set name="multiclass proficiencies">Light armor, shields.</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 			</rules>
-		</multiclass>
-	</element>
-	<element name="Druidic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
+		</multiclass> -->
+	</element> 
+<!--	<element name="Druidic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_DRUIDIC</requirements>
 		<description>
 			<p>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
