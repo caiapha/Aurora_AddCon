@@ -155,30 +155,31 @@
 		</rules>
 	</element>
 	
-<!--	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_SPELLCASTING</requirements>
+	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
 		<description>
-			<p>Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.</p>
-			<h5>CANTRIPS</h5>
-			<p>At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p>
-			<h5>PREPARING AND CASTING SPELLS</h5>
-			<p>The Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
-			<p class="indent">You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
-			<p class="indent">For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
-			<p class="indent">You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>
-			<h5>SPELLCASTING ABILITY</h5>
-			<p>Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.</p>
+			<p>You have learned to cast spells through studying the mystical forces of nature. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Druid spells, which appear on the Druid spell list later in the class's description.</p>
+			<h5>Cantrips</h5>
+			<p>You know two cantrips of your choice from the Druid spell list. Druidcraft and Produce Flame are recommended. Whenever you gain a Druid level, you can replace one of your cantrips with another cantrip of your choice from the Druid spell list. When you reach Druid levels 4 and 10, you learn another cantrip of your choice from the Druid spell list, as shown in the Cantrips column of the Druid Features table.</p>
+			<h5>Spell Slots</h5>
+			<p>The Druid Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<h5>Prepared Spells of Level 1+</h5>
+			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Druid spell list. Animal Friendship, Cure Wounds, Faerie Fire, and Thunderwave are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Druid levels, as shown in the Prepared Spells column of the Druid Features table.</p>
+			<p class="indent">Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Druid, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>
+			<p class="indent">If another Druid feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Druid spells for you.</p>
+			<h5>Changing Your Prepared Spells.</h5>
+			<p>Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells with other Druid spells for which you have spell slots.</p>
+			<h5>Spellcasting Ability</h5>
+			<p>Wisdom is your spellcasting ability for your Druid spells.</p>
 			<center>
 				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
 				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
 			</center>
-			<h5>RITUAL CASTING</h5>
-			<p>You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
-			<h5>SPELLCASTING FOCUS</h5>
-			<p>You can use a druidic focus as a spellcasting focus for your druid spells.</p>
+			<h5>Spellcasting Focus</h5>
+			<p>You can use a Druidic Focus as a Spellcasting Focus for your Druid spells.</p>
 		</description>
-		<sheet>
-			<description>You can cast druid spells as rituals. You can prepare {{druid:spellcasting:prepare}} spells from the druid spell list. You can use a druidic focus as your spellcasting focus.</description>
+		<sheet> <!-- QUI -->
+			<description>You can prepare {{druid:spellcasting:prepare}} spells from the druid spell list. You can use a druidic focus as your spellcasting focus.</description>
 		</sheet>
 		<spellcasting name="Druid" ability="Wisdom" prepare="true">
 			<list known="true">Druid</list>
