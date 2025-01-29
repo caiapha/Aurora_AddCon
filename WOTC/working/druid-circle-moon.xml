@@ -14,15 +14,17 @@
       			<p class="indent">Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood.</p>
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL" />
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS" />
-		<!--	<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP" />
-			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" />  -->
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS" level="3" />
-		<!--	<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" />  -->
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" /> 
 		</rules>
 	</element>
 	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL">
@@ -42,15 +44,15 @@
 			<description>The Circle Spells are always prepared. You can caste them also in Wilde Shape form.</description>
 		</sheet>
       		<rules>
-        	<!--	<grant name="Cure Wounds" id="ID_PHB24_SPELL_CURE_WOUNDS" />
+        		<grant name="Cure Wounds" id="ID_PHB24_SPELL_CURE_WOUNDS" />
         		<grant name="Moonbeam" id="ID_PHB24_SPELL_MOONBEAM" />
         		<grant name="Starry Wisp" id="ID_PHB24_SPELL_STARRY_WISP" />
         		<grant name="Conjure Animals" id="ID_PHB24_SPELL_CONJURE_ANIMALS" />
         		<grant name="Fount of Moonlight" id="ID_PHB24_SPELL_FOUNT_OF_MOONLIGHT" />
-        		<grant name="Mass Cure Wounds" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" />  -->
+        		<grant name="Mass Cure Wounds" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" />
       		</rules>
 	</element>
-	<element name="Circle Form" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
+	<element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
 		<description>
 			<p>Starting at 3th level, You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.</p>
 			<p class="indent"><strong>Challenge Rating.</strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
@@ -72,5 +74,15 @@
       			<stat name="wild_shape:ac" value="13" />
       			<stat name="wild_shape:ac" value="wisdom:modifier" />
     		</rules>
+	</element>
+	<element name="Improved Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS">
+		<description>
+			<p>Starting at 6th level, While in a Wild Shape form, you gain the following benefits.</p>
+			<p class="indent"><strong>Lunar Radiance.</strong>  Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+			<p class="indent"><strong>Increased Toughness.</strong> You can add your Wisdom modifier to your Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>While in Wild Shape, each time you hit with an attack, you can choose to deal normal or Radiant damage. You can also add your Wisdom modifier to Constitution Saving Throw.</description>
+		</sheet>
 	</element>
 </elements>
