@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="spells.xml" url="/spells.xml" />
 		</update>
 	</info>
@@ -5255,7 +5255,7 @@
 		</setters>
 	</element>
 	 
-	<element name="Misty Step" type="Spell" source="Player’s Handbook Rev. 2024 Rev. 2024" id="ID_PHB24_SPELL_MISTY_STEP">
+	<element name="Misty Step" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_MISTY_STEP">
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
@@ -7368,7 +7368,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>  
-	<element name="Telekinesis" type="Spell" source="Player’s Handbook Rev. 2024 Rev. 2024" id="ID_PHB24_SPELL_TELEKINESIS">
+	<element name="Telekinesis" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_TELEKINESIS">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
 			<p>You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p>
