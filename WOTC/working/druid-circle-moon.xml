@@ -78,11 +78,33 @@
 	<element name="Improved Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS">
 		<description>
 			<p>Starting at 6th level, While in a Wild Shape form, you gain the following benefits.</p>
-			<p class="indent"><strong>Lunar Radiance.</strong>  Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+			<p class="indent"><strong>Lunar Radiance.</strong> Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
 			<p class="indent"><strong>Increased Toughness.</strong> You can add your Wisdom modifier to your Constitution saving throws.</p>
 		</description>
 		<sheet>
 			<description>While in Wild Shape, each time you hit with an attack, you can choose to deal normal or Radiant damage. You can also add your Wisdom modifier to Constitution Saving Throw.</description>
+		</sheet>
+	</element>
+	<element name="Moonlight Step" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP">
+		<description>
+			<p>Starting at 10th level, you magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required).</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{lunar_step}}/Long Rest">
+			<description>You can teleport to an unoccupied space within 30ft and, before the end of your turn, you gain Advantage on your next attack roll. You can regain uno use expendig a 2+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+			<stat name="lunar_step" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Lunar Form" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
+		<description>
+			<p>Starting at 14th level, the power of the moon suffuses you, granting you the following benefits.</p>
+			<p class="indent"><strong>Improved Lunar Radiance:</strong> once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack.</p>
+			<p class="indent"><strong>Shared Moonlight:</strong> whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
+		</description>
+		<sheet>
+			<description>Whilde Shape, in Once per Turn you can deal extra 2d10 radiant damage with an attack. Moreover, using Moonlight Step, you can also telerport a willing creature which is within 10 ft from you. The creature is teleported in an anoccupied space within 10ft from your destination.</description>
 		</sheet>
 	</element>
 </elements>
