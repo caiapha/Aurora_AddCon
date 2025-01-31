@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+		<file name="druid-circle-land.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-land.xml" />
+		</update>
+	</info>
+
+	<!-- Circle of Land Subclass -->
+	<element name="Circle of the Land" type="Archetype" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_CIRCLE_OF_THE_LAND">
+		<supports>Druid subclass</supports>
+		<description>
+			<p>The Circle of the Land comprises mystics and sages who safeguard ancient knowledge and rites. These Druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of their communities.</p>
+			
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL" />
+<!--			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURAL_RECOVERY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_WARD" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_SANCTUARY" /> -->
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL" level="3" />
+<!--			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURAL_RECOVERY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_WARD" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_SANCTUARY" level="14" /> -->
+		</rules>
+	</element>
+	<element name="Circle of the Land Spells" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL">
+		<description>
+			<p>Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. Consult the table below that corresponds to the chosen type; you have the spells listed for your Druid level and lower prepared.</p>
+      <h4 class="caption">Circle of the Land Spells</h4>
+      <p></p>
+      <h5>Arid Land</h5>
+      <table>
+        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+        <tr><td>3</td><td>Blur, Burning Hands, Fire Bolt</td></tr>
+        <tr><td>5</td><td>Fireball</td></tr>
+       	<tr><td>7</td><td>Blight</td></tr>
+        <tr><td>9</td><td>Wall of Stone</td></tr>
+       </table>
+       <p></p>
+      <h5>Polar Land</h5>
+      <table>
+        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+        <tr><td>3</td><td>Fog Cloud, Hold Person, Ray of Frost</td></tr>
+        <tr><td>5</td><td>Sleet Storm</td></tr>
+       	<tr><td>7</td><td>Ice Storm</td></tr>
+        <tr><td>9</td><td>Cone of Cold</td></tr>
+       </table>
+       <p></p>
+      <h5>Temperate Land</h5>
+      <table>
+        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+        <tr><td>3</td><td>Misty Step, Shocking Grasp, Sleep</td></tr>
+        <tr><td>5</td><td>Lightning Bolt</td></tr>
+       	<tr><td>7</td><td>Freedom of movement</td></tr>
+        <tr><td>9</td><td>Tree Stride</td></tr>
+       </table>		
+      <p></p>
+      <h5>Tropical Land</h5>
+      <table>
+        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+        <tr><td>3</td><td>Acid Splash, Ray of Sickness, Web</td></tr>
+        <tr><td>5</td><td>Stinking Cloud</td></tr>
+       	<tr><td>7</td><td>Polymorph</td></tr>
+        <tr><td>9</td><td>Insect Plague</td></tr>
+       </table>	
+    </description>
+		<sheet>
+			<description>After each Long Rest, choose one spell list. The Circle Spells are always prepared.</description>
+		</sheet>
+      		<rules>
+        		<!-- ARID LAND -->
+            <grant name="Blur (Arid)" id="ID_PHB24_SPELL_BLUR" level="3" />
+        		<grant name="Burning Hands (Arid)" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" />
+        		<grant name="Firebolt (Arid)" id="ID_PHB24_SPELL_FIREBOLT" level="3" />
+            <grant name="Fireball (Arid)" id="ID_PHB24_SPELL_FIREBALL" level="5" />
+        		<grant name="Blight (Arid)" id="ID_PHB24_SPELL_BLIGHT" level="7" />
+        		<grant name="Wall of Stone (Arid)" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" />
+        		<!-- POLAR LAND -->
+            <grant name="Fog Cloud (Polar)" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" />
+        		<grant name="Hold Person (Polar)" id="ID_PHB24_SPELL_HOLD_PERSON" level="3" />
+        		<grant name="Ray of Frost (Polar)" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" />
+        		<grant name="Steel Storm (Polar)" id="ID_PHB24_SPELL_STEEL_STORM" level="5" />
+        		<grant name="Ice Storm (Polar)" id="ID_PHB24_SPELL_ICE_STORM" level="7" />
+           	<grant name="Cone of Cold (Polar)" id="ID_PHB24_SPELL_CONE_OF_COLD" level="9" />
+            <!-- TEMPERATE LAND -->
+            <grant name="Misty Step (Temperate)" id="ID_PHB24_SPELL_MISTY_STEP" level="3" />
+        		<grant name="Shocking Grasp (Temperate)" id="ID_PHB24_SPELL_SHOCKING_GRASP" level="3" />
+        		<grant name="Sleep (Temperate)" id="ID_PHB24_SPELL_SLEEP" level="3" />
+        		<grant name="Lighning Bolt (Temperate)" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" />
+        		<grant name="Freedom of Movement (Temperate)" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="7" />
+           	<grant name="Tree Stride (Temperate)" id="ID_PHB24_SPELL_TREE_STRIDE" level="9" />
+            <!-- TROPICAL LAND -->
+            <grant name="Acid Splash (Tropic)" id="ID_PHB24_SPELL_ACID_SPLASH" level="3" />
+        		<grant name="Ray of Sickness (Tropic)" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+        		<grant name="Web (Tropic)" id="ID_PHB24_SPELL_WEB" level="3" />
+        		<grant name="Stinking Cloud (Tropic)" id="ID_PHB24_SPELL_STINKING_CLOUD" level="5" />
+        		<grant name="Polymorph (Tropic)" id="ID_PHB24_SPELL_POLYMORPH" level="7" />
+           	<grant name="Insect Plague (Tropic)" id="ID_PHB24_SPELL_INSECT_PLAGUE" level="9" />
+      		</rules>
+	</element>
+<!--	<element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
+		<description>
+			<p>Starting at 3th level, You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.</p>
+			<p class="indent"><strong>Challenge Rating.</strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
+			<p class="indent"><strong>Armor Class.</strong> Until you leave the form, your AC equals 13 plus your Wisdom modifier if that total is higher than the Beast's AC.</p>
+      			<p class="indent"><strong>Temporary Hit Points.</strong> You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
+		</description>
+		<sheet>
+			<description>The Challenge Rating of the Beast Form is equal to {{wild_shape:cr}}. The AC of your Wild Shape is {{wild_shape:ac}}, if higher than the Beast's AC.</description>
+		</sheet>
+    		<rules>    
+      			<stat name="wild_shape:cr" value="1" level="3"/>
+			<stat name="wild_shape:cr" value="1" level="6"/>
+			<stat name="wild_shape:cr" value="1" level="9"/>
+			<stat name="wild_shape:cr" value="1" level="12"/>
+			<stat name="wild_shape:cr" value="1" level="15"/>
+			<stat name="wild_shape:cr" value="1" level="18"/>
+			<stat name="wild_shape:hp" value="level:druid" />
+      			<stat name="wild_shape:hp" value="level:druid" />
+      			<stat name="wild_shape:ac" value="13" />
+      			<stat name="wild_shape:ac" value="wisdom:modifier" />
+    		</rules>
+	</element>
+	<element name="Improved Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS">
+		<description>
+			<p>Starting at 6th level, While in a Wild Shape form, you gain the following benefits.</p>
+			<p class="indent"><strong>Lunar Radiance.</strong> Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+			<p class="indent"><strong>Increased Toughness.</strong> You can add your Wisdom modifier to your Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>While in Wild Shape, each time you hit with an attack, you can choose to deal normal or Radiant damage. You can also add your Wisdom modifier to Constitution Saving Throw.</description>
+		</sheet>
+	</element>
+	<element name="Moonlight Step" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGTH_STEP">
+		<description>
+			<p>Starting at 10th level, you magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required).</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{lunar_step}}/Long Rest">
+			<description>You can teleport to an unoccupied space within 30ft and, before the end of your turn, you gain Advantage on your next attack roll. You can regain uno use expendig a 2+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+			<stat name="lunar_step" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Lunar Form" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
+		<description>
+			<p>Starting at 14th level, the power of the moon suffuses you, granting you the following benefits.</p>
+			<p class="indent"><strong>Improved Lunar Radiance:</strong> once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack.</p>
+			<p class="indent"><strong>Shared Moonlight:</strong> whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
+		</description>
+		<sheet>
+			<description>While in Wild Shape, Once per Turn you can deal extra 2d10 radiant damage with an attack. Moreover, using Moonlight Step, you can also telerport a willing creature which is within 10 ft from you. The creature is teleported in an anoccupied space within 10ft from your destination.</description>
+		</sheet>
+	</element> -->
+</elements>
