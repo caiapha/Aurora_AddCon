@@ -104,7 +104,7 @@
 			<p class="indent"><strong>Shared Moonlight:</strong> whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
 		</description>
 		<sheet>
-			<description>Whilde Shape, in Once per Turn you can deal extra 2d10 radiant damage with an attack. Moreover, using Moonlight Step, you can also telerport a willing creature which is within 10 ft from you. The creature is teleported in an anoccupied space within 10ft from your destination.</description>
+			<description>While in Wild Shape, Once per Turn you can deal extra 2d10 radiant damage with an attack. Moreover, using Moonlight Step, you can also telerport a willing creature which is within 10 ft from you. The creature is teleported in an anoccupied space within 10ft from your destination.</description>
 		</sheet>
 	</element>
 </elements>
