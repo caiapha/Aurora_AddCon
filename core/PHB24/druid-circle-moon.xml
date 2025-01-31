@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 		<file name="druid-circle-moon.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-moon.xml" />
 		</update>
 	</info>
@@ -44,12 +44,12 @@
 			<description>The Circle Spells are always prepared. You can caste them also in Wilde Shape form.</description>
 		</sheet>
       		<rules>
-        		<grant name="Cure Wounds" id="ID_PHB24_SPELL_CURE_WOUNDS" />
-        		<grant name="Moonbeam" id="ID_PHB24_SPELL_MOONBEAM" />
-        		<grant name="Starry Wisp" id="ID_PHB24_SPELL_STARRY_WISP" />
-        		<grant name="Conjure Animals" id="ID_PHB24_SPELL_CONJURE_ANIMALS" />
-        		<grant name="Fount of Moonlight" id="ID_PHB24_SPELL_FOUNT_OF_MOONLIGHT" />
-        		<grant name="Mass Cure Wounds" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" />
+        		<grant name="Cure Wounds" id="ID_PHB24_SPELL_CURE_WOUNDS" level="3" />
+        		<grant name="Moonbeam" id="ID_PHB24_SPELL_MOONBEAM" level="3" />
+        		<grant name="Starry Wisp" id="ID_PHB24_SPELL_STARRY_WISP" level="3" />
+        		<grant name="Conjure Animals" id="ID_PHB24_SPELL_CONJURE_ANIMALS" level="5" />
+        		<grant name="Fount of Moonlight" id="ID_PHB24_SPELL_FOUNT_OF_MOONLIGHT" level="7" />
+        		<grant name="Mass Cure Wounds" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" level="9" />
       		</rules>
 	</element>
 	<element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
