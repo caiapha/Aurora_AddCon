@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="spells.xml" url="/spells.xml" />
 		</update>
 	</info>
