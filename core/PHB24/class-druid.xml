@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Druid" type="Class" source="Player’s Handbook Rev. 2024 Rev. 2024" id="ID_WOTC_PHB24_CLASS_DRUID">
+	<element name="Druid" type="Class" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_DRUID">
 		<description>
 			<p>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.</p>
 			<p class="indent">Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.</p>
