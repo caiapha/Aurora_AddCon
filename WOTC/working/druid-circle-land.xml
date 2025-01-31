@@ -75,7 +75,7 @@
         		<!-- ARID LAND -->
             <grant name="Blur (Arid)" id="ID_PHB24_SPELL_BLUR" level="3" />
         		<grant name="Burning Hands (Arid)" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" />
-        		<grant name="Firebolt (Arid)" id="ID_PHB24_SPELL_FIREBOLT" level="3" />
+        		<grant name="Firebolt (Arid)" id="ID_PHB24_SPELL_FIRE_BOLT" level="3" />
             <grant name="Fireball (Arid)" id="ID_PHB24_SPELL_FIREBALL" level="5" />
         		<grant name="Blight (Arid)" id="ID_PHB24_SPELL_BLIGHT" level="7" />
         		<grant name="Wall of Stone (Arid)" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" />
