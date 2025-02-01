@@ -332,7 +332,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Additional Cantrips (Primal Order)" type="Spell" supports="Druid, 0" />
+			<select name="Additional Cantrips (Primal Order)" type="Spell" supports="Druid, 0, PHB24" />
 			<stat name="Arcana:misc" value="wisdom:modifier" />
 			<stat name="Nature:misc" value="wisdom:modifier" />
 		</rules>	
