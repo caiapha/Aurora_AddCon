@@ -78,8 +78,8 @@
 		</description>
 		<sheet display="false"> <!-- Included in Wrath of the Sea -->
 	  <rules>
-      <stat name="speed:swim" value="speed" bonus="base"/>
-    <rules>
+      		<stat name="speed:swim" value="speed" bonus="base"/>
+	  </rules>
   </element>
 	<element name="Stormborn" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_STORMBORN">
 		<description>
