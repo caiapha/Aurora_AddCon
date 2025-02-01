@@ -4,7 +4,7 @@
 		<name>Player's Handbook 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
 		</update>
 	</info>
@@ -35,6 +35,7 @@
 		<file name="class-druid.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-druid.xml" />
 			<file name="druid-circle-moon.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-moon.xml" />
 			<file name="druid-circle-land.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-land.xml" />
+			<file name="druid-circle-sea.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-sea.xml" />
 
 		<!-- Misc -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> <!-- TEMPORARY -->
