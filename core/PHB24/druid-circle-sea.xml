@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 		<file name="druid-circle-sea.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-sea.xml" />
 		</update>
 	</info>
@@ -39,7 +39,7 @@
         		</table>
 		</description>
 		<sheet>
-			<description>The Circle Spells are always prepared. You can caste them also in Wilde Shape form.</description>
+			<description>The Circle Spells are always prepared.</description>
 		</sheet>
       		<rules>
         		<grant name="Fog Cloud" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" prepared="true" />
@@ -61,14 +61,16 @@
 			<p class="indent">When you manifest the Emanation and as a Bonus Action on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die).</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can expend one Wild Shape use to create a {{emanation:size}}-foot Emanation. Once per turn, a creature of your choice in the Emanation must succeed on a CON Saving Throw DC{{wrath:dc}} or take {{wisdom:modifier}}d6 of Cold damage. Moreover, if the creature is Larg or smaller, it id pushed up to 15ft away.</description>
+			<description>You can expend one Wild Shape use to create a {{emanation:size}}-foot Emanation. Once per turn, a creature of your choice in the Emanation must succeed on a CON Saving Throw DC{{wrath:dc}} or take {{wrath:dice}}d6 of Cold damage. Moreover, if the creature is Larg or smaller, it is pushed up to 15ft away.</description>
 		</sheet>
     		<rules>    
      			<stat name="wrath:dc" value="8" />
-          <stat name="wrath:dc" value="proficiency" />
-          <stat name="wrath:dc" value="wisdom:modifier" />      			
-          <stat name="emanation:size" value="5" />
-          <stat name="emanation:size" value="10" level="6" />
+          		<stat name="wrath:dc" value="proficiency" />
+          		<stat name="wrath:dc" value="wisdom:modifier" />      			
+          		<stat name="wrath:dice" value="1" />
+			<stat name="wrath:dice" value="wisdom:modifier" bonus="base" />
+			<stat name="emanation:size" value="5" />
+          		<stat name="emanation:size" value="10" level="6" />
     		</rules>
 	</element>
 	<element name="Aquatic Affinity" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_AQUATIC_AFFINITY">
