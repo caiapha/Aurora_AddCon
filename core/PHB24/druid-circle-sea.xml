@@ -76,7 +76,7 @@
 			<p>Starting at 6th level, The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p>
 			<p class="indent">In addition, you gain a Swim Speed equal to your Speed.</p>
 		</description>
-		<sheet display="false"> <!-- Included in Wrath of the Sea -->
+		<sheet display="false" /> <!-- Included in Wrath of the Sea -->
 	  <rules>
       		<stat name="speed:swim" value="speed" bonus="base" />
 	  </rules>
