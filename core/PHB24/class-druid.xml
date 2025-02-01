@@ -4,7 +4,7 @@
 		<name>Druid</name>
 		<description>The Druid class from the Player’s Handbook Rev. 2024 Rev. 2024.</description>
 		<author url="phb">Wizards of the Coast</author>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="class-druid.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-druid.xml" />
 		</update>
 	</info>
