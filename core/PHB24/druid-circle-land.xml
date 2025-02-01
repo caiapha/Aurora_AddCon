@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.2">
+		<update version="0.1.3">
 		<file name="druid-circle-land.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-land.xml" />
 		</update>
 	</info>
@@ -29,9 +29,9 @@
 	<element name="Circle of the Land Spells" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL">
 		<description>
 			<p>Starting at 3rd level, whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. Consult the table below that corresponds to the chosen type; you have the spells listed for your Druid level and lower prepared.</p>
-			      <h5 class="caption">Circle of the Land Spells</h5>
+			      <h4>Circle of the Land Spells</h4>
 			      <p></p>
-			      <h4>Arid Land</h4>
+			      <h5>Arid Land</h5>
 			      <table>
 			        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
 			        <tr><td>3</td><td>Blur, Burning Hands, Fire Bolt</td></tr>
@@ -40,7 +40,7 @@
 			        <tr><td>9</td><td>Wall of Stone</td></tr>
 			       </table>
 			       <p></p>
-			      <h4>Polar Land</h4>
+			      <h5>Polar Land</h5>
 			      <table>
 			        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
 			        <tr><td>3</td><td>Fog Cloud, Hold Person, Ray of Frost</td></tr>
@@ -49,7 +49,7 @@
 			        <tr><td>9</td><td>Cone of Cold</td></tr>
 			       </table>
 			       <p></p>
-			      <h4>Temperate Land</h4>
+			      <h5>Temperate Land</h5>
 			      <table>
 			        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
 			        <tr><td>3</td><td>Misty Step, Shocking Grasp, Sleep</td></tr>
@@ -58,7 +58,7 @@
 			        <tr><td>9</td><td>Tree Stride</td></tr>
 			       </table>		
 			      <p></p>
-			      <h4>Tropical Land</h4>
+			      <h5>Tropical Land</h5>
 			      <table>
 			        <thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
 			        <tr><td>3</td><td>Acid Splash, Ray of Sickness, Web</td></tr>
@@ -71,34 +71,10 @@
 			<description>After each Long Rest, choose one spell list: Arid, Polar, Temperate, Tropical. The Circle Spells are always prepared.</description>
 		</sheet>
       		<rules>
-        		<!-- ARID LAND -->
-			<grant name="Blur (Arid)" id="ID_PHB24_SPELL_BLUR" level="3" alt="Arid Land" />
-        		<grant name="Burning Hands (Arid)" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" alt="Arid Land" />
-        		<grant name="Firebolt (Arid)" id="ID_PHB24_SPELL_FIRE_BOLT" level="3" alt="Arid Land" />
-			<grant name="Fireball (Arid)" id="ID_PHB24_SPELL_FIREBALL" level="5" alt="Arid Land" />
-        		<grant name="Blight (Arid)" id="ID_PHB24_SPELL_BLIGHT" level="7" alt="Arid Land" />
-        		<grant name="Wall of Stone (Arid)" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" alt="Arid Land" />
-        		<!-- POLAR LAND -->
-			<grant name="Fog Cloud (Polar)" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" />
-        		<grant name="Hold Person (Polar)" id="ID_PHB24_SPELL_HOLD_PERSON" level="3" />
-        		<grant name="Ray of Frost (Polar)" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" />
-        		<grant name="Steel Storm (Polar)" id="ID_PHB24_SPELL_STEEL_STORM" level="5" />
-        		<grant name="Ice Storm (Polar)" id="ID_PHB24_SPELL_ICE_STORM" level="7" />
-			<grant name="Cone of Cold (Polar)" id="ID_PHB24_SPELL_CONE_OF_COLD" level="9" />
-			<!-- TEMPERATE LAND -->
-			<grant name="Misty Step (Temperate)" id="ID_PHB24_SPELL_MISTY_STEP" level="3" />
-        		<grant name="Shocking Grasp (Temperate)" id="ID_PHB24_SPELL_SHOCKING_GRASP" level="3" />
-        		<grant name="Sleep (Temperate)" id="ID_PHB24_SPELL_SLEEP" level="3" />
-        		<grant name="Lighning Bolt (Temperate)" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" />
-        		<grant name="Freedom of Movement (Temperate)" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="7" />
-			<grant name="Tree Stride (Temperate)" id="ID_PHB24_SPELL_TREE_STRIDE" level="9" />
-			<!-- TROPICAL LAND -->
-			<grant name="Acid Splash (Tropic)" id="ID_PHB24_SPELL_ACID_SPLASH" level="3" />
-        		<grant name="Ray of Sickness (Tropic)" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
-        		<grant name="Web (Tropic)" id="ID_PHB24_SPELL_WEB" level="3" />
-        		<grant name="Stinking Cloud (Tropic)" id="ID_PHB24_SPELL_STINKING_CLOUD" level="5" />
-        		<grant name="Polymorph (Tropic)" id="ID_PHB24_SPELL_POLYMORPH" level="7" />
-			<grant name="Insect Plague (Tropic)" id="ID_PHB24_SPELL_INSECT_PLAGUE" level="9" />
+			<grant name="Arid Spell" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_ARID" />
+        		<grant name="Polar Spell" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_POLAR" />
+			<grant name="Temperated Spell" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_TEMPERATED" />
+			<grant name="Tropical Spell" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_TROPICAL" />
       		</rules>
 	</element>
 	<element name="Land's Aid" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID">
@@ -151,5 +127,54 @@
 		<sheet>
 			<description>As a Magic Action, you can expend one Wild Magic use to cause spectral tree branches to appear in a 15-foot cube, within 120ft form you. While in the cube, you and your allies gain the Half-Cover condition and the Land Ward resistance. The cube lasts for 1 minute or until you are incapacitated.</description>
 		</sheet>
+	</element>
+
+	<!-- LAND'S SPELL LISTS -->
+	<!-- ARID LAND -->
+	<element name="Arid Land Spell" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_ARID" />
+		<rules>
+			<grant name="Blur (Arid)" id="ID_PHB24_SPELL_BLUR" level="3" alt="Arid Land" />
+	        	<grant name="Burning Hands (Arid)" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" alt="Arid Land" />
+	        	<grant name="Firebolt (Arid)" id="ID_PHB24_SPELL_FIRE_BOLT" level="3" alt="Arid Land" />
+			<grant name="Fireball (Arid)" id="ID_PHB24_SPELL_FIREBALL" level="5" alt="Arid Land" />
+	        	<grant name="Blight (Arid)" id="ID_PHB24_SPELL_BLIGHT" level="7" alt="Arid Land" />
+	        	<grant name="Wall of Stone (Arid)" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" alt="Arid Land" />
+		</rules>
+	</element>
+
+	<!-- POLAR LAND -->
+	<element name="Polar Land Spell" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_POLAR" />
+		<rules>
+			<grant name="Fog Cloud (Polar)" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" />
+		        <grant name="Hold Person (Polar)" id="ID_PHB24_SPELL_HOLD_PERSON" level="3" />
+		        <grant name="Ray of Frost (Polar)" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" />
+		        <grant name="Steel Storm (Polar)" id="ID_PHB24_SPELL_STEEL_STORM" level="5" />
+		        <grant name="Ice Storm (Polar)" id="ID_PHB24_SPELL_ICE_STORM" level="7" />
+			<grant name="Cone of Cold (Polar)" id="ID_PHB24_SPELL_CONE_OF_COLD" level="9" />
+		</rules>
+	</element>
+	
+	<!-- TEMPERATE LAND -->
+	<element name="Temperated Land Spell" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_TEMPERATED" />
+		<rules>
+			<grant name="Misty Step (Temperate)" id="ID_PHB24_SPELL_MISTY_STEP" level="3" />
+        		<grant name="Shocking Grasp (Temperate)" id="ID_PHB24_SPELL_SHOCKING_GRASP" level="3" />
+        		<grant name="Sleep (Temperate)" id="ID_PHB24_SPELL_SLEEP" level="3" />
+        		<grant name="Lighning Bolt (Temperate)" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" />
+        		<grant name="Freedom of Movement (Temperate)" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="7" />
+			<grant name="Tree Stride (Temperate)" id="ID_PHB24_SPELL_TREE_STRIDE" level="9" />
+		</rules>
+	</element>
+	
+	<!-- TROPICAL LAND -->
+	<element name="Tropical Land Spell" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_TROPICAL" />
+		<rules>
+			<grant name="Acid Splash (Tropic)" id="ID_PHB24_SPELL_ACID_SPLASH" level="3" />
+        		<grant name="Ray of Sickness (Tropic)" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+        		<grant name="Web (Tropic)" id="ID_PHB24_SPELL_WEB" level="3" />
+        		<grant name="Stinking Cloud (Tropic)" id="ID_PHB24_SPELL_STINKING_CLOUD" level="5" />
+        		<grant name="Polymorph (Tropic)" id="ID_PHB24_SPELL_POLYMORPH" level="7" />
+			<grant name="Insect Plague (Tropic)" id="ID_PHB24_SPELL_INSECT_PLAGUE" level="9" />
+		</rules>
 	</element>
 </elements>
