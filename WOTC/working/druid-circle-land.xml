@@ -150,7 +150,7 @@
 			<p class="indent">As a Bonus Action, you can move the Cube up to 60 feet to ground within 120 feet of yourself.</p>
 		</description>
 		<sheet>
-			<description>As a Magic Action, you can expend one Wild Magic use to cause spectral tree branches to appear in a 15-foot cube, within 120ft form you. While in the cube, you and your allies gain the Half-Cover condition and the Land Ward resitance. The cube lasts for 1 minute or until you are incapacitated.</description>
+			<description>As a Magic Action, you can expend one Wild Magic use to cause spectral tree branches to appear in a 15-foot cube, within 120ft form you. While in the cube, you and your allies gain the Half-Cover condition and the Land Ward resistance. The cube lasts for 1 minute or until you are incapacitated.</description>
 		</sheet>
 	</element>
 </elements>
