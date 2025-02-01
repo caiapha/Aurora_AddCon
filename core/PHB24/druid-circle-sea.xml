@@ -47,7 +47,7 @@
         		<grant name="Ray of Frost" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" prepared="true" />
             <grant name="Shatter" id="ID_PHB24_SPELL_SHATTER" level="3" prepared="true" />
             <grant name="Thunderwave" id="ID_PHB24_SPELL_THUNDERWAVE" level="3" prepared="true" />
-        		<grant name="Lightning Bolt" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5 prepared="true"" />
+        		<grant name="Lightning Bolt" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" prepared="true" />
             <grant name="Water Breathing" id="ID_PHB24_SPELL_WATHER_BREATHING" level="5" prepared="true" />
         		<grant name="Control Water" id="ID_PHB24_SPELL_CONTROL_WATER" level="7" prepared="true" />
             <grant name="Ice Storm" id="ID_PHB24_SPELL_ICE_STORM" level="7" prepared="true" />
