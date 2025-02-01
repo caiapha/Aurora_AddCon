@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 		<file name="druid-circle-land.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-land.xml" />
 		</update>
 	</info>
@@ -69,7 +69,7 @@
        </table>	
     </description>
 		<sheet>
-			<description>After each Long Rest, choose one spell list. The Circle Spells are always prepared.</description>
+			<description>After each Long Rest, choose one spell list: Arid, Polar, Temperate, Tropical. The Circle Spells are always prepared.</description>
 		</sheet>
       		<rules>
         		<!-- ARID LAND -->
@@ -108,7 +108,7 @@
 			<p class="indent">The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p>
 		</description>
 		<sheet action="Magic Action">
-			<description>You can expend a use of your Wild Shape and choose a point within 60ft form you. Any creature of your choice in a 10 foot-radius sphere from that point shall make a CON save DC{{land_aid:dc}}. On a fail, the creature takes {{land_aid:dice}}d6 Necrotic damages (save halves). Moreover, one creature within thet area of your choice regains {{land_aid:dice}}d6 Hit Points</description>
+			<description>You can expend a use of your Wild Shape and choose a point within 60ft form you. Any creature of your choice in a 10 foot-radius sphere from that point shall make a CON save DC{{land_aid:dc}}. On a fail, the creature takes {{land_aid:dice}}d6 Necrotic damages (save halves). Moreover, one creature of your choice within that area regains {{land_aid:dice}}d6 Hit Points</description>
 		</sheet>
 		<rules>
 			<stat name="land_aid:dc" value="8" />
