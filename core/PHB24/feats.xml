@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player’s Handbook Rev. 2024</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 		<file name="feats.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/feats.xml"/>
 		</update>
 	</info>
@@ -545,7 +545,7 @@
 		<rules>
 			<select name="Ability improvement (Fey-Touchd)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 			<grant name="Misty Step (Fey-Touched)" type="spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" />
-			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment)" prepared="true" />
+			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment), PHB24" prepared="true" />
 		</rules>										 	
 	</element>
 	<element name="Grappler" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_GRAPPLER">
@@ -753,8 +753,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Wizard spell List (Magic Initiate)" type="Spell" supports="0, Wizard" number="2" />
-			<select name="Wizard Spell List (Magic Initiate)" type="Spell" supports="1, Wizard" prepared="true" />
+			<select name="Wizard spell List (Magic Initiate)" type="Spell" supports="0, Wizard, PHB24" number="2" />
+			<select name="Wizard Spell List (Magic Initiate)" type="Spell" supports="1, Wizard, PHB24" prepared="true" />
 		</rules>	
 	</element>
 	<element name="Cleric Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC">
@@ -764,8 +764,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Cleric spell List (Magic Initiate)" type="Spell" supports="0, Cleric" number="2" />
-			<select name="Cleric Spell List (Magic Initiate)" type="Spell" supports="1, Cleric" prepared="true" />
+			<select name="Cleric spell List (Magic Initiate)" type="Spell" supports="0, Cleric, PHB24" number="2" />
+			<select name="Cleric Spell List (Magic Initiate)" type="Spell" supports="1, Cleric, PHB24" prepared="true" />
 		</rules>	
 	</element>
 	<element name="Druid Spell List" type="Feat Feature" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID">
@@ -775,8 +775,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Druid spell List (Magic Initiate)" type="Spell" supports="0, Druid" number="2" />
-			<select name="Druid Spell List (Magic Initiate)" type="Spell" supports="1, Druid" prepared="true" />
+			<select name="Druid spell List (Magic Initiate)" type="Spell" supports="0, Druid, PHB24" number="2" />
+			<select name="Druid Spell List (Magic Initiate)" type="Spell" supports="1, Druid, PHB24" prepared="true" />
 		</rules>	
 	</element>
 <!-- END OF MAGIC INITIATE SPELL LISTS -->
@@ -950,11 +950,11 @@
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Ritual Caster)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
-			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="2" level="4" prepared="true" />
-			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="5" prepared="true" />
-			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="9" prepared="true" />
-			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="13" prepared="true" />
-			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual" number="1" level="17" prepared="true" />
+			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual, PHB24" number="2" level="4" prepared="true" />
+			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual, PHB24" number="1" level="5" prepared="true" />
+			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual, PHB24" number="1" level="9" prepared="true" />
+			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual, PHB24" number="1" level="13" prepared="true" />
+			<select name="Ritual Caster's Spells" type="Spell" supports="1, Ritual, PHB24" number="1" level="17" prepared="true" />
 		</rules>
 	</element>
 	<element name="Savage Attacker" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_SAVAGE_ATTACKER">
@@ -995,7 +995,7 @@
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Shadow-Touched)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
-			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy)" prepared="true" />
+			<select name="Shadow-Touched's spell" type="Spell" supports="1, (Illusion||Necromancy), PHB24" prepared="true" />
 			<grant name="Invisibility (Shadow-Touched)" id="ID_PHB24_SPELL_INVISIBILITY" prepared="true" />
 		</rules>
 	</element>
@@ -1208,7 +1208,7 @@
 		</sheet>
 		<rules> 
 			<select name="Ability improvement (Telepatic)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
-			<grant name="Mage Hand (Telekinetic)" id="ID_PHB24_SPELL_DETECT_THOUGHTS" />
+			<grant name="Detect Thoughts (Telekinetic)" id="ID_PHB24_SPELL_DETECT_THOUGHTS" />
 		</rules>
 	</element>
  	<element name="Tough" type="Feat" source="Player’s Handbook Rev. 2024" id="ID_PHB24_FEAT_TOUGH">
@@ -1255,7 +1255,7 @@
 	</element>
 		
 
-	<!-- RESILIENT ABILITI SCORE IMPROVEMENT --> <!-- NON SEMPRE ATTIVA IL BONUS QUANDO SI SELEZIONA LA STAT!!!!! -->
+	<!-- RESILIENT ABILITY SCORE IMPROVEMENT --> <!-- NON SEMPRE ATTIVA IL BONUS QUANDO SI SELEZIONA LA STAT!!!!! -->
 	
 	<element name="Strength" type="Ability Score Improvement" source="Player’s Handbook Rev. 2024" id="ID_PHB24_ASI_STRENGTH_RESILIENT">
 		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
