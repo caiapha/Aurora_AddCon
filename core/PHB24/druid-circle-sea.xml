@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 		<file name="druid-circle-sea.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-sea.xml" />
 		</update>
 	</info>
@@ -45,14 +45,14 @@
         		<grant name="Fog Cloud" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" prepared="true" />
         		<grant name="Gust of Wind" id="ID_PHB24_SPELL_GUST_OF_WIND" level="3" prepared="true" />
         		<grant name="Ray of Frost" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" prepared="true" />
-            <grant name="Shatter" id="ID_PHB24_SPELL_SHATTER" level="3" prepared="true" />
-            <grant name="Thunderwave" id="ID_PHB24_SPELL_THUNDERWAVE" level="3" prepared="true" />
+            		<grant name="Shatter" id="ID_PHB24_SPELL_SHATTER" level="3" prepared="true" />
+            		<grant name="Thunderwave" id="ID_PHB24_SPELL_THUNDERWAVE" level="3" prepared="true" />
         		<grant name="Lightning Bolt" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" prepared="true" />
-            <grant name="Water Breathing" id="ID_PHB24_SPELL_WATHER_BREATHING" level="5" prepared="true" />
+            		<grant name="Water Breathing" id="ID_PHB24_SPELL_WATER_BREATHING" level="5" prepared="true" />
         		<grant name="Control Water" id="ID_PHB24_SPELL_CONTROL_WATER" level="7" prepared="true" />
-            <grant name="Ice Storm" id="ID_PHB24_SPELL_ICE_STORM" level="7" prepared="true" />
+            		<grant name="Ice Storm" id="ID_PHB24_SPELL_ICE_STORM" level="7" prepared="true" />
         		<grant name="Conjure Elemental" id="ID_PHB24_SPELL_CONJURE_ELEMENTAL" level="9" prepared="true" />
-            <grant name="Hold Monster" id="ID_PHB24_SPELL_HOLD_MONSTER" level="9" prepared="true" />
+            		<grant name="Hold Monster" id="ID_PHB24_SPELL_HOLD_MONSTER" level="9" prepared="true" />
       		</rules>
 	</element>
 	<element name="Wrath of the Sea" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_WRATH_OF_THE_SEA">
