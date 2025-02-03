@@ -95,7 +95,7 @@
 			<p>Starting at 10th level, the constellations of your Starry Form improve. The 1d8 of the Archer and the Chalice becomes 2d8, and while the Dragon is active, you have a Fly Speed of 20 feet and can hover.</p>
 			<p class="indent">Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
      </description>
-		<sheet display="false"> <!-- included in Starry form -->
+		<sheet display="false" /> <!-- included in Starry form -->
 			
 	</element>
 	<element name="Full of Stars" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_FULL_OF_STARS">
@@ -108,17 +108,17 @@
 	</element>
 
   <!-- STARRY FORMS -->
-  <element name="The Archer" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_ARCHER">
+  <element name="The Archer" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_ARCHER">
   <sheet>
     <description>As a Bonus Action, you can make a Ranged Spell Attack, dealing on a hit {{starry_form:dice}}d8+{{wisdom:modifier}} Radiant damages</description>
   </sheet>  
   </element>
-  <element name="The Chalice" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_CHALICE">
+  <element name="The Chalice" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_CHALICE">
   <sheet>
     <description>Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to {{starry_form:dice}}d8 plus your Wisdom modifier.</description>
   </sheet>  
   </element>
-  <element name="The Dragon" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_DRAGON">
+  <element name="The Dragon" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_STARRY_FORM_DRAGON">
   <sheet>
     <description>When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
     <description level="10">You have a Fly speed of 20 feet and can hover. Moreover, when you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
@@ -126,12 +126,12 @@
   </element>
   
 <!-- COSMIC OMEN -->
- <element name="Weal (even)" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL">
+ <element name="Weal (even)" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL">
   <sheet>
     <description>Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and add the number rolled to the total.</description>
   </sheet>  
  </element>
- <element name="Woe (odd)" type="Archetipe Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE">
+ <element name="Woe (odd)" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE">
   <sheet>
     <description>Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and subtract the number rolled from the total.</description>
   </sheet>  
