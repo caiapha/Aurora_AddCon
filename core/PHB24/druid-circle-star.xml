@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1.0">
 		<file name="druid-circle-star.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-star.xml" />
 		</update>
 	</info>
@@ -61,10 +61,10 @@
       <p><strong>Chalice:</strong> a constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to 1d8 plus your Wisdom modifier.</p>
       <p><strong>Dragon:</strong> a constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p>
     </description>
-		<sheet action="Bonus Action">
-			<description>Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and Dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice:</description>
-		  <description level="10">Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and Dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice. You can change the effect at the start of each turn:</description>
-    </sheet>
+	<sheet action="Bonus Action">
+		<description>Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and Dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice:</description>
+		<description level="10">Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and Dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice, which you can change at the start of each turn:</description>
+	</sheet>
     <rules>    
      		<grant name="The Archer" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER" />
      		<grant name="The Chalice" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE" />
@@ -108,30 +108,30 @@
 	</element>
 
   <!-- STARRY FORMS -->
-  <element name="The Archer" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER">
+  <element name="• The Archer" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER">
   <sheet>
     <description>As a Bonus Action, you can make a Ranged Spell Attack, dealing on a hit {{starry_form:dice}}d8+{{wisdom:modifier}} Radiant damages</description>
   </sheet>  
   </element>
-  <element name="The Chalice" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE">
+  <element name="• The Chalice" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE">
   <sheet>
-    <description>Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to {{starry_form:dice}}d8 plus your Wisdom modifier.</description>
+    <description>Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to {{starry_form:dice}}d8+{{wisdom:modifier}}.</description>
   </sheet>  
   </element>
-  <element name="The Dragon" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_DRAGON">
+  <element name="• The Dragon" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_DRAGON">
   <sheet>
     <description>When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
-    <description level="10">You have a Fly speed of 20 feet and can hover. Moreover, when you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
+    <description level="10">You have a Fly Speed of 20 feet and can hover. Moreover, when you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
   </sheet>  
   </element>
   
 <!-- COSMIC OMEN -->
- <element name="Weal (even)" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL">
+ <element name="• Weal (even)" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL">
   <sheet>
     <description>Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and add the number rolled to the total.</description>
   </sheet>  
  </element>
- <element name="Woe (odd)" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE">
+ <element name="• Woe (odd)" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE">
   <sheet>
     <description>Whenever a creature you can see within 30 feet of you is about to make a D20 Test, you can take a Reaction to roll 1d6 and subtract the number rolled from the total.</description>
   </sheet>  
