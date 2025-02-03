@@ -70,11 +70,11 @@
       			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_BARD_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD" />
-		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_COUNTERCHARM" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_MAGICAL_SECRETS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_EPIC_BOON" />
+		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_EPIC_BOON" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_BARD_WORD_OF_CREATION" /> -->
 		</description>
 		<sheet display="false" />
@@ -96,11 +96,11 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" level="2"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_BARD_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD" level="4"/>
-		<!---	<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" level="5"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_COUNTERCHARM" level="7"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_MAGICAL_SECRETS" level="10"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION" level="18"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_EPIC_BOON" level="19"/>
+		<!--	<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_EPIC_BOON" level="19"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_WORD_OF_CREATION" level="20"/> -->
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_BARD">
@@ -192,7 +192,7 @@
 
 			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="1" number="2" spellcasting="Bard" />
 			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="4" number="1" spellcasting="Bard" />
-			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Bard" />
+			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Bard||Wizard||Cleric||Druid" />
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="4" spellcasting="Bard" />
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Bard" />
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Bard" />
@@ -202,10 +202,10 @@
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Bard" />
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="1" spellcasting="Bard" />
 			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="1" spellcasting="Bard" />
-			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Bard" />
-			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Bard" />
-			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Bard" />
-			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Bard" />
+			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Bard||Wizard||Cleric||Druid" />
+			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Bard||Wizard||Cleric||Druid" />
+			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Bard||Wizard||Cleric||Druid" />
+			<select type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Bard||Wizard||Cleric||Druid" />
 		</rules>
 	</element>
 	<element name="Expertise" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_EXPERTISE">
@@ -256,7 +256,6 @@
 			<select type="Archetype" name="Bard Subclass" supports="Bard Subclass" level="3" />
 		</rules>
 	</element>
-
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
 		<compendium display="false" />
 		<description>
@@ -270,47 +269,37 @@
 			<select name="Improvement Option (Bard 16)" type="Class Feature" supports="Level Improvement" level="16" />
 		</rules>
 	</element>
-<!--	<element name="Font of Inspiration" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARD_FONT_OF_INSPIRATION</requirements>
+	<element name="Font of Inspiration" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION">
 		<description>
-			<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
+			<p>Beginning when you reach 5th level, you now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.</p>
+			<p class="indent">In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.</p>
 		</description>
 		<sheet>
-			<description>You regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</description>
+			<description>You regain all of your expended uses of Bardic Inspiration when you finish a short or long rest. In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.</description>
 		</sheet>
 	</element>
-	<element name="Countercharm" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_COUNTERCHARM">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARD_COUNTERCHARM</requirements>
+	<element name="Countercharm" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_COUNTERCHARM">
 		<description>
-			<p>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</p>
+			<p>At 7th level, you can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.</p>
 		</description>
-		<sheet action="Action">
-			<description>You can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed.</description>
+		<sheet action="Reaction">
+			<description>If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.</description>
 		</sheet>
 	</element>
-	<element name="Magical Secrets" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_MAGICAL_SECRETS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARD_MAGICAL_SECRETS</requirements>
+	<element name="Magical Secrets" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_MAGICAL_SECRETS">
 		<description>
-			<p>By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.</p>
-			<p class="indent">The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</p>
-			<p class="indent">You learn two additional spells from any classes at 14th level and again at 18th level.</p>
+			<p>You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists.</p>
 		</description>
 		<sheet display="false">
-			<description>You have plundered magical knowledge from a wide spectrum of disciplines.</description>
+			<description>You have plundered magical knowledge from a wide spectrum of disciplines.</description> <!-- rules included in spellcasting -->
 		</sheet>
-		<rules>
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" number="2" level="10" spellcasting="Bard"/>
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" number="2" level="14" spellcasting="Bard"/>
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" number="2" level="18" spellcasting="Bard"/>
-		</rules>
 	</element>
-	<element name="Superior Inspiration" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BARD_SUPERIOR_INSPIRATION</requirements>
+	<element name="Superior Inspiration" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
 		<description>
-			<p>At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</p>
+			<p>At 18th level, when you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that.</p>
 		</description>
 		<sheet>
-			<description>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</description>
+			<description>When you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that.</description>
 		</sheet>
-	</element> -->
+	</element> 
 </elements>
