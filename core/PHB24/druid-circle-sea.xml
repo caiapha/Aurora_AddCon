@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 		<file name="druid-circle-sea.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-sea.xml" />
 		</update>
 	</info>
@@ -61,7 +61,7 @@
 			<p class="indent">When you manifest the Emanation and as a Bonus Action on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die).</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You can expend one Wild Shape use to create a {{emanation:size}}-foot Emanation. Once per turn, a creature of your choice in the Emanation must succeed on a CON Saving Throw DC{{wrath:dc}} or take {{wrath:dice}}d6 of Cold damage. Moreover, if the creature is Larg or smaller, it is pushed up to 15ft away.</description>
+			<description>You can expend one Wild Shape use to create a {{emanation:size}}-foot Emanation centred on you. Once per turn, a creature of your choice in the Emanation must succeed on a CON Saving Throw DC{{wrath:dc}} or take {{wrath:dice}}d6 of Cold damage. Moreover, if the creature is Larg or smaller, it is pushed up to 15ft away.</description>
 		</sheet>
     		<rules>    
      			<stat name="wrath:dc" value="8" />
