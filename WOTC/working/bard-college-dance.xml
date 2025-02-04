@@ -70,12 +70,12 @@
 	</element>
 	
 	<!-- DAZZLING FOOTWORK EFFECTS -->
-	<element name="Dance Virtuoso" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO" />
+	<element name="Dance Virtuoso" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO">
 		<sheet>
 			<description>You have Advantage on any Charisma (Performance) check you make that involves you dancing.</description>
 		</sheet>	
 	</element>
-	<element name="Unarmored Defense" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_UNARMORED_DEFENCE" />			
+	<element name="Unarmored Defense" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_UNARMORED_DEFENCE">			
 		<sheet>
 			<description>Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers</description>
 		</sheet>
@@ -86,12 +86,12 @@
 			<stat name="ac:calculation" value="ac:unarmored defence:dance" bonus="calculation" equipped="[armor:none]" />
 		</rules>
 	</element>
-	<element name="Agile Strikes" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_AGILE_STRIKES" />
+	<element name="Agile Strikes" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_AGILE_STRIKES">
 		<sheet>
 			<description>When you spend a Bardic Inspiration as an Action, Bonus Action or Reaction, you can make an Unarmored Strike as part of it.</description>
 		</sheet>
 	</element>
-	<element name="Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE" />
+	<element name="Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE">
 		<sheet>
 			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal 1d{{bardic-inspiration:dice}}+{{dexterity:modifier}} Bludgeoning Damages.</description>
 		</sheet>
