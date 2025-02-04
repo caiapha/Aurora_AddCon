@@ -117,6 +117,6 @@
 	</element>
 	<element name="Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE" />
 		<sheet>
-			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal {{}}+{{dexterity:modifier}} Bludgeoning Damages. </description>
+			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal 1d{{bardic-inspiration:dice}}+{{dexterity:modifier}} Bludgeoning Damages.</description>
 		</sheet>	
 </elements>
