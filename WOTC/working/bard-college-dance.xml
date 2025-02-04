@@ -33,7 +33,7 @@
 			<p><strong>Bardic Damage:</strong> you can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike's normal damage. This roll doesn't expend the die.</p>
 		</description>
 		<sheet>
-			<description>After each Long Rest, choose one spell list: Arid, Polar, Temperate, Tropical. The Circle Spells are always prepared.</description>
+			<description>While you aren't wearing armor or wielding a Shield, you gain the following benefits:</description>
 		</sheet>
 		<rules>
 			<grant name="Dance Virtuoso" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO" />
@@ -77,7 +77,7 @@
 	</element>
 	<element name="Unarmored Defense" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_UNARMORED_DEFENCE">			
 		<sheet>
-			<description>Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers</description>
+			<description>Your base Armor Class equals {{unarmored defence:dance}}</description>
 		</sheet>
 		<rules>
 			<stat name="ac:unarmored defence:dance" value="10" />
