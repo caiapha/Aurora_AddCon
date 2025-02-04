@@ -42,57 +42,33 @@
 			<grant name="Bardic Damage" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE" />
 		</rules>
 	</element>
-	<element name="Land's Aid" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_LANDS_AID">
+	<element name="Inspiring Movement" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_INSPIRING_MOVEMENT">
 		<description>
-			<p>Starting at 3rd level, as a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains 2d6 Hit Points.</p>
-			<p class="indent">The damage and healing increase by 1d6 when you reach Druid levels 10 (3d6) and 14 (4d6).</p>
+			<p>Starting at 6rd level, when an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.</p>
+			<p class="indent">None of this feature's movement provokes Opportunity Attacks.</p>
 		</description>
-		<sheet action="Magic Action">
-			<description>You can expend a use of your Wild Shape and choose a point within 60ft form you. Any creature of your choice in a 10 foot-radius sphere from that point shall make a CON save DC{{land_aid:dc}}. On a fail, the creature takes {{land_aid:dice}}d6 Necrotic damages (save halves). Moreover, one creature of your choice within that area regains {{land_aid:dice}}d6 Hit Points</description>
+		<sheet action="Reaction">
+			<description>When an enemy ends its turn within 5ft form you, you can move up to half of your speed. One ally of your choice within 30ft of you can also move up to half of his speed using his Reaction. None of this movements provoke Opportunity attacks.</description>
 		</sheet>
-		<rules>
-			<stat name="land_aid:dc" value="8" />
-			<stat name="land_aid:dc" value="proficiency" />
-			<stat name="land_aid:dc" value="wisdom:modifier" />
-			<stat name="land_aid:dice" value="2" />
-			<stat name="land_aid:dice" value="1" level="10" />
-			<stat name="land_aid:dice" value="1" level="14" />
-		</rules>	
 	</element>
-	<element name="Natural Recovery" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURAL_RECOVERY">
+	<element name="Tandem Footwork" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_TANDEM_FOOTWORK">
 		<description>
-			<p>Starting at 6th level, you can cast one of the level 1+ spells that you have prepared from your Circle Spells feature without expending a spell slot, and you must finish a Long Rest before you do so again.</p>
-			<p class="indent">In addition, when you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your Druid level (round up), and none of them can be level 6+. For example, if you're a level 6 Druid, you can recover up to three levels' worth of spell slots. You can recover a level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots. Once you recover spell slots with this feature, you can't do so again until you finish a Long Rest.</p>
+			<p>Starting at 6th level, when you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p>
 		</description>
 		<sheet>
-			<description>Once per Long Rest, you can cast one 1+ Circle Spell you prepared, without expending the spell slot. In addition, once per Long Rest, after a Short Rest, you ragain expended spell slots of your choice, provided that the total level is equal or lower {{level:druid:half:up}}.</description>
+			<description>When you roll Initiative, you can expend one Bardic Inspiration. You and any allies within 30ft gain an Initiative bonus equal to the number rolled.</description>
 		</sheet>
 	</element>
-	<element name="Nature's Ward" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_WARD">
+	<element name="Leading Evasion" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_LEADING_EVASION">
 		<description>
-			<p>Starting at 10th level, you are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature, as shown in the Nature's Ward table.</p>
-			<h5>Nature's Ward</h5>
-			<table>
-				<thead><tr><td>Land Type</td><td>Resistance</td></tr></thead>
-				<tr><td>Arid</td><td>Fire</td></tr>
-				<tr><td>Polar</td><td>Cold</td></tr>
-				<tr><td>Temperate</td><td>Lightning</td></tr>
-				<tr><td>Tropical</td><td>Poison</td></tr>
-			</table>	
+			<p>Starting at 14th level, When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.</p>
+			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
 		</description>
 		<sheet>
-			<description>You are immune to Poisoned condition and you gain Resistance to damage type associated to the choosen Land: Arid-Fire, Polar-Cold, Temperate-Lightning, Tropical-Poison.</description>
+			<description>When you are subject to a DEX Saving Throw to halve a damage, you take half damage on a fail and no damage on a save. You can share this ability with any creature within 5ft form you subject to the same effect. You can't use this feature if you are Incapacitated.</description>
 		</sheet>
 	</element>
-	<element name="Nature's Sanctuary" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_SANCTUARY">
-		<description>
-			<p>Starting at 14th level, as a Magic action, you can expend a use of your Wild Shape and cause spectral trees and vines to appear in a 15-foot Cube on the ground within 120 feet of yourself. They last there for 1 minute or until you have the Incapacitated condition or die. You and your allies have Half Cover while in that area, and your allies gain the current Resistance of your Nature's Ward while there.</p>
-			<p class="indent">As a Bonus Action, you can move the Cube up to 60 feet to ground within 120 feet of yourself.</p>
-		</description>
-		<sheet>
-			<description>As a Magic Action, you can expend one Wild Magic use to cause spectral tree branches to appear in a 15-foot cube, within 120ft form you. While in the cube, you and your allies gain the Half-Cover condition and the Land Ward resistance. The cube lasts for 1 minute or until you are incapacitated.</description>
-		</sheet>
-	</element>
+	
 	<!-- DAZZLING FOOTWORK EFFECTS -->
 	<element name="Dance Virtuoso" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO" />
 		<sheet>
@@ -118,5 +94,6 @@
 	<element name="Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE" />
 		<sheet>
 			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal 1d{{bardic-inspiration:dice}}+{{dexterity:modifier}} Bludgeoning Damages.</description>
-		</sheet>	
+		</sheet>
+	</element>
 </elements>
