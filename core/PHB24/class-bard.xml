@@ -3,7 +3,7 @@
 	<info>
 		<name>Bard</name>
 		<update version="0.1.0">
-			<file name="class-bard.xml" url="class-bard.xml" />
+			<file name="class-bard.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-bard.xml" />
 		</update>
 	</info>
 	
