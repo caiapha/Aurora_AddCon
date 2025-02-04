@@ -83,7 +83,7 @@
 			<stat name="ac:unarmored defence:dance" value="10" />
 			<stat name="ac:unarmored defence:dance" value="dexterity:modifier" />
 			<stat name="ac:unarmored defence:dance" value="charisma:modifier" />
-			<stat name="ac:calculation" value="ac:unarmored defence:dance" bonus="calculation" equipped="[armor:none]" />
+			<stat name="ac:calculation" value="ac:unarmored defence:dance" bonus="calculation" equipped="[armor:none],[shield:none]" />
 		</rules>
 	</element>
 	<element name="Agile Strikes" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_AGILE_STRIKES">
