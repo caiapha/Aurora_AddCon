@@ -253,7 +253,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Bard Subclass" supports="Bard Subclass" level="3" />
+			<select type="Archetype" name="Bard Subclass" supports="Bard subclass" level="3" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
