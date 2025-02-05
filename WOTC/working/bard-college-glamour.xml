@@ -32,7 +32,7 @@
 		  <p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required).</p>
     </description>
 		<sheet usage="1/Long Rest">
-			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantement or Illusion spell, you can force a creature withing 60ft form you to make a WIS Saving Throw DC{{beguiling:dc}}. On a fail, the creature suffersthe Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
+			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantement or Illusion spell, you can force a creature withing 60ft form you to make a WIS Saving Throw DC{{beguiling:dc}}. On a fail, the creature suffers the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
 		</sheet>
 		<rules>
 			<grant name="Charm Person Spell" type="spell" id="ID_PHB24_SPELL_CHARM_PERSON" prepared="true" />
