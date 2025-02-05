@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<title>The College of Glamour Bard subclass</title>
-    <update version="0.1.0">
+    <update version="0.1.1">
 		<file name="bard-college-glamour.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-glamour.xml" />
 		</update>
 	</info>
@@ -35,8 +35,8 @@
 			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantement or Illusion spell, you can force a creature withing 60ft form you to make a WIS Saving Throw DC{{beguiling:dc}}. On a fail, the creature suffers the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" prepared="true" />
-			<grant type="Spell" id="ID_PHB24_SPELL_MIRROR_IMAGE" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_MIRROR_IMAGE" spellcasting="Bard" prepared="true" />
 			<stat name="beguiling:dc" value="8" />
 			<stat name="beguiling:dc" value="proficiency" />
 			<stat name="beguiling:dc" value="charisma:modifier" />
@@ -65,7 +65,7 @@
 			<description>You have Command always prepared and you can cast it wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fails the saving throw against the Command you cast with this feature. You can restore a use expending a level 3+ spell slot (no action required).</description>
 		</sheet>
 		<rules>
-			<grant name="Command Spell" type="Spell" id="ID_PHB24_SPELL_COMMAND" />
+			<grant type="Spell" id="ID_PHB24_SPELL_COMMAND" spellcasting="Bard" prepared="true" />
 		</rules>
 	</element>
 	<element name="Unbreakable Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY">
