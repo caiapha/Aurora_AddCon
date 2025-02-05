@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<title>The College of Glamour Bard subclass</title>
+    <update version="0.0.1">
+		<file name="bard-college-glamour.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-glamour.xml" />
+		</update>
+	</info>
+
+	<!-- College of Glamour Subclass -->
+	<element name="College of Glamour" type="Archetype" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_COLLEGE_OF_GLAMOUR">
+		<supports>Bard subclass</supports>
+		<description>
+			<p>The College of Glamour traces its origins to the beguiling magic of the Feywild. Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hard-hearted listeners.</p>	
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" />	
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" />
+		</rules>
+	</element>
+	<element name="Beguiling Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC">
+		<description>
+			<p>Starting at 3rd level, you always have the Charm Person and Mirror Image spells prepared.</p>
+			<p class="indent">In addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>    
+		  <p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required).</p>
+    </description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantement or Illusion spell, you can force a creature withing 60ft form you to make a WIS Saving Throw DC{{spell:dc}}. On a fail, the creature suffersthe Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
+		</sheet>
+	</element> 
+	<element name="Inspiring Movement" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_INSPIRING_MOVEMENT">
+		<description>
+			<p>Starting at 6rd level, when an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.</p>
+			<p class="indent">None of this feature's movement provokes Opportunity Attacks.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an enemy ends its turn within 5ft form you, you can move up to half of your speed. One ally of your choice within 30ft of you can also move up to half of his speed using his Reaction. None of this movements provoke Opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="Tandem Footwork" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_TANDEM_FOOTWORK">
+		<description>
+			<p>Starting at 6th level, when you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p>
+		</description>
+		<sheet>
+			<description>When you roll Initiative, you can expend one Bardic Inspiration. You and any allies within 30ft gain an Initiative bonus equal to the number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Leading Evasion" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_LEADING_EVASION">
+		<description>
+			<p>Starting at 14th level, When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.</p>
+			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>When you are subject to a DEX Saving Throw to halve a damage, you take half damage on a fail and no damage on a success. You can share this ability with any creature of your choice within 5ft form you subject to the same effect. You can't use this feature if you are Incapacitated.</description>
+		</sheet>
+	</element>
+	
+	<!-- DAZZLING FOOTWORK EFFECTS -->
+	<element name="• Dance Virtuoso" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO">
+		<sheet>
+			<description>You have Advantage on any Charisma (Performance) check you make that involves you dancing.</description>
+		</sheet>	
+	</element>
+	<element name="• Unarmored Defense" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_UNARMORED_DEFENCE">			
+		<sheet>
+			<description>Your base Armor Class equals {{ac:unarmored defence:dance}}</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defence:dance" value="10" />
+			<stat name="ac:unarmored defence:dance" value="dexterity:modifier" />
+			<stat name="ac:unarmored defence:dance" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:unarmored defence:dance" bonus="calculation" equipped="[armor:none],[shield:none]" />
+		</rules>
+	</element>
+	<element name="• Agile Strikes" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_AGILE_STRIKES">
+		<sheet>
+			<description>When you spend a Bardic Inspiration as an Action, Bonus Action or Reaction, you can make an Unarmored Strike as part of it.</description>
+		</sheet>
+	</element>
+	<element name="• Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE">
+		<sheet>
+			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal 1d{{bardic-inspiration:dice}}+{{dexterity:modifier}} Bludgeoning Damages.</description>
+		</sheet>
+	</element>
+</elements>
