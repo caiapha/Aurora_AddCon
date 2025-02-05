@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 		<file name="druid-circle-star.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/druid-circle-star.xml" />
 		</update>
 	</info>
@@ -46,10 +46,10 @@
 			<description>holding your Star Map, you can cast Guiding Bolt without expending a spell slot. You can replace your Star Map performing an 1-hour ceremony. This ceremony can be performed during a Short or Long Rest, and it destroys the previous map.</description>
 		</sheet>
       		<rules>
-        		<grant name="Guiding Bolt" id="ID_PHB24_SPELL_GUIDING_BOLT" prepared="true" />
-        		<grant name="Guidance" id="ID_PHB24_SPELL_GUIDANCE" prepared="true" />
-            <stat name="map:usage" value="1" bonus="base" />
-            <stat name="map:usage" value="wisdom:modifier" bonus="base" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_GUIDING_BOLT" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_GUIDANCE" spellcasting="Druid" prepared="true" />
+		        <stat name="map:usage" value="1" bonus="base" />
+		        <stat name="map:usage" value="wisdom:modifier" bonus="base" />
       		</rules>
 	</element>
 	<element name="Starry Form" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM">
@@ -69,8 +69,8 @@
      		<grant name="The Archer" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER" />
      		<grant name="The Chalice" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE" />
      		<grant name="The Dragon" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_DRAGON" />
-        <stat name="starry_form:dice" value="1" />
-        <stat name="starry_form:dice" value="1" level="10" />
+	        <stat name="starry_form:dice" value="1" />
+	        <stat name="starry_form:dice" value="1" level="10" />
     </rules>
 	</element>
 	<element name="Cosmic Omen" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN">
@@ -84,10 +84,10 @@
       <description>Whenever you finish a Long Rest, roll a die and gain one of the following benefits:</description>
     </sheet>
     <rules>
-      <stat name="cosmic_omen:usage" value="1" bonus="base" />
-      <stat name="cosmic_omen:usage" value="wisdom:modifier" bonus="base" />
-	    <grant name="Weal" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL" />
- 	    <grant name="Woe" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE" />
+      	<stat name="cosmic_omen:usage" value="1" bonus="base" />
+      	<stat name="cosmic_omen:usage" value="wisdom:modifier" bonus="base" />
+	<grant name="Weal" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL" />
+ 	<grant name="Woe" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE" />
     </rules>
   </element>
 	<element name="Twinkling Constellation" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_TWINKLING_CONSTELLATION">
