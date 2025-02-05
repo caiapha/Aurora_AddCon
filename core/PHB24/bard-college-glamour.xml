@@ -62,7 +62,7 @@
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can cast Command wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fails the saving throw against the Command you cast with this feature. You can restore a use expending a level 3+ spell slot (no action required).</description>
+			<description>You have Command always prepared and you can cast it wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fails the saving throw against the Command you cast with this feature. You can restore a use expending a level 3+ spell slot (no action required).</description>
 		</sheet>
 		<rules>
 			<grant name="Command Spell" type="Spell" id="ID_PHB24_SPELL_COMMAND" />
