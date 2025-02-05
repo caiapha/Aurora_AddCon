@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<title>The College of Glamour Bard subclass</title>
-    <update version="0.0.2">
+    <update version="0.1.0">
 		<file name="bard-college-glamour.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-glamour.xml" />
 		</update>
 	</info>
@@ -50,20 +50,23 @@
 			<description>You can spend a Bardic Inspiration and roll the related die. Up to {{mantle:target}} creatures of your choice within 60ft from you gain temporary Hit Points equal to the nuber rolled and, expending their Reaction, can move up to their speed without provoking Opportunity Attack.</description>
 		</sheet>
 		<rules>
-			<stat name="mantle:target" value="1" />
-			<stat name="mantle:target" value="charisma:modifeir" bonus="base" />
+			<stat name="mantle:target" value="1" bonus="base" />
+			<stat name="mantle:target" value="charisma:modifier" bonus="base" />
 		</rules>		
 	</element>
 	<element name="Mantel of Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY">
 		<description>
-			<p>Starting at 6th level, You always have the Command spell prepared.</p>
+			<p>Starting at 6th level, you always have the Command spell prepared.</p>
 			<p class="indent">As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot.</p>
 			<p class="indent">Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can cast Command wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fail the saving throw adainst the Command you cast with this feature. You can restor a use expending a level 3+ spell slot (no action required).</description>
+			<description>You can cast Command wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fails the saving throw against the Command you cast with this feature. You can restore a use expending a level 3+ spell slot (no action required).</description>
 		</sheet>
+		<rules>
+			<grant name="Command Spell" type="Spell" id="ID_PHB24_SPELL_COMMAND" />
+		</rules>
 	</element>
 	<element name="Unbreakable Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY">
 		<description>
@@ -71,7 +74,7 @@
 			<p class="indent">Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
-			<description>For one minute, or until your Concentration ends, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed ona a CHA Saving Throw DC{{majesty:dc}} or miss the attack.</description>
+			<description>For one minute, or until your Concentration ends, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed on a CHA Saving Throw DC{{majesty:dc}} or miss the attack.</description>
 		</sheet>
 		<rules>
 			<stat name="majesty:dc" value="8" />
