@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<title>The College of Glamour Bard subclass</title>
-    <update version="0.0.1">
+    <update version="0.0.2">
 		<file name="bard-college-glamour.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-glamour.xml" />
 		</update>
 	</info>
@@ -14,15 +14,15 @@
 			<p>The College of Glamour traces its origins to the beguiling magic of the Feywild. Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hard-hearted listeners.</p>	
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" />
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" />
-		<!--	<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" />
-			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" />	-->
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" level="6" />
-		<!--	<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" /> -->
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" /> 
 		</rules>
 	</element>
 	<element name="Beguiling Magic" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC">
@@ -54,49 +54,29 @@
 			<stat name="mantle:target" value="charisma:modifeir" bonus="base" />
 		</rules>		
 	</element>
-<!--	<element name="Tandem Footwork" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_TANDEM_FOOTWORK">
+	<element name="Mantel of Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY">
 		<description>
-			<p>Starting at 6th level, when you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.</p>
+			<p>Starting at 6th level, You always have the Command spell prepared.</p>
+			<p class="indent">As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot.</p>
+			<p class="indent">Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
 		</description>
-		<sheet>
-			<description>When you roll Initiative, you can expend one Bardic Inspiration. You and any allies within 30ft gain an Initiative bonus equal to the number rolled.</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can cast Command wihtout expending a spell slot. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fail the saving throw adainst the Command you cast with this feature. You can restor a use expending a level 3+ spell slot (no action required).</description>
 		</sheet>
 	</element>
-	<element name="Leading Evasion" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_LEADING_EVASION">
+	<element name="Unbreakable Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY">
 		<description>
-			<p>Starting at 14th level, When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.</p>
-			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
+			<p>Starting at 14th level, as a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.</p>
+			<p class="indent">Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest.</p>
 		</description>
-		<sheet>
-			<description>When you are subject to a DEX Saving Throw to halve a damage, you take half damage on a fail and no damage on a success. You can share this ability with any creature of your choice within 5ft form you subject to the same effect. You can't use this feature if you are Incapacitated.</description>
-		</sheet>
-	</element> -->
-	
-	<!-- DAZZLING FOOTWORK EFFECTS -->
-<!--	<element name="• Dance Virtuoso" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_DANCE_VIRTUOSO">
-		<sheet>
-			<description>You have Advantage on any Charisma (Performance) check you make that involves you dancing.</description>
-		</sheet>	
-	</element>
-	<element name="• Unarmored Defense" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_UNARMORED_DEFENCE">			
-		<sheet>
-			<description>Your base Armor Class equals {{ac:unarmored defence:dance}}</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>For one minute, or until your Concentration ends, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed ona a CHA Saving Throw DC{{majesty:dc}} or miss the attack.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:unarmored defence:dance" value="10" />
-			<stat name="ac:unarmored defence:dance" value="dexterity:modifier" />
-			<stat name="ac:unarmored defence:dance" value="charisma:modifier" />
-			<stat name="ac:calculation" value="ac:unarmored defence:dance" bonus="calculation" equipped="[armor:none],[shield:none]" />
+			<stat name="majesty:dc" value="8" />
+			<stat name="majesty:dc" value="proficiency" />
+			<stat name="majesty:dc" value="charisma:modifier" />
 		</rules>
 	</element>
-	<element name="• Agile Strikes" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_AGILE_STRIKES">
-		<sheet>
-			<description>When you spend a Bardic Inspiration as an Action, Bonus Action or Reaction, you can make an Unarmored Strike as part of it.</description>
-		</sheet>
-	</element>
-	<element name="• Bardic Damage" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_DANCE_DAZZLING_FOOTWORK_BARDIC DAMAGE">
-		<sheet>
-			<description>You can apply the Dexterity modifier instead of the Strenght modifier to your Unarmed Strikes. You deal 1d{{bardic-inspiration:dice}}+{{dexterity:modifier}} Bludgeoning Damages.</description>
-		</sheet>
-	</element> -->
 </elements>
