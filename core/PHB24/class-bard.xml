@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bard</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="class-bard.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-bard.xml" />
 		</update>
 	</info>
@@ -190,6 +190,25 @@
 			<stat name="bard:spellcasting:slots:8" value="1" level="15" />
 			<stat name="bard:spellcasting:slots:9" value="1" level="17" />
 
+			<stat name="bard:spellcasting:prepare" value="4" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="2" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="3" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="4" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="5" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="6" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="7" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="8" />
+			<stat name="bard:spellcasting:prepare" value="2" Level="9" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="10" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="11" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="13" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="15" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="17" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="18" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="19" />
+			<stat name="bard:spellcasting:prepare" value="1" Level="20" />
+				
+			
 			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="1" number="2" spellcasting="Bard" />
 			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="4" number="1" spellcasting="Bard" />
 			<select type="Spell" name="Cantrip (Bard)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Bard" />
