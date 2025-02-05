@@ -35,8 +35,8 @@
 			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantement or Illusion spell, you can force a creature withing 60ft form you to make a WIS Saving Throw DC{{beguiling:dc}}. On a fail, the creature suffers the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
 		</sheet>
 		<rules>
-			<grant name="Charm Person Spell" type="spell" id="ID_PHB24_SPELL_CHARM_PERSON" prepared="true" />
-			<grant name="Mirror Image Spell" type="spell" id="ID_PHB24_SPELL_MIRROR_IMAGE" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_MIRROR_IMAGE" prepared="true" />
 			<stat name="beguiling:dc" value="8" />
 			<stat name="beguiling:dc" value="proficiency" />
 			<stat name="beguiling:dc" value="charisma:modifier" />
