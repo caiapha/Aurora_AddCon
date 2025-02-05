@@ -4,7 +4,7 @@
 		<name>Druid</name>
 		<description>The Druid class from the Player’s Handbook Rev. 2024 Rev. 2024.</description>
 		<author url="phb">Wizards of the Coast</author>
-		<update version="0.1.9">
+		<update version="0.1.10">
 			<file name="class-druid.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-druid.xml" />
 		</update>
 	</info>
@@ -202,8 +202,25 @@
 			<stat name="druid:spellcasting:slots:7" value="1" level="20" />
 			<stat name="druid:spellcasting:slots:8" value="1" level="15" />
 			<stat name="druid:spellcasting:slots:9" value="1" level="17" />
-			<stat name="druid:spellcasting:prepare" value="wisdom:modifier" />
-			<stat name="druid:spellcasting:prepare" value="level:druid" />
+
+			<stat name="druid:spellcasting:prepare" value="4" level="1" />
+			<stat name="druid:spellcasting:prepare" value="1" level="2" />
+			<stat name="druid:spellcasting:prepare" value="1" level="3" />
+			<stat name="druid:spellcasting:prepare" value="1" level="4" />
+			<stat name="druid:spellcasting:prepare" value="2" level="5" />
+			<stat name="druid:spellcasting:prepare" value="1" level="6" />
+			<stat name="druid:spellcasting:prepare" value="1" level="7" />
+			<stat name="druid:spellcasting:prepare" value="1" level="8" />
+			<stat name="druid:spellcasting:prepare" value="2" level="9" />
+			<stat name="druid:spellcasting:prepare" value="1" level="10" />
+			<stat name="druid:spellcasting:prepare" value="1" level="11" />
+			<stat name="druid:spellcasting:prepare" value="1" level="13" />
+			<stat name="druid:spellcasting:prepare" value="1" level="15" />
+			<stat name="druid:spellcasting:prepare" value="1" level="17" />
+			<stat name="druid:spellcasting:prepare" value="1" level="18" />
+			<stat name="druid:spellcasting:prepare" value="1" level="19" />
+			<stat name="druid:spellcasting:prepare" value="1" level="20" />
+						
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0, PHB24" level="1" number="2" spellcasting="Druid" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0, PHB24" level="4" number="1" spellcasting="Druid" />
 			<select type="Spell" name="Cantrip (Druid)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Druid" />
@@ -332,7 +349,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select name="Additional Cantrips (Primal Order)" type="Spell" supports="Druid, 0, PHB24" />
+			<select name="Additional Cantrips (Primal Order)" type="Spell" supports="Druid, 0, PHB24" spellcasting="Druid" />
 			<stat name="Arcana:misc" value="wisdom:modifier" />
 			<stat name="Nature:misc" value="wisdom:modifier" />
 		</rules>	
