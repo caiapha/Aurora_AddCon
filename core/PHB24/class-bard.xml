@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bard</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="class-bard.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/class-bard.xml" />
 		</update>
 	</info>
@@ -342,8 +342,8 @@
 			<description>You have Power Word Heal and Kill spells always prepared. When you cast either spell, you can target a second creature within 10ft form the first.</description>
 		</sheet>
 		<rules>
-			<grant name="Power Word Heal" type="Spell" id="ID_PHB24_SPELL_POWER_WORD_HEAL" prepared="true" />
-			<grant name="Power Word Kill" type="Spell" id="ID_PHB24_SPELL_POWER_WORD_KILL" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_POWER_WORD_HEAL" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_POWER_WORD_KILL" spellcasting="Bard" prepared="true" />
 		</rules>
 	</element>
 </elements>
