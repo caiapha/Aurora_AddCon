@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<title>The College of Glamour Bard subclass</title>
-    <update version="0.0.1">
+    <update version="0.1.0">
 		<file name="bard-college-lore.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-lore.xml" />
 		</update>
 	</info>
