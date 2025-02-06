@@ -48,7 +48,8 @@
 		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
-		<grant name="Light Bearer" id="ID_PHB24_SPELL_LIGHT" />
+		<grant name="Light Bearer" spellcasting="Innate casting" id="ID_PHB24_SPELL_LIGHT" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA" />
 		<stat name="Necrotic Shroud:dc" value="8" />
 		<stat name="Necrotic Shroud:dc" value="proficiency" />
 		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
@@ -608,7 +609,7 @@
 	<element name="Charisma" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA">
 		<supports>Innate casting ability</supports>
 		<spellcasting name="Innate casting" ability="charisma" />	 
-
+	</element>
 <!-- CREATURE SIZE -->
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
 		<supports>Creature Size</supports>
