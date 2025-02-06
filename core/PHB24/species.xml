@@ -600,14 +600,17 @@
 	<!-- Innate casting ability -->
 	<element name="Intelligence" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_INTELLIGENCE">
 		<supports>Innate casting ability</supports>
+		<sheet display="false" />
 		<spellcasting name="Innate casting" ability="intelligence" />
 	</element>
 	<element name="Wisdom" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_WISDOM">
 		<supports>Innate casting ability</supports>
+		<sheet display="false" />
 		<spellcasting name="Innate casting" ability="wisdom" />
 	</element>
 	<element name="Charisma" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA">
 		<supports>Innate casting ability</supports>
+		<sheet display="false" />
 		<spellcasting name="Innate casting" ability="charisma" />	 
 	</element>
 <!-- CREATURE SIZE -->
