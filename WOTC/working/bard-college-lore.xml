@@ -15,14 +15,14 @@
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_BONUS_PROFICIENCY" />
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_CUTTING_WORDS" />
 			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_MAGIC_DISCOVERIES" />
-		<!--	<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_PEERLESS_SKILL" /> -->
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_PEERLESS_SKILL" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_BONUS_PROFICIENCY" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_CUTTING_WORDS" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_MAGIC_DISCOVERIES" level="6" />
-		<!--	<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_PEERLESS_SKILL" level="14" /> -->
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_PEERLESS_SKILL" level="14" />
 		</rules>
 	</element>
 	<element name="Bonus Proficiency" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_BONUS_PROFICIENCY">
@@ -50,21 +50,15 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" spellcasting="Wizard||Cleric||Druid" prepared="true" />
+			<select type="Spell" supports="(Wizard||Cleric||Druid), $(spellcasting:slots), PHB24" spellcasting="Bard" number="2" prepared="true" level="6" />
 		</rules>
 	</element>
-<!--	<element name="Unbreakable Majesty" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY">
+<element name="Peerless Skill" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_LORE_PEERLESS_SKILL">
 		<description>
-			<p>Starting at 14th level, as a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.</p>
-			<p class="indent">Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest.</p>
+			<p>Starting at 14th level, When you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
-			<description>For one minute, or until your Concentration ends, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed on a CHA Saving Throw DC{{majesty:dc}} or miss the attack.</description>
+			<description>When you fail an Ability Check or an Attack Roll, you can expend a Bardic Inspiration, roll the related die and add the rolled number to the d20 result. On a failure, the Bardic Inspiration isn't expended.</description>
 		</sheet>
-		<rules>
-			<stat name="majesty:dc" value="8" />
-			<stat name="majesty:dc" value="proficiency" />
-			<stat name="majesty:dc" value="charisma:modifier" />
-		</rules>
-	</element> -->
+	</element> 
 </elements>
