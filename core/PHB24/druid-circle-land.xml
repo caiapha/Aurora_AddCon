@@ -133,12 +133,12 @@
 	<!-- ARID LAND -->
 	<element name="Arid Land Spell" type="Archetipe Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_SPELL_ARID">
 		<rules>
-			<grant type="Spell" id="ID_PHB24_SPELL_BLUR" level="3" alt="Arid Land" spellcasting="Druid" prepared="true" />
-	        	<grant type="Spell" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" alt="Arid Land" spellcasting="Druid" prepared="true" />
-	        	<grant type="Spell" id="ID_PHB24_SPELL_FIRE_BOLT" level="3" alt="Arid Land" spellcasting="Druid" prepared="true" />
-			<grant type="Spell" id="ID_PHB24_SPELL_FIREBALL" level="5" alt="Arid Land"  spellcasting="Druid" prepared="true"/>
-	        	<grant type="Spell" id="ID_PHB24_SPELL_BLIGHT" level="7" alt="Arid Land" spellcasting="Druid" prepared="true" />
-	        	<grant type="Spell" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" alt="Arid Land" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_BLUR" level="3" spellcasting="Druid" prepared="true" />
+	        	<grant type="Spell" id="ID_PHB24_SPELL_BURNING_HANDS" level="3" spellcasting="Druid" prepared="true" />
+	        	<grant type="Spell" id="ID_PHB24_SPELL_FIRE_BOLT" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_FIREBALL" level="5" spellcasting="Druid" prepared="true"/>
+	        	<grant type="Spell" id="ID_PHB24_SPELL_BLIGHT" level="7" spellcasting="Druid" prepared="true" />
+	        	<grant type="Spell" id="ID_PHB24_SPELL_WALL_OF_STONE" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
 
