@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<title>The College of Glamour Bard subclass</title>
-    <update version="0.1.1">
+    <update version="0.1.2">
 		<file name="bard-college-glamour.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/bard-college-glamour.xml" />
 		</update>
 	</info>
@@ -44,7 +44,7 @@
 	</element> 
 	<element name="Mantle of Inspiration" type="Archetype Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION">
 		<description>
-			<p>Starting at 6th level, You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
+			<p>Starting at 3rd level, You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
 		</description>
 		<sheet action="Bonus Action">
 			<description>You can spend a Bardic Inspiration and roll the related die. Up to {{mantle:target}} creatures of your choice within 60ft from you gain temporary Hit Points equal to the nuber rolled and, expending their Reaction, can move up to their speed without provoking Opportunity Attack.</description>
