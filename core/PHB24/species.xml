@@ -266,7 +266,9 @@
 		</table>
 		<p><strong>Otherworldly Presence.</strong> You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.</p>
 	</description>
-	<sheet display="false" />	
+	<sheet display="false" />
+	<select name="fiendish:cast:ability" type="Ability" supports="Intelligence||Wisdom||Charisma" />	
+	<spellcasting name="Tiefling" ability="$(fiendish:cast:ability)" />
 	<rules>
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -538,9 +540,9 @@
 		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Poison Spray (Abyssal)" id="ID_PHB24_SPELL_POISON_SPRAY" />
-		<grant name="Ray of Sickness (Abyssal)" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
-		<grant name="Darkness (Abyssl)" id="ID_PHB24_SPELL_HOLD_PERSON" level="5" />
+		<grant name="Poison Spray (Abyssal)" spellcasting="Tiefling" id="ID_PHB24_SPELL_POISON_SPRAY" />
+		<grant name="Ray of Sickness (Abyssal)" spellcasting="Tiefling" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+		<grant name="Darkness (Abyssl)" spellcasting="Tiefling" id="ID_PHB24_SPELL_HOLD_PERSON" level="5" />
 	</rules>
 </element>
 <element name="Chthonic" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_CHTHONIC">
@@ -552,9 +554,9 @@
 		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Chill Touch (Chthonic)" id="ID_PHB24_SPELL_CHILL_TOUCH" />
-		<grant name="False Life (Chthonic)" id="ID_PHB24_SPELL_FALSE_LIFE" level="3" />
-		<grant name="Ray of Enfeeblement (Chthonic)" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
+		<grant name="Chill Touch (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_CHILL_TOUCH" />
+		<grant name="False Life (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_FALSE_LIFE" level="3" />
+		<grant name="Ray of Enfeeblement (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
 	</rules>
 </element>
 <element name="Infernal" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_INFERNAL">
