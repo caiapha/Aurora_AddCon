@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		</update>
 	</info>
@@ -54,7 +54,9 @@
 		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
 	</rules>
 </element>
-<element name="Dragonborn" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DRAGONBORN">
+
+<!-- DRAGONBORN -->	
+	<element name="Dragonborn" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DRAGONBORN">
 	<description>
 		<h4>DRAGONBORN TRAITS</h4>
 		<p><strong>Creature Type:</strong> Humanoid</p>
@@ -98,184 +100,6 @@
 		<stat name="dragon breath:damage" value="1" level="17" />
 	</rules>
 </element>
-<element name="Dwarf" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DWARF">
-	<description>
-		<h4>DWARF TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Medium (about 4-5 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p>
-		<p><strong>Dwarven Resilience.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p>
-		<p><strong>Dwarven Toughness.</strong> Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
-		<p><strong>Stonecunning.</strong> As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
-		<p class="indent">You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
-	</description>
-	<sheet>
-		<description>You have Resistance to Poison damage and Advantage on Saving throws against Poisoned condition. {{proficiency}} times per Long Rest, as a Bonus Action while stading or touching a stone surface, you gain Tremorsense for 10 minutes.</description>
-	</sheet>
-	<rules>
-		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
-		<stat name="innate speed" value="30" />
-		<stat name="hp" value="level" />
-	</rules>
-</element>	
-<element name="Elf" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ELF">
-	<description>
-		<h4>ELF TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Medium (about 5-6 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
-		<p><strong>Elven Lineage.</strong> You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.</p>
-		<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.</p>
-		<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>	
-		<h5>Elven Lineages</h5>
-		<table>
-			<thead><tr><td>Lineage</td><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead>
-			<tr><td><strong>Drow</strong></td><td>The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip.</td><td>Faerie Fire</td><td>Darkness</td></tr>
-			<tr><td><strong>High Elf</strong></td><td>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.</td><td>Detect Magic</td><td>Misty Step</td></tr>
-			<tr><td><strong>Wood Elf</strong></td><td>Your Speed increases to 35 feet. You also know the Druidcraft cantrip.</td><td>Longstrider</td><td>Pass without Trace</td></tr>
-		</table>
-		<p><strong>Fey Ancestry.</strong> You have Advantage on saving throws you make to avoid or end the Charmed condition.</p>
-		<p><strong>Keen Senses.</strong> You have proficiency in the Insight, Perception, or Survival skill.</p>
-		<p><strong>Trance.</strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
-		
-	</description>
-	<sheet display="false" />
-	<rules>
-		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage" />
-	</rules>
-</element>
-<element name="Gnome" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GNOME">
-	<description>
-		<h4>GNOME TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Small (about 3-4 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
-		<p><strong>Gnomish Cunning.</strong> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
-		<h5>Gnomish Lineage.</h5>
-		<p>You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
-		<p class="indent"><strong>Forest Gnome.</strong> You know the <strong>Minor Illusion</strong> cantrip. You also always have the <strong>Speak with Animals</strong> spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
-		<p class="indent"><strong>Rock Gnome.</strong> You know the <strong>Mending</strong> and <strong>Prestidigitation</strong> cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
-	</description>
-	<sheet display="false" />
-	<rules>
-		<select name="Gnome Lineage" type="Racial Trait" supports="Gnome Lineage" />
-		<stat name="innate speed" value="30" />
-		<grant type="Vision" id="ID_VISION_DARKVISION" />
-	</rules>
-</element>
-<element name="Goliath" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GOLIATH">
-	<description>
-		<h4>GOLIATH TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Medium (about 7-8 feet tall)</p>
-		<p><strong>Speed:</strong> 35 feet</p>
-		<p><strong>Powerful Build.</strong> You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>
-		<p><strong>Large Form.</strong> Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
-		<h5>Giant Ancestry</h5>
-		<p>You are descended from Giants. Choose one of the following benefits, a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p>
-		<p class="indent"><strong>Cloud's Jaunt (Cloud Giant)</strong> As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
-		<p class="indent"><strong>Fire's Burn (Fire Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
-		<p class="indent"><strong>Frost's Chill (Frost Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
-		<p class="indent"><strong>Hill's Tumble (Hill Giant).</strong> When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
-		<p class="indent"><strong>Stone's Endurance (Stone Giant).</strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
-		<p class="indent"><strong>Storm's Thunder (Storm Giant).</strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
-	</description>
-	<sheet>
-		<description>You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity.</description>
-		<description level="5">You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity. Once per Long Rest, as a Bonus Action, you can change your size to Large for 10 minutes, or until you end it (no action required). In this form you have Advantage on Strength Checks and your speed increases by 10 ft.</description>
-	</sheet>	
-	<rules>
-		<select name="Goliath Lineage" type="Racial Trait" supports="Goliath Lineage" />
-		<stat name="innate speed" value="35" />
-	</rules>
-</element>
-<element name="Halflings" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HALFLINGS">
-	<description>
-		<h4>HALFLINGS TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Small (about 2-3 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Brave.</strong> You have Advantage on saving throws you make to avoid or end the Frightened condition.</p>
-		<p><strong>Halfling Nimbleness.</strong> You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>
-		<p><strong>Luck.</strong> When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>
-		<p><strong>Naturally Stealthy.</strong> You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
-	</description>
-	<sheet>
-		<description>You have Advantage on Saving Throw against the Frightened condition. Moreover, you can move through a space of any creature large than you, but you can't stop in it. You can take the Hide action when obscured by a creature at least one size larger than you. Moreover, when you roll a 1 on a D20 Test, you can reroll and take the new result.</description>
-	</sheet>	
-	<rules>
-		<stat name="innate speed" value="30" />
-	</rules>
-</element>
-<element name="Human" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
-	<description>
-		<h4>HUMAN TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Resourceful.</strong> You gain Heroic Inspiration whenever you finish a Long Rest.</p>
-		<p><strong>Skillful.</strong> You gain proficiency in one skill of your choice</p>
-		<p><strong>Versatile.</strong> You gain an Origin feat of your choice.</p>
-	</description>
-	<sheet usage="1/Long Rest">
-		<description>You gain an Heroic Inspiration.</description>
-	</sheet>	
-	<rules>
-		<stat name="innate speed" value="30" />
-		<select name="Skillful (Human)" type="Proficiency" supports="Skill" />
-		<select name="Versatile (Human)" type="Feat" supports="Origin Feat" />
-	</rules>
-</element>
-<element name="Orc" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ORC">
-	<description>
-		<h4>ORC TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> Medium (6-7 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Adrenaline Rush.</strong> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
-		<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
-		<p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p>
-		<p><strong>Relentless Endurance.</strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
-	</description>
-	<sheet>
-		<description>As a Bonus Action, you can take the Dash action, gaining {{proficiency}} temporary HP. You can use this feature {{proficiency}} times per Short Rest. Moreover, once per Long Rest, when you are reduced to 0 HP but not killed, you can drop to 1 HP instead.</description>
-	</sheet>	
-	<rules>
-		<stat name="innate speed" value="30" />
-		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
-	</rules>
-</element>
-	<element name="Tiefling" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TIEFLING">
-	<description>
-		<h4>TIEFLING TRAITS</h4>
-		<p><strong>Creature Type:</strong> Humanoid</p>
-		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
-		<p><strong>Speed:</strong> 30 feet</p>
-		<p><strong>Darkvision.</strong> ou have Darkvision with a range of 60 feet.</p>
-		<h5>Fiendish Legacy.</h5>
-		<p>You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.</p>
-		<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p>
-		<table>
-			<thead><tr><td>Legacy</td><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead>
-			<tr><td><strong>Abyssal</strong></td><td>You have Resistance to Poison damage. You also know the Poison Spray cantrip.</td><td>Ray of Sickness</td><td>Hold Person</td></tr>
-			<tr><td><strong>Chthonic</strong></td><td>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.</td><td>False Life</td><td>Ray of Enfeeblement</td></tr>
-			<tr><td><strong>Infernal</strong></td><td>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.</td><td>Hellish Rebuke</td><td>Darkness</td></tr>
-		</table>
-		<p><strong>Otherworldly Presence.</strong> You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.</p>
-	</description>
-	<sheet display="false" />
-	<select name="fiendish:cast:ability" type="Ability" supports="Intelligence||Wisdom||Charisma" />	
-	<spellcasting name="Tiefling" ability="$(fiendish:cast:ability)" />
-	<rules>
-		<stat name="innate speed" value="30" />
-		<grant type="Vision" id="ID_VISION_DARKVISION" />
-		<select name="Fiendish Legacy" type="Racial Trait" supports="Fiendish Legacy" />
-		<grant name="Otherworldly Presence" id="ID_PHB24_SPELL_THAUMATURGY" />
-	</rules>
-</element>	
 <!-- DRACONIC ANCESTRY -->
 <element name="Black Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLACK_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -387,6 +211,60 @@
 		<description>You are resistant to Cold damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
+
+<!-- DWARF -->	
+<element name="Dwarf" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DWARF">
+	<description>
+		<h4>DWARF TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 4-5 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p>
+		<p><strong>Dwarven Resilience.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p>
+		<p><strong>Dwarven Toughness.</strong> Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+		<p><strong>Stonecunning.</strong> As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.</p>
+		<p class="indent">You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+	</description>
+	<sheet>
+		<description>You have Resistance to Poison damage and Advantage on Saving throws against Poisoned condition. {{proficiency}} times per Long Rest, as a Bonus Action while stading or touching a stone surface, you gain Tremorsense for 10 minutes.</description>
+	</sheet>
+	<rules>
+		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+		<stat name="innate speed" value="30" />
+		<stat name="hp" value="level" />
+	</rules>
+</element>
+
+<!-- ELF -->	
+<element name="Elf" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ELF">
+	<description>
+		<h4>ELF TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 5-6 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
+		<p><strong>Elven Lineage.</strong> You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.</p>
+		<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.</p>
+		<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).</p>	
+		<h5>Elven Lineages</h5>
+		<table>
+			<thead><tr><td>Lineage</td><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead>
+			<tr><td><strong>Drow</strong></td><td>The range of your Darkvision increases to 120 feet. You also know the Dancing Lights cantrip.</td><td>Faerie Fire</td><td>Darkness</td></tr>
+			<tr><td><strong>High Elf</strong></td><td>You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.</td><td>Detect Magic</td><td>Misty Step</td></tr>
+			<tr><td><strong>Wood Elf</strong></td><td>Your Speed increases to 35 feet. You also know the Druidcraft cantrip.</td><td>Longstrider</td><td>Pass without Trace</td></tr>
+		</table>
+		<p><strong>Fey Ancestry.</strong> You have Advantage on saving throws you make to avoid or end the Charmed condition.</p>
+		<p><strong>Keen Senses.</strong> You have proficiency in the Insight, Perception, or Survival skill.</p>
+		<p><strong>Trance.</strong> You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.</p>
+		
+	</description>
+	<sheet display="false" />
+	<rules>
+		<select name="Elf Lineage" type="Racial Trait" supports="Elf Lineage" />
+		<select name="Innate casting ability" type="Racial Trait" supports="Innate casting ability" />
+	</rules>
+</element>
+	
 <!-- ELF LINEAGE -->
 <element name="Drow" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_ELF_DROW">
 	<supports>Elf Lineage</supports>
@@ -399,9 +277,9 @@
 	<rules>
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
-		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_DANCING_LIGHTS" />
-		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_FAERIE_FIRE" level="3" />
-		<grant name="Dancing Light (Drow)" id="ID_PHB24_SPELL_DARKNESS" level="5" />
+		<grant name="Dancing Light (Drow)" spellcasting="Innate casting" id="ID_PHB24_SPELL_DANCING_LIGHTS" />
+		<grant name="Dancing Light (Drow)" spellcasting="Innate casting" id="ID_PHB24_SPELL_FAERIE_FIRE" level="3" />
+		<grant name="Dancing Light (Drow)" spellcasting="Innate casting" id="ID_PHB24_SPELL_DARKNESS" level="5" />
 	</rules>
 </element>
 <element name="High Elf" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_ELF_HIGH">
@@ -415,9 +293,9 @@
 	<rules>
 		<stat name="innate speed" value="30" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
-		<grant name="Prestidigitation (High Elf)" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
-		<grant name="Detect Magic (High ELf)" id="ID_PHB24_SPELL_DETECT_MAGIC" level="3" />
-		<grant name="Misty Step (High Elf)" id="ID_PHB24_SPELL_MISTY_STEP" level="5" />
+		<grant name="Prestidigitation (High Elf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
+		<grant name="Detect Magic (High ELf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_DETECT_MAGIC" level="3" />
+		<grant name="Misty Step (High Elf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_MISTY_STEP" level="5" />
 	</rules>
 </element>
 <element name="Wood Elf" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_ELF_WOOD">
@@ -431,11 +309,34 @@
 	<rules>
 		<stat name="innate speed" value="35" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
-		<grant name="Druidcraft (Wood Elf)" id="ID_PHB24_SPELL_DRUIDCRAFT" />
-		<grant name="Long Strider (Wood ELf)" id="ID_PHB24_SPELL_LONGSTRIDER" level="3" />
-		<grant name="Pass Without Trace (Wood Elf)" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
+		<grant name="Druidcraft (Wood Elf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_DRUIDCRAFT" />
+		<grant name="Long Strider (Wood ELf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_LONGSTRIDER" level="3" />
+		<grant name="Pass Without Trace (Wood Elf)" spellcasting="Innate casting" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" level="5" />
 	</rules>
 </element>	
+
+<!-- GNOME -->	
+<element name="Gnome" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GNOME">
+	<description>
+		<h4>GNOME TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Small (about 3-4 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
+		<p><strong>Gnomish Cunning.</strong> You have Advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+		<h5>Gnomish Lineage.</h5>
+		<p>You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):</p>
+		<p class="indent"><strong>Forest Gnome.</strong> You know the <strong>Minor Illusion</strong> cantrip. You also always have the <strong>Speak with Animals</strong> spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.</p>
+		<p class="indent"><strong>Rock Gnome.</strong> You know the <strong>Mending</strong> and <strong>Prestidigitation</strong> cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action.</p>
+	</description>
+	<sheet display="false" />
+	<rules>
+		<select name="Gnome Lineage" type="Racial Trait" supports="Gnome Lineage" />
+		<select name="Innate casting ability" type="Racial Trait" supports="Innate casting ability" />
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+	</rules>
+</element>
 <!-- GNOME LINEAGE -->
 <element name="Forest Gnome" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GNOME_FOREST">
 	<supports>Gnome Lineage</supports>
@@ -446,8 +347,8 @@
 		<description>You know Minor Illusion cantrip and always have the Speak with Animal spell Prepared. {{proficiency}} times per Long Rest you can cast it without expend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Minor Illusion (Forest Gnome)" id="ID_PHB24_SPELL_MINOR_ILLUSION" />
-		<grant name="Speak with Animals (Forest Gnome)" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" prepared="true" />
+		<grant name="Minor Illusion (Forest Gnome)" spellcasting="Innate casting" id="ID_PHB24_SPELL_MINOR_ILLUSION" />
+		<grant name="Speak with Animals (Forest Gnome)" spellcasting="Innate casting" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" prepared="true" />
 	</rules>
 </element>
 <element name="Rock Gnome" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GNOME_ROCK">
@@ -459,8 +360,36 @@
 		<description>You know Mending and Prestidigitation cantrips. Spending 10 minute casting Prestidigitation you can create a Tiny clockwork device (AC 5, 1 HP), which reproduce one effect of the cantrip when activated with a Bonus Action. Each device lasts up to 8 hours or until you dismantel it. You can have up to 3 devices at the same time.</description>
 	</sheet>
 	<rules>
-		<grant name="Mending (Rock Gnome)" id="ID_PHB24_SPELL_MENDING" />
-		<grant name="Prestidigitation (Forest Gnome)" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
+		<grant name="Mending (Rock Gnome)" spellcasting="Innate casting" id="ID_PHB24_SPELL_MENDING" />
+		<grant name="Prestidigitation (Forest Gnome)" spellcasting="Innate casting" id="ID_PHB24_SPELL_PRESTIDIGITATION" />
+	</rules>
+</element>
+	
+<!-- GOLIATH -->	
+<element name="Goliath" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_GOLIATH">
+	<description>
+		<h4>GOLIATH TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (about 7-8 feet tall)</p>
+		<p><strong>Speed:</strong> 35 feet</p>
+		<p><strong>Powerful Build.</strong> You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>
+		<p><strong>Large Form.</strong> Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+		<h5>Giant Ancestry</h5>
+		<p>You are descended from Giants. Choose one of the following benefits, a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p>
+		<p class="indent"><strong>Cloud's Jaunt (Cloud Giant)</strong> As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p>
+		<p class="indent"><strong>Fire's Burn (Fire Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p>
+		<p class="indent"><strong>Frost's Chill (Frost Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p>
+		<p class="indent"><strong>Hill's Tumble (Hill Giant).</strong> When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p>
+		<p class="indent"><strong>Stone's Endurance (Stone Giant).</strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p>
+		<p class="indent"><strong>Storm's Thunder (Storm Giant).</strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+	</description>
+	<sheet>
+		<description>You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity.</description>
+		<description level="5">You have Advantage to end Grappled condition. Your size count as Large when determining your carrying capacity. Once per Long Rest, as a Bonus Action, you can change your size to Large for 10 minutes, or until you end it (no action required). In this form you have Advantage on Strength Checks and your speed increases by 10 ft.</description>
+	</sheet>	
+	<rules>
+		<select name="Goliath Lineage" type="Racial Trait" supports="Goliath Lineage" />
+		<stat name="innate speed" value="35" />
 	</rules>
 </element>
 <!-- GOLIATH LINEAGE -->
@@ -530,6 +459,99 @@
 		<description>When you take damage from a creature within 60ft of you, you can deal 1d8 Thunder damage to that creature.</description>
 	</sheet>
 </element>
+
+<!-- HALFLINGS -->
+<element name="Halflings" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HALFLINGS">
+	<description>
+		<h4>HALFLINGS TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Small (about 2-3 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Brave.</strong> You have Advantage on saving throws you make to avoid or end the Frightened condition.</p>
+		<p><strong>Halfling Nimbleness.</strong> You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.</p>
+		<p><strong>Luck.</strong> When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.</p>
+		<p><strong>Naturally Stealthy.</strong> You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p>
+	</description>
+	<sheet>
+		<description>You have Advantage on Saving Throw against the Frightened condition. Moreover, you can move through a space of any creature large than you, but you can't stop in it. You can take the Hide action when obscured by a creature at least one size larger than you. Moreover, when you roll a 1 on a D20 Test, you can reroll and take the new result.</description>
+	</sheet>	
+	<rules>
+		<stat name="innate speed" value="30" />
+	</rules>
+</element>
+
+<!-- HUMAN -->
+<element name="Human" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_HUMAN">
+	<description>
+		<h4>HUMAN TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Resourceful.</strong> You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+		<p><strong>Skillful.</strong> You gain proficiency in one skill of your choice</p>
+		<p><strong>Versatile.</strong> You gain an Origin feat of your choice.</p>
+	</description>
+	<sheet usage="1/Long Rest">
+		<description>You gain an Heroic Inspiration.</description>
+	</sheet>	
+	<rules>
+		<stat name="innate speed" value="30" />
+		<select name="Skillful (Human)" type="Proficiency" supports="Skill" />
+		<select name="Versatile (Human)" type="Feat" supports="Origin Feat" />
+	</rules>
+</element>
+
+<!-- ORC -->	
+<element name="Orc" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_ORC">
+	<description>
+		<h4>ORC TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> Medium (6-7 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Adrenaline Rush.</strong> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
+		<p class="indent">You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		<p><strong>Darkvision.</strong> You have Darkvision with a range of 120 feet.</p>
+		<p><strong>Relentless Endurance.</strong> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
+	</description>
+	<sheet>
+		<description>As a Bonus Action, you can take the Dash action, gaining {{proficiency}} temporary HP. You can use this feature {{proficiency}} times per Short Rest. Moreover, once per Long Rest, when you are reduced to 0 HP but not killed, you can drop to 1 HP instead.</description>
+	</sheet>	
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+	</rules>
+</element>
+
+<!--TIEFLING -->	
+<element name="Tiefling" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TIEFLING">
+	<description>
+		<h4>TIEFLING TRAITS</h4>
+		<p><strong>Creature Type:</strong> Humanoid</p>
+		<p><strong>Size:</strong> (about 4-7 feet tall) or Small (about 3-4 feet tall)</p>
+		<p><strong>Speed:</strong> 30 feet</p>
+		<p><strong>Darkvision.</strong> ou have Darkvision with a range of 60 feet.</p>
+		<h5>Fiendish Legacy.</h5>
+		<p>You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.</p>
+		<p class="indent">When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p>
+		<table>
+			<thead><tr><td>Legacy</td><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead>
+			<tr><td><strong>Abyssal</strong></td><td>You have Resistance to Poison damage. You also know the Poison Spray cantrip.</td><td>Ray of Sickness</td><td>Hold Person</td></tr>
+			<tr><td><strong>Chthonic</strong></td><td>You have Resistance to Necrotic damage. You also know the Chill Touch cantrip.</td><td>False Life</td><td>Ray of Enfeeblement</td></tr>
+			<tr><td><strong>Infernal</strong></td><td>You have Resistance to Fire damage. You also know the Fire Bolt cantrip.</td><td>Hellish Rebuke</td><td>Darkness</td></tr>
+		</table>
+		<p><strong>Otherworldly Presence.</strong> You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.</p>
+	</description>
+	<sheet display="false" />
+	<select name="fiendish:cast:ability" type="Ability" supports="Intelligence||Wisdom||Charisma" />	
+	<spellcasting name="Innate casting" ability="$(fiendish:cast:ability)" />
+	<rules>
+		<stat name="innate speed" value="30" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
+		<select name="Fiendish Legacy" type="Racial Trait" supports="Fiendish Legacy" />
+		<select name="Innate casting ability" type="Racial Trait" supports="Innate casting ability" />
+		<grant name="Otherworldly Presence" spellcasting="Innate casting" id="ID_PHB24_SPELL_THAUMATURGY" />
+	</rules>
+</element>	
 <!-- TIEFLING FIENDISH LEGACY -->
 <element name="Abyssal" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_ABYSSAL">
 	<supports>Fiendish Legacy</supports>
@@ -540,9 +562,9 @@
 		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Poison Spray (Abyssal)" spellcasting="Tiefling" id="ID_PHB24_SPELL_POISON_SPRAY" />
-		<grant name="Ray of Sickness (Abyssal)" spellcasting="Tiefling" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
-		<grant name="Darkness (Abyssl)" spellcasting="Tiefling" id="ID_PHB24_SPELL_HOLD_PERSON" level="5" />
+		<grant name="Poison Spray (Abyssal)" spellcasting="Innate casting" id="ID_PHB24_SPELL_POISON_SPRAY" />
+		<grant name="Ray of Sickness (Abyssal)" spellcasting="Innate casting" id="ID_PHB24_SPELL_RAY_OF_SICKNESS" level="3" />
+		<grant name="Darkness (Abyssl)" spellcasting="Innate casting" id="ID_PHB24_SPELL_HOLD_PERSON" level="5" />
 	</rules>
 </element>
 <element name="Chthonic" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_CHTHONIC">
@@ -554,9 +576,9 @@
 		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Chill Touch (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_CHILL_TOUCH" />
-		<grant name="False Life (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_FALSE_LIFE" level="3" />
-		<grant name="Ray of Enfeeblement (Chthonic)" spellcasting="Tiefling" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
+		<grant name="Chill Touch (Chthonic)" spellcasting="Innate casting" id="ID_PHB24_SPELL_CHILL_TOUCH" />
+		<grant name="False Life (Chthonic)" spellcasting="Innate casting" id="ID_PHB24_SPELL_FALSE_LIFE" level="3" />
+		<grant name="Ray of Enfeeblement (Chthonic)" spellcasting="Innate casting" id="ID_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" />
 	</rules>
 </element>
 <element name="Infernal" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_TIEFLING_INFERNAL">
@@ -568,14 +590,26 @@
 		<description>Once per Long Rest, you can cast the innate spells without spend a spell slot.</description>
 	</sheet>
 	<rules>
-		<grant name="Fire Bolt (Infernal)" id="ID_PHB_SPELL_FIRE_BOLT" />
-		<grant name="Hellish Rebuke (Infernal)" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
-		<grant name="Darkness (Infernal)" id="ID_PHB24_SPELL_DARKNESS" level="5" />
+		<grant name="Fire Bolt (Infernal)" spellcasting="Innate casting" id="ID_PHB_SPELL_FIRE_BOLT" />
+		<grant name="Hellish Rebuke (Infernal)" spellcasting="Innate casting" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+		<grant name="Darkness (Infernal)" spellcasting="Innate casting" id="ID_PHB24_SPELL_DARKNESS" level="5" />
 	</rules>
 </element>	
-	 
-<!-- CREATURE SIZE -->
 
+	<!-- Innate casting ability -->
+	<element name="Intelligence" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_INTELLIGENCE">
+		<supports>Innate casting ability</supports>
+		<spellcasting name="Innate casting" ability="intelligence" />
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_WISDOM">
+		<supports>Innate casting ability</supports>
+		<spellcasting name="Innate casting" ability="wisdom" />
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA">
+		<supports>Innate casting ability</supports>
+		<spellcasting name="Innate casting" ability="charisma" />	 
+
+<!-- CREATURE SIZE -->
 	<element name="Medium" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_SIZE_MEDIUM">
 		<supports>Creature Size</supports>
 		<description>
