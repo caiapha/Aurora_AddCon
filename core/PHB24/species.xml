@@ -32,7 +32,7 @@
 	</description>
 	<sheet>
 		<description>You gain Resistance to Necrotic and Radiant Damage.</description>
-		<description level="3">You gain Resistance to Necrotic and Radiant Damage. Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.</description>
+		<description level="3">You gain Resistance to Necrotic and Radiant Damage. Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the choosen Revelation.</description>
 	</sheet>
 	<rules>
 		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
