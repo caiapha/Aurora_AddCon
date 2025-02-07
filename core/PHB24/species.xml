@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.1.5">
+		<update version="0.1.6">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		</update>
 	</info>
@@ -31,18 +31,8 @@
 		</ul>
 	</description>
 	<sheet>
-		<description>You gain Resistance to Necrotic and Radiant Damage.
-			You gain Darkvision with a range of 60 feet.
-			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
-		</description>
-		<description level="3">You gain Resistance to Necrotic and Radiant Damage.
-			You gain Darkvision with a range of 60 feet.
-			Healing Hand: Once per Long Rest, as a magic action you touch a creature and heal {{proficiency}}d4.
-			Celestial Revelation: Once per Long Rest, as a Bonus Action you can manifest one of the following manifestation for 1 minute:
-			Heavenly Wings: you have a Fly Speed equal to your Speed.
-			Inner Radiance: you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.
-			Necrotic Shroud: creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.
-			Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.</description>
+		<description>You gain Resistance to Necrotic and Radiant Damage.</description>
+		<description level="3">You gain Resistance to Necrotic and Radiant Damage. Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the Revelation.</description>
 	</sheet>
 	<rules>
 		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
@@ -50,12 +40,44 @@
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<grant name="Light Bearer" spellcasting="Innate casting" id="ID_PHB24_SPELL_LIGHT" />
 		<grant type="Racial Trait" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_AASIMAR_HEALING_HAND" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_AASIMAR_CELESTIAL_REVELATION" />
 		<stat name="Necrotic Shroud:dc" value="8" />
 		<stat name="Necrotic Shroud:dc" value="proficiency" />
 		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
 	</rules>
 </element>
-
+<!-- ASIMAAR RACIAL TRAITS -->
+<element name="Healing Hand" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEALING_HAND">
+	<sheet action="Magic Action" usage="1/Long Rest">
+		<description>You touch a creature and heal {{proficiency}}d4.</description>
+	</sheet>
+</element>
+<element name="Celestial revelation" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_CELESTIAL_REVELATION">
+	<sheet action="Bonus Action" usage="1/Long Rest">
+		<description>you can manifest one of the following manifestation for 1 minute:</description>
+	</sheet>
+	<rules>
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS">
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_INNER_RADIANCE">
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_NECROTIC_SHROUD">	
+	</rules>
+</element>	
+<element name="Heavenly Wings" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS">
+	<sheet>
+		<description>You have a Fly Speed equal to your Speed.</description>
+	</sheet>
+</element>
+<element name="Inner Radiance" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_INNER_RADIANCE">
+	<sheet>
+		<description>You shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} Radiant damage.</description>
+	</sheet>
+</element>
+<element name="Necrotic Shroud" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_NECROTIC_SHROUD">
+	<sheet>
+		<description>Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw DC{{Necrotic Shroud:dc}} or have the Frightened condition until the end of your next turn.</description>
+	</sheet>
+</element>	
 <!-- DRAGONBORN -->	
 <element name="Dragonborn" type="Race" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_DRAGONBORN">
 	<description>
