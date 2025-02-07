@@ -58,9 +58,9 @@
 		<description>you can manifest one of the following manifestation for 1 minute:</description>
 	</sheet>
 	<rules>
-		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS">
-		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_INNER_RADIANCE">
-		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_NECROTIC_SHROUD">	
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS" />
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_INNER_RADIANCE" />
+		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_NECROTIC_SHROUD" />	
 	</rules>
 </element>	
 <element name="Heavenly Wings" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS">
