@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.1.6">
+		<update version="0.1.7">
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		</update>
 	</info>
@@ -41,7 +41,7 @@
 		<grant name="Light Bearer" spellcasting="Innate casting" id="ID_PHB24_SPELL_LIGHT" />
 		<grant type="Racial Trait" id="ID_PHB24_RACE_TRAIT_RACIAL_CASTING_ABILITY_CHARISMA" />
 		<grant type="Racial Trait" id="ID_PHB24_RACE_AASIMAR_HEALING_HAND" />
-		<grant type="Racial Trait" id="ID_PHB24_RACE_AASIMAR_CELESTIAL_REVELATION" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_AASIMAR_CELESTIAL_REVELATION" level="3" />
 		<stat name="Necrotic Shroud:dc" value="8" />
 		<stat name="Necrotic Shroud:dc" value="proficiency" />
 		<stat name="Necrotic Shroud:dc" value="charisma:modifier" />
