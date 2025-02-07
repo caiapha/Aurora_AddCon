@@ -32,7 +32,7 @@
 	</description>
 	<sheet>
 		<description>You gain Resistance to Necrotic and Radiant Damage.</description>
-		<description level="3">You gain Resistance to Necrotic and Radiant Damage. Moreover, you deal {{proficiency}} Necrotic or Radiant extra damage, according the choosen Revelation.</description>
+		<description level="3">You gain Resistance to Necrotic and Radiant Damage.</description>
 	</sheet>
 	<rules>
 		<select type="Racial Trait" name="Aasimar size" supports="Creature Size" id="ID_PHB24_RACE_SIZE" />
@@ -55,7 +55,7 @@
 </element>
 <element name="Celestial revelation" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_CELESTIAL_REVELATION">
 	<sheet action="Bonus Action" usage="1/Long Rest">
-		<description>you can manifest one of the following manifestation for 1 minute:</description>
+		<description>You can manifest one of the following manifestation for 1 minute, dealing also {{proficiency}} Necrotic or Radiant extra damage, according the choosen Revelation:</description>
 	</sheet>
 	<rules>
 		<grant type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_AASIMAR_HEAVENLY_WINGS" />
