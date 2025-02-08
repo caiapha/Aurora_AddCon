@@ -4,7 +4,7 @@
 		<name>Species</name>
 		<description>Species from the Player's Handbook Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="0.1.8">
+		<update version="0.1.9>
 		  <file name="species.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/species.xml" />
 		</update>
 	</info>
@@ -106,14 +106,14 @@
 		<p><strong>Darkvision.</strong> You have Darkvision with a range of 60 feet.</p>
 		<p><strong>Draconic Flight.</strong> When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
 	</description>
-	<sheet>
-		<description level="5">Once per Long Rest, as a Bonus Action, you gain a {{speed}}ft Fly Speed for 10 minutes, or until you end it (no action required) or are Incapacitated.</description>
-	</sheet>
+	<sheet display="false" />
 	<rules>
-		<grant type="Racial Trait" name="Dragonborn size" id="ID_PHB24_RACE_SIZE_MEDIUM" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_SIZE_MEDIUM" />
+		<grant type="Racial Trait" id="ID_PHB24_RACE_TRAIT_DRACONIC_FLIGHT" level="5" />
 		<grant type="Vision" id="ID_VISION_DARKVISION" />
 		<stat name="innate speed" value="30" />
 		<select name="Draconic Ancestry" type="Racial Trait" supports="Draconic Ancestry" />
+
 		<stat name="dragon breath.dc" value="8" />
 		<stat name="dragon breath.dc" value="proficiency" />
 		<stat name="dragon breath.dc" value="constitution:modifier" />
@@ -123,6 +123,12 @@
 		<stat name="dragon breath:damage" value="1" level="17" />
 	</rules>
 </element>
+<!-- DRACONIC FLIGHT -->
+<element name="Draconic Flight" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_DRACONIC_FLIGHT">
+	<sheet action="Bonus Action" usage="1/Long Rest)">
+		<description>You manifest your spectral draconic wings, gaining a {{speed}}ft Fly Speed, for 10 minutes or until you end it (no action required) or are Incapacitated.</description>
+	</sheet>
+</element>
 <!-- DRACONIC ANCESTRY -->
 <element name="Black Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLACK_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -131,13 +137,9 @@
 		<p>Your dragon breath is Acid type.</p>
 		<p>Your gain resistance to Acid damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Acid damages. {{proficiency}} times per Long Rest, during an attack action you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-		<stat inline="true" name="draconic-ancestry:type" value="Black Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Blue Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BLUE_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -146,13 +148,9 @@
 		<p>Your dragon breath is Lightning type.</p>
 		<p>Your gain resistance to Lightning damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Lightning damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-		<stat inline="true" name="draconic-ancestry:type" value="Blue Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Brass Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRASS_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -161,13 +159,9 @@
 		<p>Your dragon breath is Fire type.</p>
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-		<stat inline="true" name="draconic-ancestry:type" value="Brass Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Bronze Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_BRONZE_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -176,13 +170,9 @@
 		<p>Your dragon breath is Lightning type.</p>
 		<p>Your gain resistance to Lightning damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Lightning damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Lightning Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Lightning Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-		<stat inline="true" name="draconic-ancestry:type" value="Bronze Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Copper Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_COPPER_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -191,13 +181,9 @@
 		<p>Your dragon breath is Acid type.</p>
 		<p>Your gain resistance to Acid damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Acid damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with an Acid Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Acid Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-		<stat inline="true" name="draconic-ancestry:type" value="Copper Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Gold Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GOLD_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -206,13 +192,9 @@
 		<p>Your dragon breath is Fire type.</p>
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-		<stat inline="true" name="draconic-ancestry:type" value="Gold Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Green Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_GREEN_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -221,13 +203,9 @@
 		<p>Your dragon breath is Poison type.</p>
 		<p>Your gain resistance to Poison damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Poison damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Poison Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Poison Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
-		<stat inline="true" name="draconic-ancestry:type" value="Green Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Red Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_RED_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -236,13 +214,9 @@
 		<p>Your dragon breath is Fire type.</p>
 		<p>Your gain resistance to Fire damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Fire damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Fire Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Fire Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-		<stat inline="true" name="draconic-ancestry:type" value="Red Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="Silver Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_SILVER_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -251,13 +225,9 @@
 		<p>Your dragon breath is Cold type.</p>
 		<p>Your gain resistance to Cold damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet>
 		<description>You are resistant to Cold damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
-		<stat inline="true" name="draconic-ancestry:type" value="Silver Dragon Ancestry" />
-	</rules>
+	</sheet>
 </element>
 <element name="White Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_WHITE_ANCESTRY">
 	<supports>Draconic Ancestry</supports>
@@ -266,17 +236,8 @@
 		<p>Your dragon breath is Cold type.</p>
 		<p>Your gain resistance to Cold damages.</p>		
 	</description>
-<!--	<sheet>
+	<sheet> 
 		<description>You are resistant to Cold damages. {{proficiency}} times per Long Rest, during an attack action, you can replace one attack with a Cold Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 Cold Damages. On a save, damage halves.</description>
-	</sheet> -->
-	<rules>
-		<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
-		<stat inline="true" name="draconic-ancestry:type" value="White Dragon Ancestry" />
-	</rules>
-</element>
-<element name="Dragon Ancestry" type="Racial Trait" source="Player’s Handbook Rev. 2024" id="ID_PHB24_RACE_TRAIT_DRAGON_ANCESTRY">
-	<sheet usage="{{proficiency}}/Long Rest" alt="{{draconic-ancestry:type}}">
-		<description>You are resistant to {{draconic-ancestry:damage type}} damages. During an attack action, you can replace one attack with a Dragon Breath in a 15ft cone or 30 ft line (5 ft wide). Creatures in the area must make a Dexterity Saving Throw against DC{{dragon breath.dc}} or take {{dragon breath:damage}}d10 {{draconic-ancestry:damage type}} Damages. On a save, damage halves.</description>
 	</sheet>
 </element>
 <!-- DWARF -->	
