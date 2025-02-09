@@ -3,7 +3,7 @@
 	<info>
 		<name>Cleric</name>
 		<description>The Cleric class from the Player’s Handbook Rev. 2024</description>
-		<author url="">Wizards of the Coast</author>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="class-cleric.xml" url="class-cleric.xml" />
 		</update>
