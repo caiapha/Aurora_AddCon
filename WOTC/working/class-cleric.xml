@@ -2,17 +2,17 @@
 <elements>
 	<info>
 		<name>Cleric</name>
-		<description>The Cleric class from the Player’s Handbook Rev. 2024</description>
+		<description>The Cleric class from the Player’s Handbook Rev. 2024 Rev. 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
 		<update version="0.0.1">
 			<file name="class-cleric.xml" url="class-cleric.xml" />
 		</update>
 	</info>
 	
-	<element name="Cleric" type="Class" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_CLERIC">
+	<element name="Cleric" type="Class" source="Player’s Handbook Rev. 2024 Rev. 2024" id="ID_WOTC_PHB24_CLASS_CLERIC">
 		<description>
 			<h4>CREATING A CLERIC</h4>
-			<p>As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. The Player’s Handbook includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.</p>
+			<p>As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. The Player’s Handbook Rev. 2024 includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.</p>
 			<p class="indent">Once you’ve chosen a deity, consider your cleric’s relationship to that god. Did you enter this service willingly? Or did the god choose you, impelling you into service with no regard for your wishes? How do the temple priests of your faith regard you: as a champion or a troublemaker? What are your ultimate goals? Does your deity have a special task in mind for you? Or are you striving to prove yourself worthy of a great quest?</p>
 			<h5 class="caption">QUICK BUILD</h5>
 			<p>You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the acolyte background.</p>
@@ -66,38 +66,43 @@
 				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>4</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
 				<tr><td>20th</td><td>+6</td><td class="left">Greater Divine Intervention</td><td>4</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
-	<!--		<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEDOMAIN" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DESTROYUNDEAD" />
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" />
 		</description>
 		<sheet display="false">
 			<description>A priestly champion who wields divine magic in service of a higher power.</description>
 		</sheet>
-		<setters> -->
+		<setters>
 			<set name="short">A priestly champion who wields divine magic in service of a higher power.</set>
 			<set name="hd">d8</set>
 		</setters>
-<!--		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
-			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_CLERIC"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
 
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEDOMAIN" level="1" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DESTROYUNDEAD" level="5" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" />
 		</rules>
-		<multiclass id="ID_WOTC_PHB_MULTICLASS_CLERIC">
+		<multiclass id="ID_WOTC_PHB24_MULTICLASS_CLERIC">
 			<prerequisite>Wisdom 13</prerequisite>
 			<requirements>[wis:13]</requirements>
 			<setters>
@@ -111,17 +116,19 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_SPELLCASTING</requirements>
+	<element name="Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC">
 		<description>
-			<p>As a conduit for divine power, you can cast cleric spells.</p>
+			<p>You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Cleric spells, which appear on the Cleric spell list later in the class's description.</p>
 			<h5 class="caption">CANTRIPS</h5>
-			<p>At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.</p>
-			<h5 class="caption">PREPARING AND CASTING SPELLS</h5>
-			<p>The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
-			<p class="indent">You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
-			<p class="indent">For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
-			<p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>
+			<p>At 1st level, You know three cantrips of your choice from the Cleric spell list. Guidance, Sacred Flame, and Thaumaturgy are recommended. Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list. When you reach Cleric levels 4 and 10, you learn another cantrip of your choice from the Cleric spell list, as shown in the Cantrips column of the Cleric Features table</p>
+			<h5 class="caption">SPELL SLOTS</h5>
+			<p>The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<h5 class="caption">PREPARED SPELLS OF LEVEL 1+</h5>
+			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list. Bless, Cure Wounds, Guiding Bolt, and Shield of Faith are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>
+			<p class="indent">If another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you.</p>
+			<h5 class="caption">CHANGING YOUR PREPARED SPELLS</p>
+			<p>Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots.</p>
 			<h5 class="caption">SPELLCASTING ABILITY</h5>
 			<p>Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
 			<center>
@@ -133,7 +140,7 @@
 			<h5 class="caption">SPELLCASTING FOCUS</h5>
 			<p>You can use a holy symbol as a spellcasting focus for your cleric spells.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You can cast cleric spells as rituals. You can prepare {{cleric:spellcasting:prepare}} spells from the cleric spell list. You can use a holy symbol as your spellcasting focus.</description>
 		</sheet>
 		<spellcasting name="Cleric" ability="Wisdom" prepare="true">
@@ -141,7 +148,6 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
-			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
 			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
 
 			<stat name="cleric:spellcasting:slots:1" value="2" level="1" />
@@ -167,12 +173,13 @@
 			<stat name="cleric:spellcasting:prepare" value="wisdom:modifier" />
 			<stat name="cleric:spellcasting:prepare" value="level:cleric" />
 
-			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Cleric" />
-			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Cleric" />
-			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0, PHB24" level="1" number="3" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0, PHB24" level="4" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Cleric" />
 		</rules>
 	</element>
-	<element name="Divine Domain" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEDOMAIN">
+<!-- QUI -->
+	<element name="Divine Domain" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEDOMAIN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_DOMAIN</requirements>
 		<description>
 			<p>Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.</p>
@@ -185,7 +192,7 @@
 			<select type="Archetype" name="Divine Domain" supports="Divine Domain" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
+	<element name="Channel Divinity" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNEL_DIVINITY</requirements>
 		<description>
 			<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
@@ -202,7 +209,7 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD">
+	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_CHANNELDIVINITY_TURN_UNDEAD</requirements>
 		<description>
 			<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
@@ -213,7 +220,7 @@
 				A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
 		<description>
@@ -228,7 +235,7 @@
 			<select type="Class Feature" name="Improvement Option (Cleric 19)" supports="Improvement Option,Cleric,19" level="19" />
 		</rules>
 	</element>
-	<element name="Destroy Undead" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DESTROYUNDEAD">
+	<element name="Destroy Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DESTROYUNDEAD">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DESTROY_UNDEAD</requirements>
 		<description>
 			<p>Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.</p>
@@ -252,7 +259,7 @@
 			<description level="17">When an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
 		</sheet>
 	</element>
-	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION">
+	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_INTERVENTION</requirements>
 		<description>
 			<p>Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.</p>
@@ -266,6 +273,6 @@
 			<description level="20">Describe the assistance you seek and your deity intervenes.
 			You can’t use this feature again for 7 days.</description>
 		</sheet>
-	</element> -->
+	</element>
 
 	</elements>
