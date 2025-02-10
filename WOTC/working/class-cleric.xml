@@ -69,6 +69,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
 		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
@@ -208,8 +210,6 @@
 			<p>At 2nd level, You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with two such effects: Divine Spark and Turn Undead, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.</p>
 			<p class="indent">You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.</p>
 			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
 		</description>
 		<sheet usage="{{channel divinity:count}}/Long Rest" />
 		<rules>
@@ -226,13 +226,16 @@
 			<p class="indent">You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).</p>
 		</description>
 		<sheet alt="Divine Spark" action="Magic Action"  usage="Channel Divinity">
-			<description>Roll {{divine spark:count}}d8+{{wisdom:modifier}}. A creature you can see within 30ft ragains Hit Points equal to the roll's result. Otherwise, you force it to make a CON Saving Throw. On a fail the creature takes Radiant of Necrotic (your choice) damages equal to the rolled number. On a success, the damage is halved.</description>
+			<description>Roll {{divine spark:count}}d8+{{wisdom:modifier}}. A creature you can see within 30ft gains Hit Points equal to the roll's result. Otherwise, you force it to make a CON Saving Throw DC{{divine spark:dc}}. On a fail the creature takes Radiant of Necrotic (your choice) damages equal to the rolled number. On a success, the damage is halved.</description>
 		</sheet>
 		<rules>
 			<stat name="divine spark:count" value="1" />
 			<stat name="divine spark:count" value="1" level="7" />
 			<stat name="divine spark:count" value="1" level="13" />
 			<stat name="divine spark:count" value="1" level="18" />
+			<stat name="divine spark:dc" value="8" />
+			<stat name="divine spark:dc" value="proficiency" />
+			<stat name="divine spark:dc" value="wisdom:modifier" />
 		</rules>
 	</element>
 	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD">
@@ -240,8 +243,13 @@
 			<p>As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</p>
 		</description>
 		<sheet alt="Turn Undead" action="Magic Action" usage="Channel Divinity">
-			<description>Each undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it has the Frightened and Incapacitated conditions for 1 minute. it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</description>
+			<description>Each undead of your choice within 30 feet of you must make a WIS Saving Throw DC{{turn undead:dc}}. If the creature fails its saving throw, it has the Frightened and Incapacitated conditions for 1 minute. it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</description>
 		</sheet>
+		<rules>
+			<stat name="turn undead:dc" value="8" />
+			<stat name="turn undead:dc" value="proficiency" />
+			<stat name="turn undead:dc" value="wisdom:modifier" />
+		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
@@ -249,7 +257,7 @@
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
-		<sheet display="false" /><
+		<sheet display="false" />
 		<rules>
 			<select type="Class Feature" name="Improvement Option (Cleric 4)" supports="Improvement Option,Cleric,4" level="4" />
 			<select type="Class Feature" name="Improvement Option (Cleric 8)" supports="Improvement Option,Cleric,8" level="8" />
