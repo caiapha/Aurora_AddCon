@@ -193,7 +193,6 @@
 			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0, PHB24" level="10" number="1" spellcasting="Cleric" />
 		</rules>
 	</element>
-<!-- QUI -->
 	<element name="Divine Order" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER">
 		<description>
 			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
@@ -220,37 +219,7 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Divine Spark" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK">
-		<description>
-			<p>As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).</p>
-			<p class="indent">You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).</p>
-		</description>
-		<sheet alt="Divine Spark" action="Magic Action"  usage="Channel Divinity">
-			<description>Roll {{divine spark:count}}d8+{{wisdom:modifier}}. A creature you can see within 30ft gains Hit Points equal to the roll's result. Otherwise, you force it to make a CON Saving Throw DC{{divine spark:dc}}. On a fail the creature takes Radiant of Necrotic (your choice) damages equal to the rolled number. On a success, the damage is halved.</description>
-		</sheet>
-		<rules>
-			<stat name="divine spark:count" value="1" />
-			<stat name="divine spark:count" value="1" level="7" />
-			<stat name="divine spark:count" value="1" level="13" />
-			<stat name="divine spark:count" value="1" level="18" />
-			<stat name="divine spark:dc" value="8" />
-			<stat name="divine spark:dc" value="proficiency" />
-			<stat name="divine spark:dc" value="wisdom:modifier" />
-		</rules>
-	</element>
-	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD">
-		<description>
-			<p>As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</p>
-		</description>
-		<sheet alt="Turn Undead" action="Magic Action" usage="Channel Divinity">
-			<description>Each undead of your choice within 30 feet of you must make a WIS Saving Throw DC{{turn undead:dc}}. If the creature fails its saving throw, it has the Frightened and Incapacitated conditions for 1 minute. it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</description>
-		</sheet>
-		<rules>
-			<stat name="turn undead:dc" value="8" />
-			<stat name="turn undead:dc" value="proficiency" />
-			<stat name="turn undead:dc" value="wisdom:modifier" />
-		</rules>
-	</element>
+	<!-- QUI -->
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
 		<compendium display="false" />
@@ -329,6 +298,39 @@
 			<stat name="Arcana:misc" value="wisdom:modifier" bonus="base" />
 			<stat name="Religion:misc" value="1" bonus="base" />
 			<stat name="Religion:misc" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	
+	<!-- CHANNEL DIVINITY -->
+	<element name="Channel Divinity: Divine Spark" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK">
+		<description>
+			<p>As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).</p>
+			<p class="indent">You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).</p>
+		</description>
+		<sheet alt="Divine Spark" action="Magic Action"  usage="Channel Divinity">
+			<description>Roll {{divine spark:count}}d8+{{wisdom:modifier}}. A creature you can see within 30ft gains Hit Points equal to the roll's result. Otherwise, you force it to make a CON Saving Throw DC{{divine spark:dc}}. On a fail the creature takes Radiant of Necrotic (your choice) damages equal to the rolled number. On a success, the damage is halved.</description>
+		</sheet>
+		<rules>
+			<stat name="divine spark:count" value="1" />
+			<stat name="divine spark:count" value="1" level="7" />
+			<stat name="divine spark:count" value="1" level="13" />
+			<stat name="divine spark:count" value="1" level="18" />
+			<stat name="divine spark:dc" value="8" />
+			<stat name="divine spark:dc" value="proficiency" />
+			<stat name="divine spark:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD">
+		<description>
+			<p>As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</p>
+		</description>
+		<sheet alt="Turn Undead" action="Magic Action" usage="Channel Divinity">
+			<description>Each undead of your choice within 30 feet of you must make a WIS Saving Throw DC{{turn undead:dc}}. If the creature fails its saving throw, it has the Frightened and Incapacitated conditions for 1 minute. it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</description>
+		</sheet>
+		<rules>
+			<stat name="turn undead:dc" value="8" />
+			<stat name="turn undead:dc" value="proficiency" />
+			<stat name="turn undead:dc" value="wisdom:modifier" />
 		</rules>
 	</element>
 </elements>
