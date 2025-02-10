@@ -67,14 +67,14 @@
 				<tr><td>20th</td><td>+6</td><td class="left">Greater Divine Intervention</td><td>4</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
+	<!--		<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" /> -->
 		</description>
 		<sheet display="false">
 			<description>A priestly champion who wields divine magic in service of a higher power.</description>
@@ -93,14 +93,14 @@
 			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
 
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
+	<!--		<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" level="10" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" /> -->
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_CLERIC">
 			<prerequisite>Wisdom 13</prerequisite>
