@@ -67,8 +67,8 @@
 				<tr><td>20th</td><td>+6</td><td class="left">Greater Divine Intervention</td><td>4</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
 			</table>
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
-	<!--		<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
+		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
@@ -93,8 +93,8 @@
 			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill,Cleric" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
 
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
-	<!--		<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
+	<!--		<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
@@ -192,17 +192,16 @@
 		</rules>
 	</element>
 <!-- QUI -->
-	<element name="Divine Domain" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEDOMAIN">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_DOMAIN</requirements>
+	<element name="Divine Order" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER">
 		<description>
-			<p>Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.</p>
-			<h5 class="caption">DOMAIN SPELLS</h5>
-			<p>Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.</p>
-			<p class="indent">If you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</p>
+			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<h5 class="caption">DIVINE ORDER</h5>
+			<p><strong>Protector:</strong> trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>
+			<p><strong>Thaumaturge</strong> you know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Divine Domain" supports="Divine Domain" />
+			<select type="Class Feature" name="Divine Order" supports="Divine Order" />
 		</rules>
 	</element>
 	<element name="Channel Divinity" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
@@ -287,5 +286,32 @@
 			You can’t use this feature again for 7 days.</description>
 		</sheet>
 	</element>
-
-	</elements>
+<!-- DIVINE ORDER CHOICE -->
+	<element name="Protector" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_PROTECTOR">
+		<supports>Divine Order</supports>
+		<description>
+			<h5 class="caption">DIVINE ORDER: PROTECTOR</hr>
+			<p>Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Thaumaturge" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_PROTECTOR">
+		<supports>Divine Order</supports>
+		<description>
+			<h5 class="caption">DIVINE ORDER: THAUMATURGE</hr>
+			<p>You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<select type="Spell" name="Cantrip (Thaumaturge)" supports="$(spellcasting:list), 0, PHB24" level="1" number="1" spellcasting="Cleric" />
+			<stat name="Arcana:misc" value="1" bonus="base" />
+			<stat name="Arcana:misc" value="wisdom:modifier" bonus="base" />
+			<stat name="Religion:misc" value="1" bonus="base" />
+			<stat name="Religion:misc" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+</elements>
