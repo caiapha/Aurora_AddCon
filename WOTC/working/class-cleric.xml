@@ -76,6 +76,7 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" />
 		</description>
@@ -103,6 +104,7 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE" level="14" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" level="20" />
 		</rules>
@@ -221,13 +223,13 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
 		</rules>
 	</element>
-	<element name="Cleirc Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS">
+	<element name="Cleric Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS">
 		<description>
 			<p>At 3rd level, you gain a Cleric subclass of your choice. A subclass is a specialization that grants you features at certain Cleric levels. For the rest of your career, you gain each of your subclass's features that are of your Cleric level or lower.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype" name="Bard Subclass" supports="Cleric subclass" level="3" />
+			<select type="Archetype" name="Cleric Subclass" supports="Cleric subclass" level="3" />
 		</rules>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
@@ -248,7 +250,7 @@
 			<p>Starting at 5th level, Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</p>
 		</description>
 		<sheet>
-			<description>Each undead that fails the Saving Throw against your Turn Undead, takes {{sear undead:count}}d8 Radiant Damage. This damage doesn't ende the Turn Undead effect.</description>
+			<description>Each undead that fails the Saving Throw against your Turn Undead, takes {{sear undead:count}}d8 Radiant Damage. This damage doesn't end the Turn Undead effect.</description>
 			
 		</sheet>
 		<rules>
@@ -267,7 +269,6 @@
 			<select name="Blessed Strike" type="Class Feature" supports="Blessed Strike" /> 
 		</rules>
 	</element>	
-	
 	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION">
 		<description>
 			<p>Beginning at 10th level, you can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest.</p>
@@ -276,6 +277,14 @@
 			<description>You can cast a cleric spell of level 5 or lower that doesn't require a Reaction to cast, without expendig a spell slot and material components.</description>
 		</sheet>
 	</element>
+	<element name="Improved Blessed Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE">
+		<description>
+			<p>Beginning at 14th level, The option you chose for Blessed Strikes grows more powerful.</p>
+			<p><strong>Divine Strike:</strong> The extra damage of your Divine Strike increases to 2d8.</p>
+			<p><strong>Potent Spellcasting.</strong>  When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.</p>
+		</description>
+		<sheet display="false" /> <!-- included in Bless Strike options -->
+	</element>	
 	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON">
 		<description>
 			<p>At 19th level, you gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Spell Recall is recommended.</p>
@@ -284,12 +293,16 @@
 			<description>At 19th level, you gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.</description>
 		</sheet>
 		<rules>
-			<select name="Epic Boon (Bard)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" />
+			<select name="Epic Boon (Cleric)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" />
 		</rules>
 	</element>
 	<element name="Greater Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" />
-		<description>You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description>
-		<sheet><description>When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description></sheet>
+		<description>
+			<p>You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</p>
+		</description>
+		<sheet>
+			<description>When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description>
+		</sheet>
 	
 	<!-- DIVINE ORDER CHOICE -->
 	<element name="Protector" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_PROTECTOR">
@@ -350,23 +363,31 @@
 			<stat name="turn undead:dc" value="wisdom:modifier" />
 		</rules>
 	</element>
-<!-- BLESSED STRIKE -->
-	<element name="Blessed Strike: Divine Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_DIVINE_STRIKE">
+	<!-- BLESSED STRIKE -->
+	<element name="Divine Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_DIVINE_STRIKE">
 		<supports>Blessed Strike</supports>
 		<description>
 			<p>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p>
+			<p>At 14th level, the extra damage increase to 2d8</p>
 		</description>	
 		<sheet alt="Divine Strike">
-			<description>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice)</description>
+			<description level="7">Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice)</description>
+			<description level="14">Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 2d8 Necrotic or Radiant damage (your choice)</description>
 		</sheet>	
 	</element>		
-	<element name="Blessed Strike: Potent Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_POTENT_SPELLCASTING">
+	<element name="Potent Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_POTENT_SPELLCASTING">
 		<supports>Blessed Strike</supports>
 		<description>		
 			<p>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+			<p>>At 14th level, when you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.</p>
 		</description>
 		<sheet alt="Potent Spellcasting">
-			<description>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</description>
+			<description level="7">Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</description>
+			<description level="14">Add your Wisdom modifier to the damage you deal with any Cleric cantrip. In addition, dealing damage with a Cleric Cantrip grants you, or a crature of your choice within 60ft form you, {{potent spell:hp}} temporary Hit Points.</description>
 		</sheet>
+		<rules>
+			<stat name="potent spell:hp" value="wisdom:modifier" />
+			<stat name="potent spell:hp" value="wisdom:modifier" />
+		</rules>
 	</element>	
 </elements>
