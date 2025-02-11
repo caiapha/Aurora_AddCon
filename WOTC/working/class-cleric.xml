@@ -71,12 +71,13 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
-		<!--	<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" /> -->
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" />
 		</description>
 		<sheet display="false">
 			<description>A priestly champion who wields divine magic in service of a higher power.</description>
@@ -97,12 +98,13 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
-	<!--		<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" level="7" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" level="10" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" /> -->
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" level="20" />
 		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_CLERIC">
 			<prerequisite>Wisdom 13</prerequisite>
@@ -219,62 +221,77 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
 		</rules>
 	</element>
-	<!-- QUI -->
-	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_ABILITY_SCORE_IMPROVEMENT</requirements>
-		<compendium display="false" />
+	<element name="Cleirc Subclass" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS">
 		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>At 3rd level, you gain a Cleric subclass of your choice. A subclass is a specialization that grants you features at certain Cleric levels. For the rest of your career, you gain each of your subclass's features that are of your Cleric level or lower.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Cleric 4)" supports="Improvement Option,Cleric,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Cleric 8)" supports="Improvement Option,Cleric,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Cleric 12)" supports="Improvement Option,Cleric,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Cleric 16)" supports="Improvement Option,Cleric,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Cleric 19)" supports="Improvement Option,Cleric,19" level="19" />
+			<select type="Archetype" name="Bard Subclass" supports="Cleric subclass" level="3" />
 		</rules>
 	</element>
-	<element name="Destroy Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DESTROYUNDEAD">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DESTROY_UNDEAD</requirements>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
+		<compendium display="false" />
 		<description>
-			<p>Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.</p>
-			<h5 class="caption">DESTROY UNDEAD</h5>
-			<table>
-				<thead>
-					<tr><td>Cleric Level</td><td>Destroys Undead of CR ...</td></tr>
-				</thead>
-				<tr><td>5th</td><td>1/2 or lower</td></tr>
-				<tr><td>8th</td><td>1 or lower</td></tr>
-				<tr><td>11th</td><td>2 or lower</td></tr>
-				<tr><td>14th</td><td>3 or lower</td></tr>
-				<tr><td>17th</td><td>4 or lower</td></tr>
-			</table>
+			<p>When you reach 4th level, you gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Improvement Option (Cleric 4)" type="Class Feature" supports="Level Improvement" level="4" />
+			<select name="Improvement Option (Cleric 8)" type="Class Feature" supports="Level Improvement" level="8" />
+			<select name="Improvement Option (Cleric 12)" type="Class Feature" supports="Level Improvement" level="12" />
+			<select name="Improvement Option (Cleric 16)" type="Class Feature" supports="Level Improvement" level="16" />
+		</rules>
+	</element>
+	<element name="Sear Undead" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD">
+		<description>
+			<p>Starting at 5th level, Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</p>
 		</description>
 		<sheet>
-			<description>When an undead of CR 1/2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
-			<description level="8">When an undead of CR 1 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
-			<description level="11">When an undead of CR 2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
-			<description level="14">When an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
-			<description level="17">When an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+			<description>Each undead that fails the Saving Throw against your Turn Undead, takes {{sear undead:count}}d8 Radiant Damage. This damage doesn't ende the Turn Undead effect.</description>
+			
 		</sheet>
+		<rules>
+			<stat name="sear undead:count" value="1" bonus="base" />
+			<stat name="sear undead:count" value="wisdom:modifier" bonus="base" />
+		</rules>
 	</element>
-	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_INTERVENTION</requirements>
+	<element name="Blessed Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE">
 		<description>
-			<p>Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.</p>
-			<p class="indent">Imploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.</p>
-			<p class="indent">If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.</p>
-			<p class="indent">At 20th level, your call for intervention succeeds automatically, no roll required.</p>
+			<p>Divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).</p>
+			<p><strong>Divine Strike:</strong> once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p>
+			<p><strong>Potent Spellcasting.</strong> Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
 		</description>
-		<sheet action="Action">
-			<description>Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
-			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.</description>
-			<description level="20">Describe the assistance you seek and your deity intervenes.
-			You can’t use this feature again for 7 days.</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Blessed Strike" type="Class Feature" supports="Blessed Strike" /> 
+		</rules>
+	</element>	
+	
+	<element name="Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION">
+		<description>
+			<p>Beginning at 10th level, you can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You can cast a cleric spell of level 5 or lower that doesn't require a Reaction to cast, without expendig a spell slot and material components.</description>
 		</sheet>
 	</element>
-<!-- DIVINE ORDER CHOICE -->
+	<element name="Epic Boon" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON">
+		<description>
+			<p>At 19th level, you gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Spell Recall is recommended.</p>
+		</description>
+		<sheet display="false">
+			<description>At 19th level, you gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Fate is recommended.</description>
+		</sheet>
+		<rules>
+			<select name="Epic Boon (Bard)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" />
+		</rules>
+	</element>
+	<element name="Greater Divine Intervention" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" />
+		<description>You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description>
+		<sheet><description>When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description></sheet>
+	
+	<!-- DIVINE ORDER CHOICE -->
 	<element name="Protector" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_PROTECTOR">
 		<supports>Divine Order</supports>
 		<description>
@@ -333,4 +350,23 @@
 			<stat name="turn undead:dc" value="wisdom:modifier" />
 		</rules>
 	</element>
+<!-- BLESSED STRIKE -->
+	<element name="Blessed Strike: Divine Strike" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_DIVINE_STRIKE">
+		<supports>Blessed Strike</supports>
+		<description>
+			<p>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p>
+		</description>	
+		<sheet alt="Divine Strike">
+			<description>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice)</description>
+		</sheet>	
+	</element>		
+	<element name="Blessed Strike: Potent Spellcasting" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_POTENT_SPELLCASTING">
+		<supports>Blessed Strike</supports>
+		<description>		
+			<p>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+		</description>
+		<sheet alt="Potent Spellcasting">
+			<description>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</description>
+		</sheet>
+	</element>	
 </elements>
