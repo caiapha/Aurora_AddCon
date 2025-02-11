@@ -43,7 +43,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_PHB24_SPELL_BURNING_HANDS" spellcasting="Cleric" prepared="true" level="3" />
-			<grant type="Spell" id="ID_PHB24_FAERIE_FIRE" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_FAERIE_FIRE" spellcasting="Cleric" prepared="true" level="3" />
       			<grant type="Spell" id="ID_PHB24_SPELL_SCORCHING_RAY" spellcasting="Cleric" prepared="true" level="3" />
      			<grant type="Spell" id="ID_PHB24_SPELL_SEE_INVISIBILITY" spellcasting="Cleric" prepared="true" level="3" />
       			<grant type="Spell" id="ID_PHB24_SPELL_DAYLIGHT" spellcasting="Cleric" prepared="true" level="5" />
@@ -59,7 +59,7 @@
 			<p>Starting at 3rd level, as a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to emit a flash of light in a 30-foot Emanation originating from yourself. Any magical Darkness—such as that created by the Darkness spell—in that area is dispelled. Additionally, each creature of your choice in that area must make a Constitution saving throw, taking Radiant damage equal to 2d10 plus your Cleric level on a failed save or half as much damage on a successful one.</p>
 		</description>
 		<sheet action="Magic Action" usage="Channel Divinity">
-			<description>You emit a 30-foot Emanation originating from yourself. All magical darkness in the area are dispelled and any creature of your choice shall succed a CON Saving Throw DC{{radiance:dc}} or take 2d10+{{level:cleric}} Radiant damages. On a success the damage is halved.</description>
+			<description>You emit a 30-foot Emanation originating from yourself. All magical darkness in the area are dispelled and any creature of your choice shall succed a CON Saving Throw DC{{radiance:dc}} or take 2d10+{{level:cleric}} Radiant damages. On a success, the damage is halved.</description>
 		</sheet>
 		<rules>
 			<stat name="radiance:dc" value="8" />
@@ -78,7 +78,7 @@
 		</sheet>
 		<rules>
 			<stat name="flare:use" value="1" bonus="base" />
-			<stat name="flare:use" value="1" bonus="wisdom:modifier" bonus="base" />
+			<stat name="flare:use" value="wisdom:modifier" bonus="base" />
 			<stat name="flare:rest" value="Long" inline="true" level="3" />
 			<stat name="flare:rest" value="Short" inline="true" level="6" />
 		</rules>
@@ -96,7 +96,7 @@
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet usage="{{flare:use}}/Long Rest" action="Magic Action">
-			<description>For 1 minute, or until you dismiss it (no action required), you emitt an aura of 60ft Bright Light and additional 30ft Dim Light. Any enemy in the Bright Light has Disvantage against your Radiance of the Dawn and any spell dealing Fire or Radiant Damage.</description>
+			<description>For 1 minute, or until you dismiss it (no action required), you emitt an aura of 60ft Bright Light and additional 30ft of Dim Light. Any enemy in the Bright Light has Disvantage against your Radiance of the Dawn and any spell dealing Fire or Radiant Damage.</description>
 		</sheet>
 	</element>
 </elements>
