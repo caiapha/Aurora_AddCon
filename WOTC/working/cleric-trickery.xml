@@ -44,13 +44,13 @@
 		<rules>
 			<grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" spellcasting="Cleric" prepared="true" level="3" />
 			<grant type="Spell" id="ID_PHB24_SPELL_DISGUISE_SELF" spellcasting="Cleric" prepared="true" level="3" />
-      <grant type="Spell" id="ID_PHB24_INVISIBILITY" spellcasting="Cleric" prepared="true" level="3" />
-     	<grant type="Spell" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" spellcasting="Cleric" prepared="true" level="3" />
-      <grant type="Spell" id="ID_PHB24_SPELL_HIPNOTIC_PATTERN" spellcasting="Cleric" prepared="true" level="5" />
-      <grant type="Spell" id="ID_PHB24_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" level="5" />
-      <grant type="Spell" id="ID_PHB24_SPELL_CONFUSION" spellcasting="Cleric" prepared="true" level="7" />
-      <grant type="Spell" id="ID_PHB24_SPELL_DIMENSION_DOOR" spellcasting="Cleric" prepared="true" level="7" />
-      <grant type="Spell" id="ID_PHB24_SPELL_DOMINATE_PERSON" spellcasting="Cleric" prepared="true" level="9" />
+      			<grant type="Spell" id="ID_PHB24_SPELL_INVISIBILITY" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_PASS_WITHOUT_TRACE" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_HIPNOTIC_PATTERN" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB24_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB24_SPELL_CONFUSION" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB24_SPELL_DIMENSION_DOOR" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB24_SPELL_DOMINATE_PERSON" spellcasting="Cleric" prepared="true" level="9" />
 			<grant type="Spell" id="ID_PHB24_SPELL_MODIFY_MEMORY" spellcasting="Cleric" prepared="true" level="9" />
 		</rules>
 	</element> 
