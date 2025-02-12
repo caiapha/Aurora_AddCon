@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<title>The Nature Domain Cleric subclass</title>
-		<update version="0.1.0">
+		<title>The Trickery Domain Cleric subclass</title>
+		<update version="0.1.1">
 			<file name="cleric-trickery.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/cleric-trickery.xml" />
 		</update>
 	</info>
