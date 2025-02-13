@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="spells.xml" url="/spells.xml" />
 		</update>
 	</info>
@@ -7079,46 +7079,6 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Staggering Smite" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_STAGGERING_SMITE">
-		<supports>Paladin, Spell Saving Throw, PHB24</supports>
-		<description>
-			<p>The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn.</p>
-		</description>
-		<setters>
-			<set name="keywords">psychic</set>
-			<set name="level">4</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 bonus action</set>
-			<set name="duration">Concentration, up to 1 minute</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">false</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">true</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-	<element name="Staggering Smite" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_STAGGERING_SMITE">
-		<supports>Paladin, Spell Saving Throw, PHB24</supports>
-		<description>
-			<p>The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn.</p>
-		</description>
-		<setters>
-			<set name="keywords">psychic</set>
-			<set name="level">4</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 bonus action</set>
-			<set name="duration">Concentration, up to 1 minute</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">false</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">true</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
 	<element name="Starry Wisp" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_STARRY_WISP">
 		<supports>Bard, Druid, PHB24</supports>
 		<description>
@@ -7136,6 +7096,27 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Steel Wind Strike" type="Spell" source="Player’s Handbook Rev. 2024" id="ID_PHB24_SPELL_STEEL_WIND_STRIKE">
+		<supports>Ranger, Wizard, PHB24</supports>
+		<description>
+			<p>You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.</p>
+			<p>You then teleport to an unoccupied space you can see within 5 feet of one of the targets.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a Melee weapon worth 1+sp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
