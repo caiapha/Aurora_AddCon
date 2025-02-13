@@ -36,7 +36,7 @@
 			<table>
 				<thead><tr><td>Level</td><td>Prepared Spells</td></tr></thead>
 				<tr><td>3rd</td><td>Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon</td></tr>
-				<tr><td>5th</td><td>Crusader's Mantle,Spirit Guardian</td></tr>
+				<tr><td>5th</td><td>Crusader's Mantle,Spirit Guardians</td></tr>
 				<tr><td>7th</td><td>Fire Shield,Freedom of Movement</td></tr>
 				<tr><td>9th</td><td>Hold Monster, Steel Wind Strike</td></tr>
 			</table>
@@ -48,7 +48,7 @@
       			<grant type="Spell" id="ID_PHB24_SPELL_SHIELD_OF_FAITH" spellcasting="Cleric" prepared="true" level="3" />
 			<grant type="Spell" id="ID_PHB24_SPELL_SPIRITUAL_WEAPON" spellcasting="Cleric" prepared="true" level="3" />
 			<grant type="Spell" id="ID_PHB24_SPELL_CRUSADERS_MANTLE" spellcasting="Cleric" prepared="true" level="5" />
-			<grant type="Spell" id="ID_PHB24_SPELL_SPIRIT_GUARDIAN" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB24_SPELL_SPIRIT_GUARDIANS" spellcasting="Cleric" prepared="true" level="5" />
 			<grant type="Spell" id="ID_PHB24_SPELL_FIRE_SHIELD" spellcasting="Cleric" prepared="true" level="7" />
 			<grant type="Spell" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Cleric" prepared="true" level="7" />
 			<grant type="Spell" id="ID_PHB24_SPELL_HOLD_MONSTER" spellcasting="Cleric" prepared="true" level="9" />
