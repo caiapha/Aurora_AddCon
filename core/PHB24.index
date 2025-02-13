@@ -4,7 +4,7 @@
 		<name>Player's Handbook 2024 Revision</name>
 		<description>the index for all the content of the  Player's Handbook - 2024 Revision.</description>
 		<author url="https://github.com/caiapha">Caiapha</author>
-		<update version="0.0.22">
+		<update version="0.0.23">
 			<file name="PHB24.index" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24.index" />
 		</update>
 	</info>
@@ -48,6 +48,7 @@
 			<file name="cleric-life.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/cleric-life.xml" />
 			<file name="cleric-light.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/cleric-light.xml" />
 			<file name="cleric-trickery.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/cleric-trickery.xml" />
+			<file name="cleric-war.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/core/PHB24/cleric-war.xml" />
 
 		<!-- Misc -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_AddCon/refs/heads/main/WOTC/working/spells.xml" /> <!-- TEMPORARY -->
