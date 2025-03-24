@@ -46,34 +46,34 @@
 				<thead>
 					<tr><td class="col-10">Level</td><td class="col-10">Bonus Prof.</td><td class="col-60">Features</td><td>Martial Arts</td><td class="col-10">Focus Point</td><td class="left">Unarmored Movement</td></tr>
 				</thead>
-        <tr><td>1st</td><td>+2</td><td class="left">Unarmored Defense, Martial Arts</td><td>1d6</td><td>-</td><td>-</td></tr>
-        <tr><td>2nd</td><td>+2</td><td class="left">Monk's Focus,Unarmored Movement,Uncanny Metabolism</td><td>1d6</td><td>2</td><td>+10ft</td></tr>
-        <tr><td>3rd</td><td>+2</td><td class="left">Deflect Attacks,Monk Subclass</td><td>1d6</td><td>3</td><td>+10ft</td></tr>
-        <tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement,Slow Fall</td><td>1d6</td><td>4</td><td>+10ft</td></tr>
-        <tr><td>5th</td><td>+3</td><td class="left">Extra Attack,Stunning Strike</td><td>1d8</td><td>5</td><td>+10ft</td></tr>
-        <tr><td>6th</td><td>+3</td><td class="left">Empowered Strikes,Subclass Feature</td><td>1d8</td><td>6</td><td>+15ft</td></tr>
-        <tr><td>7th</td><td>+3</td><td class="left">Evasion</td><td>1d8</td><td>7</td><td>+15ft</td></tr>
-				<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>1d8</td><td>8</td><td>+15ft</td></tr>
-				<tr><td>9th</td><td>+4</td><td class="left">Acrobatic Movement</td><td>1d8</td><td>9</td><td>+15ft</td></tr>
-				<tr><td>10th</td><td>+4</td><td class="left">Heightened Focus,Self-Restoration</td><td>1d8</td><td>10</td><td>+20ft</td></tr>
-				<tr><td>11th</td><td>+4</td><td class="left">Subclass Feature</td><td>1d10</td><td>11</td><td>+20ft</td></tr>
-				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>12</td><td>+20ft</td></tr>
-        <tr><td>13th</td><td>+5</td><td class="left">Deflect Energy</td><td>1d10</td><td>13</td><td>+20ft</td></tr>
-				<tr><td>14th</td><td>+5</td><td class="left">Disciplined Survivor</td><td>1d10</td><td>14</td><td>+25ft</td></tr>
-				<tr><td>15th</td><td>+5</td><td class="left">Perfect Focus</td><td>1d10</td><td>15</td><td>+25ft</td></tr>
-				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>16</td><td>+25ft</td></tr>
-				<tr><td>17th</td><td>+6</td><td class="left">Subclass Feature</td><td>1d12</td><td>17</td><td>+25ft</td></tr>
-				<tr><td>18th</td><td>+6</td><td class="left">Superior Defense</td><td>1d12</td><td>18</td><td>+30ft</td></tr>
-				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>1d12</td><td>19</td><td>+30ft</td></tr>
-				<tr><td>20th</td><td>+6</td><td class="left">Body and Mind</td><td>1d12</td><td>20</td><td>+30ft</td></tr>
+					<tr><td>1st</td><td>+2</td><td class="left">Unarmored Defense, Martial Arts</td><td>1d6</td><td>-</td><td>-</td></tr>
+					<tr><td>2nd</td><td>+2</td><td class="left">Monk's Focus,Unarmored Movement,Uncanny Metabolism</td><td>1d6</td><td>2</td><td>+10ft</td></tr>
+					<tr><td>3rd</td><td>+2</td><td class="left">Deflect Attacks,Monk Subclass</td><td>1d6</td><td>3</td><td>+10ft</td></tr>
+					<tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement,Slow Fall</td><td>1d6</td><td>4</td><td>+10ft</td></tr>
+					<tr><td>5th</td><td>+3</td><td class="left">Extra Attack,Stunning Strike</td><td>1d8</td><td>5</td><td>+10ft</td></tr>
+					<tr><td>6th</td><td>+3</td><td class="left">Empowered Strikes,Subclass Feature</td><td>1d8</td><td>6</td><td>+15ft</td></tr>
+					<tr><td>7th</td><td>+3</td><td class="left">Evasion</td><td>1d8</td><td>7</td><td>+15ft</td></tr>
+					<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>1d8</td><td>8</td><td>+15ft</td></tr>
+					<tr><td>9th</td><td>+4</td><td class="left">Acrobatic Movement</td><td>1d8</td><td>9</td><td>+15ft</td></tr>
+					<tr><td>10th</td><td>+4</td><td class="left">Heightened Focus,Self-Restoration</td><td>1d8</td><td>10</td><td>+20ft</td></tr>
+					<tr><td>11th</td><td>+4</td><td class="left">Subclass Feature</td><td>1d10</td><td>11</td><td>+20ft</td></tr>
+					<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>12</td><td>+20ft</td></tr>
+					<tr><td>13th</td><td>+5</td><td class="left">Deflect Energy</td><td>1d10</td><td>13</td><td>+20ft</td></tr>
+					<tr><td>14th</td><td>+5</td><td class="left">Disciplined Survivor</td><td>1d10</td><td>14</td><td>+25ft</td></tr>
+					<tr><td>15th</td><td>+5</td><td class="left">Perfect Focus</td><td>1d10</td><td>15</td><td>+25ft</td></tr>
+					<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>1d10</td><td>16</td><td>+25ft</td></tr>
+					<tr><td>17th</td><td>+6</td><td class="left">Subclass Feature</td><td>1d12</td><td>17</td><td>+25ft</td></tr>
+					<tr><td>18th</td><td>+6</td><td class="left">Superior Defense</td><td>1d12</td><td>18</td><td>+30ft</td></tr>
+					<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>1d12</td><td>19</td><td>+30ft</td></tr>
+					<tr><td>20th</td><td>+6</td><td class="left">Body and Mind</td><td>1d12</td><td>20</td><td>+30ft</td></tr>
 			</table>				
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNCANNY_METABOLISM" />
-			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_MISSILES" />
-      <div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_ATTACKS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUBCLASS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SLOW_FALL" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EXTRA_ATTACK" />
@@ -87,8 +87,8 @@
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DISCIPLINED_SURVIVOR" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_PERFECT_FOCUS" />
 			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUPERIOR_DEFENCE" />
-      <div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EPIC_BOON" />
-      <div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EPIC_BOON" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND" />
 		</description>
 		<sheet display="false">
 			<description>A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</description>
@@ -99,18 +99,18 @@
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" supports="light" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="light" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" /
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="light" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<select type="Proficiency" name="Tool Proficiency (Monk)" supports="Musical Instrument||Artisan tools" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<select type="Proficiency" name="Skill Proficiency (Monk)" supports="Skill,Monk" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" level="1" />
-      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT" level="2" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNCANNY_METABOLISM" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_MISSILES" level="3" />
-      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_ATTACKS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUBCLASS" level="3" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SLOW_FALL" level="4" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EXTRA_ATTACK" level="5" />
@@ -124,9 +124,9 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DISCIPLINED_SURVIVOR" level="14" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_PERFECT_FOCUS" level="15" />
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUPERIOR_DEFENCE" level="18" />
-      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EPIC_BOON" level="19" />
-      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND" level="20" />
-  	</rules>
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND" level="20" />
+		</rules>
 		<multiclass id="ID_WOTC_PHB24_MULTICLASS_MONK">
 			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
 			<requirements>([dex:13],[wis:13])</requirements>
@@ -136,7 +136,7 @@
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" supports="light" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" supports="light" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="light" />
 			</rules>
 		</multiclass>
 	</element>
@@ -441,28 +441,4 @@
 			<description>When you roll for initiative and have no ki points remaining, you regain 4 ki points.</description>
 		</sheet>
 	</element>
-
-	<!--Feature Replacement Grants-->
-	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_UNARMORED_DEFENSE" />
-	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MARTIAL_ARTS" />
-	<element name="Ki Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI" />
-	<element name="Flurry of Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_FLURRY_OF_BLOWS" />
-	<element name="Patient Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_PATIENT_DEFENSE" />
-	<element name="Step of the Wind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_STEP_OF_THE_WIND" />
-	<element name="Unarmored Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_UNARMORED_MOVEMENT" />
-	<element name="Monastic Tradition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MONASTIC_TRADITION" />
-	<element name="Deflect Missiles Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_DEFLECT_MISSILES" />
-	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_ABILITY_SCORE_IMPROVEMENT" />
-	<element name="Slow Fall Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_SLOW_FALL" />
-	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EXTRA_ATTACK" />
-	<element name="Stunning Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STUNNING_STRIKE" />
-	<element name="Ki-Empowered Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_EMPOWERED_STRIKES" />
-	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EVASION" />
-	<element name="Stillness of Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STILLNESS_OF_MIND" />
-	<element name="Purity of Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PURITY_OF_BODY" />
-	<element name="Tongue of the Sun and Moon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TONGUE_OF_THE_SUN_AND_MOON" />
-	<element name="Diamond Soul Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_DIAMOND_SOUL" />
-	<element name="Timeless Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TIMELESS_BODY" />
-	<element name="Empty Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EMPTY_BODY" />
-	<element name="Perfect Self Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PERFECT_SELF" />
 </elements>
