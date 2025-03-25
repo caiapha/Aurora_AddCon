@@ -179,6 +179,9 @@
 			<stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
 		</rules>
 	</element>
+	
+	<!-- QUI -->
+	
 	<element name="Ki" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_KI">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI</requirements>
 		<description>
