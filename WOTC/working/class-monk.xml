@@ -28,7 +28,7 @@
             <h5 class="caption">PROFICIENCIES</h5>
             <ul class="unstyled mb">
                 <li><strong>Armor:</strong> None</li>
-                <li><strong>Weapons:</strong> Simple and Martial weapons, that have the Light Property </li>
+                <li><strong>Weapons:</strong> Simple weapons and Martial weapons that have the Light Property </li>
                 <li><strong>Tools:</strong> Choose one type of artisan’s tools or one musical instrument</li>
             </ul>
             <ul class="unstyled">
@@ -98,7 +98,7 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" supports="light" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="light" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<select type="Proficiency" name="Tool Proficiency (Monk)" supports="Musical Instrument||Artisan tools" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
@@ -135,7 +135,7 @@
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" supports="light" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="light" />
 			</rules>
 		</multiclass>
@@ -157,27 +157,22 @@
 			<stat name="ac:calculation" value="ac:unarmored defense monk" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Monk)" />
 		</rules>
 	</element>
-  <!-- QUI -->
-	<element name="Martial Arts" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS">
+ 	<element name="Martial Arts" type="Class Feature" source="Player’s Handbook Rev. 2024" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS">
 		<description>
-			<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</p>
-			<p class="indent">You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:</p>
+			<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use your Unarmed Strike and Monk weapons, which are the following:</p>
 			<ul>
-				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</li>
-				<li>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</li>
-				<li>When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</li>
+				<li>Simple Melee Weapons</li>
+				<li>Martial Melee Weapons that have the Light property</li>
 			</ul>
-			<p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>
+			<p>You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.</p>
+			<p class="indent"><strong>Bonus Unarmed Strike:</strong> you can make an Unarmed Strike as a Bonus Action.</p>
+			<p class="indent"><strong>Martial Arts Die:</strong> you can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.</p>
+			<p class="indent"><strong>Dexterous Attacks:</strong> you can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p>
 		</description>
 		<sheet>
-			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
-			When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</description>
+			<description>While Unarmed or wielding a Monk weapon you gain the following benefitrs: you can strike an Unarmed attack as a Bonus Action. You can roll 1d{{martial arts:dice}} instead of the normal damage die. You can use the DEX modifier instead the STR modifier for attack and damage rolls. You can use the DEX modifier instead the STR modifier to calcualte the DC for the Grapple and Shove option.</description>
 		</sheet>
 		<rules>
-			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
 			<stat name="martial arts:dice" value="4" bonus="martial arts" />
 			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
 			<stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
